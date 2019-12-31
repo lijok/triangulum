@@ -8,8 +8,8 @@ class Ranking(BaseController):
     def __init__(self, action_handler: Callable):
         super().__init__(action_handler=action_handler, controller='ranking')
 
-    def get_kingdom_victory_points_with_treasures(self, start: int, end: int) -> dict:
-        return self.invoke_action(
+    async def get_kingdom_victory_points_with_treasures(self, start: int, end: int) -> dict:
+        return await self.invoke_action(
             action='getKingdomVictoryPointsWithTreasures',
             params={
                 'start': start,
@@ -17,15 +17,15 @@ class Ranking(BaseController):
             }
         )
 
-    def get_kingdom_stats(self, kingdom_id: int) -> dict:
-        return self.invoke_action(
+    async def get_kingdom_stats(self, kingdom_id: int) -> dict:
+        return await self.invoke_action(
             action='getKingdomStats',
             params={
                 'kingdomId': kingdom_id,
             }
         )
 
-    def get_ranking(
+    async def get_ranking(
         self,
         start: int,
         end: int,
@@ -41,13 +41,13 @@ class Ranking(BaseController):
         if _id:
             params['id'] = _id
 
-        return self.invoke_action(
+        return await self.invoke_action(
             action='getRanking',
             params=params
         )
 
-    def get_ranking_average_points(self, ranking_category: RankingCategory) -> dict:
-        return self.invoke_action(
+    async def get_ranking_average_points(self, ranking_category: RankingCategory) -> dict:
+        return await self.invoke_action(
             action='getRankingAveragePoints',
             params={
                 'rankingType': ranking_category.value['ranking_type'],
@@ -55,8 +55,8 @@ class Ranking(BaseController):
             }
         )
 
-    def get_rank_and_count(self, id: int, ranking_category: RankingCategory) -> dict:
-        return self.invoke_action(
+    async def get_rank_and_count(self, id: int, ranking_category: RankingCategory) -> dict:
+        return await self.invoke_action(
             action='getRankAndCount',
             params={
                 'id': id,
@@ -65,12 +65,12 @@ class Ranking(BaseController):
             }
         )
 
-    def get_world_stats(self) -> dict:
-        return self.invoke_action(
+    async def get_world_stats(self) -> dict:
+        return await self.invoke_action(
             action='getWorldStats'
         )
 
-    def get_kingdom_internal_ranking(self) -> dict:
-        return self.invoke_action(
+    async def get_kingdom_internal_ranking(self) -> dict:
+        return await self.invoke_action(
             action='getKingdomInternalRanking'
         )

@@ -1,5 +1,5 @@
 import json
-import requests
+import aiohttp
 
 from triangulum.clients.http.base import HttpBaseClient
 from triangulum.clients.routing import URL
@@ -20,22 +20,15 @@ class LobbyClient(HttpBaseClient):
             self,
             msid: str = None,
             session_key: str = None,
-            session: requests.Session = None,
-            proxies: dict = None,
-            headers: dict = None,
-            email: str = None,
-            password: str = None
+            session: aiohttp.ClientSession = None,
+            headers: dict = None
     ):
         super().__init__(
             msid=msid,
             session_key=session_key,
             session=session,
-            proxies=proxies,
             headers=headers
         )
-
-        if email and password:
-            self.authenticate(email, password)
 
         self.achievements = Achievements(action_handler=self.invoke_action)
         self.cache = Cache(action_handler=self.invoke_action)
@@ -46,26 +39,26 @@ class LobbyClient(HttpBaseClient):
         self.player = Player(action_handler=self.invoke_action)
         self.sitter = Sitter(action_handler=self.invoke_action)
 
-    def is_authenticated(self):
+    async def is_authenticated(self):
         """Checks whether user is authenticated with the lobby portal"""
 
-        if 'error' in self.gameworld.get_possible_new_gameworlds():
+        if 'error' in await self.gameworld.get_possible_new_gameworlds():
             return False
         else:
             return True
 
-    def authenticate(self, email: str, password: str) -> None:
+    async def authenticate(self, email: str, password: str) -> None:
         """Authenticates with the lobby portal"""
 
-        response = self._get(URL.LOBBY_AUTH)
-        self.msid = find_msid(response.text)
+        response = await self._get(URL.LOBBY_AUTH)
+        self.msid = find_msid(await response.text())
 
-        response = self._post(
+        response = await self._post(
             url=URL.LOBBY_AUTH_STEP_2.format(msid=self.msid),
             data={'email': email, 'password': password}
         )
-        token = find_token(response.text)
-        _ = self._get(URL.LOBBY_AUTH_STEP_3.format(token=token, msid=self.msid))
+        token = find_token(await response.text())
+        _ = await self._get(URL.LOBBY_AUTH_STEP_3.format(token=token, msid=self.msid))
 
         self.session_key = get_session_key(
             session=self.session,
@@ -73,18 +66,21 @@ class LobbyClient(HttpBaseClient):
             domain='.kingdoms.com'
         )
 
-    def connect_to_gameworld(self, gameworld_id: str, gameworld_name: str) -> GameworldClient:
+    async def connect_to_gameworld(self, gameworld_id: str, gameworld_name: str) -> GameworldClient:
         """Connect to a gameworld"""
 
-        return GameworldClient(
+        gameworld_client = GameworldClient(
             gameworld_id=gameworld_id,
             gameworld_name=gameworld_name,
             msid=self.msid,
-            proxies=self.proxies
+            session=self.session
         )
+        await gameworld_client.authenticate()
 
-    def invoke_action(self, action: str, controller: str, params: dict = None) -> dict:
-        response = self._post(
+        return gameworld_client
+
+    async def invoke_action(self, action: str, controller: str, params: dict = None) -> dict:
+        response = await self._post(
             url=URL.LOBBY_API,
             data=json.dumps(
                 {
@@ -96,4 +92,4 @@ class LobbyClient(HttpBaseClient):
             )
         )
 
-        return response.json()
+        return await response.json()

@@ -6,8 +6,8 @@ class BaseController:
         self._action_handler = action_handler
         self.controller = controller
 
-    def invoke_action(self, action: str, params: dict = None) -> dict:
-        return self._action_handler(
+    async def invoke_action(self, action: str, params: dict = None) -> dict:
+        return await self._action_handler(
             action=action,
             controller=self.controller,
             params=params

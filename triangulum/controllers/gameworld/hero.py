@@ -8,12 +8,12 @@ class Hero(BaseController):
     def __init__(self, action_handler: Callable):
         super().__init__(action_handler=action_handler, controller='hero')
 
-    def get_value_points(self):
-        return self.invoke_action(
+    async def get_value_points(self):
+        return await self.invoke_action(
             action='getValuePoints'
         )
 
-    def add_attribute_points(
+    async def add_attribute_points(
         self,
         fight_strength_points: int,
         att_bonus_points: int,
@@ -21,7 +21,7 @@ class Hero(BaseController):
         res_bonus_points: int,
         res_bonus_type: Resource
     ) -> dict:
-        return self.invoke_action(
+        return await self.invoke_action(
             action='addAttributePoints',
             params={
                 'fightStrengthPoints': fight_strength_points,
@@ -32,8 +32,8 @@ class Hero(BaseController):
             }
         )
 
-    def merge_item(self, id: int, amount: int, village_id: int) -> dict:
-        return self.invoke_action(
+    async def merge_item(self, id: int, amount: int, village_id: int) -> dict:
+        return await self.invoke_action(
             action='mergeItem',
             params={
                 'id': id,
@@ -42,7 +42,7 @@ class Hero(BaseController):
             }
         )
 
-    def save_face(
+    async def save_face(
         self,
         mouth: int,
         hair: int,
@@ -61,7 +61,7 @@ class Hero(BaseController):
         assets/game/{version}/layout/images/heroAvatar/{gender}/thumb/head/{property}
         """
 
-        return self.invoke_action(
+        return await self.invoke_action(
             action='saveFace',
             params={
                 'face': {
@@ -80,26 +80,26 @@ class Hero(BaseController):
             }
         )
 
-    def get_last_inventory_view(self) -> dict:
-        return self.invoke_action(
+    async def get_last_inventory_view(self) -> dict:
+        return await self.invoke_action(
             action='getLastInventoryView'
         )
 
-    def get_treasure_sell_price(self) -> dict:
-        return self.invoke_action(
+    async def get_treasure_sell_price(self) -> dict:
+        return await self.invoke_action(
             action='getTreasureSellPrice'
         )
 
-    def get_duration_to_closest_village_with_influence(self, village_id: int) -> dict:
-        return self.invoke_action(
+    async def get_duration_to_closest_village_with_influence(self, village_id: int) -> dict:
+        return await self.invoke_action(
             action='getDurationToClosestVillageWithInfluence',
             params={
                 'villageId': village_id,
             }
         )
 
-    def use_item(self, id: int, amount: int, village_id: int) -> dict:
-        return self.invoke_action(
+    async def use_item(self, id: int, amount: int, village_id: int) -> dict:
+        return await self.invoke_action(
             action='useItem',
             params={
                 'id': id,
@@ -108,13 +108,13 @@ class Hero(BaseController):
             }
         )
 
-    def set_last_inventory_view(self) -> dict:
-        return self.invoke_action(
+    async def set_last_inventory_view(self) -> dict:
+        return await self.invoke_action(
             action='setLastInventoryView'
         )
 
-    def get_resource_for_resource_chest(self, percent: int, resource_type: Resource) -> dict:
-        return self.invoke_action(
+    async def get_resource_for_resource_chest(self, percent: int, resource_type: Resource) -> dict:
+        return await self.invoke_action(
             action='getResourceForResourceChest',
             params={
                 'percent': percent,
@@ -122,8 +122,8 @@ class Hero(BaseController):
             }
         )
 
-    def upgrade_item(self, upgrade_item_id: int, target_item_id: int) -> dict:
-        return self.invoke_action(
+    async def upgrade_item(self, upgrade_item_id: int, target_item_id: int) -> dict:
+        return await self.invoke_action(
             action='upgradeItem',
             params={
                 'upgradeItemId': upgrade_item_id,
@@ -131,21 +131,21 @@ class Hero(BaseController):
             }
         )
 
-    def revive(self, village_id: int) -> dict:
-        return self.invoke_action(
+    async def revive(self, village_id: int) -> dict:
+        return await self.invoke_action(
             action='revive',
             params={
                 'villageId': village_id,
             }
         )
 
-    def confirm_hero_level_up(self) -> dict:
-        return self.invoke_action(
+    async def confirm_hero_level_up(self) -> dict:
+        return await self.invoke_action(
             action='confirmHeroLevelUp'
         )
 
-    def switch_items(self, id1: int, id2: int) -> dict:
-        return self.invoke_action(
+    async def switch_items(self, id1: int, id2: int) -> dict:
+        return await self.invoke_action(
             action='switchItems',
             params={
                 'id1': id1,

@@ -1,4 +1,5 @@
 import json
+import aiohttp
 
 from triangulum.clients.http.base import HttpBaseClient
 from triangulum.clients.routing import URL, RootURL
@@ -32,14 +33,12 @@ class GameworldClient(HttpBaseClient):
         gameworld_id: str,
         gameworld_name: str,
         msid: str,
-        proxies: dict = None
+        session: aiohttp.ClientSession
     ):
-        super().__init__(msid=msid, proxies=proxies)
+        super().__init__(msid=msid, session=session)
 
         self.gameworld_id = gameworld_id
         self.gameworld_name = gameworld_name.lower()
-
-        self.authenticate()
 
         self.player = Player(action_handler=self.invoke_action)
         self.farm_list = FarmList(action_handler=self.invoke_action)
@@ -63,21 +62,23 @@ class GameworldClient(HttpBaseClient):
         self.kingdom_treaty = KingdomTreaty(action_handler=self.invoke_action)
         self.login = Login(action_handler=self.invoke_action)
 
-    def is_authenticated(self):
+    async def is_authenticated(self):
         """Checks whether user is authenticated with the gameworld"""
 
-        if 'error' in self.troops.get_markers():
+        if 'error' in await self.troops.get_markers():
             return False
         else:
             return True
 
-    def authenticate(self) -> None:
+    async def authenticate(self) -> None:
         """Authenticates with the gameworld"""
 
-        response = self._get(URL.GAMEWORLD_JOIN.format(gameworld_id=self.gameworld_id, msid=self.msid))
-        token = find_token(response.text)
+        response = await self._get(
+            URL.GAMEWORLD_JOIN.format(gameworld_id=self.gameworld_id, msid=self.msid)
+        )
+        token = find_token(await response.text())
 
-        _ = self._get(
+        _ = await self._get(
             URL.GAMEWORLD_AUTH.format(gameworld=self.gameworld_name, token=token, msid=self.msid)
         )
 
@@ -87,8 +88,8 @@ class GameworldClient(HttpBaseClient):
             domain=f'{self.gameworld_name}.kingdoms.com'
         )
 
-    def invoke_action(self, action: str, controller: str, params: dict = None) -> dict:
-        response = self._post(
+    async def invoke_action(self, action: str, controller: str, params: dict = None) -> dict:
+        response = await self._post(
             url=f'{URL.GAMEWORLD_API.format(gameworld=self.gameworld_name)}/?c={controller}&a={action}&t{timestamp()}',
             data=json.dumps(
                 {
@@ -100,4 +101,4 @@ class GameworldClient(HttpBaseClient):
             )
         )
 
-        return response.json()
+        return await response.json()

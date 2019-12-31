@@ -9,7 +9,7 @@ class Building(BaseController):
     def __init__(self, action_handler: Callable):
         super().__init__(action_handler=action_handler, controller='building')
 
-    def get_celebration_list(self, village_id: int, location_id: int) -> dict:
+    async def get_celebration_list(self, village_id: int, location_id: int) -> dict:
         """Get list of running celebrations in a village
 
         Args:
@@ -19,7 +19,7 @@ class Building(BaseController):
         Returns:
             dict
         """
-        return self.invoke_action(
+        return await self.invoke_action(
             action='getCelebrationList',
             params={
                 'villageId': village_id,
@@ -27,7 +27,7 @@ class Building(BaseController):
             }
         )
 
-    def start_celebration(self, village_id: int, celebration_type: CelebrationType) -> dict:
+    async def start_celebration(self, village_id: int, celebration_type: CelebrationType) -> dict:
         """Start a celebration
 
         Args:
@@ -37,7 +37,7 @@ class Building(BaseController):
         Returns:
             dict
         """
-        return self.invoke_action(
+        return await self.invoke_action(
             action='startCelebration',
             params={
                 'villageId': village_id,
@@ -45,7 +45,7 @@ class Building(BaseController):
             }
         )
 
-    def get_building_list(self, village_id: int, location_id: int) -> dict:
+    async def get_building_list(self, village_id: int, location_id: int) -> dict:
         """Get information on a building at a particular location_id or the
         list of buildings that can be built in that spot
 
@@ -56,7 +56,7 @@ class Building(BaseController):
         Returns:
             dict
         """
-        return self.invoke_action(
+        return await self.invoke_action(
             action='getBuildingList',
             params={
                 'villageId': village_id,
@@ -64,7 +64,7 @@ class Building(BaseController):
             }
         )
 
-    def get_trapper_infos(self, village_id: int, location_id: int) -> dict:
+    async def get_trapper_infos(self, village_id: int, location_id: int) -> dict:
         """Get information about a trapper
 
         Args:
@@ -74,7 +74,7 @@ class Building(BaseController):
         Returns:
             dict
         """
-        return self.invoke_action(
+        return await self.invoke_action(
             action='getTrapperInfos',
             params={
                 'villageId': village_id,
@@ -82,7 +82,7 @@ class Building(BaseController):
             }
         )
 
-    def build_traps(self, village_id: int, location_id: int, amount: int) -> dict:
+    async def build_traps(self, village_id: int, location_id: int, amount: int) -> dict:
         """Build traps in a trapper
 
         Args:
@@ -93,7 +93,7 @@ class Building(BaseController):
         Returns:
             dict
         """
-        return self.invoke_action(
+        return await self.invoke_action(
             action='buildTraps',
             params={
                 'villageId': village_id,
@@ -102,7 +102,7 @@ class Building(BaseController):
             }
         )
 
-    def upgrade(self, village_id: int, location_id: int, building_type: BuildingType) -> dict:
+    async def upgrade(self, village_id: int, location_id: int, building_type: BuildingType) -> dict:
         """Upgrade a building
 
         Args:
@@ -113,7 +113,7 @@ class Building(BaseController):
         Returns:
             dict
         """
-        return self.invoke_action(
+        return await self.invoke_action(
             action='upgrade',
             params={
                 'villageId': village_id,
@@ -122,7 +122,7 @@ class Building(BaseController):
             }
         )
 
-    def get_recruit_list(self, village_id: int, location_id: int) -> dict:
+    async def get_recruit_list(self, village_id: int, location_id: int) -> dict:
         """Get list of units currently in the recruitment queue
 
         Args:
@@ -132,7 +132,7 @@ class Building(BaseController):
         Returns:
             dict
         """
-        return self.invoke_action(
+        return await self.invoke_action(
             action='getRecruitList',
             params={
                 'villageId': village_id,
@@ -140,7 +140,7 @@ class Building(BaseController):
             }
         )
 
-    def recruit_units(
+    async def recruit_units(
             self,
             village_id: int,
             location_id: int,
@@ -156,7 +156,7 @@ class Building(BaseController):
         Returns:
             dict
         """
-        return self.invoke_action(
+        return await self.invoke_action(
             action='recruitUnits',
             params={
                 'villageId': village_id,
@@ -165,7 +165,7 @@ class Building(BaseController):
             }
         )
 
-    def use_master_builder(
+    async def use_master_builder(
         self,
         village_id: int,
         location_id: int,
@@ -186,7 +186,7 @@ class Building(BaseController):
         Returns:
             dict
         """
-        return self.invoke_action(
+        return await self.invoke_action(
             action='useMasterBuilder',
             params={
                 'villageId': village_id,
@@ -197,7 +197,7 @@ class Building(BaseController):
             }
         )
 
-    def get_oasis_list(self, village_id: int) -> dict:
+    async def get_oasis_list(self, village_id: int) -> dict:
         """Get a list of oasis within the influence range of a village
 
         Args:
@@ -206,14 +206,14 @@ class Building(BaseController):
         Returns:
             dict
         """
-        return self.invoke_action(
+        return await self.invoke_action(
             action='getOasisList',
             params={
                 'villageId': village_id,
             }
         )
 
-    def get_culture_point_balance(self, village_id: int) -> dict:
+    async def get_culture_point_balance(self, village_id: int) -> dict:
         """Retrieve the culture point balance
 
         Args:
@@ -222,14 +222,14 @@ class Building(BaseController):
         Returns:
             dict
         """
-        return self.invoke_action(
+        return await self.invoke_action(
             action='getCulturePointBalance',
             params={
                 'villageId': village_id,
             }
         )
 
-    def reserve_resources(self, village_id: int, entry_id: int) -> dict:
+    async def reserve_resources(self, village_id: int, entry_id: int) -> dict:
         """Reserve resources for a master builder task
 
         Args:
@@ -239,7 +239,7 @@ class Building(BaseController):
         Returns:
             dict
         """
-        return self.invoke_action(
+        return await self.invoke_action(
             action='reserveResources',
             params={
                 'villageId': village_id,
@@ -247,7 +247,7 @@ class Building(BaseController):
             }
         )
 
-    def cancel(self, village_id: int, event_id: int) -> dict:
+    async def cancel(self, village_id: int, event_id: int) -> dict:
         """Cancel an event
 
         Args:
@@ -257,7 +257,7 @@ class Building(BaseController):
         Returns:
 
         """
-        return self.invoke_action(
+        return await self.invoke_action(
             action='cancel',
             params={
                 'villageId': village_id,
@@ -265,7 +265,7 @@ class Building(BaseController):
             }
         )
 
-    def research_unit(
+    async def research_unit(
         self,
         village_id: int,
         location_id: int,
@@ -283,7 +283,7 @@ class Building(BaseController):
         Returns:
             dict
         """
-        return self.invoke_action(
+        return await self.invoke_action(
             action='researchUnit',
             params={
                 'villageId': village_id,
@@ -293,7 +293,7 @@ class Building(BaseController):
             }
         )
 
-    def shift_master_builder(self, village_id: int, shift_from: int, shift_to: int) -> dict:
+    async def shift_master_builder(self, village_id: int, shift_from: int, shift_to: int) -> dict:
         """Shift the positions of a master builder reservation
 
         Args:
@@ -304,7 +304,7 @@ class Building(BaseController):
         Returns:
             dict
         """
-        return self.invoke_action(
+        return await self.invoke_action(
             action='shiftMasterBuilder',
             params={
                 'villageId': village_id,
@@ -313,7 +313,7 @@ class Building(BaseController):
             }
         )
 
-    def destroy(self, village_id: int, location_id: int) -> dict:
+    async def destroy(self, village_id: int, location_id: int) -> dict:
         """Begin a destruction task of a building in your village
 
         Args:
@@ -323,7 +323,7 @@ class Building(BaseController):
         Returns:
             dict
         """
-        return self.invoke_action(
+        return await self.invoke_action(
             action='destroy',
             params={
                 'villageId': village_id,
@@ -331,17 +331,17 @@ class Building(BaseController):
             }
         )
 
-    def get_treasury_transformations(self) -> dict:
+    async def get_treasury_transformations(self) -> dict:
         """Get information on treasury transformations in your gameworld account
 
         Returns:
             dict
         """
-        return self.invoke_action(
+        return await self.invoke_action(
             action='getTreasuryTransformations'
         )
 
-    def transform_treasury(self, village_id: int, location_id: int) -> dict:
+    async def transform_treasury(self, village_id: int, location_id: int) -> dict:
         """Begin a treasury transformation task
 
         Args:
@@ -351,7 +351,7 @@ class Building(BaseController):
         Returns:
             dict
         """
-        return self.invoke_action(
+        return await self.invoke_action(
             action='transformTreasury',
             params={
                 'villageId': village_id,
@@ -359,7 +359,7 @@ class Building(BaseController):
             }
         )
 
-    def get_cp_data(self, village_id: int) -> dict:
+    async def get_cp_data(self, village_id: int) -> dict:
         """Get culture point data
 
         Args:
@@ -368,7 +368,7 @@ class Building(BaseController):
         Returns:
             dict
         """
-        return self.invoke_action(
+        return await self.invoke_action(
             action='getCpData',
             params={
                 'villageId': village_id,

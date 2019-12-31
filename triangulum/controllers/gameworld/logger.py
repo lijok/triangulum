@@ -9,10 +9,10 @@ class Logger(BaseController):
     def __init__(self, action_handler: Callable):
         super().__init__(action_handler=action_handler, controller='logger')
 
-    def log_message(self, message: str, prefix: str, log_type: LogType, details: str) -> dict:
+    async def log_message(self, message: str, prefix: str, log_type: LogType, details: str) -> dict:
         raise ActionNotImplementedError
 
-        # return self.invoke_action(
+        # return await self.invoke_action(
         #     action='logMessage',
         #     params={
         #         'message': message,

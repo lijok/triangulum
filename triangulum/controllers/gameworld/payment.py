@@ -9,18 +9,18 @@ class Payment(BaseController):
     def __init__(self, action_handler: Callable):
         super().__init__(action_handler=action_handler, controller='payment')
 
-    def get_payment_shop_url(self, shop_version: ShopVersion) -> dict:
-        return self.invoke_action(
+    async def get_payment_shop_url(self, shop_version: ShopVersion) -> dict:
+        return await self.invoke_action(
             action='getPaymentShopUrl',
             params={
                 'shopVersion': shop_version,
             }
         )
 
-    def get_smallest_package(self, feature_price: int) -> dict:
+    async def get_smallest_package(self, feature_price: int) -> dict:
         raise ActionNotImplementedError
 
-        # return self.invoke_action(
+        # return await self.invoke_action(
         #     action='getSmallestPackage',
         #     params={
         #         'featurePrice': feature_price,  # TODO: Enum this

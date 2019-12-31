@@ -9,10 +9,10 @@ class KingdomTreaty(BaseController):
     def __init__(self, action_handler: Callable):
         super().__init__(action_handler=action_handler, controller='kingdomTreaty')
 
-    def offer(self, kingdom_id: int, type: KingdomTreatyType) -> dict:
+    async def offer(self, kingdom_id: int, type: KingdomTreatyType) -> dict:
         raise ActionNotImplementedError
 
-        # return self.invoke_action(
+        # return await self.invoke_action(
         #     action='offer',
         #     params={
         #         'kingdomId': kingdom_id,
@@ -20,16 +20,16 @@ class KingdomTreaty(BaseController):
         #     }
         # )
 
-    def deny(self, id: int) -> dict:
-        return self.invoke_action(
+    async def deny(self, id: int) -> dict:
+        return await self.invoke_action(
             action='deny',
             params={
                 'id': id,
             }
         )
 
-    def cancel(self, id: int) -> dict:
-        return self.invoke_action(
+    async def cancel(self, id: int) -> dict:
+        return await self.invoke_action(
             action='cancel',
             params={
                 'id': id,

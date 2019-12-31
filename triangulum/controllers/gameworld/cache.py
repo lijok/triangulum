@@ -9,10 +9,10 @@ class Cache(BaseController):
         super().__init__(action_handler=action_handler, controller='cache')
 
     # TODO: Implement proper cache control
-    def get(self, names: list) -> dict:
+    async def get(self, names: list) -> dict:
         raise ActionNotImplementedError
 
-        # return self.invoke_action(
+        # return await self.invoke_action(
         #     action='get',
         #     params={
         #         'names': names,

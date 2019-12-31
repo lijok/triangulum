@@ -1,4 +1,4 @@
-import requests
+import aiohttp
 
 from triangulum.clients.util import random_user_agent
 
@@ -8,22 +8,21 @@ class HttpBaseClient:
         self,
         msid: str = None,
         session_key: str = None,
-        session: requests.Session = None,
-        proxies: dict = None,
+        session: aiohttp.ClientSession = None,
         headers: dict = None
     ):
-        self.session = session if session else requests.Session()
-        self.session.headers['User-Agent'] = random_user_agent() if not session else self.session.headers['User-Agent']
-        self.session.headers.update(headers or {})
-        self.proxies = proxies
+        self.session = session if session else aiohttp.ClientSession()
+        self.headers = {
+            'User-Agent': random_user_agent()
+        } if not session else {}
+        self.headers.update(headers or {})
 
         self.msid = msid
         self.session_key = session_key
 
-    def _get(self, url):
-        response = self.session.get(url=url, proxies=self.proxies)
-        return response
+    async def _get(self, url):
+        return await self.session.get(url=url)
 
-    def _post(self, url, data):
-        response = self.session.post(url=url, data=data, proxies=self.proxies)
-        return response
+    async def _post(self, url, data):
+        return await self.session.post(url=url, data=data)
+

@@ -7,8 +7,8 @@ class Sitter(BaseController):
     def __init__(self, action_handler: Callable):
         super().__init__(action_handler=action_handler, controller='sitter')
 
-    def add(self, avatar_identifier: int, consumers_id: str, avatar_name: str, email: str) -> dict:
-        return self.invoke_action(
+    async def add(self, avatar_identifier: int, consumers_id: str, avatar_name: str, email: str) -> dict:
+        return await self.invoke_action(
             action='add',
             params={
                 'avatarIdentifier': avatar_identifier,
@@ -18,7 +18,7 @@ class Sitter(BaseController):
             }
         )
 
-    def set_permissions(
+    async def set_permissions(
         self,
         avatar_identifier: int,
         sitter_account_identifier: int,
@@ -27,7 +27,7 @@ class Sitter(BaseController):
         can_send_resources: bool,
         can_buy_and_spend_gold: bool
     ) -> dict:
-        return self.invoke_action(
+        return await self.invoke_action(
             action='setPermissions',
             params={
                 'avatarIdentifier': avatar_identifier,
@@ -41,8 +41,8 @@ class Sitter(BaseController):
             }
         )
 
-    def remove(self, avatar_identifier: int, sitter_account_identifier: int) -> dict:
-        return self.invoke_action(
+    async def remove(self, avatar_identifier: int, sitter_account_identifier: int) -> dict:
+        return await self.invoke_action(
             action='remove',
             params={
                 'avatarIdentifier': avatar_identifier,

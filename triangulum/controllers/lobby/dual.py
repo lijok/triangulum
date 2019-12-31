@@ -7,8 +7,8 @@ class Dual(BaseController):
     def __init__(self, action_handler: Callable):
         super().__init__(action_handler=action_handler, controller='dual')
 
-    def add(self, avatar_identifier: int, consumers_id: str, avatar_name: str, email: str) -> dict:
-        return self.invoke_action(
+    async def add(self, avatar_identifier: int, consumers_id: str, avatar_name: str, email: str) -> dict:
+        return await self.invoke_action(
             action='add',
             params={
                 'avatarIdentifier': avatar_identifier,

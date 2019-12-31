@@ -1,7 +1,7 @@
 from typing import Union
 from urllib import parse
 from time import time
-import requests
+import aiohttp
 import random
 import json
 import math
@@ -93,11 +93,18 @@ def find_msid(text: str) -> str:
     return text[text.find('msid=')+5: text.find('msid=')+31]
 
 
-def get_session_key(session: requests.Session, key_name: str, domain: str) -> str:
-    encoded_session_key = session.cookies.get(key_name, domain=domain)
-    decoded_session_key = parse.unquote(encoded_session_key)
+def get_session_key(session: aiohttp.ClientSession, key_name: str, domain: str) -> str:
+    for cookie in session.cookie_jar:
+        if cookie.key == key_name:
+            decoded_session_key = parse.unquote(cookie.value)
 
-    return json.loads(decoded_session_key)['key']
+            return json.loads(decoded_session_key)['key']
+
+
+def get_t5_game_io(session: aiohttp.ClientSession):
+    for cookie in session.cookie_jar:
+        if cookie.key == 't5-game-io':
+            return cookie.value
 
 
 def timestamp():

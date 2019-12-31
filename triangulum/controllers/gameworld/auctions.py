@@ -8,7 +8,7 @@ class Auctions(BaseController):
     def __init__(self, action_handler: Callable):
         super().__init__(action_handler=action_handler, controller='auctions')
 
-    def get_running_auction_amount(
+    async def get_running_auction_amount(
         self,
         filter_item_type: HeroItemType = HeroItemType.NONE,
         filter_slot: HeroItemSlot = HeroItemSlot.NONE,
@@ -24,7 +24,7 @@ class Auctions(BaseController):
         Returns:
             dict
         """
-        return self.invoke_action(
+        return await self.invoke_action(
             action='getRunningAuctionAmount',
             params={
                 'filterItemType': filter_item_type.value,
@@ -33,7 +33,7 @@ class Auctions(BaseController):
             }
         )
 
-    def get_running_auction_page(
+    async def get_running_auction_page(
         self,
         filter_item_type: HeroItemType = HeroItemType.NONE,
         filter_slot: HeroItemSlot = HeroItemSlot.NONE,
@@ -49,7 +49,7 @@ class Auctions(BaseController):
         Returns:
             dict
         """
-        return self.invoke_action(
+        return await self.invoke_action(
             action='getRunningAuctionPage',
             params={
                 'filterItemType': filter_item_type.value,
@@ -58,7 +58,7 @@ class Auctions(BaseController):
             }
         )
 
-    def place_bid(self, auction_id: int, bid_amount: int) -> dict:
+    async def place_bid(self, auction_id: int, bid_amount: int) -> dict:
         """Place bid on an auction item
 
         Args:
@@ -68,7 +68,7 @@ class Auctions(BaseController):
         Returns:
             dict
         """
-        return self.invoke_action(
+        return await self.invoke_action(
             action='placeBid',
             params={
                 'auctionId': auction_id,
@@ -76,7 +76,7 @@ class Auctions(BaseController):
             }
         )
 
-    def get_seller_payout(self, item_id: int, amount: int) -> dict:
+    async def get_seller_payout(self, item_id: int, amount: int) -> dict:
         """Get the payout value of an auctionable item
 
         Args:
@@ -86,7 +86,7 @@ class Auctions(BaseController):
         Returns:
             dict
         """
-        return self.invoke_action(
+        return await self.invoke_action(
             action='getSellerPayout',
             params={
                 'itemId': item_id,
@@ -94,7 +94,7 @@ class Auctions(BaseController):
             }
         )
 
-    def sell_item(self, item_id: int, amount: int) -> dict:
+    async def sell_item(self, item_id: int, amount: int) -> dict:
         """Sell an item on the auction
 
         Args:
@@ -104,7 +104,7 @@ class Auctions(BaseController):
         Returns:
             dict
         """
-        return self.invoke_action(
+        return await self.invoke_action(
             action='sellItem',
             params={
                 'itemId': item_id,

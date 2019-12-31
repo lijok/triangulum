@@ -8,7 +8,7 @@ class FarmList(BaseController):
     def __init__(self, action_handler: Callable):
         super().__init__(action_handler=action_handler, controller='farmList')
 
-    def toggle_entry(self, village_id: int, list_id: int) -> dict:
+    async def toggle_entry(self, village_id: int, list_id: int) -> dict:
         """UNKNOWN
 
         Args:
@@ -18,7 +18,7 @@ class FarmList(BaseController):
         Returns:
             dict
         """
-        return self.invoke_action(
+        return await self.invoke_action(
             action='toggleEntry',
             params={
                 'villageId': village_id,
@@ -26,7 +26,7 @@ class FarmList(BaseController):
             }
         )
 
-    def get_attack_info(self, current_village_id: int, farm_list_ids: list) -> dict:
+    async def get_attack_info(self, current_village_id: int, farm_list_ids: list) -> dict:
         """Get info about a potential attack before launching, which will inform you
         of any errors such as unable to attack due to player having been banned
 
@@ -37,7 +37,7 @@ class FarmList(BaseController):
         Returns:
             dict
         """
-        return self.invoke_action(
+        return await self.invoke_action(
             action='getAttackInfo',
             params={
                 'currentVillageId': current_village_id,
@@ -49,7 +49,7 @@ class FarmList(BaseController):
     # as not all units are allowed to be added to a farm list
     # the list of numbers doesn't go beyond 6 or so, and each one has a different
     # enum assignment
-    def edit_troops(self, entry_ids: list, units: Union[RomanUnits, TeutonUnits, GaulUnits]) -> dict:
+    async def edit_troops(self, entry_ids: list, units: Union[RomanUnits, TeutonUnits, GaulUnits]) -> dict:
         """Edit the assignment of attack units for entries in a farm list
 
         Args:
@@ -59,7 +59,7 @@ class FarmList(BaseController):
         Returns:
             dict
         """
-        return self.invoke_action(
+        return await self.invoke_action(
             action='editTroops',
             params={
                 'entryIds': entry_ids,
@@ -67,7 +67,7 @@ class FarmList(BaseController):
             }
         )
 
-    def create_list(self, name: str) -> dict:
+    async def create_list(self, name: str) -> dict:
         """Create a new farm list
 
         Args:
@@ -76,14 +76,14 @@ class FarmList(BaseController):
         Returns:
             dict
         """
-        return self.invoke_action(
+        return await self.invoke_action(
             action='createList',
             params={
                 'name': name,
             }
         )
 
-    def copy_entry(self, village_id: int, new_list_id: int, entry_id: int) -> dict:
+    async def copy_entry(self, village_id: int, new_list_id: int, entry_id: int) -> dict:
         """Copy a farm list entry from one farm list into another
 
         Args:
@@ -94,7 +94,7 @@ class FarmList(BaseController):
         Returns:
             dict
         """
-        return self.invoke_action(
+        return await self.invoke_action(
             action='copyEntry',
             params={
                 'villageId': village_id,
@@ -103,7 +103,7 @@ class FarmList(BaseController):
             }
         )
 
-    def delete_list(self, list_id: int) -> dict:
+    async def delete_list(self, list_id: int) -> dict:
         """Delete a farm list
 
         Args:
@@ -112,14 +112,14 @@ class FarmList(BaseController):
         Returns:
             dict
         """
-        return self.invoke_action(
+        return await self.invoke_action(
             action='deleteList',
             params={
                 'listId': list_id,
             }
         )
 
-    def delete_entry(self, entry_id: int) -> dict:
+    async def delete_entry(self, entry_id: int) -> dict:
         """Delete an entry in a farm list
 
         Args:
@@ -128,14 +128,14 @@ class FarmList(BaseController):
         Returns:
             dict
         """
-        return self.invoke_action(
+        return await self.invoke_action(
             action='deleteEntry',
             params={
                 'entryId': entry_id,
             }
         )
 
-    def check_target(self, village_id: int) -> dict:
+    async def check_target(self, village_id: int) -> dict:
         """UNKNOWN, possibly target check done prior to adding an entry to a farm list *
 
         Args:
@@ -144,14 +144,14 @@ class FarmList(BaseController):
         Returns:
             dict
         """
-        return self.invoke_action(
+        return await self.invoke_action(
             action='checkTarget',
             params={
                 'villageId': village_id,
             }
         )
 
-    def add_entry(self, village_id: int, list_id: int) -> dict:
+    async def add_entry(self, village_id: int, list_id: int) -> dict:
         """Add a new entry to a farm list
 
         Args:
@@ -161,7 +161,7 @@ class FarmList(BaseController):
         Returns:
             dict
         """
-        return self.invoke_action(
+        return await self.invoke_action(
             action='addEntry',
             params={
                 'villageId': village_id,
@@ -169,7 +169,7 @@ class FarmList(BaseController):
             }
         )
 
-    def edit_list(self, name: str, list_id: int) -> dict:
+    async def edit_list(self, name: str, list_id: int) -> dict:
         """Edit the name of a farm list
 
         Args:
@@ -179,7 +179,7 @@ class FarmList(BaseController):
         Returns:
 
         """
-        return self.invoke_action(
+        return await self.invoke_action(
             action='editList',
             params={
                 'name': name,
@@ -187,7 +187,7 @@ class FarmList(BaseController):
             }
         )
 
-    def change_list_order(self, list_ids: list) -> dict:  # TODO: Check this
+    async def change_list_order(self, list_ids: list) -> dict:  # TODO: Check this
         """Change the order of farm lists in your farm lists view
 
         Args:
@@ -196,7 +196,7 @@ class FarmList(BaseController):
         Returns:
             dict
         """
-        return self.invoke_action(
+        return await self.invoke_action(
             action='changeListOrder',
             params={
                 'listIds': list_ids,

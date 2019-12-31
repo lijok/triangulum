@@ -10,20 +10,20 @@ class Troops(BaseController):
     def __init__(self, action_handler: Callable):
         super().__init__(action_handler=action_handler, controller='troops')
 
-    def get_markers(self) -> dict:
-        return self.invoke_action(
+    async def get_markers(self) -> dict:
+        return await self.invoke_action(
             action='getMarkers'
         )
 
     # TODO
-    def set_marker(
+    async def set_marker(
         self,
         troop_id: int,
         # marker: Marker
     ) -> dict:
         raise ActionNotImplementedError
 
-        # return self.invoke_action(
+        # return await self.invoke_action(
         #     action='setMarker',
         #     params={
         #         'troopId': troop_id,
@@ -31,15 +31,15 @@ class Troops(BaseController):
         #     }
         # )
 
-    def abort_troop_movement(self, troop_id: int) -> dict:
-        return self.invoke_action(
+    async def abort_troop_movement(self, troop_id: int) -> dict:
+        return await self.invoke_action(
             action='abortTroopMovement',
             params={
                 'troopId': troop_id,
             }
         )
 
-    def check_target(
+    async def check_target(
         self,
         dest_village_name: str,
         dest_village_id: int,
@@ -49,7 +49,7 @@ class Troops(BaseController):
         hero_present: bool,
         selected_units: Union[RomanUnits, TeutonUnits, GaulUnits]
     ) -> dict:
-        return self.invoke_action(
+        return await self.invoke_action(
             action='checkTarget',
             params={
                 'destVillageName': dest_village_name,
@@ -62,7 +62,7 @@ class Troops(BaseController):
             }
         )
 
-    def send(
+    async def send(
         self,
         dest_village_id: int,
         village_id: int,
@@ -71,7 +71,7 @@ class Troops(BaseController):
         units: Union[RomanUnits, TeutonUnits, GaulUnits],
         spy_mission: SpyMissionType = None
     ) -> dict:
-        return self.invoke_action(
+        return await self.invoke_action(
             action='send',
             params={
                 'destVillageId': dest_village_id,
@@ -83,8 +83,8 @@ class Troops(BaseController):
             }
         )
 
-    def start_partial_farm_list_raid(self, list_id: int, entry_ids: List[int], village_id: int) -> dict:
-        return self.invoke_action(
+    async def start_partial_farm_list_raid(self, list_id: int, entry_ids: List[int], village_id: int) -> dict:
+        return await self.invoke_action(
             action='startPartialFarmListRaid',
             params={
                 'listId': list_id,
@@ -93,8 +93,8 @@ class Troops(BaseController):
             }
         )
 
-    def start_farm_list_raid(self, list_ids: List[int], village_id: int) -> dict:
-        return self.invoke_action(
+    async def start_farm_list_raid(self, list_ids: List[int], village_id: int) -> dict:
+        return await self.invoke_action(
             action='startFarmListRaid',
             params={
                 'listIds': list_ids,
@@ -103,7 +103,7 @@ class Troops(BaseController):
         )
 
     # TODO: Finish this off, need an elegant solution as the data structure is complex
-    def fight_simulate(
+    async def fight_simulate(
             self,
             attack_type: int,
             attacker_tribe: PlayerTribe,
@@ -129,7 +129,7 @@ class Troops(BaseController):
     ) -> dict:
         raise ActionNotImplementedError
 
-        # return self.invoke_action(
+        # return await self.invoke_action(
         #     action='fightSimulate',
         #     params={
         #         'attackType': attack_type,
@@ -156,8 +156,8 @@ class Troops(BaseController):
         #     }
         # )
 
-    def move_troops_home(self, troop_id: int, units: Union[RomanUnits, TeutonUnits, GaulUnits]) -> dict:
-        return self.invoke_action(
+    async def move_troops_home(self, troop_id: int, units: Union[RomanUnits, TeutonUnits, GaulUnits]) -> dict:
+        return await self.invoke_action(
             action='moveTroopsHome',
             params={
                 'troopId': troop_id,
@@ -165,8 +165,8 @@ class Troops(BaseController):
             }
         )
 
-    def disband(self, troop_id: int) -> dict:
-        return self.invoke_action(
+    async def disband(self, troop_id: int) -> dict:
+        return await self.invoke_action(
             action='disband',
             params={
                 'troopId': troop_id,

@@ -9,15 +9,15 @@ class Society(BaseController):
     def __init__(self, action_handler: Callable):
         super().__init__(action_handler=action_handler, controller='society')
 
-    def get_shared_informations(self, village_id: int) -> dict:
-        return self.invoke_action(
+    async def get_shared_informations(self, village_id: int) -> dict:
+        return await self.invoke_action(
             action='getSharedInformations',
             params={
                 'villageId': village_id,
             }
         )
 
-    def create(
+    async def create(
         self,
         name: str,
         attitude: SocietyAttitude,
@@ -44,13 +44,13 @@ class Society(BaseController):
             params['joinCondition'] = join_condition.value
             params['conditionValue'] = condition_value
 
-        return self.invoke_action(
+        return await self.invoke_action(
             action='create',
             params=params
         )
 
-    def invite(self, group_id: int, player_names: List[str], custom_text: str) -> dict:
-        return self.invoke_action(
+    async def invite(self, group_id: int, player_names: List[str], custom_text: str) -> dict:
+        return await self.invoke_action(
             action='invite',
             params={
                 'groupId': group_id,
@@ -60,16 +60,16 @@ class Society(BaseController):
             }
         )
 
-    def decline_invitation(self, id: int) -> dict:
-        return self.invoke_action(
+    async def decline_invitation(self, id: int) -> dict:
+        return await self.invoke_action(
             action='declineInvitation',
             params={
                 'id': id,
             }
         )
 
-    def change_description(self, group_id: int, description: int) -> dict:
-        return self.invoke_action(
+    async def change_description(self, group_id: int, description: int) -> dict:
+        return await self.invoke_action(
             action='changeDescription',
             params={
                 'groupId': group_id,
@@ -77,8 +77,8 @@ class Society(BaseController):
             }
         )
 
-    def close(self, group_id: int) -> dict:
-        return self.invoke_action(
+    async def close(self, group_id: int) -> dict:
+        return await self.invoke_action(
             action='close',
             params={
                 'groupId': group_id,

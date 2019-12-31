@@ -11,10 +11,10 @@ class Trade(BaseController):
         super().__init__(action_handler=action_handler, controller='trade')
 
     # TODO
-    def change_trade_route_status(self, id: int, status: int) -> dict:
+    async def change_trade_route_status(self, id: int, status: int) -> dict:
         raise ActionNotImplementedError
 
-        # return self.invoke_action(
+        # return await self.invoke_action(
         #     action='changeTradeRouteStatus',
         #     params={
         #         'id': id,
@@ -22,8 +22,8 @@ class Trade(BaseController):
         #     }
         # )
 
-    def delete_trade_route(self, id: int) -> dict:
-        return self.invoke_action(
+    async def delete_trade_route(self, id: int) -> dict:
+        return await self.invoke_action(
             action='deleteTradeRoute',
             params={
                 'id': id,
@@ -31,8 +31,8 @@ class Trade(BaseController):
         )
 
     # TODO: This is used for checking the validity of a trade route setup so needs to be inspected more
-    def check_target(self, source_village_id: int, dest_village_id: int, dest_village_name: str) -> dict:
-        return self.invoke_action(
+    async def check_target(self, source_village_id: int, dest_village_id: int, dest_village_name: str) -> dict:
+        return await self.invoke_action(
             action='checkTarget',
             params={
                 'sourceVillageId': source_village_id,
@@ -41,7 +41,7 @@ class Trade(BaseController):
             }
         )
 
-    def create_offer(
+    async def create_offer(
         self,
         village_id: int,
         offered_resource: Resource,
@@ -50,7 +50,7 @@ class Trade(BaseController):
         searched_amount: int,
         kingdom_only: bool
     ) -> dict:
-        return self.invoke_action(
+        return await self.invoke_action(
             action='createOffer',
             params={
                 'villageId': village_id,
@@ -62,8 +62,8 @@ class Trade(BaseController):
             }
         )
 
-    def cancel_offer(self, offer_id: int) -> dict:
-        return self.invoke_action(
+    async def cancel_offer(self, offer_id: int) -> dict:
+        return await self.invoke_action(
             action='cancelOffer',
             params={
                 'offerId': offer_id,
@@ -71,7 +71,7 @@ class Trade(BaseController):
         )
 
     # TODO: Check this function
-    def get_offer_list(
+    async def get_offer_list(
         self,
         village_id: int,
         search: Resource,
@@ -80,7 +80,7 @@ class Trade(BaseController):
         start: int,
         count: int
     ) -> dict:
-        return self.invoke_action(
+        return await self.invoke_action(
             action='getOfferList',
             params={
                 'villageId': village_id,
@@ -92,8 +92,8 @@ class Trade(BaseController):
             }
         )
 
-    def accept_offer(self, offer_id: int, village_id: int) -> dict:
-        return self.invoke_action(
+    async def accept_offer(self, offer_id: int, village_id: int) -> dict:
+        return await self.invoke_action(
             action='acceptOffer',
             params={
                 'offerId': offer_id,
@@ -101,14 +101,14 @@ class Trade(BaseController):
             }
         )
 
-    def send_resources(
+    async def send_resources(
         self,
         dest_village_id: int,
         recurrences: int,
         resources: Resources,
         source_village_id: int
     ) -> dict:
-        return self.invoke_action(
+        return await self.invoke_action(
             action='sendResources',
             params={
                 'destVillageId': dest_village_id,

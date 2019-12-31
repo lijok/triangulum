@@ -7,7 +7,7 @@ class Error(BaseController):
     def __init__(self, action_handler: Callable):
         super().__init__(action_handler=action_handler, controller='error')
 
-    def log_javascript_error(self, player_id: int, error: str) -> dict:
+    async def log_javascript_error(self, player_id: int, error: str) -> dict:
         """Logs a javascript error with the backend, used during UI debugging
 
         Args:
@@ -17,7 +17,7 @@ class Error(BaseController):
         Returns:
             dict
         """
-        return self.invoke_action(
+        return await self.invoke_action(
             action='logJavascriptError',
             params={
                 'playerId': player_id,

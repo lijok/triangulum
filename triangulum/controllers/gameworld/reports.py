@@ -8,7 +8,7 @@ class Reports(BaseController):
     def __init__(self, action_handler: Callable):
         super().__init__(action_handler=action_handler, controller='reports')
 
-    def get_last_reports(
+    async def get_last_reports(
         self,
         collection: ReportsCollection,
         start: int,
@@ -16,7 +16,7 @@ class Reports(BaseController):
         filters: List[ReportFilter],
         also_get_total_number: bool
     ) -> dict:
-        return self.invoke_action(
+        return await self.invoke_action(
             action='getLastReports',
             params={
                 'collection': collection.value,
@@ -27,13 +27,13 @@ class Reports(BaseController):
             }
         )
 
-    def get_full_report(
+    async def get_full_report(
         self,
         id: str,
         collection: ReportsCollection,
         security_code: str = ""  # Not sure what this is, could be for sharing reports
     ) -> dict:
-        return self.invoke_action(
+        return await self.invoke_action(
             action='getFullReport',
             params={
                 'id': id,
@@ -42,8 +42,8 @@ class Reports(BaseController):
             }
         )
 
-    def mark_as_favorite(self, id: str, collection: ReportsCollection, security_code: str) -> dict:
-        return self.invoke_action(
+    async def mark_as_favorite(self, id: str, collection: ReportsCollection, security_code: str) -> dict:
+        return await self.invoke_action(
             action='markAsFavorite',
             params={
                 'id': id,
@@ -52,7 +52,7 @@ class Reports(BaseController):
             }
         )
 
-    def share_report(
+    async def share_report(
         self,
         id: str,
         share_with: ShareReportWith,
@@ -60,7 +60,7 @@ class Reports(BaseController):
         share_message: str,
         collection: ReportsCollection
     ) -> dict:
-        return self.invoke_action(
+        return await self.invoke_action(
             action='shareReport',
             params={
                 'id': id,
@@ -71,8 +71,8 @@ class Reports(BaseController):
             }
         )
 
-    def remove_as_favorite(self, body_id: str) -> dict:
-        return self.invoke_action(
+    async def remove_as_favorite(self, body_id: str) -> dict:
+        return await self.invoke_action(
             action='removeAsFavorite',
             params={
                 'bodyId': body_id,
