@@ -95,7 +95,7 @@ def find_msid(text: str) -> str:
 
 def get_session_key(session: aiohttp.ClientSession, key_name: str, domain: str) -> str:
     for cookie in session.cookie_jar:
-        if cookie.key == key_name:
+        if cookie.key == key_name and cookie.get('domain') == domain:
             decoded_session_key = parse.unquote(cookie.value)
 
             return json.loads(decoded_session_key)['key']
