@@ -2,7 +2,7 @@ import json
 import requests
 
 from triangulum.clients.http.base import HttpBaseClient
-from triangulum.clients.http.routing import URL
+from triangulum.clients.routing import URL
 from triangulum.clients.gameworld import GameworldClient
 from triangulum.clients.util import get_session_key, find_token, find_msid
 from triangulum.controllers.lobby.achievements import Achievements
