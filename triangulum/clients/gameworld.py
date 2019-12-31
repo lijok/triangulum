@@ -2,7 +2,7 @@ import json
 import aiohttp
 
 from triangulum.clients.http.base import HttpBaseClient
-from triangulum.clients.routing import URL, RootURL
+from triangulum.clients.routing import URL
 from triangulum.clients.util import get_session_key, find_token, timestamp
 from triangulum.controllers.gameworld.player import Player
 from triangulum.controllers.gameworld.farm_list import FarmList
