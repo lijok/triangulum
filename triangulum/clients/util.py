@@ -4,6 +4,7 @@ from time import time
 import requests
 import random
 import json
+import math
 
 USER_AGENTS = [
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36",
@@ -102,3 +103,25 @@ def get_session_key(session: requests.Session, key_name: str, domain: str) -> st
 def timestamp():
     return int('{:.2f}'.format(time()).replace('.', ''))
 
+
+def uniqid():
+    """Generates a TK compatible unique client id
+
+    Returns:
+        unique client id in the form of 'client5e0ab79849'
+    """
+    def fun(seed, e):
+        seed = hex(seed)[2:]
+
+        if e < len(seed):
+            return seed[:len(seed) - e]
+        elif e > len(seed):
+            return f'{"0"*(len(seed)-e)}{seed}'
+        else:
+            return seed
+
+    seed = math.floor(random.random() * 123456789) + 1
+    id = fun(int(time()), 8)
+    id += fun(seed, 5)
+
+    return f'client{id}'
