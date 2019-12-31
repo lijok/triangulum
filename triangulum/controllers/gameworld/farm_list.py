@@ -45,6 +45,10 @@ class FarmList(BaseController):
             }
         )
 
+    # TODO BUG: units here are not of _Units.combat_format_with_zeros type
+    # as not all units are allowed to be added to a farm list
+    # the list of numbers doesn't go beyond 6 or so, and each one has a different
+    # enum assignment
     def edit_troops(self, entry_ids: list, units: Union[RomanUnits, TeutonUnits, GaulUnits]) -> dict:
         """Edit the assignment of attack units for entries in a farm list
 
