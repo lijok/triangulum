@@ -24,11 +24,15 @@ pip install triangulum-x.x.x.zip
 
 ```py
 from triangulum.clients.lobby import LobbyClient
+import asyncio
 
-lobby = LobbyClient(email='', password='')
-gameworld = lobby.connect_to_gameworld(gameworld_id='', gameworld_name='')
+loop = asyncio.get_event_loop()
+lobby = LobbyClient()
+loop.run_until_complete(lobby.authenticate(email='', password='')
 
-gameworld.player.get_player_info(0)
+gameworld = loop.run_until_complete(lobby.connect_to_gameworld(gameworld_id='', gameworld_name=''))
+
+loop.run_until_complete(gameworld.player.get_player_info(0))
 ```
 
 
