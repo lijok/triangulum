@@ -8,6 +8,15 @@ class Error(BaseController):
         super().__init__(action_handler=action_handler, controller='error')
 
     def log_javascript_error(self, player_id: int, error: str) -> dict:
+        """Logs a javascript error with the backend, used during UI debugging
+
+        Args:
+            player_id: ID of the player
+            error: Error message
+
+        Returns:
+            dict
+        """
         return self.invoke_action(
             action='logJavascriptError',
             params={
