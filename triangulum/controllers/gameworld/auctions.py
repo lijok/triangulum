@@ -14,6 +14,16 @@ class Auctions(BaseController):
         filter_slot: HeroItemSlot = HeroItemSlot.NONE,
         page: int = 0
     ) -> dict:
+        """Get prices of running auctions matching filters
+
+        Args:
+            filter_item_type: Item type to filter by
+            filter_slot: Hero item slot to filter by
+            page: Running auction page
+
+        Returns:
+            dict
+        """
         return self.invoke_action(
             action='getRunningAuctionAmount',
             params={
@@ -29,6 +39,16 @@ class Auctions(BaseController):
         filter_slot: HeroItemSlot = HeroItemSlot.NONE,
         page: int = 0
     ) -> dict:
+        """Get items in running auction page
+
+        Args:
+            filter_item_type: Item type to filter by
+            filter_slot: Hero item slot to filter by
+            page: Running auction page
+
+        Returns:
+            dict
+        """
         return self.invoke_action(
             action='getRunningAuctionPage',
             params={
@@ -39,6 +59,15 @@ class Auctions(BaseController):
         )
 
     def place_bid(self, auction_id: int, bid_amount: int) -> dict:
+        """Place bid on an auction item
+
+        Args:
+            auction_id: ID of the auction entry
+            bid_amount: Amount in Silver to bid for the item
+
+        Returns:
+            dict
+        """
         return self.invoke_action(
             action='placeBid',
             params={
@@ -48,6 +77,15 @@ class Auctions(BaseController):
         )
 
     def get_seller_payout(self, item_id: int, amount: int) -> dict:
+        """Get the payout value of an auctionable item
+
+        Args:
+            item_id: ID of an item you wish to auction
+            amount: Amount of items you wish to auction
+
+        Returns:
+            dict
+        """
         return self.invoke_action(
             action='getSellerPayout',
             params={
@@ -57,6 +95,15 @@ class Auctions(BaseController):
         )
 
     def sell_item(self, item_id: int, amount: int) -> dict:
+        """Sell an item on the auction
+
+        Args:
+            item_id: ID of an item you wish to auction
+            amount: Amount of items you wish to auction
+
+        Returns:
+            dict
+        """
         return self.invoke_action(
             action='sellItem',
             params={
