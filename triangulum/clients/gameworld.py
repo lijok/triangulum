@@ -89,7 +89,7 @@ class GameworldClient(HttpBaseClient):
 
     def invoke_action(self, action: str, controller: str, params: dict = None) -> dict:
         response = self._post(
-            url=f'{RootURL.GAMEWORLD.format(gameworld=self.gameworld_name)}/?c={controller}&a={action}&t{timestamp()}',
+            url=f'{URL.GAMEWORLD_API.format(gameworld=self.gameworld_name)}/?c={controller}&a={action}&t{timestamp()}',
             data=json.dumps(
                 {
                     'action': action,
