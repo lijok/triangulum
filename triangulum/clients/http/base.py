@@ -1,6 +1,6 @@
 import requests
 
-from triangulum.clients.http.util import random_user_agent
+from triangulum.clients.util import random_user_agent
 
 
 class HttpBaseClient:
