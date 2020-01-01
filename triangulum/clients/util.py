@@ -93,24 +93,18 @@ def find_msid(text: str) -> str:
     return text[text.find('msid=')+5: text.find('msid=')+31]
 
 
-def get_session_key(session: aiohttp.ClientSession, key_name: str, domain: str) -> str:
+def get_cookie(
+    session: aiohttp.ClientSession,
+    key: str,
+    domain: str,
+    unquote: bool = False
+) -> str:
     for cookie in session.cookie_jar:
-        if cookie.key == key_name and cookie.get('domain') == domain:
-            decoded_session_key = parse.unquote(cookie.value)
-
-            return json.loads(decoded_session_key)['key']
-
-
-def get_t5_game_io(session: aiohttp.ClientSession):
-    for cookie in session.cookie_jar:
-        if cookie.key == 't5-game-io':
-            return cookie.value
-
-
-def get_msid(session: aiohttp.ClientSession):
-    for cookie in session.cookie_jar:
-        if cookie.key == 'msid':
-            return cookie.value
+        if cookie.key == key and cookie['domain'] == domain:
+            if unquote:
+                return parse.unquote(cookie.value)
+            else:
+                return cookie.value
 
 
 def timestamp():

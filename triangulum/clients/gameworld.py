@@ -3,7 +3,7 @@ import aiohttp
 
 from triangulum.clients.http.base import HttpBaseClient
 from triangulum.clients.routing import URL
-from triangulum.clients.util import get_session_key, find_token, timestamp
+from triangulum.clients.util import find_token, timestamp, get_cookie
 from triangulum.controllers.gameworld.player import Player
 from triangulum.controllers.gameworld.farm_list import FarmList
 from triangulum.controllers.gameworld.logger import Logger
@@ -63,11 +63,14 @@ class GameworldClient(HttpBaseClient):
 
     @property
     def t5_session_key(self):
-        return get_session_key(
-            session=self.session,
-            key_name='t5SessionKey',
-            domain=f'{self.gameworld_name}.kingdoms.com'
-        )
+        return json.loads(
+            get_cookie(
+                session=self.session,
+                key='t5SessionKey',
+                domain=f'{self.gameworld_name}.kingdoms.com',
+                unquote=True
+            )
+        )['key']
 
     async def is_authenticated(self):
         """Checks whether user is authenticated with the gameworld"""

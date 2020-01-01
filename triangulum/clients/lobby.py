@@ -4,7 +4,7 @@ import aiohttp
 from triangulum.clients.http.base import HttpBaseClient
 from triangulum.clients.routing import URL
 from triangulum.clients.gameworld import GameworldClient
-from triangulum.clients.util import get_session_key, find_token, find_msid
+from triangulum.clients.util import find_token, find_msid, get_cookie
 from triangulum.controllers.lobby.achievements import Achievements
 from triangulum.controllers.lobby.cache import Cache
 from triangulum.controllers.lobby.dual import Dual
@@ -34,11 +34,14 @@ class LobbyClient(HttpBaseClient):
 
     @property
     def gl5_session_key(self):
-        return get_session_key(
-            session=self.session,
-            key_name='gl5SessionKey',
-            domain='kingdoms.com'
-        )
+        return json.loads(
+            get_cookie(
+                session=self.session,
+                key='gl5SessionKey',
+                domain='kingdoms.com',
+                unquote=True
+            )
+        )['key']
 
     async def is_authenticated(self):
         """Checks whether user is authenticated with the lobby portal"""
