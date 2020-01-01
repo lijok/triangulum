@@ -1,4 +1,5 @@
 import aiohttp
+import yarl
 
 from triangulum.clients.util import random_user_agent
 
@@ -28,6 +29,14 @@ class HttpBaseClient:
 
     async def load_cookies(self, filepath: str) -> None:
         self.session.cookie_jar.load(filepath)
+
+    def add_cookie(self, key: str, value: str, domain: str) -> None:
+        self.session.cookie_jar.update_cookies(
+            cookies={
+                key: value
+            },
+            response_url=yarl.URL(domain)
+        )
 
     async def _get(self, url):
         return await self.session.get(url=url)
