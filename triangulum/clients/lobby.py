@@ -52,6 +52,7 @@ class LobbyClient(HttpBaseClient):
 
         response = await self._get(URL.LOBBY_AUTH)
         self.msid = find_msid(await response.text())
+        self.add_cookie(key='msid', value=self.msid, domain='https://kingdoms.com')
 
         response = await self._post(
             url=URL.LOBBY_AUTH_STEP_2.format(msid=self.msid),
