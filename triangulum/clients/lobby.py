@@ -32,6 +32,14 @@ class LobbyClient(HttpBaseClient):
         self.player = Player(action_handler=self.invoke_action)
         self.sitter = Sitter(action_handler=self.invoke_action)
 
+    @property
+    def gl5_session_key(self):
+        return get_session_key(
+            session=self.session,
+            key_name='gl5SessionKey',
+            domain='kingdoms.com'
+        )
+
     async def is_authenticated(self):
         """Checks whether user is authenticated with the lobby portal"""
 
@@ -44,8 +52,11 @@ class LobbyClient(HttpBaseClient):
         """Authenticates with the lobby portal"""
 
         response = await self._get(URL.LOBBY_AUTH)
-        self.msid = find_msid(await response.text())
-        self.add_cookie(key='msid', value=self.msid, domain='https://kingdoms.com')
+        self.add_cookie(
+            key='msid',
+            value=find_msid(await response.text()),
+            domain='https://kingdoms.com'
+        )
 
         response = await self._post(
             url=URL.LOBBY_AUTH_STEP_2.format(msid=self.msid),
@@ -53,12 +64,6 @@ class LobbyClient(HttpBaseClient):
         )
         token = find_token(await response.text())
         _ = await self._get(URL.LOBBY_AUTH_STEP_3.format(token=token, msid=self.msid))
-
-        self.session_key = get_session_key(
-            session=self.session,
-            key_name='gl5SessionKey',
-            domain='kingdoms.com'
-        )
 
     async def connect_to_gameworld(self, gameworld_id: str, gameworld_name: str) -> GameworldClient:
         """Connect to a gameworld"""
@@ -81,7 +86,7 @@ class LobbyClient(HttpBaseClient):
                     'action': action,
                     'controller': controller,
                     'params': params if params else {},
-                    'session': self.session_key
+                    'session': self.gl5_session_key
                 }
             )
         )

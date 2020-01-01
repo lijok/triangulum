@@ -32,10 +32,9 @@ class GameworldClient(HttpBaseClient):
         self,
         gameworld_id: str,
         gameworld_name: str,
-        msid: str,
         session: aiohttp.ClientSession
     ):
-        super().__init__(msid=msid, session=session)
+        super().__init__(session=session)
 
         self.gameworld_id = gameworld_id
         self.gameworld_name = gameworld_name.lower()
@@ -62,6 +61,14 @@ class GameworldClient(HttpBaseClient):
         self.kingdom_treaty = KingdomTreaty(action_handler=self.invoke_action)
         self.login = Login(action_handler=self.invoke_action)
 
+    @property
+    def t5_session_key(self):
+        return get_session_key(
+            session=self.session,
+            key_name='t5SessionKey',
+            domain=f'{self.gameworld_name}.kingdoms.com'
+        )
+
     async def is_authenticated(self):
         """Checks whether user is authenticated with the gameworld"""
 
@@ -82,12 +89,6 @@ class GameworldClient(HttpBaseClient):
             URL.GAMEWORLD_AUTH.format(gameworld=self.gameworld_name, token=token, msid=self.msid)
         )
 
-        self.session_key = get_session_key(
-            session=self.session,
-            key_name='t5SessionKey',
-            domain=f'{self.gameworld_name}.kingdoms.com'
-        )
-
     async def invoke_action(self, action: str, controller: str, params: dict = None) -> dict:
         response = await self._post(
             url=f'{URL.GAMEWORLD_API.format(gameworld=self.gameworld_name)}/?c={controller}&a={action}&t{timestamp()}',
@@ -96,7 +97,7 @@ class GameworldClient(HttpBaseClient):
                     'action': action,
                     'controller': controller,
                     'params': params if params else {},
-                    'session': self.session_key
+                    'session': self.t5_session_key
                 }
             )
         )

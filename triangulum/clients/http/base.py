@@ -1,13 +1,12 @@
 import aiohttp
 import yarl
 
-from triangulum.clients.util import random_user_agent
+from triangulum.clients.util import random_user_agent, get_msid
 
 
 class HttpBaseClient:
     def __init__(
         self,
-        msid: str = None,
         session_key: str = None,
         session: aiohttp.ClientSession = None,
         cookie_file: str = None,
@@ -20,7 +19,6 @@ class HttpBaseClient:
         self.headers.update(headers or {})
 
         self.cookie_file = cookie_file
-        self.msid = msid
         self.session_key = session_key
 
         if cookie_file:
@@ -42,6 +40,10 @@ class HttpBaseClient:
             },
             response_url=yarl.URL(domain)
         )
+
+    @property
+    def msid(self):
+        return get_msid(self.session)
 
     async def _get(self, url):
         return await self.session.get(url=url)

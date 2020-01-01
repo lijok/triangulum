@@ -107,6 +107,12 @@ def get_t5_game_io(session: aiohttp.ClientSession):
             return cookie.value
 
 
+def get_msid(session: aiohttp.ClientSession):
+    for cookie in session.cookie_jar:
+        if cookie.key == 'msid':
+            return cookie.value
+
+
 def timestamp():
     return int('{:.2f}'.format(time()).replace('.', ''))
 
