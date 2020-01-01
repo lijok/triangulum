@@ -23,10 +23,14 @@ class HttpBaseClient:
     async def close(self):
         await self.session.close()
 
+    async def save_cookies(self, filepath: str) -> None:
+        self.session.cookie_jar.save(filepath)
+
+    async def load_cookies(self, filepath: str) -> None:
+        self.session.cookie_jar.load(filepath)
+
     async def _get(self, url):
         return await self.session.get(url=url)
 
     async def _post(self, url, data):
         return await self.session.post(url=url, data=data)
-
-
