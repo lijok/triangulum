@@ -7,7 +7,6 @@ from triangulum.clients.util import random_user_agent, get_msid
 class HttpBaseClient:
     def __init__(
         self,
-        session_key: str = None,
         session: aiohttp.ClientSession = None,
         cookie_file: str = None,
         headers: dict = None
@@ -19,8 +18,6 @@ class HttpBaseClient:
         self.headers.update(headers or {})
 
         self.cookie_file = cookie_file
-        self.session_key = session_key
-
         if cookie_file:
             self.load_cookies(cookie_file)
 
