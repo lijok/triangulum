@@ -62,7 +62,7 @@ class GameworldClient(HttpBaseClient):
         self.login = Login(action_handler=self.invoke_action)
 
     @property
-    def t5_session_key(self):
+    def session_key(self):
         return json.loads(
             get_cookie(
                 session=self.session,
@@ -100,7 +100,7 @@ class GameworldClient(HttpBaseClient):
                     'action': action,
                     'controller': controller,
                     'params': params if params else {},
-                    'session': self.t5_session_key
+                    'session': self.session_key
                 }
             )
         )
