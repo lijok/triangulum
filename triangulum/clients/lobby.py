@@ -63,7 +63,7 @@ class LobbyClient(HttpBaseClient):
         self.session_key = get_session_key(
             session=self.session,
             key_name='gl5SessionKey',
-            domain='.kingdoms.com'
+            domain='kingdoms.com'
         )
 
     async def connect_to_gameworld(self, gameworld_id: str, gameworld_name: str) -> GameworldClient:
