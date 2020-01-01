@@ -10,6 +10,7 @@ class HttpBaseClient:
         msid: str = None,
         session_key: str = None,
         session: aiohttp.ClientSession = None,
+        cookie_file: str = None,
         headers: dict = None
     ):
         self.session = session if session else aiohttp.ClientSession()
@@ -18,8 +19,12 @@ class HttpBaseClient:
         } if not session else {}
         self.headers.update(headers or {})
 
+        self.cookie_file = cookie_file
         self.msid = msid
         self.session_key = session_key
+
+        if cookie_file:
+            self.load_cookies(cookie_file)
 
     async def close(self):
         await self.session.close()

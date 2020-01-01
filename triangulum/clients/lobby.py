@@ -17,18 +17,11 @@ from triangulum.controllers.lobby.sitter import Sitter
 
 class LobbyClient(HttpBaseClient):
     def __init__(
-            self,
-            msid: str = None,
-            session_key: str = None,
-            session: aiohttp.ClientSession = None,
-            headers: dict = None
+        self,
+        cookie_file: str = None,
+        headers: dict = None
     ):
-        super().__init__(
-            msid=msid,
-            session_key=session_key,
-            session=session,
-            headers=headers
-        )
+        super().__init__(cookie_file=cookie_file, headers=headers)
 
         self.achievements = Achievements(action_handler=self.invoke_action)
         self.cache = Cache(action_handler=self.invoke_action)
