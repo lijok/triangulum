@@ -43,7 +43,7 @@ class HttpBaseClient:
         return get_cookie(
             session=self.session,
             key='msid',
-            domain='https://kingdoms.com'
+            domain='kingdoms.com'
         )
 
     async def _get(self, url):
