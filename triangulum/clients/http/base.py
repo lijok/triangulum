@@ -20,9 +20,13 @@ class HttpBaseClient:
         self.msid = msid
         self.session_key = session_key
 
+    async def close(self):
+        await self.session.close()
+
     async def _get(self, url):
         return await self.session.get(url=url)
 
     async def _post(self, url, data):
         return await self.session.post(url=url, data=data)
+
 
