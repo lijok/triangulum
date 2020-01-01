@@ -71,7 +71,6 @@ class LobbyClient(HttpBaseClient):
         gameworld_client = GameworldClient(
             gameworld_id=gameworld_id,
             gameworld_name=gameworld_name,
-            msid=self.msid,
             session=self.session
         )
         await gameworld_client.authenticate()
