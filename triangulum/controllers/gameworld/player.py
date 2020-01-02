@@ -11,7 +11,7 @@ class Player(BaseController):
     def __init__(self, action_handler: Callable):
         super().__init__(action_handler=action_handler, controller='player')
 
-    async def get_all(self, device_dimension_x: int, device_dimension_y: int) -> dict:
+    async def get_all(self, device_dimension_x: int = 1920, device_dimension_y: int = 1080) -> dict:
         return await self.invoke_action(
             action='getAll',
             params={
