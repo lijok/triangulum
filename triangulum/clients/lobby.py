@@ -62,22 +62,23 @@ class LobbyClient(HttpBaseClient):
     async def authenticate(self, email: str, password: str) -> None:
         """Authenticates with the lobby portal"""
 
-        response = await self._get(URL.LOBBY_AUTH)
-        self.add_cookie(
-            key='msid',
-            value=find_msid(await response.text()),
-            domain='https://kingdoms.com'
-        )
+        if not await self.is_authenticated(extensive_check=True):
+            response = await self._get(URL.LOBBY_AUTH)
+            self.add_cookie(
+                key='msid',
+                value=find_msid(await response.text()),
+                domain='https://kingdoms.com'
+            )
 
-        response = await self._post(
-            url=URL.LOBBY_AUTH_STEP_2.format(msid=self.msid),
-            data={'email': email, 'password': password}
-        )
-        token = find_token(await response.text())
-        if not token:
-            raise AuthenticationError
+            response = await self._post(
+                url=URL.LOBBY_AUTH_STEP_2.format(msid=self.msid),
+                data={'email': email, 'password': password}
+            )
+            token = find_token(await response.text())
+            if not token:
+                raise AuthenticationError
 
-        _ = await self._get(URL.LOBBY_AUTH_STEP_3.format(token=token, msid=self.msid))
+            _ = await self._get(URL.LOBBY_AUTH_STEP_3.format(token=token, msid=self.msid))
 
     async def connect_to_gameworld(self, gameworld_id: str, gameworld_name: str) -> GameworldClient:
         """Connect to a gameworld"""

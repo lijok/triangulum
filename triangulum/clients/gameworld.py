@@ -88,15 +88,15 @@ class GameworldClient(HttpBaseClient):
 
     async def authenticate(self) -> None:
         """Authenticates with the gameworld"""
+        if not await self.is_authenticated(extensive_check=True):
+            response = await self._get(
+                URL.GAMEWORLD_JOIN.format(gameworld_id=self.gameworld_id, msid=self.msid)
+            )
+            token = find_token(await response.text())
 
-        response = await self._get(
-            URL.GAMEWORLD_JOIN.format(gameworld_id=self.gameworld_id, msid=self.msid)
-        )
-        token = find_token(await response.text())
-
-        _ = await self._get(
-            URL.GAMEWORLD_AUTH.format(gameworld=self.gameworld_name, token=token, msid=self.msid)
-        )
+            _ = await self._get(
+                URL.GAMEWORLD_AUTH.format(gameworld=self.gameworld_name, token=token, msid=self.msid)
+            )
 
     async def invoke_action(self, action: str, controller: str, params: dict = None) -> dict:
         if not await self.is_authenticated():
