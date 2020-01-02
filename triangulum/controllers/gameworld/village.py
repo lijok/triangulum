@@ -9,10 +9,13 @@ class Village(BaseController):
 
     # This is for clicking on a hidden thing on the UI that gives you an achievement
     async def click_special(self, id: int) -> dict:
-        """
-        Click on a special event entity in the UI which rewards you with an achievement
+        """Click on a special event entity in the UI which rewards you with an achievement
 
-        :param id: id of the special
+        Args:
+            id: id of the special
+
+        Returns:
+            dict
         """
         return await self.invoke_action(
             action='clickSpecial',
@@ -22,10 +25,13 @@ class Village(BaseController):
         )
 
     async def toggle_allow_tribute_collection(self, village_id: int) -> dict:
-        """
-        Toggle whether tributes can be collected by your king
+        """Toggle whether tributes can be collected by your king
 
-        :param village_id: id of the village to toggle
+        Args:
+            village_id: id of the village to toggle
+
+        Returns:
+            dict
         """
         return await self.invoke_action(
             action='toggleAllowTributeCollection',
@@ -35,11 +41,14 @@ class Village(BaseController):
         )
 
     async def get_villages_with_influence_on_oasis_for_player(self, oasis_id: int, player_id: int) -> dict:
-        """
-        Fetch info on which villages a player has influence with over an oasis
+        """Fetch info on which villages a player has influence with over an oasis
 
-        :param oasis_id: id of the oasis
-        :param player_id: id of the player
+        Args:
+            oasis_id: id of the oasis
+            player_id: id of the player
+
+        Returns:
+            dict
         """
         return await self.invoke_action(
             action='getVillagesWithInfluenceOnOasisForPlayer',
@@ -50,18 +59,23 @@ class Village(BaseController):
         )
 
     async def get_kingdom_village_attacks(self) -> dict:
-        """
-        Fetch all incoming attacks on villages within your kingdom
+        """Fetch all incoming attacks on villages within your kingdom
+
+        Returns:
+            dict
         """
         return await self.invoke_action(
             action='getKingdomVillageAttacks'
         )
 
     async def get_production_details(self, village_id: int) -> dict:
-        """
-        Get production details of a village
+        """Get production details of a village
 
-        :param village_id: id of the village
+        Args:
+            village_id: id of the village
+
+        Returns:
+            dict
         """
         return await self.invoke_action(
             action='getProductionDetails',
@@ -71,11 +85,14 @@ class Village(BaseController):
         )
 
     async def use_oasis(self, oasis_id: int, village_id: int) -> dict:
-        """
-        Set a village to use an oasis
+        """Set a village to use an oasis
 
-        :param oasis_id: id of the oasis
-        :param village_id: id of the village
+        Args:
+            oasis_id: id of the oasis
+            village_id: id of the village
+
+        Returns:
+            dict
         """
         return await self.invoke_action(
             action='useOasis',
@@ -86,11 +103,14 @@ class Village(BaseController):
         )
 
     async def clear_oasis(self, oasis_id: int, village_id: int) -> dict:
-        """
-        Set a village to not use an oasis
+        """Set a village to not use an oasis
 
-        :param oasis_id: id of the oasis
-        :param village_id: id of the village
+        Args:
+            oasis_id: id of the oasis
+            village_id: id of the village
+
+        Returns:
+            dict
         """
         return await self.invoke_action(
             action='clearOasis',
@@ -101,11 +121,14 @@ class Village(BaseController):
         )
 
     async def update_name(self, village_id: int, village_name: str) -> dict:
-        """
-        Update the name of a village
+        """Update the name of a village
 
-        :param village_id: id of the village
-        :param village_name: new name of the village
+        Args:
+            village_id: id of the village
+            village_name: new name of the village
+
+        Returns:
+            dict
         """
         return await self.invoke_action(
             action='updateName',
@@ -116,10 +139,13 @@ class Village(BaseController):
         )
 
     async def check_unit_production(self, village_id: int) -> dict:
-        """
-        Get current units in production in a village
+        """Get current units in production in a village
 
-        :param village_id: id of the village
+        Args:
+            village_id: id of the village
+
+        Returns:
+            dict
         """
         return await self.invoke_action(
             action='checkUnitProduction',
@@ -129,10 +155,13 @@ class Village(BaseController):
         )
 
     async def get_treasuries_capacity(self, village_id: int) -> dict:
-        """
-        Get capacity of a treasury in a village
+        """Get capacity of a treasury in a village
 
-        :param village_id: id of the village the treasury is in
+        Args:
+            village_id: id of the village the treasury is in
+
+        Returns:
+            dict
         """
         return await self.invoke_action(
             action='getTreasuriesCapacity',
@@ -142,10 +171,13 @@ class Village(BaseController):
         )
 
     async def get_victory_points_and_influence_bonus(self, village_id: int) -> dict:
-        """
-        Get victory points and influence bonus
+        """Get victory points and influence bonus
 
-        :param village_id: id of the village
+        Args:
+            village_id: id of the village
+
+        Returns:
+            dict
         """
         return await self.invoke_action(
             action='getVictoryPointsAndInfluenceBonus',
