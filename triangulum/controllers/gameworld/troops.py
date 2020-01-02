@@ -32,6 +32,14 @@ class Troops(BaseController):
         # )
 
     async def abort_troop_movement(self, troop_id: int) -> dict:
+        """Abort the movement of troops
+
+        Args:
+            troop_id: ID of the movement
+
+        Returns:
+            dict
+        """
         return await self.invoke_action(
             action='abortTroopMovement',
             params={
@@ -49,6 +57,20 @@ class Troops(BaseController):
         hero_present: bool,
         selected_units: Union[RomanUnits, TeutonUnits, GaulUnits]
     ) -> dict:
+        """Check whether a desired troop movement is valid prior to begining the movement
+
+        Args:
+            dest_village_name: Movement destination village id
+            dest_village_id: Movement destination village name
+            village_id: ID of the village from which the movement will take place
+            movement_type: Type of the movement, i.e attack, raid, siege
+            redeploy_hero: Whether to send the hero along *
+            hero_present: Whether to send the hero along *
+            selected_units: Units to be sent
+
+        Returns:
+            dict
+        """
         return await self.invoke_action(
             action='checkTarget',
             params={
@@ -71,6 +93,20 @@ class Troops(BaseController):
         units: Union[RomanUnits, TeutonUnits, GaulUnits],
         spy_mission: SpyMissionType = None
     ) -> dict:
+        """
+
+        Args:
+            dest_village_id: Movement destination village name
+            village_id: ID of the village from which the movement will take place
+            movement_type: Type of the movement, i.e attack, raid, siege
+            redeploy_hero: Whether to send the hero along *
+            units: Units to be sent
+            spy_mission: Type of the spy mission (spy for resources or defences and troops)
+                this will be ignored if the movement type is not TroopMovementType.SPY
+
+        Returns:
+            dict
+        """
         return await self.invoke_action(
             action='send',
             params={
@@ -84,6 +120,16 @@ class Troops(BaseController):
         )
 
     async def start_partial_farm_list_raid(self, list_id: int, entry_ids: List[int], village_id: int) -> dict:
+        """Begin a farm list raid on some of the targets in the farm list
+
+        Args:
+            list_id: ID of the farm list
+            entry_ids: List of entry IDs of the farm list
+            village_id: ID of the village from which to begin the raid
+
+        Returns:
+            dict
+        """
         return await self.invoke_action(
             action='startPartialFarmListRaid',
             params={
@@ -94,6 +140,15 @@ class Troops(BaseController):
         )
 
     async def start_farm_list_raid(self, list_ids: List[int], village_id: int) -> dict:
+        """Start a farm list raid
+
+        Args:
+            list_ids: ID of the farm list
+            village_id: ID of the village from which to begin the raid
+
+        Returns:
+            dict
+        """
         return await self.invoke_action(
             action='startFarmListRaid',
             params={
@@ -157,6 +212,15 @@ class Troops(BaseController):
         # )
 
     async def move_troops_home(self, troop_id: int, units: Union[RomanUnits, TeutonUnits, GaulUnits]) -> dict:
+        """UNKNOWN *
+
+        Args:
+            troop_id: ID of the movement
+            units: Units to move home
+
+        Returns:
+            dict
+        """
         return await self.invoke_action(
             action='moveTroopsHome',
             params={
@@ -166,6 +230,14 @@ class Troops(BaseController):
         )
 
     async def disband(self, troop_id: int) -> dict:
+        """Disband troops being held in traps *
+
+        Args:
+            troop_id: UNKNOWN *
+
+        Returns:
+            dict
+        """
         return await self.invoke_action(
             action='disband',
             params={
