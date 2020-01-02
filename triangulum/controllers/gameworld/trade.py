@@ -23,6 +23,14 @@ class Trade(BaseController):
         # )
 
     async def delete_trade_route(self, id: int) -> dict:
+        """Delete a trade route
+
+        Args:
+            id: ID of the trade route
+
+        Returns:
+            dict
+        """
         return await self.invoke_action(
             action='deleteTradeRoute',
             params={
@@ -32,6 +40,16 @@ class Trade(BaseController):
 
     # TODO: This is used for checking the validity of a trade route setup so needs to be inspected more
     async def check_target(self, source_village_id: int, dest_village_id: int, dest_village_name: str) -> dict:
+        """Confirm that a trade route is valid before creating one
+
+        Args:
+            source_village_id: ID of the village from which resources will be sent
+            dest_village_id: ID of the village to which resources will be sent
+            dest_village_name: Name of the village to which resources will be sent
+
+        Returns:
+            dict
+        """
         return await self.invoke_action(
             action='checkTarget',
             params={
@@ -50,6 +68,19 @@ class Trade(BaseController):
         searched_amount: int,
         kingdom_only: bool
     ) -> dict:
+        """Create a marketplace resource trade offer
+
+        Args:
+            village_id: ID of the village from which to trade resources
+            offered_resource: Type of the offered resource
+            offered_amount: Amount of offered resources
+            searched_resource: Type of the sought after resource
+            searched_amount: Amount of resources sought after
+            kingdom_only: Toggle whether this trade offer is only available to your kingdom members
+
+        Returns:
+            dict
+        """
         return await self.invoke_action(
             action='createOffer',
             params={
@@ -63,6 +94,14 @@ class Trade(BaseController):
         )
 
     async def cancel_offer(self, offer_id: int) -> dict:
+        """Cancel a marketplace resource trade offer
+
+        Args:
+            offer_id: ID of the offer
+
+        Returns:
+            dict
+        """
         return await self.invoke_action(
             action='cancelOffer',
             params={
@@ -80,19 +119,41 @@ class Trade(BaseController):
         start: int,
         count: int
     ) -> dict:
+        """Get list of resource trade offers in the marketplace
+
+        Args:
+            village_id: ID of the village from which you wish to trade
+            search: Type of resource to search for
+            offer: Type of resource offered in return
+            rate: Rate for which to search
+            start: Starting index from which to return the list of offers
+            count: Amount of offers to return
+
+        Returns:
+            dict
+        """
         return await self.invoke_action(
             action='getOfferList',
             params={
                 'villageId': village_id,
                 'search': search.value,
                 'offer': offer.value,
-                'rate': TradeRate.value,
+                'rate': rate.value,
                 'start': start,
                 'count': count,
             }
         )
 
     async def accept_offer(self, offer_id: int, village_id: int) -> dict:
+        """Accept a resource trade offer in the marketplace
+
+        Args:
+            offer_id: ID of the offer
+            village_id: ID of the village from which to trade the resources
+
+        Returns:
+            dict
+        """
         return await self.invoke_action(
             action='acceptOffer',
             params={
@@ -108,6 +169,17 @@ class Trade(BaseController):
         resources: Resources,
         source_village_id: int
     ) -> dict:
+        """Send resources to another village
+
+        Args:
+            dest_village_id: ID of the destination village
+            recurrences: Amount of times to repeat the sending of the resources
+            resources: Resource amounts to be sent
+            source_village_id: ID of the village from which to send the resources
+
+        Returns:
+            dict
+        """
         return await self.invoke_action(
             action='sendResources',
             params={
