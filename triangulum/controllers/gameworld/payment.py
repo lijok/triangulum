@@ -10,6 +10,14 @@ class Payment(BaseController):
         super().__init__(action_handler=action_handler, controller='payment')
 
     async def get_payment_shop_url(self, shop_version: ShopVersion) -> dict:
+        """UNKNOWN *
+
+        Args:
+            shop_version: UNKNOWN *
+
+        Returns:
+            dict
+        """
         return await self.invoke_action(
             action='getPaymentShopUrl',
             params={
