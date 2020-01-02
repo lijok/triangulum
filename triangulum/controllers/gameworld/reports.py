@@ -16,6 +16,18 @@ class Reports(BaseController):
         filters: List[ReportFilter],
         also_get_total_number: bool
     ) -> dict:
+        """Get latest reports
+
+        Args:
+            collection: Report owners, i.e own, kingdom or society *
+            start: Starting index of the first report to retrieve
+            count: Last index of the reports to retrieve
+            filters: List of filters to filter the reports through
+            also_get_total_number: Also get the total number of reports
+
+        Returns:
+            dict
+        """
         return await self.invoke_action(
             action='getLastReports',
             params={
@@ -33,6 +45,16 @@ class Reports(BaseController):
         collection: ReportsCollection,
         security_code: str = ""  # Not sure what this is, could be for sharing reports
     ) -> dict:
+        """Get a full report
+
+        Args:
+            id: ID of the report
+            collection: Report owners, i.e own, kingdom or society *
+            security_code: UNKNOWN *
+
+        Returns:
+            dict
+        """
         return await self.invoke_action(
             action='getFullReport',
             params={
@@ -43,6 +65,16 @@ class Reports(BaseController):
         )
 
     async def mark_as_favorite(self, id: str, collection: ReportsCollection, security_code: str) -> dict:
+        """Mark a report as favorite
+
+        Args:
+            id: ID of the report
+            collection: Report owners, i.e own, kingdom or society *
+            security_code: UNKNOWN *
+
+        Returns:
+            dict
+        """
         return await self.invoke_action(
             action='markAsFavorite',
             params={
@@ -56,10 +88,23 @@ class Reports(BaseController):
         self,
         id: str,
         share_with: ShareReportWith,
-        share_with_id: int,  # ID of the Society or Player to share with
+        share_with_id: int,
         share_message: str,
         collection: ReportsCollection
     ) -> dict:
+        """Share a report with a player, kingdom or a society
+
+        Args:
+            id: ID of the report
+            share_with: Type of entity to share the report with
+            share_with_id: ID of the entity to share the report with
+                i.e kingdom ID if share_with == ShareReportWith.KINGDOM
+            share_message: Message to send together with the report
+            collection: Report owners, i.e own, kingdom or society *
+
+        Returns:
+            dict
+        """
         return await self.invoke_action(
             action='shareReport',
             params={
@@ -72,6 +117,14 @@ class Reports(BaseController):
         )
 
     async def remove_as_favorite(self, body_id: str) -> dict:
+        """Remove a report from your favorites
+
+        Args:
+            body_id: UNKNOWN *
+
+        Returns:
+            dict
+        """
         return await self.invoke_action(
             action='removeAsFavorite',
             params={
