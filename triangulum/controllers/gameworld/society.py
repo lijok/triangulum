@@ -10,6 +10,14 @@ class Society(BaseController):
         super().__init__(action_handler=action_handler, controller='society')
 
     async def get_shared_informations(self, village_id: int) -> dict:
+        """UNKNOWN *
+
+        Args:
+            village_id: ID of a village
+
+        Returns:
+            dict
+        """
         return await self.invoke_action(
             action='getSharedInformations',
             params={
@@ -29,6 +37,25 @@ class Society(BaseController):
         share_display_of_next_attack_on_village: bool,
         share_additional_village_information: bool
     ) -> dict:
+        """Create a secret society
+        The target and join_condition depend on the attitude of the society
+
+        Args:
+            name: Name of the secret society
+            attitude: Attitude of the secret society
+            target: Target type of the secret society
+            target_id: ID of the target entity
+            join_condition: Condition type for joining
+            condition_value: Value for join_condition
+            share_battle_and_scout_reports: Toggle for whether the society shares battle and scout reports
+            share_display_of_next_attack_on_village: Toggle for whether the society displays the incoming attacks
+                on eachothers villages
+            share_additional_village_information: Toggle for whether additional information is shared between
+                the members of the society, such as crop production and troop counts
+
+        Returns:
+            dict
+        """
         params = {
                 'name': name,
                 'attitude': attitude.value,
@@ -50,6 +77,16 @@ class Society(BaseController):
         )
 
     async def invite(self, group_id: int, player_names: List[str], custom_text: str) -> dict:
+        """Invite players to a secret society
+
+        Args:
+            group_id: ID of the secret society
+            player_names: List of player names to be invited
+            custom_text: Message to include with the invitation
+
+        Returns:
+            dict
+        """
         return await self.invoke_action(
             action='invite',
             params={
@@ -61,6 +98,14 @@ class Society(BaseController):
         )
 
     async def decline_invitation(self, id: int) -> dict:
+        """Decline a secret society invitation
+
+        Args:
+            id: ID of the invitation
+
+        Returns:
+
+        """
         return await self.invoke_action(
             action='declineInvitation',
             params={
@@ -69,6 +114,15 @@ class Society(BaseController):
         )
 
     async def change_description(self, group_id: int, description: int) -> dict:
+        """Change a secret society description
+
+        Args:
+            group_id: ID of the secret society
+            description: New description
+
+        Returns:
+
+        """
         return await self.invoke_action(
             action='changeDescription',
             params={
@@ -78,6 +132,14 @@ class Society(BaseController):
         )
 
     async def close(self, group_id: int) -> dict:
+        """Close a secret society
+
+        Args:
+            group_id: ID of the secret society
+
+        Returns:
+            dict
+        """
         return await self.invoke_action(
             action='close',
             params={
