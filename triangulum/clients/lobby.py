@@ -1,5 +1,4 @@
 import json
-import aiohttp
 
 from triangulum.clients.http.base import HttpBaseClient
 from triangulum.clients.routing import URL
@@ -36,7 +35,7 @@ class LobbyClient(HttpBaseClient):
     @property
     def session_key(self):
         cookie = get_cookie(
-            session=self.session,
+            cookie_jar=self.session.cookie_jar,
             key='gl5SessionKey',
             domain='kingdoms.com',
             unquote=True

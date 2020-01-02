@@ -65,7 +65,7 @@ class GameworldClient(HttpBaseClient):
     @property
     def session_key(self):
         cookie = get_cookie(
-            session=self.session,
+            cookie_jar=self.session.cookie_jar,
             key='t5SessionKey',
             domain=f'{self.gameworld_name}.kingdoms.com',
             unquote=True

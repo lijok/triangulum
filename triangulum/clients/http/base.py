@@ -41,7 +41,7 @@ class HttpBaseClient:
     @property
     def msid(self):
         return get_cookie(
-            session=self.session,
+            cookie_jar=self.session.cookie_jar,
             key='msid',
             domain='kingdoms.com'
         )

@@ -3,7 +3,6 @@ from urllib import parse
 from time import time
 import aiohttp
 import random
-import json
 import math
 
 USER_AGENTS = [
@@ -94,12 +93,12 @@ def find_msid(text: str) -> str:
 
 
 def get_cookie(
-    session: aiohttp.ClientSession,
+    cookie_jar: aiohttp.abc.AbstractCookieJar,
     key: str,
     domain: str,
     unquote: bool = False
 ) -> Union[str, None]:
-    for cookie in session.cookie_jar:
+    for cookie in cookie_jar:
         if cookie.key == key and cookie['domain'] == domain:
             if unquote:
                 return parse.unquote(cookie.value)
@@ -109,11 +108,11 @@ def get_cookie(
     return None
 
 
-def timestamp():
+def timestamp() -> int:
     return int('{:.2f}'.format(time()).replace('.', ''))
 
 
-def uniqid():
+def uniqid() -> str:
     """Generates a TK compatible unique client id
 
     Returns:

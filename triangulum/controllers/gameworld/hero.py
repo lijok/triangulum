@@ -8,7 +8,7 @@ class Hero(BaseController):
     def __init__(self, action_handler: Callable):
         super().__init__(action_handler=action_handler, controller='hero')
 
-    async def get_value_points(self):
+    async def get_value_points(self) -> dict:
         return await self.invoke_action(
             action='getValuePoints'
         )
