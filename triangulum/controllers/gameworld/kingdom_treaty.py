@@ -10,6 +10,12 @@ class KingdomTreaty(BaseController):
         super().__init__(action_handler=action_handler, controller='kingdomTreaty')
 
     async def offer(self, kingdom_id: int, type: KingdomTreatyType) -> dict:
+        """Offer a treaty between yourself / your kingdom and another kingdom
+
+        Args:
+            kingdom_id: ID of the kingdom to offer a treaty to
+            type: Type of treaty
+        """
         raise ActionNotImplementedError
 
         # return await self.invoke_action(
@@ -21,6 +27,14 @@ class KingdomTreaty(BaseController):
         # )
 
     async def deny(self, id: int) -> dict:
+        """Deny a kingdom treaty proposition
+
+        Args:
+            id: ID of the proposition
+
+        Returns:
+            dict
+        """
         return await self.invoke_action(
             action='deny',
             params={
@@ -29,6 +43,14 @@ class KingdomTreaty(BaseController):
         )
 
     async def cancel(self, id: int) -> dict:
+        """Cancel a kingdom treaty
+
+        Args:
+            id: ID of the treaty
+
+        Returns:
+            dict
+        """
         return await self.invoke_action(
             action='cancel',
             params={
