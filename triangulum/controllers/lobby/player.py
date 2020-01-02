@@ -9,6 +9,16 @@ class Player(BaseController):
         super().__init__(action_handler=action_handler, controller='player')
 
     async def switch_country(self, country: Country) -> dict:
+        """Switch the country your account is in
+        This will grant you access to different game worlds specific to
+        the selected country
+
+        Args:
+            country: Country to switch to
+
+        Returns:
+            dict
+        """
         return await self.invoke_action(
             action='switchCountry',
             params={
@@ -17,6 +27,14 @@ class Player(BaseController):
         )
 
     async def save_name(self, account_name: str) -> dict:
+        """Change your account name *
+
+        Args:
+            account_name: New name for the account *
+
+        Returns:
+            dict
+        """
         return await self.invoke_action(
             action='saveName',
             params={
@@ -25,16 +43,32 @@ class Player(BaseController):
         )
 
     async def get_all(self) -> dict:
+        """Get all information about the account including the information about all avatars *
+
+        Returns:
+            dict
+        """
         return await self.invoke_action(
             action='getAll'
         )
 
     async def get_avatar_data(self) -> dict:
+        """Get data about your account on a particular game world
+
+        Returns:
+            dict
+        """
         return await self.invoke_action(
             action='getAvatarData'
         )
 
     async def get_prestige_on_worlds(self) -> dict:
+        """Get the prestige quantities obtained on different game worlds the account
+        is currently a part of
+
+        Returns:
+            dict
+        """
         return await self.invoke_action(
             action='getPrestigeOnWorlds',
             params={
@@ -43,11 +77,24 @@ class Player(BaseController):
         )
 
     async def get_account_details(self) -> dict:
+        """Get details about the account *
+
+        Returns:
+            dict
+        """
         return await self.invoke_action(
             action='getAccountDetails'
         )
 
     async def delete_avatar(self, avatar_identifier: int) -> dict:
+        """Delete your avatar on a particular game world
+
+        Args:
+            avatar_identifier: ID of the avatar
+
+        Returns:
+            dict
+        """
         return await self.invoke_action(
             action='deleteAvatar',
             params={
@@ -56,6 +103,14 @@ class Player(BaseController):
         )
 
     async def abort_deletion(self, avatar_identifier: int) -> dict:
+        """Abort the deletion of an avatar
+
+        Args:
+            avatar_identifier: ID of the avatar
+
+        Returns:
+            dict
+        """
         return await self.invoke_action(
             action='abortDeletion',
             params={
