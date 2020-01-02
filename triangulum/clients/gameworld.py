@@ -25,6 +25,7 @@ from triangulum.controllers.gameworld.premium_feature import PremiumFeature
 from triangulum.controllers.gameworld.payment import Payment
 from triangulum.controllers.gameworld.kingdom_treaty import KingdomTreaty
 from triangulum.controllers.gameworld.login import Login
+from triangulum.utils.exceptions import NotAuthenticated
 
 
 class GameworldClient(HttpBaseClient):
@@ -63,22 +64,27 @@ class GameworldClient(HttpBaseClient):
 
     @property
     def session_key(self):
-        return json.loads(
-            get_cookie(
-                session=self.session,
-                key='t5SessionKey',
-                domain=f'{self.gameworld_name}.kingdoms.com',
-                unquote=True
-            )
-        )['key']
+        cookie = get_cookie(
+            session=self.session,
+            key='t5SessionKey',
+            domain=f'{self.gameworld_name}.kingdoms.com',
+            unquote=True
+        )
+        if cookie:
+            return json.loads(cookie)['key']
 
-    async def is_authenticated(self):
+    async def is_authenticated(self, extensive_check=False):
         """Checks whether user is authenticated with the gameworld"""
-
-        if 'error' in await self.troops.get_markers():
+        if not self.session_key or not self.msid:
             return False
-        else:
-            return True
+        if extensive_check:
+            try:
+                if 'error' in await self.troops.get_markers():
+                    return False
+            except json.decoder.JSONDecodeError:
+                return False
+
+        return True
 
     async def authenticate(self) -> None:
         """Authenticates with the gameworld"""
@@ -93,6 +99,9 @@ class GameworldClient(HttpBaseClient):
         )
 
     async def invoke_action(self, action: str, controller: str, params: dict = None) -> dict:
+        if not await self.is_authenticated():
+            raise NotAuthenticated
+
         response = await self._post(
             url=f'{URL.GAMEWORLD_API.format(gameworld=self.gameworld_name)}/?c={controller}&a={action}&t{timestamp()}',
             data=json.dumps(

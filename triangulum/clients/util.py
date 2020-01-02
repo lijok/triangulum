@@ -98,13 +98,15 @@ def get_cookie(
     key: str,
     domain: str,
     unquote: bool = False
-) -> str:
+) -> Union[str, None]:
     for cookie in session.cookie_jar:
         if cookie.key == key and cookie['domain'] == domain:
             if unquote:
                 return parse.unquote(cookie.value)
             else:
                 return cookie.value
+
+    return None
 
 
 def timestamp():

@@ -13,6 +13,7 @@ from triangulum.controllers.lobby.login import Login
 from triangulum.controllers.lobby.notification import Notification
 from triangulum.controllers.lobby.player import Player
 from triangulum.controllers.lobby.sitter import Sitter
+from triangulum.utils.exceptions import NotAuthenticated, AuthenticationError
 
 
 class LobbyClient(HttpBaseClient):
@@ -34,22 +35,29 @@ class LobbyClient(HttpBaseClient):
 
     @property
     def session_key(self):
-        return json.loads(
-            get_cookie(
-                session=self.session,
-                key='gl5SessionKey',
-                domain='kingdoms.com',
-                unquote=True
-            )
-        )['key']
-
-    async def is_authenticated(self):
-        """Checks whether user is authenticated with the lobby portal"""
-
-        if 'error' in await self.gameworld.get_possible_new_gameworlds():
-            return False
+        cookie = get_cookie(
+            session=self.session,
+            key='gl5SessionKey',
+            domain='kingdoms.com',
+            unquote=True
+        )
+        if cookie:
+            return json.loads(cookie)['key']
         else:
-            return True
+            return None
+
+    async def is_authenticated(self, extensive_check=False):
+        """Checks whether user is authenticated with the lobby portal"""
+        if not self.session_key or not self.msid:
+            return False
+        if extensive_check:
+            try:
+                if 'error' in await self.gameworld.get_possible_new_gameworlds():
+                    return False
+            except json.decoder.JSONDecodeError:
+                return False
+
+        return True
 
     async def authenticate(self, email: str, password: str) -> None:
         """Authenticates with the lobby portal"""
@@ -66,6 +74,9 @@ class LobbyClient(HttpBaseClient):
             data={'email': email, 'password': password}
         )
         token = find_token(await response.text())
+        if not token:
+            raise AuthenticationError
+
         _ = await self._get(URL.LOBBY_AUTH_STEP_3.format(token=token, msid=self.msid))
 
     async def connect_to_gameworld(self, gameworld_id: str, gameworld_name: str) -> GameworldClient:
@@ -81,6 +92,9 @@ class LobbyClient(HttpBaseClient):
         return gameworld_client
 
     async def invoke_action(self, action: str, controller: str, params: dict = None) -> dict:
+        if not await self.is_authenticated():
+            raise NotAuthenticated
+
         response = await self._post(
             url=URL.LOBBY_API,
             data=json.dumps(
