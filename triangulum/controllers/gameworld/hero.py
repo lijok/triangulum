@@ -9,6 +9,12 @@ class Hero(BaseController):
         super().__init__(action_handler=action_handler, controller='hero')
 
     async def get_value_points(self) -> dict:
+        """UNKNOWN
+
+        Returns:
+            dict
+
+        """
         return await self.invoke_action(
             action='getValuePoints'
         )
@@ -21,6 +27,18 @@ class Hero(BaseController):
         res_bonus_points: int,
         res_bonus_type: Resource
     ) -> dict:
+        """Assign hero attribute points or reassign Resource Bonus Type
+
+        Args:
+            fight_strength_points: Points to assign to Strength
+            att_bonus_points: Points to assign to Attack Bonus
+            def_bonus_points: Points to assign to Defence Bonus
+            res_bonus_points: Points to assign to Resource Bonus
+            res_bonus_type: Resource bonus type to use
+
+        Returns:
+            dict
+        """
         return await self.invoke_action(
             action='addAttributePoints',
             params={
@@ -33,6 +51,16 @@ class Hero(BaseController):
         )
 
     async def merge_item(self, id: int, amount: int, village_id: int) -> dict:
+        """Merge two item piles into one
+
+        Args:
+            id: Item ID
+            amount: How many of the items to merge
+            village_id: ID of the village *
+
+        Returns:
+            dict
+        """
         return await self.invoke_action(
             action='mergeItem',
             params={
@@ -59,6 +87,22 @@ class Hero(BaseController):
         """Sets the face properties for the hero
         Each property is an integer corresponding to a file in
         assets/game/{version}/layout/images/heroAvatar/{gender}/thumb/head/{property}
+
+        Args:
+            mouth: ID of mouth look
+            hair: ID of hair look
+            eye: ID of eye look
+            eyebrow: ID of eyebrow look
+            ear: ID of ear look
+            nose: ID of nose look
+            hair_color: ID of hair_color look
+            gender: Gender to set
+            player_id: ID of the player
+            beard:  ID of beard look
+            fetched_from_lobby: UNKNOWN *
+
+        Returns:
+            dict
         """
 
         return await self.invoke_action(
@@ -81,16 +125,34 @@ class Hero(BaseController):
         )
 
     async def get_last_inventory_view(self) -> dict:
+        """UNKNOWN *
+
+        Returns:
+            dict
+        """
         return await self.invoke_action(
             action='getLastInventoryView'
         )
 
     async def get_treasure_sell_price(self) -> dict:
+        """Get the price for selling a treasure in resources
+
+        Returns:
+            dict
+        """
         return await self.invoke_action(
             action='getTreasureSellPrice'
         )
 
     async def get_duration_to_closest_village_with_influence(self, village_id: int) -> dict:
+        """UNKNOWN *
+
+        Args:
+            village_id: ID of the village
+
+        Returns:
+            dict
+        """
         return await self.invoke_action(
             action='getDurationToClosestVillageWithInfluence',
             params={
@@ -99,6 +161,16 @@ class Hero(BaseController):
         )
 
     async def use_item(self, id: int, amount: int, village_id: int) -> dict:
+        """Use an item in Hero inventory
+
+        Args:
+            id: ID of the item
+            amount: Amount to use
+            village_id: ID of the village in which to use the item
+
+        Returns:
+            dict
+        """
         return await self.invoke_action(
             action='useItem',
             params={
@@ -109,11 +181,25 @@ class Hero(BaseController):
         )
 
     async def set_last_inventory_view(self) -> dict:
+        """UNKNOWN *
+
+        Returns:
+            dict
+        """
         return await self.invoke_action(
             action='setLastInventoryView'
         )
 
     async def get_resource_for_resource_chest(self, percent: int, resource_type: Resource) -> dict:
+        """UNKNOWN *
+
+        Args:
+            percent: UNNOWN *
+            resource_type: Type of resource
+
+        Returns:
+            dict
+        """
         return await self.invoke_action(
             action='getResourceForResourceChest',
             params={
@@ -123,6 +209,15 @@ class Hero(BaseController):
         )
 
     async def upgrade_item(self, upgrade_item_id: int, target_item_id: int) -> dict:
+        """Upgrade an item in Hero inventory
+
+        Args:
+            upgrade_item_id: ID of the item that applies the upgrade
+            target_item_id: ID of the item on which to apply the upgrade that's applied by upgrade_item_id
+
+        Returns:
+            dict
+        """
         return await self.invoke_action(
             action='upgradeItem',
             params={
@@ -132,6 +227,14 @@ class Hero(BaseController):
         )
 
     async def revive(self, village_id: int) -> dict:
+        """Revive a Hero
+
+        Args:
+            village_id: ID of the village to revive the Hero in
+
+        Returns:
+            dict
+        """
         return await self.invoke_action(
             action='revive',
             params={
@@ -140,11 +243,25 @@ class Hero(BaseController):
         )
 
     async def confirm_hero_level_up(self) -> dict:
+        """UNKNOWN *
+
+        Returns:
+            dict
+        """
         return await self.invoke_action(
             action='confirmHeroLevelUp'
         )
 
     async def switch_items(self, id1: int, id2: int) -> dict:
+        """Swap the location of two items in Hero inventory
+
+        Args:
+            id1: ID of the first item
+            id2: ID of the second item
+
+        Returns:
+            dict
+        """
         return await self.invoke_action(
             action='switchItems',
             params={
