@@ -1,9 +1,6 @@
 from collections import Callable
 
-from cachetools import TTLCache
-
 from triangulum.controllers.base import BaseController
-from triangulum.utils.cache import cached, MAX_SIZE, TTL
 from triangulum.utils.enums import HeroItemType, HeroItemSlot
 
 
@@ -36,7 +33,6 @@ class Auctions(BaseController):
             }
         )
 
-    @cached(TTLCache(MAX_SIZE, TTL))
     async def get_running_auction_page(
         self,
         filter_item_type: HeroItemType = HeroItemType.NONE,
@@ -80,7 +76,6 @@ class Auctions(BaseController):
             }
         )
 
-    @cached(TTLCache(MAX_SIZE, TTL))
     async def get_seller_payout(self, item_id: int, amount: int) -> dict:
         """Get the payout value of an auctionable item
 
