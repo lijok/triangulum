@@ -1,6 +1,9 @@
 from typing import Union, List, Callable
 
+from cachetools import TTLCache
+
 from triangulum.controllers.base import BaseController
+from triangulum.utils.cache import cached, MAX_SIZE, TTL
 from triangulum.utils.enums import BrightSocietyTarget, DarkSocietyTarget, BrightSocietyAdmissionCondition, \
     DarkSocietyAdmissionCondition, SocietySharedInformation, SocietyAttitude
 
@@ -9,6 +12,7 @@ class Society(BaseController):
     def __init__(self, action_handler: Callable):
         super().__init__(action_handler=action_handler, controller='society')
 
+    @cached(TTLCache(MAX_SIZE, TTL))
     async def get_shared_informations(self, village_id: int) -> dict:
         """UNKNOWN *
 

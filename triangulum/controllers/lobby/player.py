@@ -2,6 +2,8 @@ from collections import Callable
 
 from triangulum.controllers.base import BaseController
 from triangulum.utils.enums import Country
+from cachetools import TTLCache
+from triangulum.utils.cache import cached, MAX_SIZE, TTL
 
 
 class Player(BaseController):
@@ -42,6 +44,7 @@ class Player(BaseController):
             }
         )
 
+    @cached(TTLCache(MAX_SIZE, TTL))
     async def get_all(self) -> dict:
         """Get all information about the account including the information about all avatars *
 
@@ -52,6 +55,7 @@ class Player(BaseController):
             action='getAll'
         )
 
+    @cached(TTLCache(MAX_SIZE, TTL))
     async def get_avatar_data(self) -> dict:
         """Get data about your account on a particular game world
 
@@ -62,6 +66,7 @@ class Player(BaseController):
             action='getAvatarData'
         )
 
+    @cached(TTLCache(MAX_SIZE, TTL))
     async def get_prestige_on_worlds(self) -> dict:
         """Get the prestige quantities obtained on different game worlds the account
         is currently a part of
@@ -76,6 +81,7 @@ class Player(BaseController):
             }
         )
 
+    @cached(TTLCache(MAX_SIZE, TTL))
     async def get_account_details(self) -> dict:
         """Get details about the account *
 

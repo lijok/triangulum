@@ -1,6 +1,9 @@
 from collections import Callable
 
+from cachetools import TTLCache
+
 from triangulum.controllers.base import BaseController
+from triangulum.utils.cache import cached, MAX_SIZE, TTL
 from triangulum.utils.enums import Resource, Gender
 
 
@@ -8,6 +11,7 @@ class Hero(BaseController):
     def __init__(self, action_handler: Callable):
         super().__init__(action_handler=action_handler, controller='hero')
 
+    @cached(TTLCache(MAX_SIZE, TTL))
     async def get_value_points(self) -> dict:
         """UNKNOWN
 
@@ -134,6 +138,7 @@ class Hero(BaseController):
             action='getLastInventoryView'
         )
 
+    @cached(TTLCache(MAX_SIZE, TTL))
     async def get_treasure_sell_price(self) -> dict:
         """Get the price for selling a treasure in resources
 
@@ -144,6 +149,7 @@ class Hero(BaseController):
             action='getTreasureSellPrice'
         )
 
+    @cached(TTLCache(MAX_SIZE, TTL))
     async def get_duration_to_closest_village_with_influence(self, village_id: int) -> dict:
         """UNKNOWN *
 
@@ -190,6 +196,7 @@ class Hero(BaseController):
             action='setLastInventoryView'
         )
 
+    @cached(TTLCache(MAX_SIZE, TTL))
     async def get_resource_for_resource_chest(self, percent: int, resource_type: Resource) -> dict:
         """UNKNOWN *
 

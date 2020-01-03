@@ -1,6 +1,9 @@
 from collections import Callable
 
+from cachetools import TTLCache
+
 from triangulum.controllers.base import BaseController
+from triangulum.utils.cache import cached, MAX_SIZE, TTL
 from triangulum.utils.dataclasses import MapFilter, AttacksFilter
 from triangulum.utils.enums import PlayerTribe, SettingsTimeType, NotificationType, SettingsPremiumConfirmation, \
     Language, SettingsTimeFormat, OnlineStatusFilter, PlayerProgressTriggerHelpPage, RequestAction, ReportPlayerReason
@@ -11,6 +14,7 @@ class Player(BaseController):
     def __init__(self, action_handler: Callable):
         super().__init__(action_handler=action_handler, controller='player')
 
+    @cached(TTLCache(MAX_SIZE, TTL))
     async def get_all(self, device_dimension_x: int = 1920, device_dimension_y: int = 1080) -> dict:
         """Get all information about a players state in the gameworld
 
@@ -19,7 +23,7 @@ class Player(BaseController):
             device_dimension_y: UI PARAM Y dimension of the device
 
         Returns:
-
+            dict
         """
         return await self.invoke_action(
             action='getAll',
@@ -54,6 +58,7 @@ class Player(BaseController):
             }
         )
 
+    @cached(TTLCache(MAX_SIZE, TTL))
     async def check_king_registration_rule(self) -> dict:
         """Check whether the player qualifies to play as a king *
 
@@ -64,6 +69,7 @@ class Player(BaseController):
             action='checkKingRegistrationRule'
         )
 
+    @cached(TTLCache(MAX_SIZE, TTL))
     async def get_system_message(self) -> dict:
         """Get system messages
 
@@ -74,6 +80,7 @@ class Player(BaseController):
             action='getSystemMessage'
         )
 
+    @cached(TTLCache(MAX_SIZE, TTL))
     async def get_achievement_notifications(self) -> dict:
         """Get notifications of new achievements
 
@@ -130,6 +137,7 @@ class Player(BaseController):
             action='deleteAllNotifications'
         )
 
+    @cached(TTLCache(MAX_SIZE, TTL))
     async def get_open_chat_windows(self) -> dict:
         """Get info on open chat windows
 
@@ -209,6 +217,7 @@ class Player(BaseController):
             }
         )
 
+    @cached(TTLCache(MAX_SIZE, TTL))
     async def get_invitation_ref_link(self) -> dict:
         """Get referral url
 
@@ -219,6 +228,7 @@ class Player(BaseController):
             action='getInvitationRefLink'
         )
 
+    @cached(TTLCache(MAX_SIZE, TTL))
     async def get_player_info(self, player_id: int) -> dict:
         """Get information about a player
 
@@ -409,6 +419,7 @@ class Player(BaseController):
             action='getActivityStreams'
         )
 
+    @cached(TTLCache(MAX_SIZE, TTL))
     async def get_prestige_conditions(self) -> dict:
         """Get conditions for weekly prestige point acquisition
 
@@ -419,6 +430,7 @@ class Player(BaseController):
             action='getPrestigeConditions'
         )
 
+    @cached(TTLCache(MAX_SIZE, TTL))
     async def get_robber_villages_amount(self, kingdom_id: int) -> dict:
         """UNKNOWN *
 
@@ -617,6 +629,7 @@ class Player(BaseController):
             }
         )
 
+    @cached(TTLCache(MAX_SIZE, TTL))
     async def get_player_influence(self, village_id: int) -> dict:
         """Get influence over a player and their village *
 

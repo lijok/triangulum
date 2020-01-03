@@ -1,6 +1,9 @@
 from collections import Callable
 
+from cachetools import TTLCache
+
 from triangulum.controllers.base import BaseController
+from triangulum.utils.cache import cached, MAX_SIZE, TTL
 
 
 class Village(BaseController):
@@ -40,6 +43,7 @@ class Village(BaseController):
             }
         )
 
+    @cached(TTLCache(MAX_SIZE, TTL))
     async def get_villages_with_influence_on_oasis_for_player(self, oasis_id: int, player_id: int) -> dict:
         """Fetch info on which villages a player has influence with over an oasis
 
@@ -68,6 +72,7 @@ class Village(BaseController):
             action='getKingdomVillageAttacks'
         )
 
+    @cached(TTLCache(MAX_SIZE, TTL))
     async def get_production_details(self, village_id: int) -> dict:
         """Get production details of a village
 
@@ -154,6 +159,7 @@ class Village(BaseController):
             }
         )
 
+    @cached(TTLCache(MAX_SIZE, TTL))
     async def get_treasuries_capacity(self, village_id: int) -> dict:
         """Get capacity of a treasury in a village
 
@@ -170,6 +176,7 @@ class Village(BaseController):
             }
         )
 
+    @cached(TTLCache(MAX_SIZE, TTL))
     async def get_victory_points_and_influence_bonus(self, village_id: int) -> dict:
         """Get victory points and influence bonus
 

@@ -1,6 +1,9 @@
 from typing import Union, List, Callable
 
+from cachetools import TTLCache
+
 from triangulum.controllers.base import BaseController
+from triangulum.utils.cache import cached, MAX_SIZE, TTL
 from triangulum.utils.dataclasses import GaulUnits, TeutonUnits, RomanUnits
 from triangulum.utils.enums import TroopMovementType, SpyMissionType, PlayerTribe
 from triangulum.utils.exceptions import ActionNotImplementedError
@@ -47,6 +50,7 @@ class Troops(BaseController):
             }
         )
 
+    @cached(TTLCache(MAX_SIZE, TTL))
     async def check_target(
         self,
         dest_village_name: str,
@@ -158,6 +162,7 @@ class Troops(BaseController):
         )
 
     # TODO: Finish this off, need an elegant solution as the data structure is complex
+    @cached(TTLCache(MAX_SIZE, TTL))
     async def fight_simulate(
             self,
             attack_type: int,

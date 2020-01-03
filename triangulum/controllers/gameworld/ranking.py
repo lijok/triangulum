@@ -1,6 +1,9 @@
 from collections import Callable
 
+from cachetools import TTLCache
+
 from triangulum.controllers.base import BaseController
+from triangulum.utils.cache import cached, MAX_SIZE, TTL
 from triangulum.utils.enums import RankingCategory
 
 
@@ -8,6 +11,7 @@ class Ranking(BaseController):
     def __init__(self, action_handler: Callable):
         super().__init__(action_handler=action_handler, controller='ranking')
 
+    @cached(TTLCache(MAX_SIZE, TTL))
     async def get_kingdom_victory_points_with_treasures(self, start: int, end: int) -> dict:
         """Get kingdom victory points rankings with treasures
 
@@ -26,6 +30,7 @@ class Ranking(BaseController):
             }
         )
 
+    @cached(TTLCache(MAX_SIZE, TTL))
     async def get_kingdom_stats(self, kingdom_id: int) -> dict:
         """Get stats about a kingdom
 
@@ -42,6 +47,7 @@ class Ranking(BaseController):
             }
         )
 
+    @cached(TTLCache(MAX_SIZE, TTL))
     async def get_ranking(
         self,
         start: int,
@@ -74,6 +80,7 @@ class Ranking(BaseController):
             params=params
         )
 
+    @cached(TTLCache(MAX_SIZE, TTL))
     async def get_ranking_average_points(self, ranking_category: RankingCategory) -> dict:
         """Get average points for a ranking category
 
@@ -91,6 +98,7 @@ class Ranking(BaseController):
             }
         )
 
+    @cached(TTLCache(MAX_SIZE, TTL))
     async def get_rank_and_count(self, id: int, ranking_category: RankingCategory) -> dict:
         """UNKNOWN *
 
@@ -110,6 +118,7 @@ class Ranking(BaseController):
             }
         )
 
+    @cached(TTLCache(MAX_SIZE, TTL))
     async def get_world_stats(self) -> dict:
         """Get statistics about the game world such as the race and troops distributions
 
@@ -120,6 +129,7 @@ class Ranking(BaseController):
             action='getWorldStats'
         )
 
+    @cached(TTLCache(MAX_SIZE, TTL))
     async def get_kingdom_internal_ranking(self) -> dict:
         """Get internal kingdom rankings
 

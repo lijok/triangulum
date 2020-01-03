@@ -1,14 +1,18 @@
 from typing import Union, Callable
 
+from cachetools import TTLCache
+
 from triangulum.controllers.base import BaseController
-from triangulum.utils.enums import CelebrationType, BuildingType, RomanUnit, TeutonUnit, GaulUnit
+from triangulum.utils.cache import cached, MAX_SIZE, TTL
 from triangulum.utils.dataclasses import RomanUnits, TeutonUnits, GaulUnits
+from triangulum.utils.enums import CelebrationType, BuildingType, RomanUnit, TeutonUnit, GaulUnit
 
 
 class Building(BaseController):
     def __init__(self, action_handler: Callable):
         super().__init__(action_handler=action_handler, controller='building')
 
+    @cached(TTLCache(MAX_SIZE, TTL))
     async def get_celebration_list(self, village_id: int, location_id: int) -> dict:
         """Get list of running celebrations in a village
 
@@ -45,6 +49,7 @@ class Building(BaseController):
             }
         )
 
+    @cached(TTLCache(MAX_SIZE, TTL))
     async def get_building_list(self, village_id: int, location_id: int) -> dict:
         """Get information on a building at a particular location_id or the
         list of buildings that can be built in that spot
@@ -64,6 +69,7 @@ class Building(BaseController):
             }
         )
 
+    @cached(TTLCache(MAX_SIZE, TTL))
     async def get_trapper_infos(self, village_id: int, location_id: int) -> dict:
         """Get information about a trapper
 
@@ -122,6 +128,7 @@ class Building(BaseController):
             }
         )
 
+    @cached(TTLCache(MAX_SIZE, TTL))
     async def get_recruit_list(self, village_id: int, location_id: int) -> dict:
         """Get list of units currently in the recruitment queue
 
@@ -197,6 +204,7 @@ class Building(BaseController):
             }
         )
 
+    @cached(TTLCache(MAX_SIZE, TTL))
     async def get_oasis_list(self, village_id: int) -> dict:
         """Get a list of oasis within the influence range of a village
 
@@ -213,6 +221,7 @@ class Building(BaseController):
             }
         )
 
+    @cached(TTLCache(MAX_SIZE, TTL))
     async def get_culture_point_balance(self, village_id: int) -> dict:
         """Retrieve the culture point balance
 
@@ -331,6 +340,7 @@ class Building(BaseController):
             }
         )
 
+    @cached(TTLCache(MAX_SIZE, TTL))
     async def get_treasury_transformations(self) -> dict:
         """Get information on treasury transformations in your gameworld account
 
@@ -359,6 +369,7 @@ class Building(BaseController):
             }
         )
 
+    @cached(TTLCache(MAX_SIZE, TTL))
     async def get_cp_data(self, village_id: int) -> dict:
         """Get culture point data
 

@@ -1,6 +1,9 @@
 from collections import Callable
 
+from cachetools import TTLCache
+
 from triangulum.controllers.base import BaseController
+from triangulum.utils.cache import cached, MAX_SIZE, TTL
 from triangulum.utils.exceptions import ActionNotImplementedError
 
 
@@ -9,6 +12,7 @@ class Cache(BaseController):
         super().__init__(action_handler=action_handler, controller='cache')
 
     # TODO: Implement proper cache control
+    @cached(TTLCache(MAX_SIZE, TTL))
     async def get(self, names: list) -> dict:
         raise ActionNotImplementedError
 

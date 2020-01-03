@@ -1,6 +1,9 @@
 from typing import List, Callable
 
+from cachetools import TTLCache
+
 from triangulum.controllers.base import BaseController
+from triangulum.utils.cache import cached, MAX_SIZE, TTL
 from triangulum.utils.enums import ReportsCollection, ReportFilter, ShareReportWith
 
 
@@ -39,6 +42,7 @@ class Reports(BaseController):
             }
         )
 
+    @cached(TTLCache(MAX_SIZE, TTL))
     async def get_full_report(
         self,
         id: str,

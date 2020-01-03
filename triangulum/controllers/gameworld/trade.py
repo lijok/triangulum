@@ -1,6 +1,9 @@
 from collections import Callable
 
+from cachetools import TTLCache
+
 from triangulum.controllers.base import BaseController
+from triangulum.utils.cache import cached, MAX_SIZE, TTL
 from triangulum.utils.dataclasses import Resources
 from triangulum.utils.enums import Resource, TradeRate
 from triangulum.utils.exceptions import ActionNotImplementedError
@@ -39,6 +42,7 @@ class Trade(BaseController):
         )
 
     # TODO: This is used for checking the validity of a trade route setup so needs to be inspected more
+    @cached(TTLCache(MAX_SIZE, TTL))
     async def check_target(self, source_village_id: int, dest_village_id: int, dest_village_name: str) -> dict:
         """Confirm that a trade route is valid before creating one
 

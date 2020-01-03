@@ -1,6 +1,9 @@
 from collections import Callable
 
+from cachetools import TTLCache
+
 from triangulum.controllers.base import BaseController
+from triangulum.utils.cache import cached, MAX_SIZE, TTL
 from triangulum.utils.enums import DialogActionCommand
 
 
@@ -8,6 +11,7 @@ class Quest(BaseController):
     def __init__(self, action_handler: Callable):
         super().__init__(action_handler=action_handler, controller='quest')
 
+    @cached(TTLCache(MAX_SIZE, TTL))
     async def get_puzzle(self) -> dict:
         """Get the map puzzle during registration
 

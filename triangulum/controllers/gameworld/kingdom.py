@@ -1,6 +1,9 @@
 from collections import Callable
 
+from cachetools import TTLCache
+
 from triangulum.controllers.base import BaseController
+from triangulum.utils.cache import cached, MAX_SIZE, TTL
 
 
 class Kingdom(BaseController):
@@ -40,6 +43,7 @@ class Kingdom(BaseController):
             }
         )
 
+    @cached(TTLCache(MAX_SIZE, TTL))
     async def get_top3_nearby_kings(self, village_id: int) -> dict:
         """Get top 3 kings nearest to village_id
 
@@ -142,6 +146,7 @@ class Kingdom(BaseController):
             }
         )
 
+    @cached(TTLCache(MAX_SIZE, TTL))
     async def get_fight_strength_ranks(self) -> dict:
         """Get Fight Strength rankings of your kingdom *
 
@@ -152,6 +157,7 @@ class Kingdom(BaseController):
             action='getFightStrengthRanks'
         )
 
+    @cached(TTLCache(MAX_SIZE, TTL))
     async def get_news(self, start: int, count: int) -> dict:
         """UNKNOWN
 
@@ -188,6 +194,7 @@ class Kingdom(BaseController):
             }
         )
 
+    @cached(TTLCache(MAX_SIZE, TTL))
     async def get_duke_candidate(self, kingdom_id: int) -> dict:
         """Get governors best suited to become Dukes in your kingdom
 
