@@ -35,6 +35,14 @@ gameworld = loop.run_until_complete(lobby.connect_to_gameworld(gameworld_id='', 
 loop.run_until_complete(gameworld.player.get_player_info(0))
 ```
 
+There is a built in caching mechanism that, when activated, will reduce the amount of repeat network calls being made
+in your program that is utilizing this client, by returning the same response, when a function is called with the same
+arguments within the TTL.
+Only safe to cache actions are making use of the cache, and it is by default disabled.
+
+There are 2 environment variables that need to be set to activate the caching mechanism:
+- TRIANGULUM_CACHE_MAX_SIZE = specifies the maximum number of cached entries for a given function
+- TRIANGULUM_CACHE_TTL = specifies the time to live in seconds for any cached content
 
 ## Missing Controllers
 > There are 3 controllers that have not yet been implemented
