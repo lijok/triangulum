@@ -57,7 +57,7 @@ class GameworldClient(HttpBaseClient):
         self.map = Map(action_handler=self.invoke_action)
         self.reports = Reports(action_handler=self.invoke_action)
         self.society = Society(action_handler=self.invoke_action)
-        self.premium_eature = PremiumFeature(action_handler=self.invoke_action)
+        self.premium_feature = PremiumFeature(action_handler=self.invoke_action)
         self.payment = Payment(action_handler=self.invoke_action)
         self.kingdom_treaty = KingdomTreaty(action_handler=self.invoke_action)
         self.login = Login(action_handler=self.invoke_action)
