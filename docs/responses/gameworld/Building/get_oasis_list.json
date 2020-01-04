@@ -1,0 +1,117 @@
+{
+    "time": 1577636491363,
+    "serialNo": 3034,
+    "response": {
+        "inReach": [
+            {
+                "villageId": "534921221",
+                "type": "21",
+                "isWild": false,
+                "kingdomId": "596",
+                "kingId": "4744",
+                "kingdomInfluence": 0,
+                "myRank": 6,
+                "usedByVillage": 0,
+                "coordsX": "5",
+                "coordsY": "-60",
+                "bonus": {
+                    "1": 0,
+                    "2": 5,
+                    "3": 0,
+                    "4": 5
+                }
+            },
+            {
+                "villageId": "534953984",
+                "type": "30",
+                "isWild": false,
+                "kingdomId": "112",
+                "kingId": "916",
+                "kingdomInfluence": 0,
+                "myRank": 1,
+                "usedByVillage": 0,
+                "coordsX": "0",
+                "coordsY": "-59",
+                "bonus": {
+                    "1": 0,
+                    "2": 0,
+                    "3": 25,
+                    "4": 0
+                }
+            },
+            {
+                "villageId": "534953986",
+                "type": "11",
+                "isWild": false,
+                "kingdomId": 0,
+                "kingId": "0",
+                "kingdomInfluence": 0,
+                "myRank": 1,
+                "usedByVillage": 0,
+                "coordsX": "2",
+                "coordsY": "-59",
+                "bonus": {
+                    "1": 25,
+                    "2": 0,
+                    "3": 0,
+                    "4": 25
+                }
+            },
+            {
+                "villageId": "534986751",
+                "type": "31",
+                "isWild": false,
+                "kingdomId": "112",
+                "kingId": "916",
+                "kingdomInfluence": 0,
+                "myRank": 5,
+                "usedByVillage": 0,
+                "coordsX": "-1",
+                "coordsY": "-58",
+                "bonus": {
+                    "1": 0,
+                    "2": 0,
+                    "3": 5,
+                    "4": 5
+                }
+            },
+            {
+                "villageId": "535019524",
+                "type": "40",
+                "isWild": true,
+                "kingdomId": 0,
+                "kingId": "0",
+                "kingdomInfluence": 0,
+                "myRank": 1,
+                "usedByVillage": 0,
+                "coordsX": "4",
+                "coordsY": "-57",
+                "bonus": {
+                    "1": 0,
+                    "2": 0,
+                    "3": 0,
+                    "4": 25
+                }
+            },
+            {
+                "villageId": "535052292",
+                "type": "41",
+                "isWild": false,
+                "kingdomId": 0,
+                "kingId": "0",
+                "kingdomInfluence": 0,
+                "myRank": 5,
+                "usedByVillage": 0,
+                "coordsX": "4",
+                "coordsY": "-56",
+                "bonus": {
+                    "1": 0,
+                    "2": 0,
+                    "3": 0,
+                    "4": 10
+                }
+            }
+        ],
+        "radius": 3
+    }
+}

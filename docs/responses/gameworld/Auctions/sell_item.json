@@ -1,0 +1,154 @@
+{
+    "cache": [
+        {
+            "name": "Player:5230",
+            "data": {
+                "playerId": "5230",
+                "name": "lijok",
+                "tribeId": "3",
+                "kingdomId": "683",
+                "kingdomTag": "tantuni",
+                "kingdomRole": "2",
+                "isKing": false,
+                "kingId": "5302",
+                "kingstatus": "0",
+                "villages": [
+                    {
+                        "villageId": "534986754",
+                        "playerId": "5230",
+                        "name": "[00]",
+                        "tribeId": "3",
+                        "belongsToKing": "0",
+                        "belongsToKingdom": 0,
+                        "type": "1",
+                        "population": "222",
+                        "coordinates": {
+                            "x": "2",
+                            "y": "-58"
+                        },
+                        "isMainVillage": true,
+                        "isTown": false,
+                        "treasuresUsable": "0",
+                        "treasures": "0",
+                        "allowTributeCollection": "1",
+                        "protectionGranted": "0",
+                        "tributeCollectorPlayerId": 0,
+                        "realTributePercent": 0.2,
+                        "supplyBuildings": "222",
+                        "supplyTroops": "357",
+                        "production": {
+                            "1": "1155",
+                            "2": "1238",
+                            "3": "960",
+                            "4": "576"
+                        },
+                        "storage": {
+                            "1": 3239.6194444445,
+                            "2": 3224.0011111112,
+                            "3": 6556.8124999999,
+                            "4": 5082.2177777778
+                        },
+                        "treasury": {
+                            "1": "0",
+                            "2": "0",
+                            "3": "0",
+                            "4": 0
+                        },
+                        "storageCapacity": {
+                            "1": "7875",
+                            "2": "7875",
+                            "3": "7875",
+                            "4": "7875"
+                        },
+                        "usedControlPoints": "0",
+                        "availableControlPoints": "0",
+                        "culturePoints": 510.36329861108,
+                        "celebrationType": "0",
+                        "celebrationEnd": "0",
+                        "culturePointProduction": "327",
+                        "treasureResourceBonus": "0",
+                        "acceptance": 100,
+                        "acceptanceProduction": "0.01666",
+                        "tributes": {
+                            "1": 0,
+                            "2": 0,
+                            "3": 0,
+                            "4": 0
+                        },
+                        "tributesCapacity": "7875",
+                        "tributeTreasures": 4,
+                        "tributeProduction": 670,
+                        "tributeProductionDetail": {
+                            "1": 231,
+                            "2": 247,
+                            "3": 192,
+                            "4": 0
+                        },
+                        "tributeTime": "0",
+                        "tributesRequiredToFetch": 1575,
+                        "estimatedWarehouseLevel": 8
+                    }
+                ],
+                "population": "222",
+                "active": "1",
+                "prestige": 1184,
+                "level": 6,
+                "stars": {
+                    "bronze": 0,
+                    "silver": 0,
+                    "gold": 3
+                },
+                "nextLevelPrestige": 2000,
+                "hasNoobProtection": false,
+                "filterInformation": false,
+                "signupTime": "1577621566",
+                "vacationState": "0",
+                "uiLimitations": "3",
+                "gold": "0",
+                "silver": 856,
+                "deletionTime": "0",
+                "coronationDuration": 0,
+                "brewCelebration": "0",
+                "uiStatus": "-1",
+                "hintStatus": "0",
+                "spawnedOnMap": "1577621703",
+                "isActivated": "1",
+                "isInstant": "0",
+                "productionBonusTime": "1577881530",
+                "cropProductionBonusTime": "1577881533",
+                "premiumFeatureAutoExtendFlags": "0",
+                "plusAccountTime": "1577909692",
+                "limitedPremiumFeatureFlags": "0",
+                "lastPaymentTime": "0",
+                "isPunished": false,
+                "limitationFlags": "0",
+                "limitation": "0",
+                "isBannedFromMessaging": false,
+                "bannedFromMessaging": "0",
+                "questVersion": "2",
+                "nextDailyQuestTime": 1577837569,
+                "dailyQuestsExchanged": "0",
+                "avatarIdentifier": "5143462",
+                "vacationStateStart": "0",
+                "vacationStateEnd": "0",
+                "usedVacationDays": "0"
+            }
+        },
+        {
+            "name": "Collection:HeroItem:own",
+            "data": {
+                "cache": [
+                    {
+                        "name": "HeroItem:210722",
+                        "data": ""
+                    }
+                ],
+                "operation": 3
+            }
+        }
+    ],
+    "ignoreSerial": 2,
+    "time": 1577797492591,
+    "serialNo": 9835,
+    "response": []
+}

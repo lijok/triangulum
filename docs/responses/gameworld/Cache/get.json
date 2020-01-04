@@ -1,0 +1,334 @@
+{
+    "cache": [
+        {
+            "name": "Collection:Notifications:",
+            "data": {
+                "cache": [],
+                "operation": 1
+            }
+        },
+        {
+            "name": "Collection:TroopsMovementInfo:attackVillage:534986754",
+            "data": {
+                "cache": [
+                    {
+                        "name": "TroopsMovementInfo:6580210",
+                        "data": {
+                            "troopId": "6580210",
+                            "villageIdStart": "535674907",
+                            "villageIdTarget": "534986754",
+                            "playerIdTarget": "5230",
+                            "coordinateID": 0,
+                            "timeStart": 0,
+                            "timeFinish": "1577767391",
+                            "movementType": "4",
+                            "resources": {
+                                "1": 0,
+                                "2": 0,
+                                "3": 0,
+                                "4": 0
+                            },
+                            "treasures": "0",
+                            "spyTarget": 0,
+                            "catapultTarget1": 0,
+                            "catapultTarget2": 0,
+                            "merchants": "0"
+                        }
+                    }
+                ],
+                "operation": 1
+            }
+        },
+        {
+            "name": "Collection:Quest:",
+            "data": {
+                "cache": [
+                    {
+                        "name": "Quest:624",
+                        "data": {
+                            "id": 624,
+                            "questGiver": 1,
+                            "status": 4,
+                            "progress": 1,
+                            "finishedSteps": 1,
+                            "finalStep": 1,
+                            "data": [],
+                            "rewards": {
+                                "2": {
+                                    "1": 0,
+                                    "2": 0,
+                                    "3": 0,
+                                    "4": 1400
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "name": "Quest:607",
+                        "data": {
+                            "id": 607,
+                            "questGiver": 1,
+                            "status": 4,
+                            "progress": 1,
+                            "finishedSteps": 45,
+                            "finalStep": 45,
+                            "data": [],
+                            "rewards": {
+                                "2": {
+                                    "1": 5000,
+                                    "2": 5000,
+                                    "3": 4000,
+                                    "4": 4000
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "name": "Quest:510",
+                        "data": {
+                            "id": 510,
+                            "questGiver": 3,
+                            "status": 4,
+                            "progress": 1,
+                            "finishedSteps": 3,
+                            "finalStep": 3,
+                            "data": [],
+                            "rewards": {
+                                "2": {
+                                    "1": 500,
+                                    "2": 700,
+                                    "3": 1000,
+                                    "4": 300
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "name": "Quest:526",
+                        "data": {
+                            "id": 526,
+                            "questGiver": 3,
+                            "status": 2,
+                            "progress": 0,
+                            "finishedSteps": 0,
+                            "finalStep": 5,
+                            "data": [],
+                            "rewards": {
+                                "2": {
+                                    "1": 150,
+                                    "2": 200,
+                                    "3": 115,
+                                    "4": 50
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "name": "Quest:630",
+                        "data": {
+                            "id": 630,
+                            "questGiver": 1,
+                            "status": 3,
+                            "progress": 0,
+                            "finishedSteps": 0,
+                            "finalStep": 12,
+                            "data": [],
+                            "rewards": {
+                                "2": {
+                                    "1": 5000,
+                                    "2": 6000,
+                                    "3": 5000,
+                                    "4": 1500
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "name": "Quest:712",
+                        "data": {
+                            "id": 712,
+                            "questGiver": 9,
+                            "status": 3,
+                            "progress": 0,
+                            "finishedSteps": 0,
+                            "finalStep": 1,
+                            "data": [],
+                            "rewards": {
+                                "2": {
+                                    "1": 5000,
+                                    "2": 3500,
+                                    "3": 3500,
+                                    "4": 4000
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "name": "Quest:832",
+                        "data": {
+                            "id": 832,
+                            "questGiver": 9,
+                            "status": 3,
+                            "progress": 0,
+                            "finishedSteps": 1,
+                            "finalStep": 5,
+                            "data": 0,
+                            "rewards": {
+                                "10": 3
+                            }
+                        }
+                    },
+                    {
+                        "name": "Quest:825",
+                        "data": {
+                            "id": 825,
+                            "questGiver": 9,
+                            "status": 3,
+                            "progress": 0,
+                            "finishedSteps": 9,
+                            "finalStep": 13,
+                            "data": 0,
+                            "rewards": {
+                                "1": 250
+                            }
+                        }
+                    },
+                    {
+                        "name": "Quest:850",
+                        "data": {
+                            "id": 850,
+                            "questGiver": 3,
+                            "status": 3,
+                            "progress": 0,
+                            "finishedSteps": 0,
+                            "finalStep": 1,
+                            "data": 0,
+                            "rewards": {
+                                "2": {
+                                    "1": 150,
+                                    "2": 200,
+                                    "3": 110,
+                                    "4": 90
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "name": "Quest:991",
+                        "data": {
+                            "id": 991,
+                            "questGiver": 11,
+                            "status": 3,
+                            "progress": 245,
+                            "finishedSteps": 0,
+                            "finalStep": 1,
+                            "data": 1,
+                            "rewards": []
+                        }
+                    },
+                    {
+                        "name": "Quest:992",
+                        "data": {
+                            "id": 992,
+                            "questGiver": 11,
+                            "status": 3,
+                            "progress": 1989,
+                            "finishedSteps": 0,
+                            "finalStep": 1,
+                            "data": 2,
+                            "rewards": []
+                        }
+                    }
+                ],
+                "operation": 1
+            }
+        },
+        {
+            "name": "Collection:QuestGiver:",
+            "data": {
+                "cache": [
+                    {
+                        "name": "QuestGiver:32420",
+                        "data": {
+                            "npcId": "-1",
+                            "questId": "10005",
+                            "dialog": "-2",
+                            "questStatus": "4"
+                        }
+                    },
+                    {
+                        "name": "QuestGiver:32421",
+                        "data": {
+                            "npcId": "0",
+                            "questId": "-1",
+                            "dialog": "-1",
+                            "questStatus": "-1"
+                        }
+                    },
+                    {
+                        "name": "QuestGiver:32422",
+                        "data": {
+                            "npcId": "9",
+                            "questId": "732",
+                            "dialog": "-2",
+                            "questStatus": "2"
+                        }
+                    },
+                    {
+                        "name": "QuestGiver:32423",
+                        "data": {
+                            "npcId": "1",
+                            "questId": "607",
+                            "dialog": "-2",
+                            "questStatus": "4"
+                        }
+                    },
+                    {
+                        "name": "QuestGiver:32424",
+                        "data": {
+                            "npcId": "3",
+                            "questId": "539",
+                            "dialog": "-2",
+                            "questStatus": "2"
+                        }
+                    },
+                    {
+                        "name": "QuestGiver:32425",
+                        "data": {
+                            "npcId": "11",
+                            "questId": "-1",
+                            "dialog": "-3",
+                            "questStatus": "3"
+                        }
+                    }
+                ],
+                "operation": 1
+            }
+        },
+        {
+            "name": "Collection:Society:",
+            "data": {
+                "cache": [],
+                "operation": 1
+            }
+        },
+        {
+            "name": "Gameworld:",
+            "data": {
+                "status": 0,
+                "acpineStatus": -1,
+                "data": [],
+                "messageTitle": "Maintenance work",
+                "messageText": "Dear players,[br][br]We\u2019re currently updating this world to a new version. This means the world will be unavailable for about 5-15 minutes. For more information about the update, please go the game forum. {{forumLink}}[br][br]Thank you for your understanding![br][br]Your Travian Kingdoms Team",
+                "startTime": "1574764217",
+                "worldWonderActivated": 0,
+                "maintenance": false,
+                "kingdomChangeDenied": 0
+            }
+        }
+    ],
+    "ignoreSerial": 1,
+    "time": 1577765038539,
+    "serialNo": 8922,
+    "response": []
+}

@@ -1,0 +1,49 @@
+{
+    "cache": [
+        {
+            "name": "Collection:HeroItem:own",
+            "data": {
+                "cache": [
+                    {
+                        "name": "HeroItem:216170",
+                        "data": {
+                            "id": "216170",
+                            "playerId": "5230",
+                            "tribeId": 0,
+                            "inSlot": "0",
+                            "itemId": "115",
+                            "itemType": "115",
+                            "amount": "1",
+                            "strength": "1",
+                            "images": [
+                                "book"
+                            ],
+                            "bonuses": {
+                                "20": "1"
+                            },
+                            "stackable": false,
+                            "slot": -1,
+                            "lastChange": "1577760502",
+                            "hasSpeedBonus": false,
+                            "inventorySlotNr": 5,
+                            "previousOwners": 0,
+                            "upgradeLevel": "0",
+                            "upgradableItemType": false,
+                            "itemQuality": 0,
+                            "itemTier": 0,
+                            "baseUpgradeBonus": [],
+                            "cardGameItem": false,
+                            "premiumItem": false,
+                            "upgradedItem": false
+                        }
+                    }
+                ],
+                "operation": 4
+            }
+        }
+    ],
+    "ignoreSerial": 1,
+    "time": 1577797484204,
+    "serialNo": 9822,
+    "response": []
+}

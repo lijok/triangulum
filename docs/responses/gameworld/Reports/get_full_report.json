@@ -1,0 +1,179 @@
+{
+    "time": 1577793870564,
+    "serialNo": 9434,
+    "response": {
+        "header": {
+            "_id": {
+                "$id": "5e0ad1dfc84eac1bcc77673e"
+            },
+            "sourceId": 535674907,
+            "sourceName": "Kir\u00e1lyv\u00e1r",
+            "destId": 534986754,
+            "destType": 1,
+            "destName": "[00]",
+            "sourcePlayerId": 348,
+            "sourcePlayerName": "Sara96",
+            "sourceKingdomId": "222",
+            "sourceKingdomTag": "Maki",
+            "sourceTribeId": "1",
+            "destPlayerId": 5230,
+            "destPlayerName": "lijok",
+            "destKingdomId": "0",
+            "destKingdomTag": "",
+            "destTribeId": "3",
+            "destX": "2",
+            "destY": "-58",
+            "attackType": "4",
+            "troopId": 6580210,
+            "capacity": 0,
+            "bounty": 0,
+            "ownRole": "defender",
+            "otherKingdomId": "222",
+            "playerId": 5230,
+            "time": 1577767391,
+            "displayType": 4,
+            "notificationType": 4,
+            "attackerTroopSum": 0,
+            "attackerTroopLossSum": 0,
+            "defenderTroopSum": 325,
+            "defenderTroopLossSum": 0,
+            "securityCode": "6a589",
+            "bodyId": {
+                "$id": "5e0ad1dfc84eac1bcc77673d"
+            },
+            "collection": "own",
+            "neededRights": 0
+        },
+        "body": {
+            "_id": {
+                "$id": "5e0ad1dfc84eac1bcc77673d"
+            },
+            "sourceId": 535674907,
+            "sourceName": "Kir\u00e1lyv\u00e1r",
+            "destId": 534986754,
+            "destType": 1,
+            "destName": "[00]",
+            "sourcePlayerId": 348,
+            "sourcePlayerName": "Sara96",
+            "sourceKingdomId": "222",
+            "sourceKingdomTag": "Maki",
+            "sourceTribeId": "1",
+            "destPlayerId": 5230,
+            "destPlayerName": "lijok",
+            "destKingdomId": "0",
+            "destKingdomTag": "",
+            "destTribeId": "3",
+            "destX": "2",
+            "destY": "-58",
+            "attackType": "4",
+            "troopId": 6580210,
+            "capacity": 0,
+            "bounty": null,
+            "ownRole": "defender",
+            "otherKingdomId": "222",
+            "treasures": null,
+            "victoryPoints": null,
+            "victoryPointsCap": null,
+            "duration": 9794,
+            "supply": "4",
+            "tributeBounty": null,
+            "stolenGoods": null,
+            "playerId": 5230,
+            "time": 1577767391,
+            "modules": [
+                {
+                    "name": "troops/attacker",
+                    "body": {
+                        "tribeId": "1",
+                        "playerId": "348",
+                        "playerName": "Sara96",
+                        "villageId": "535674907",
+                        "villageName": "Kir\u00e1lyv\u00e1r",
+                        "originalTroops": {
+                            "1": 4,
+                            "2": 0,
+                            "3": 0,
+                            "4": 0,
+                            "5": 0,
+                            "6": 0,
+                            "7": 0,
+                            "8": 0,
+                            "9": 0,
+                            "10": 0,
+                            "11": 0
+                        },
+                        "trappedTroops": {
+                            "1": 4,
+                            "2": 0,
+                            "3": 0,
+                            "4": 0,
+                            "5": 0,
+                            "6": 0,
+                            "7": 0,
+                            "8": 0,
+                            "9": 0,
+                            "10": 0,
+                            "11": 0
+                        },
+                        "lostTroops": {
+                            "1": 0,
+                            "2": 0,
+                            "3": 0,
+                            "4": 0,
+                            "5": 0,
+                            "6": 0,
+                            "7": 0,
+                            "8": 0,
+                            "9": 0,
+                            "10": 0,
+                            "11": 0
+                        }
+                    }
+                },
+                {
+                    "name": "troops/defender",
+                    "body": {
+                        "tribeId": "3",
+                        "playerId": "5230",
+                        "playerName": "lijok",
+                        "villageId": "534986754",
+                        "villageName": "[00]",
+                        "originalTroops": {
+                            "1": "246",
+                            "2": "4",
+                            "3": "0",
+                            "4": "0",
+                            "5": "74",
+                            "6": "0",
+                            "7": "0",
+                            "8": "0",
+                            "9": "0",
+                            "10": "0",
+                            "11": "1"
+                        },
+                        "lostTroops": {
+                            "1": 0,
+                            "2": 0,
+                            "3": 0,
+                            "4": 0,
+                            "5": 0,
+                            "6": 0,
+                            "7": 0,
+                            "8": 0,
+                            "9": 0,
+                            "10": 0,
+                            "11": 0
+                        }
+                    }
+                },
+                {
+                    "name": "textLine",
+                    "body": {
+                        "languageKey": "Report.NoInfoPassed",
+                        "data": "x:0"
+                    }
+                }
+            ]
+        }
+    }
+}

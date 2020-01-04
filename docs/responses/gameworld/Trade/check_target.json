@@ -1,0 +1,12 @@
+{
+    "time": 1577650536109,
+    "serialNo": 4142,
+    "response": {
+        "errors": [
+            {
+                "message": "SendResourcesCurrentVillage",
+                "params": null
+            }
+        ]
+    }
+}

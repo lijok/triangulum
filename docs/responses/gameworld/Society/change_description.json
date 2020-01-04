@@ -1,0 +1,35 @@
+{
+    "cache": [
+        {
+            "name": "Society:206",
+            "data": {
+                "groupId": "206",
+                "name": "test",
+                "members": [
+                    {
+                        "playerId": "5230",
+                        "name": "lijok",
+                        "isFounder": true,
+                        "isKing": false,
+                        "kingdomId": "0",
+                        "population": "109",
+                        "villages": 1
+                    }
+                ],
+                "societyId": "206",
+                "attitude": "1",
+                "targetType": "1",
+                "targetId": "535085092",
+                "sharedInformations": "15",
+                "profile": {
+                    "groupId": "206",
+                    "description": ""
+                }
+            }
+        }
+    ],
+    "ignoreSerial": 1,
+    "time": 1577647256860,
+    "serialNo": 3829,
+    "response": []
+}

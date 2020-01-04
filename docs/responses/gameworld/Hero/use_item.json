@@ -1,0 +1,98 @@
+{
+    "cache": [
+        {
+            "name": "Collection:HeroItem:own",
+            "data": {
+                "cache": [
+                    {
+                        "name": "HeroItem:210422",
+                        "data": {
+                            "id": "210422",
+                            "playerId": "5230",
+                            "tribeId": 0,
+                            "inSlot": "0",
+                            "itemId": "112",
+                            "itemType": "112",
+                            "amount": 51,
+                            "strength": "1",
+                            "images": [
+                                "ointment"
+                            ],
+                            "bonuses": {
+                                "14": "1"
+                            },
+                            "stackable": true,
+                            "slot": -1,
+                            "lastChange": "1577797378",
+                            "hasSpeedBonus": false,
+                            "inventorySlotNr": "2",
+                            "previousOwners": 0,
+                            "upgradeLevel": "0",
+                            "upgradableItemType": false,
+                            "itemQuality": 0,
+                            "itemTier": 0,
+                            "baseUpgradeBonus": [],
+                            "cardGameItem": false,
+                            "premiumItem": false,
+                            "upgradedItem": false
+                        }
+                    }
+                ],
+                "operation": 4
+            }
+        },
+        {
+            "name": "Hero:5230",
+            "data": {
+                "playerId": "5230",
+                "villageId": "534986754",
+                "destVillageId": "535052291",
+                "status": "4",
+                "health": 31.484189814813,
+                "lastHealthTime": "1577799731",
+                "baseRegenerationRate": 30,
+                "regenerationRate": 46,
+                "fightStrength": 1760,
+                "fightStrengthPoints": "18",
+                "attBonusPoints": "0",
+                "defBonusPoints": "0",
+                "resBonusPoints": "6",
+                "resBonusType": "0",
+                "freePoints": "0",
+                "speed": 50,
+                "untilTime": "1577799989",
+                "bonuses": {
+                    "17": 14,
+                    "3": 9,
+                    "14": 16,
+                    "10": 31,
+                    "13": 1500,
+                    "unitBonuses": {
+                        "25": 10
+                    },
+                    "18": 6
+                },
+                "maxScrollsPerDay": "0",
+                "scrollsUsedToday": "0",
+                "waterbucketUsedToday": "0",
+                "ointmentsUsedToday": 25,
+                "adventurePointCardUsedToday": "0",
+                "resourceChestsUsedToday": "0",
+                "cropChestsUsedToday": "0",
+                "artworkUsedToday": "0",
+                "isMoving": true,
+                "adventurePoints": "1",
+                "adventurePointTime": "1577811774",
+                "levelUp": "0",
+                "xp": "1255",
+                "xpThisLevel": 1050,
+                "xpNextLevel": 1400,
+                "level": "6"
+            }
+        }
+    ],
+    "ignoreSerial": 2,
+    "time": 1577799731496,
+    "serialNo": 9976,
+    "response": []
+}

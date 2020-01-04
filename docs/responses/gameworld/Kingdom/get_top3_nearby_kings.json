@@ -1,0 +1,26 @@
+{
+    "serialNo": 9430,
+    "response": [
+        {
+            "playerId": "5302",
+            "villageId": "535085062",
+            "distance": 5,
+            "governorCount": 0,
+            "population": "145"
+        },
+        {
+            "playerId": "916",
+            "villageId": "534986746",
+            "distance": 8,
+            "governorCount": 41,
+            "population": "6847"
+        },
+        {
+            "playerId": "4177",
+            "villageId": "535052298",
+            "distance": 8.2462112512353,
+            "governorCount": 0,
+            "population": "261"
+        }
+    ]
+}

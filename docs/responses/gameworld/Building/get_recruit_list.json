@@ -1,0 +1,70 @@
+{
+    "time": 1577817241038,
+    "serialNo": 10547,
+    "response": {
+        "buildable": {
+            "23": {
+                "costs": {
+                    "1": 140,
+                    "2": 110,
+                    "3": 20,
+                    "4": 0
+                },
+                "time": 301,
+                "crop": 2,
+                "currentStrength": {
+                    "attack": 0,
+                    "defence": 20,
+                    "defenceCavalry": 10
+                }
+            }
+        },
+        "notResearched": {
+            "24": {
+                "costs": {
+                    "1": 200,
+                    "2": 280,
+                    "3": 130,
+                    "4": 0
+                },
+                "time": 549,
+                "crop": 2,
+                "currentStrength": {
+                    "attack": 90,
+                    "defence": 25,
+                    "defenceCavalry": 40
+                }
+            },
+            "25": {
+                "costs": {
+                    "1": 300,
+                    "2": 270,
+                    "3": 190,
+                    "4": 0
+                },
+                "time": 567,
+                "crop": 2,
+                "currentStrength": {
+                    "attack": 45,
+                    "defence": 115,
+                    "defenceCavalry": 55
+                }
+            },
+            "26": {
+                "costs": {
+                    "1": 300,
+                    "2": 380,
+                    "3": 440,
+                    "4": 0
+                },
+                "time": 690,
+                "crop": 3,
+                "currentStrength": {
+                    "attack": 140,
+                    "defence": 60,
+                    "defenceCavalry": 165
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,553 @@
+{
+    "cache": [
+        {
+            "name": "Village:534986754",
+            "data": {
+                "villageId": "534986754",
+                "playerId": "5230",
+                "name": "[00]",
+                "tribeId": "3",
+                "belongsToKing": "0",
+                "belongsToKingdom": 0,
+                "type": "1",
+                "population": "236",
+                "coordinates": {
+                    "x": "2",
+                    "y": "-58"
+                },
+                "isMainVillage": true,
+                "isTown": false,
+                "treasuresUsable": "0",
+                "treasures": "0",
+                "allowTributeCollection": "1",
+                "protectionGranted": "0",
+                "tributeCollectorPlayerId": 0,
+                "realTributePercent": 0.2,
+                "supplyBuildings": "236",
+                "supplyTroops": "357",
+                "production": {
+                    "1": "1155",
+                    "2": "1350",
+                    "3": "1088",
+                    "4": "562"
+                },
+                "storage": {
+                    "1": 6622.5375000001,
+                    "2": 4773.875,
+                    "3": 7370.3599999995,
+                    "4": 11685.633055555
+                },
+                "treasury": {
+                    "1": "0",
+                    "2": "0",
+                    "3": "0",
+                    "4": 0
+                },
+                "storageCapacity": {
+                    "1": "22500",
+                    "2": "22500",
+                    "3": "22500",
+                    "4": "15000"
+                },
+                "usedControlPoints": "0",
+                "availableControlPoints": "0",
+                "culturePoints": 586.40385416655,
+                "celebrationType": "0",
+                "celebrationEnd": "0",
+                "culturePointProduction": "354",
+                "treasureResourceBonus": "0",
+                "acceptance": 100,
+                "acceptanceProduction": "0.01666",
+                "tributes": {
+                    "1": 0,
+                    "2": 0,
+                    "3": 0,
+                    "4": 0
+                },
+                "tributesCapacity": "22500",
+                "tributeTreasures": 4,
+                "tributeProduction": 718,
+                "tributeProductionDetail": {
+                    "1": 231,
+                    "2": 270,
+                    "3": 217,
+                    "4": 0
+                },
+                "tributeTime": "0",
+                "tributesRequiredToFetch": 4500,
+                "estimatedWarehouseLevel": 13
+            }
+        },
+        {
+            "name": "UnitResearchQueue:534986754",
+            "data": {
+                "villageId": "534986754",
+                "buildingTypes": {
+                    "22": [
+                        {
+                            "unitType": 24,
+                            "researchLevel": 0,
+                            "startTime": "1577817269",
+                            "finished": 1577820349,
+                            "pause": -1
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Research:534986754",
+            "data": {
+                "researchQueueFull": true,
+                "upgradeQueueFull": false,
+                "units": [
+                    {
+                        "unitType": 21,
+                        "unitLevel": "1",
+                        "costs": {
+                            "1": 1210,
+                            "2": 1395,
+                            "3": 960,
+                            "4": 0
+                        },
+                        "time": 3670,
+                        "canResearch": true,
+                        "canUpgrade": true,
+                        "unitsInUpgrade": 0,
+                        "required": [],
+                        "maxLevel": 20,
+                        "currentStrength": {
+                            "attack": 15.4,
+                            "defence": 40.6,
+                            "defenceCavalry": 50.7
+                        },
+                        "researchStrength": [
+                            {
+                                "level": 2,
+                                "attack": 15.8,
+                                "defence": 41.2,
+                                "defenceCavalry": 51.3
+                            },
+                            {
+                                "level": 3,
+                                "attack": 16.2,
+                                "defence": 41.8,
+                                "defenceCavalry": 52
+                            },
+                            {
+                                "level": 4,
+                                "attack": 16.6,
+                                "defence": 42.3,
+                                "defenceCavalry": 52.6
+                            }
+                        ]
+                    },
+                    {
+                        "unitType": 22,
+                        "unitLevel": "1",
+                        "costs": {
+                            "1": 1330,
+                            "2": 905,
+                            "3": 2055,
+                            "4": 0
+                        },
+                        "time": 4565,
+                        "canResearch": true,
+                        "canUpgrade": true,
+                        "unitsInUpgrade": 0,
+                        "required": [],
+                        "maxLevel": 20,
+                        "currentStrength": {
+                            "attack": 65.8,
+                            "defence": 35.6,
+                            "defenceCavalry": 20.4
+                        },
+                        "researchStrength": [
+                            {
+                                "level": 2,
+                                "attack": 66.5,
+                                "defence": 36.1,
+                                "defenceCavalry": 20.9
+                            },
+                            {
+                                "level": 3,
+                                "attack": 67.3,
+                                "defence": 36.7,
+                                "defenceCavalry": 21.3
+                            },
+                            {
+                                "level": 4,
+                                "attack": 68.1,
+                                "defence": 37.2,
+                                "defenceCavalry": 21.8
+                            }
+                        ]
+                    },
+                    {
+                        "unitType": 23,
+                        "unitLevel": "0",
+                        "costs": {
+                            "1": 540,
+                            "2": 435,
+                            "3": 170,
+                            "4": 0
+                        },
+                        "time": 3171,
+                        "canResearch": true,
+                        "canUpgrade": true,
+                        "unitsInUpgrade": 0,
+                        "required": [],
+                        "maxLevel": 20,
+                        "currentStrength": {
+                            "attack": 0,
+                            "defence": 20,
+                            "defenceCavalry": 10
+                        },
+                        "researchStrength": [
+                            {
+                                "level": 1,
+                                "attack": 0.6,
+                                "defence": 20.7,
+                                "defenceCavalry": 10.7
+                            },
+                            {
+                                "level": 2,
+                                "attack": 1.2,
+                                "defence": 21.5,
+                                "defenceCavalry": 11.3
+                            },
+                            {
+                                "level": 3,
+                                "attack": 1.8,
+                                "defence": 22.2,
+                                "defenceCavalry": 12
+                            }
+                        ]
+                    },
+                    {
+                        "unitType": 24,
+                        "unitLevel": "-2",
+                        "costs": {
+                            "1": 1300,
+                            "2": 1220,
+                            "3": 1240,
+                            "4": 0
+                        },
+                        "time": 3080,
+                        "canResearch": true,
+                        "canUpgrade": true,
+                        "unitsInUpgrade": 1,
+                        "required": [
+                            {
+                                "buildingType": 22,
+                                "requiredLevel": 5,
+                                "currentLevel": "5",
+                                "valid": true
+                            },
+                            {
+                                "buildingType": 20,
+                                "requiredLevel": 3,
+                                "currentLevel": "4",
+                                "valid": true
+                            }
+                        ],
+                        "maxLevel": 20,
+                        "currentStrength": {
+                            "attack": 90,
+                            "defence": 25,
+                            "defenceCavalry": 40
+                        },
+                        "researchStrength": [
+                            {
+                                "level": -1,
+                                "attack": 90,
+                                "defence": 25,
+                                "defenceCavalry": 40
+                            },
+                            {
+                                "level": 0,
+                                "attack": 90,
+                                "defence": 25,
+                                "defenceCavalry": 40
+                            },
+                            {
+                                "level": 1,
+                                "attack": 91.2,
+                                "defence": 25.8,
+                                "defenceCavalry": 40.9
+                            }
+                        ]
+                    },
+                    {
+                        "unitType": 25,
+                        "unitLevel": "-2",
+                        "costs": {
+                            "1": 1900,
+                            "2": 1180,
+                            "3": 1720,
+                            "4": 0
+                        },
+                        "time": 3160,
+                        "canResearch": false,
+                        "canUpgrade": true,
+                        "unitsInUpgrade": 0,
+                        "required": [
+                            {
+                                "buildingType": 22,
+                                "requiredLevel": 5,
+                                "currentLevel": "5",
+                                "valid": true
+                            },
+                            {
+                                "buildingType": 20,
+                                "requiredLevel": 5,
+                                "currentLevel": "4",
+                                "valid": false
+                            }
+                        ],
+                        "maxLevel": 20,
+                        "currentStrength": {
+                            "attack": 45,
+                            "defence": 115,
+                            "defenceCavalry": 55
+                        },
+                        "researchStrength": [
+                            {
+                                "level": -1,
+                                "attack": 45,
+                                "defence": 115,
+                                "defenceCavalry": 55
+                            },
+                            {
+                                "level": 0,
+                                "attack": 45,
+                                "defence": 115,
+                                "defenceCavalry": 55
+                            },
+                            {
+                                "level": 1,
+                                "attack": 45.9,
+                                "defence": 116.4,
+                                "defenceCavalry": 56
+                            }
+                        ]
+                    },
+                    {
+                        "unitType": 26,
+                        "unitLevel": "-2",
+                        "costs": {
+                            "1": 1900,
+                            "2": 1620,
+                            "3": 3720,
+                            "4": 0
+                        },
+                        "time": 3720,
+                        "canResearch": false,
+                        "canUpgrade": true,
+                        "unitsInUpgrade": 0,
+                        "required": [
+                            {
+                                "buildingType": 22,
+                                "requiredLevel": 15,
+                                "currentLevel": "5",
+                                "valid": false
+                            },
+                            {
+                                "buildingType": 20,
+                                "requiredLevel": 10,
+                                "currentLevel": "4",
+                                "valid": false
+                            }
+                        ],
+                        "maxLevel": 20,
+                        "currentStrength": {
+                            "attack": 140,
+                            "defence": 60,
+                            "defenceCavalry": 165
+                        },
+                        "researchStrength": [
+                            {
+                                "level": -1,
+                                "attack": 140,
+                                "defence": 60,
+                                "defenceCavalry": 165
+                            },
+                            {
+                                "level": 0,
+                                "attack": 140,
+                                "defence": 60,
+                                "defenceCavalry": 165
+                            },
+                            {
+                                "level": 1,
+                                "attack": 141.9,
+                                "defence": 61.3,
+                                "defenceCavalry": 167.1
+                            }
+                        ]
+                    },
+                    {
+                        "unitType": 27,
+                        "unitLevel": "-2",
+                        "costs": {
+                            "1": 4600,
+                            "2": 1580,
+                            "3": 1960,
+                            "4": 0
+                        },
+                        "time": 5600,
+                        "canResearch": false,
+                        "canUpgrade": true,
+                        "unitsInUpgrade": 0,
+                        "required": [
+                            {
+                                "buildingType": 22,
+                                "requiredLevel": 10,
+                                "currentLevel": "5",
+                                "valid": false
+                            },
+                            {
+                                "buildingType": 21,
+                                "requiredLevel": 1,
+                                "currentLevel": 0,
+                                "valid": false
+                            }
+                        ],
+                        "maxLevel": 20,
+                        "currentStrength": {
+                            "attack": 50,
+                            "defence": 30,
+                            "defenceCavalry": 105
+                        },
+                        "researchStrength": [
+                            {
+                                "level": -1,
+                                "attack": 50,
+                                "defence": 30,
+                                "defenceCavalry": 105
+                            },
+                            {
+                                "level": 0,
+                                "attack": 50,
+                                "defence": 30,
+                                "defenceCavalry": 105
+                            },
+                            {
+                                "level": 1,
+                                "attack": 51.3,
+                                "defence": 31.1,
+                                "defenceCavalry": 106.6
+                            }
+                        ]
+                    },
+                    {
+                        "unitType": 28,
+                        "unitLevel": "-2",
+                        "costs": {
+                            "1": 3640,
+                            "2": 4900,
+                            "3": 3400,
+                            "4": 0
+                        },
+                        "time": 9600,
+                        "canResearch": false,
+                        "canUpgrade": true,
+                        "unitsInUpgrade": 0,
+                        "required": [
+                            {
+                                "buildingType": 22,
+                                "requiredLevel": 15,
+                                "currentLevel": "5",
+                                "valid": false
+                            },
+                            {
+                                "buildingType": 21,
+                                "requiredLevel": 10,
+                                "currentLevel": 0,
+                                "valid": false
+                            }
+                        ],
+                        "maxLevel": 20,
+                        "currentStrength": {
+                            "attack": 70,
+                            "defence": 45,
+                            "defenceCavalry": 10
+                        },
+                        "researchStrength": [
+                            {
+                                "level": -1,
+                                "attack": 70,
+                                "defence": 45,
+                                "defenceCavalry": 10
+                            },
+                            {
+                                "level": 0,
+                                "attack": 70,
+                                "defence": 45,
+                                "defenceCavalry": 10
+                            },
+                            {
+                                "level": 1,
+                                "attack": 72.3,
+                                "defence": 47.1,
+                                "defenceCavalry": 11.9
+                            }
+                        ]
+                    },
+                    {
+                        "unitType": 29,
+                        "unitLevel": "-2",
+                        "costs": {
+                            "1": 15880,
+                            "2": 22900,
+                            "3": 25200,
+                            "4": 0
+                        },
+                        "time": 8158,
+                        "canResearch": false,
+                        "canUpgrade": true,
+                        "unitsInUpgrade": 0,
+                        "required": [
+                            {
+                                "buildingType": 22,
+                                "requiredLevel": 20,
+                                "currentLevel": "5",
+                                "valid": false
+                            },
+                            {
+                                "buildingType": 16,
+                                "requiredLevel": 10,
+                                "currentLevel": "1",
+                                "valid": false
+                            }
+                        ],
+                        "maxLevel": 0,
+                        "currentStrength": {
+                            "attack": 40,
+                            "defence": 50,
+                            "defenceCavalry": 50
+                        },
+                        "researchStrength": [
+                            {
+                                "level": -1,
+                                "attack": 40,
+                                "defence": 50,
+                                "defenceCavalry": 50
+                            },
+                            {
+                                "level": 0,
+                                "attack": 40,
+                                "defence": 50,
+                                "defenceCavalry": 50
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ],
+    "ignoreSerial": 3,
+    "time": 1577817269185,
+    "serialNo": 10579,
+    "response": []
+}

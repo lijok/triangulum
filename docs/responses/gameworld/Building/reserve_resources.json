@@ -1,0 +1,132 @@
+{
+    "cache": [
+        {
+            "name": "BuildingQueue:534986754",
+            "data": {
+                "villageId": 534986754,
+                "tribeId": "3",
+                "freeSlots": {
+                    "1": 0,
+                    "2": 0,
+                    "4": 0
+                },
+                "queues": {
+                    "1": [],
+                    "2": [
+                        {
+                            "id": "2939615",
+                            "villageId": "534986754",
+                            "locationId": "6",
+                            "buildingType": "2",
+                            "queueType": "2",
+                            "timeStart": "1577635980",
+                            "finished": "1577636390",
+                            "isRubble": "0",
+                            "paid": "1",
+                            "waiting": false
+                        }
+                    ],
+                    "4": [
+                        {
+                            "id": "2939634",
+                            "villageId": "534986754",
+                            "locationId": "23",
+                            "buildingType": "18",
+                            "queueType": "4",
+                            "timeStart": "0",
+                            "finished": "1577636003",
+                            "isRubble": "0",
+                            "paid": 1,
+                            "waiting": false
+                        }
+                    ],
+                    "5": []
+                },
+                "canUseInstantConstruction": true,
+                "canUseInstantConstructionOnlyInVillage": false
+            }
+        },
+        {
+            "name": "Village:534986754",
+            "data": {
+                "villageId": "534986754",
+                "playerId": "5230",
+                "name": "[00]",
+                "tribeId": "3",
+                "belongsToKing": "0",
+                "belongsToKingdom": 0,
+                "type": "1",
+                "population": "103",
+                "coordinates": {
+                    "x": "2",
+                    "y": "-58"
+                },
+                "isMainVillage": true,
+                "isTown": false,
+                "treasuresUsable": "0",
+                "treasures": "0",
+                "allowTributeCollection": "1",
+                "protectionGranted": "0",
+                "tributeCollectorPlayerId": 0,
+                "realTributePercent": 0.2,
+                "supplyBuildings": "103",
+                "supplyTroops": "14",
+                "production": {
+                    "1": "405",
+                    "2": "405",
+                    "3": "338",
+                    "4": "198"
+                },
+                "storage": {
+                    "1": 365.097720299,
+                    "2": 2.9646948614101,
+                    "3": 17.042827408556,
+                    "4": 486.4917018748
+                },
+                "treasury": {
+                    "1": "0",
+                    "2": "0",
+                    "3": "0",
+                    "4": 0
+                },
+                "storageCapacity": {
+                    "1": "2300",
+                    "2": "2300",
+                    "3": "2300",
+                    "4": "2300"
+                },
+                "usedControlPoints": "0",
+                "availableControlPoints": "0",
+                "culturePoints": 28.887604166666,
+                "celebrationType": "0",
+                "celebrationEnd": "0",
+                "culturePointProduction": "177",
+                "treasureResourceBonus": "0",
+                "acceptance": 100,
+                "acceptanceProduction": "0.01666",
+                "tributes": {
+                    "1": 0,
+                    "2": 0,
+                    "3": 0,
+                    "4": 0
+                },
+                "tributesCapacity": "2300",
+                "tributeTreasures": 2,
+                "tributeProduction": 229,
+                "tributeProductionDetail": {
+                    "1": 81,
+                    "2": 81,
+                    "3": 67,
+                    "4": 0
+                },
+                "tributeTime": "0",
+                "tributesRequiredToFetch": 460,
+                "estimatedWarehouseLevel": 3
+            }
+        }
+    ],
+    "ignoreSerial": 2,
+    "time": 1577636044500,
+    "serialNo": 2956,
+    "response": []
+}

@@ -1,0 +1,36 @@
+{
+    "cache": [
+        {
+            "name": "Settings:5230",
+            "data": {
+                "playerId": "5230",
+                "premiumConfirmation": 0,
+                "lang": "en",
+                "onlineStatusFilter": 0,
+                "extendedSimulator": true,
+                "musicVolume": 0,
+                "soundVolume": 0,
+                "uiSoundVolume": 22,
+                "muteAll": true,
+                "timeType": 2,
+                "timeZone": 0,
+                "timeZoneString": "\u00b10:00",
+                "timeZoneSwitcher": 1,
+                "timeFormat": 0,
+                "attacksFilter": 2,
+                "mapFilter": -1,
+                "disableTabNotifications": 0,
+                "enableTabNotifications": true,
+                "disableAnimations": true,
+                "notpadsVisible": true,
+                "disableHelpNotifications": true,
+                "enableHelpNotifications": 0,
+                "enableWelcomeScreen": 0
+            }
+        }
+    ],
+    "ignoreSerial": 1,
+    "time": 1577639478988,
+    "serialNo": 3274,
+    "response": []
+}

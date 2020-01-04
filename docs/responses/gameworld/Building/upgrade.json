@@ -1,0 +1,313 @@
+{
+    "cache": [
+        {
+            "name": "BuildingQueue:534986754",
+            "data": {
+                "villageId": "534986754",
+                "tribeId": "3",
+                "freeSlots": {
+                    "1": 0,
+                    "2": 0,
+                    "4": 1
+                },
+                "queues": {
+                    "1": [],
+                    "2": [
+                        {
+                            "villageId": "534986754",
+                            "locationId": 18,
+                            "buildingType": "2",
+                            "queueType": 2,
+                            "timeStart": "1577793884",
+                            "finished": 1577796224,
+                            "isRubble": 0,
+                            "paid": 1,
+                            "id": 3071533,
+                            "waiting": false
+                        }
+                    ],
+                    "4": [],
+                    "5": []
+                },
+                "canUseInstantConstruction": true,
+                "canUseInstantConstructionOnlyInVillage": false
+            }
+        },
+        {
+            "name": "Building:739363",
+            "data": {
+                "buildingType": "2",
+                "villageId": "534986754",
+                "locationId": "18",
+                "lvl": "6",
+                "lvlNext": 8,
+                "isMaxLvl": false,
+                "lvlMax": 99,
+                "upgradeCosts": {
+                    "1": 2900,
+                    "2": 1450,
+                    "3": 2900,
+                    "4": 1810
+                },
+                "nextUpgradeCosts": {
+                    "6": {
+                        "1": 1735,
+                        "2": 870,
+                        "3": 1735,
+                        "4": 1085
+                    },
+                    "7": {
+                        "1": 2900,
+                        "2": 1450,
+                        "3": 2900,
+                        "4": 1810
+                    },
+                    "8": {
+                        "1": 4840,
+                        "2": 2420,
+                        "3": 4840,
+                        "4": 3025
+                    },
+                    "9": {
+                        "1": 8080,
+                        "2": 4040,
+                        "3": 8080,
+                        "4": 5050
+                    },
+                    "10": {
+                        "1": 13500,
+                        "2": 6750,
+                        "3": 13500,
+                        "4": 8435
+                    },
+                    "11": {
+                        "1": 22540,
+                        "2": 11270,
+                        "3": 22540,
+                        "4": 14090
+                    },
+                    "12": {
+                        "1": 37645,
+                        "2": 18820,
+                        "3": 37645,
+                        "4": 23525
+                    }
+                },
+                "upgradeTime": 4740,
+                "nextUpgradeTimes": {
+                    "6": 2340,
+                    "7": 4740,
+                    "8": 7080,
+                    "9": 10500,
+                    "10": 14100,
+                    "11": 17700,
+                    "12": 21300
+                },
+                "upgradeSupplyUsage": 2,
+                "upgradeSupplyUsageSums": {
+                    "6": 8,
+                    "7": 10,
+                    "8": 12,
+                    "9": 14,
+                    "10": 16,
+                    "11": 18,
+                    "12": 20
+                },
+                "category": 3,
+                "sortOrder": 2,
+                "effect": [
+                    150,
+                    210,
+                    300,
+                    435,
+                    600,
+                    840,
+                    1125
+                ]
+            }
+        },
+        {
+            "name": "Village:534986754",
+            "data": {
+                "villageId": "534986754",
+                "playerId": "5230",
+                "name": "[00]",
+                "tribeId": "3",
+                "belongsToKing": "0",
+                "belongsToKingdom": 0,
+                "type": "1",
+                "population": 216,
+                "coordinates": {
+                    "x": "2",
+                    "y": "-58"
+                },
+                "isMainVillage": true,
+                "isTown": false,
+                "treasuresUsable": "0",
+                "treasures": "0",
+                "allowTributeCollection": "1",
+                "protectionGranted": "0",
+                "tributeCollectorPlayerId": 0,
+                "realTributePercent": 0.2,
+                "supplyBuildings": 216,
+                "supplyTroops": "398",
+                "production": {
+                    "1": 1061,
+                    "2": 1163,
+                    "3": 885,
+                    "4": 541
+                },
+                "storage": {
+                    "1": 6140,
+                    "2": 7005,
+                    "3": 6140,
+                    "4": 6652.8275352099
+                },
+                "treasury": {
+                    "1": "0",
+                    "2": "0",
+                    "3": "0",
+                    "4": 0
+                },
+                "storageCapacity": {
+                    "1": "7875",
+                    "2": "7875",
+                    "3": "7875",
+                    "4": "7875"
+                },
+                "usedControlPoints": "0",
+                "availableControlPoints": "0",
+                "culturePoints": 497.0111458333,
+                "celebrationType": "0",
+                "celebrationEnd": "0",
+                "culturePointProduction": 318,
+                "treasureResourceBonus": "0",
+                "acceptance": 100,
+                "acceptanceProduction": 0.01666,
+                "tributes": {
+                    "1": 0,
+                    "2": 0,
+                    "3": 0,
+                    "4": 0
+                },
+                "tributesCapacity": "7875",
+                "tributeTreasures": 4,
+                "tributeProduction": 621,
+                "tributeProductionDetail": {
+                    "1": 212,
+                    "2": 232,
+                    "3": 177,
+                    "4": 0
+                },
+                "tributeTime": "0",
+                "tributesRequiredToFetch": 1575,
+                "estimatedWarehouseLevel": 8
+            }
+        },
+        {
+            "name": "Collection:Building:534986754",
+            "data": {
+                "cache": [
+                    {
+                        "name": "Building:739363",
+                        "data": {
+                            "buildingType": "2",
+                            "villageId": "534986754",
+                            "locationId": "18",
+                            "lvl": "6",
+                            "lvlNext": 8,
+                            "isMaxLvl": false,
+                            "lvlMax": 99,
+                            "upgradeCosts": {
+                                "1": 2900,
+                                "2": 1450,
+                                "3": 2900,
+                                "4": 1810
+                            },
+                            "nextUpgradeCosts": {
+                                "6": {
+                                    "1": 1735,
+                                    "2": 870,
+                                    "3": 1735,
+                                    "4": 1085
+                                },
+                                "7": {
+                                    "1": 2900,
+                                    "2": 1450,
+                                    "3": 2900,
+                                    "4": 1810
+                                },
+                                "8": {
+                                    "1": 4840,
+                                    "2": 2420,
+                                    "3": 4840,
+                                    "4": 3025
+                                },
+                                "9": {
+                                    "1": 8080,
+                                    "2": 4040,
+                                    "3": 8080,
+                                    "4": 5050
+                                },
+                                "10": {
+                                    "1": 13500,
+                                    "2": 6750,
+                                    "3": 13500,
+                                    "4": 8435
+                                },
+                                "11": {
+                                    "1": 22540,
+                                    "2": 11270,
+                                    "3": 22540,
+                                    "4": 14090
+                                },
+                                "12": {
+                                    "1": 37645,
+                                    "2": 18820,
+                                    "3": 37645,
+                                    "4": 23525
+                                }
+                            },
+                            "upgradeTime": 4740,
+                            "nextUpgradeTimes": {
+                                "6": 2340,
+                                "7": 4740,
+                                "8": 7080,
+                                "9": 10500,
+                                "10": 14100,
+                                "11": 17700,
+                                "12": 21300
+                            },
+                            "upgradeSupplyUsage": 2,
+                            "upgradeSupplyUsageSums": {
+                                "6": 8,
+                                "7": 10,
+                                "8": 12,
+                                "9": 14,
+                                "10": 16,
+                                "11": 18,
+                                "12": 20
+                            },
+                            "category": 3,
+                            "sortOrder": 2,
+                            "effect": [
+                                150,
+                                210,
+                                300,
+                                435,
+                                600,
+                                840,
+                                1125
+                            ]
+                        }
+                    }
+                ],
+                "operation": 5
+            }
+        }
+    ],
+    "ignoreSerial": 4,
+    "time": 1577793884126,
+    "serialNo": 9444,
+    "response": []
+}

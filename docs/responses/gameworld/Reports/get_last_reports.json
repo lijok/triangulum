@@ -1,0 +1,419 @@
+{
+    "time": 1577793870697,
+    "serialNo": 9436,
+    "response": {
+        "reports": [
+            {
+                "_id": {
+                    "$id": "5e0ad1dfc84eac1bcc77673e"
+                },
+                "sourceId": 535674907,
+                "sourceName": "Kir\u00e1lyv\u00e1r",
+                "destId": 534986754,
+                "destType": 1,
+                "destName": "[00]",
+                "sourcePlayerId": 348,
+                "sourcePlayerName": "Sara96",
+                "sourceKingdomId": "222",
+                "sourceKingdomTag": "Maki",
+                "sourceTribeId": "1",
+                "destPlayerId": 5230,
+                "destPlayerName": "lijok",
+                "destKingdomId": "0",
+                "destKingdomTag": "",
+                "destTribeId": "3",
+                "destX": "2",
+                "destY": "-58",
+                "attackType": "4",
+                "troopId": 6580210,
+                "capacity": 0,
+                "bounty": 0,
+                "ownRole": "defender",
+                "otherKingdomId": "222",
+                "playerId": 5230,
+                "time": 1577767391,
+                "displayType": 4,
+                "notificationType": 4,
+                "attackerTroopSum": 0,
+                "attackerTroopLossSum": 0,
+                "defenderTroopSum": 325,
+                "defenderTroopLossSum": 0,
+                "securityCode": "6a589",
+                "bodyId": {
+                    "$id": "5e0ad1dfc84eac1bcc77673d"
+                },
+                "collection": "own",
+                "neededRights": 0
+            },
+            {
+                "_id": {
+                    "$id": "5e0ab6f6c84eac12a77766ba"
+                },
+                "sourceId": 534986754,
+                "sourceName": "[00]",
+                "sourcePlayerId": 5230,
+                "sourcePlayerName": "lijok",
+                "sourceKingdomId": "0",
+                "sourceKingdomTag": "",
+                "won": true,
+                "loot": [
+                    {
+                        "type": 14,
+                        "amount": 1,
+                        "subType": 115
+                    }
+                ],
+                "playerId": 5230,
+                "time": 1577760502,
+                "displayType": 3,
+                "notificationType": 21,
+                "securityCode": "da122",
+                "bodyId": {
+                    "$id": "5e0ab6f6c84eac12a77766b9"
+                },
+                "collection": "own",
+                "neededRights": 0
+            },
+            {
+                "_id": {
+                    "$id": "5e0aaf02c84eace7f6776775"
+                },
+                "sourceId": 534986754,
+                "sourceName": "[00]",
+                "destId": -22389,
+                "destType": 5,
+                "destName": "Robber hideout I",
+                "sourcePlayerId": 5230,
+                "sourcePlayerName": "lijok",
+                "sourceKingdomId": "0",
+                "sourceKingdomTag": "",
+                "sourceTribeId": "3",
+                "destPlayerId": -1,
+                "destPlayerName": "Robber",
+                "destKingdomId": null,
+                "destKingdomTag": "",
+                "destTribeId": "1",
+                "destX": 3,
+                "destY": -56,
+                "attackType": "3",
+                "troopId": 6580836,
+                "capacity": 11380,
+                "bounty": 3402,
+                "ownRole": "attacker",
+                "otherKingdomId": null,
+                "playerId": 5230,
+                "time": 1577758466,
+                "displayType": 4,
+                "notificationType": 2,
+                "attackerTroopSum": 329,
+                "attackerTroopLossSum": 4,
+                "defenderTroopSum": 12,
+                "defenderTroopLossSum": 12,
+                "securityCode": "e81c9",
+                "bodyId": {
+                    "$id": "5e0aaf02c84eace7f6776774"
+                },
+                "collection": "own",
+                "neededRights": 0
+            },
+            {
+                "_id": {
+                    "$id": "5e0a7782c84eaceea377668e"
+                },
+                "sourceId": 534986754,
+                "sourceName": "[00]",
+                "sourcePlayerId": 5230,
+                "sourcePlayerName": "lijok",
+                "sourceKingdomId": "0",
+                "sourceKingdomTag": "",
+                "won": true,
+                "loot": [
+                    {
+                        "type": 3,
+                        "amount": {
+                            "1": 1740,
+                            "2": 1140,
+                            "3": 1800,
+                            "4": 1800
+                        },
+                        "subType": null
+                    }
+                ],
+                "playerId": 5230,
+                "time": 1577744258,
+                "displayType": 3,
+                "notificationType": 21,
+                "securityCode": "cbb38",
+                "bodyId": {
+                    "$id": "5e0a7782c84eaceea377668d"
+                },
+                "collection": "own",
+                "neededRights": 0
+            },
+            {
+                "_id": {
+                    "$id": "5e0a4a13c84eac00d777669b"
+                },
+                "sourceId": 534986754,
+                "sourceName": "[00]",
+                "sourcePlayerId": 5230,
+                "sourcePlayerName": "lijok",
+                "sourceKingdomId": "0",
+                "sourceKingdomTag": "",
+                "won": true,
+                "loot": [
+                    {
+                        "type": 2,
+                        "amount": 1,
+                        "subType": 102
+                    }
+                ],
+                "playerId": 5230,
+                "time": 1577732627,
+                "displayType": 3,
+                "notificationType": 21,
+                "securityCode": "10401",
+                "bodyId": {
+                    "$id": "5e0a4a13c84eac00d777669a"
+                },
+                "collection": "own",
+                "neededRights": 0
+            },
+            {
+                "_id": {
+                    "$id": "5e0a3e68c84eacad0f7766b3"
+                },
+                "sourceId": 534986754,
+                "sourceName": "[00]",
+                "destId": -22390,
+                "destType": 5,
+                "destName": "Robber hideout II",
+                "sourcePlayerId": 5230,
+                "sourcePlayerName": "lijok",
+                "sourceKingdomId": "0",
+                "sourceKingdomTag": "",
+                "sourceTribeId": "3",
+                "destPlayerId": -1,
+                "destPlayerName": "Robber",
+                "destKingdomId": null,
+                "destKingdomTag": "",
+                "destTribeId": "2",
+                "destX": 1,
+                "destY": -59,
+                "attackType": "3",
+                "troopId": 6478591,
+                "capacity": 11520,
+                "bounty": 3402,
+                "ownRole": "attacker",
+                "otherKingdomId": null,
+                "playerId": 5230,
+                "time": 1577729640,
+                "displayType": 4,
+                "notificationType": 2,
+                "attackerTroopSum": 333,
+                "attackerTroopLossSum": 4,
+                "defenderTroopSum": 14,
+                "defenderTroopLossSum": 14,
+                "securityCode": "b06b3",
+                "bodyId": {
+                    "$id": "5e0a3e68c84eacad0f7766b2"
+                },
+                "collection": "own",
+                "neededRights": 0
+            },
+            {
+                "_id": {
+                    "$id": "5e0a24f7c84eacd38e776696"
+                },
+                "sourceId": 534986754,
+                "sourceName": "[00]",
+                "destId": -22389,
+                "destType": 5,
+                "destName": "Robber hideout I",
+                "sourcePlayerId": 5230,
+                "sourcePlayerName": "lijok",
+                "sourceKingdomId": "0",
+                "sourceKingdomTag": "",
+                "sourceTribeId": "3",
+                "destPlayerId": -1,
+                "destPlayerName": "Robber",
+                "destKingdomId": null,
+                "destKingdomTag": "",
+                "destTribeId": "3",
+                "destX": 0,
+                "destY": -56,
+                "attackType": "3",
+                "troopId": 6454068,
+                "capacity": 11660,
+                "bounty": 3002,
+                "ownRole": "attacker",
+                "otherKingdomId": null,
+                "playerId": 5230,
+                "time": 1577723127,
+                "displayType": 4,
+                "notificationType": 2,
+                "attackerTroopSum": 335,
+                "attackerTroopLossSum": 3,
+                "defenderTroopSum": 5,
+                "defenderTroopLossSum": 5,
+                "securityCode": "533b3",
+                "bodyId": {
+                    "$id": "5e0a24f7c84eacd38e776695"
+                },
+                "collection": "own",
+                "neededRights": 0
+            },
+            {
+                "_id": {
+                    "$id": "5e0a22bec84eac5dc97766e3"
+                },
+                "sourceId": 534986754,
+                "sourceName": "[00]",
+                "sourcePlayerId": 5230,
+                "sourcePlayerName": "lijok",
+                "sourceKingdomId": "0",
+                "sourceKingdomTag": "",
+                "won": true,
+                "loot": [
+                    {
+                        "type": 14,
+                        "amount": 1,
+                        "subType": 115
+                    }
+                ],
+                "playerId": 5230,
+                "time": 1577722558,
+                "displayType": 3,
+                "notificationType": 21,
+                "securityCode": "fc3d1",
+                "bodyId": {
+                    "$id": "5e0a22bec84eac5dc97766e2"
+                },
+                "collection": "own",
+                "neededRights": 0
+            },
+            {
+                "_id": {
+                    "$id": "5e09efa9c84eaca70d7766a2"
+                },
+                "sourceId": 534986754,
+                "sourceName": "[00]",
+                "sourcePlayerId": 5230,
+                "sourcePlayerName": "lijok",
+                "sourceKingdomId": "0",
+                "sourceKingdomTag": "",
+                "won": true,
+                "loot": [
+                    {
+                        "type": 2,
+                        "amount": 1,
+                        "subType": 42
+                    }
+                ],
+                "playerId": 5230,
+                "time": 1577709481,
+                "displayType": 3,
+                "notificationType": 21,
+                "securityCode": "dfa3f",
+                "bodyId": {
+                    "$id": "5e09efa9c84eaca70d7766a1"
+                },
+                "collection": "own",
+                "neededRights": 0
+            },
+            {
+                "_id": {
+                    "$id": "5e09e9dfc84eacd6407766df"
+                },
+                "sourceId": 534986754,
+                "sourceName": "[00]",
+                "sourcePlayerId": 5230,
+                "sourcePlayerName": "lijok",
+                "sourceKingdomId": "0",
+                "sourceKingdomTag": "",
+                "won": true,
+                "loot": [
+                    {
+                        "type": 3,
+                        "amount": {
+                            "1": 1020,
+                            "2": 780,
+                            "3": 1200,
+                            "4": 1560
+                        },
+                        "subType": null
+                    }
+                ],
+                "playerId": 5230,
+                "time": 1577707999,
+                "displayType": 3,
+                "notificationType": 21,
+                "securityCode": "64eab",
+                "bodyId": {
+                    "$id": "5e09e9dfc84eacd6407766de"
+                },
+                "collection": "own",
+                "neededRights": 0
+            },
+            {
+                "_id": {
+                    "$id": "5e09e2bbc84eac3c0b7766f3"
+                },
+                "sourceId": 534986754,
+                "sourceName": "[00]",
+                "sourcePlayerId": 5230,
+                "sourcePlayerName": "lijok",
+                "sourceKingdomId": "0",
+                "sourceKingdomTag": "",
+                "won": true,
+                "loot": [
+                    {
+                        "type": 2,
+                        "amount": 1,
+                        "subType": 36
+                    }
+                ],
+                "playerId": 5230,
+                "time": 1577706171,
+                "displayType": 3,
+                "notificationType": 21,
+                "securityCode": "1e1d4",
+                "bodyId": {
+                    "$id": "5e09e2bbc84eac3c0b7766f2"
+                },
+                "collection": "own",
+                "neededRights": 0
+            },
+            {
+                "_id": {
+                    "$id": "5e09d37cc84eac688d776696"
+                },
+                "sourceId": 534986754,
+                "sourceName": "[00]",
+                "sourcePlayerId": 5230,
+                "sourcePlayerName": "lijok",
+                "sourceKingdomId": "0",
+                "sourceKingdomTag": "",
+                "won": true,
+                "loot": [
+                    {
+                        "type": 14,
+                        "amount": 12,
+                        "subType": 112
+                    }
+                ],
+                "playerId": 5230,
+                "time": 1577702268,
+                "displayType": 3,
+                "notificationType": 21,
+                "securityCode": "b4017",
+                "bodyId": {
+                    "$id": "5e09d37cc84eac688d776695"
+                },
+                "collection": "own",
+                "neededRights": 0
+            }
+        ],
+        "totalNumberOfReports": 49
+    }
+}

@@ -1,0 +1,50 @@
+{
+    "cache": [
+        {
+            "name": "Collection:GroupInvitation:group:2:223",
+            "data": {
+                "cache": [
+                    {
+                        "name": "GroupInvitation:17288",
+                        "data": {
+                            "id": "17288",
+                            "groupId": "223",
+                            "groupName": "test",
+                            "playerId": "2923",
+                            "playerName": "Perantesh",
+                            "invitedBy": "5230",
+                            "invitedByName": "lijok",
+                            "invitedAs": "0",
+                            "invitationTime": "1577649995",
+                            "customText": "aaaa",
+                            "cellId": "0",
+                            "invitedByRole": "0"
+                        }
+                    },
+                    {
+                        "name": "GroupInvitation:17289",
+                        "data": {
+                            "id": "17289",
+                            "groupId": "223",
+                            "groupName": "test",
+                            "playerId": "4907",
+                            "playerName": "Test",
+                            "invitedBy": "5230",
+                            "invitedByName": "lijok",
+                            "invitedAs": "0",
+                            "invitationTime": "1577649995",
+                            "customText": "aaaa",
+                            "cellId": "0",
+                            "invitedByRole": "0"
+                        }
+                    }
+                ],
+                "operation": 1
+            }
+        }
+    ],
+    "ignoreSerial": 0,
+    "time": 1577649995749,
+    "serialNo": 3929,
+    "response": []
+}

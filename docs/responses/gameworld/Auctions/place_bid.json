@@ -1,0 +1,483 @@
+{
+    "cache": [
+        {
+            "name": "Player:5230",
+            "data": {
+                "playerId": "5230",
+                "name": "lijok",
+                "tribeId": "3",
+                "kingdomId": "683",
+                "kingdomTag": "tantuni",
+                "kingdomRole": "2",
+                "isKing": false,
+                "kingId": "5302",
+                "kingstatus": "0",
+                "villages": [
+                    {
+                        "villageId": "534986754",
+                        "playerId": "5230",
+                        "name": "[00]",
+                        "tribeId": "3",
+                        "belongsToKing": "0",
+                        "belongsToKingdom": 0,
+                        "type": "1",
+                        "population": "238",
+                        "coordinates": {
+                            "x": "2",
+                            "y": "-58"
+                        },
+                        "isMainVillage": true,
+                        "isTown": false,
+                        "treasuresUsable": "0",
+                        "treasures": "0",
+                        "allowTributeCollection": "1",
+                        "protectionGranted": "0",
+                        "tributeCollectorPlayerId": 0,
+                        "realTributePercent": 0.2,
+                        "supplyBuildings": "238",
+                        "supplyTroops": "357",
+                        "production": {
+                            "1": "1155",
+                            "2": "1350",
+                            "3": "1088",
+                            "4": "560"
+                        },
+                        "storage": {
+                            "1": 5597.6166666667,
+                            "2": 2191.5,
+                            "3": 6084.5644444439,
+                            "4": 11532.958055556
+                        },
+                        "treasury": {
+                            "1": "0",
+                            "2": "0",
+                            "3": "0",
+                            "4": 0
+                        },
+                        "storageCapacity": {
+                            "1": "22500",
+                            "2": "22500",
+                            "3": "22500",
+                            "4": "15000"
+                        },
+                        "usedControlPoints": "0",
+                        "availableControlPoints": "0",
+                        "culturePoints": 586.59642361099,
+                        "celebrationType": "0",
+                        "celebrationEnd": "0",
+                        "culturePointProduction": "354",
+                        "treasureResourceBonus": "0",
+                        "acceptance": 100,
+                        "acceptanceProduction": "0.01666",
+                        "tributes": {
+                            "1": 0,
+                            "2": 0,
+                            "3": 0,
+                            "4": 0
+                        },
+                        "tributesCapacity": "22500",
+                        "tributeTreasures": 4,
+                        "tributeProduction": 718,
+                        "tributeProductionDetail": {
+                            "1": 231,
+                            "2": 270,
+                            "3": 217,
+                            "4": 0
+                        },
+                        "tributeTime": "0",
+                        "tributesRequiredToFetch": 4500,
+                        "estimatedWarehouseLevel": 13
+                    }
+                ],
+                "population": "238",
+                "active": "1",
+                "prestige": 1184,
+                "level": 6,
+                "stars": {
+                    "bronze": 0,
+                    "silver": 0,
+                    "gold": 3
+                },
+                "nextLevelPrestige": 2000,
+                "hasNoobProtection": false,
+                "filterInformation": false,
+                "signupTime": "1577621566",
+                "vacationState": "0",
+                "uiLimitations": "3",
+                "gold": "67",
+                "silver": 956,
+                "deletionTime": "0",
+                "coronationDuration": 0,
+                "brewCelebration": "0",
+                "uiStatus": "-1",
+                "hintStatus": "0",
+                "spawnedOnMap": "1577621703",
+                "isActivated": "1",
+                "isInstant": "0",
+                "productionBonusTime": "1577881530",
+                "cropProductionBonusTime": "1577881533",
+                "premiumFeatureAutoExtendFlags": "0",
+                "plusAccountTime": "1577909692",
+                "limitedPremiumFeatureFlags": "0",
+                "lastPaymentTime": "0",
+                "isPunished": false,
+                "limitationFlags": "0",
+                "limitation": "0",
+                "isBannedFromMessaging": false,
+                "bannedFromMessaging": "0",
+                "questVersion": "2",
+                "nextDailyQuestTime": 1577837569,
+                "dailyQuestsExchanged": "0",
+                "avatarIdentifier": "5143462",
+                "vacationStateStart": "0",
+                "vacationStateEnd": "0",
+                "usedVacationDays": "0"
+            }
+        },
+        {
+            "name": "Collection:Bid:own",
+            "data": {
+                "cache": [
+                    {
+                        "name": "Bid:131127",
+                        "data": {
+                            "id": "131127",
+                            "playerId": "5230",
+                            "auctionId": "30660",
+                            "maxBid": "100",
+                            "time": "1577622620",
+                            "deleted": "0"
+                        }
+                    },
+                    {
+                        "name": "Bid:132508",
+                        "data": {
+                            "id": "132508",
+                            "playerId": "5230",
+                            "auctionId": "31210",
+                            "maxBid": "200",
+                            "time": "1577666756",
+                            "deleted": "0"
+                        }
+                    },
+                    {
+                        "name": "Bid:132869",
+                        "data": {
+                            "id": "132869",
+                            "playerId": "5230",
+                            "auctionId": "31374",
+                            "maxBid": "360",
+                            "time": "1577696152",
+                            "deleted": "0"
+                        }
+                    },
+                    {
+                        "name": "Bid:132872",
+                        "data": {
+                            "id": "132872",
+                            "playerId": "5230",
+                            "auctionId": "31381",
+                            "maxBid": "640",
+                            "time": "1577696175",
+                            "deleted": "0"
+                        }
+                    },
+                    {
+                        "name": "Bid:132874",
+                        "data": {
+                            "id": "132874",
+                            "playerId": "5230",
+                            "auctionId": "31385",
+                            "maxBid": "640",
+                            "time": "1577696180",
+                            "deleted": "0"
+                        }
+                    },
+                    {
+                        "name": "Bid:133041",
+                        "data": {
+                            "id": "133041",
+                            "playerId": "5230",
+                            "auctionId": "31453",
+                            "maxBid": "100",
+                            "time": "1577700854",
+                            "deleted": "0"
+                        }
+                    },
+                    {
+                        "name": "Bid:136664",
+                        "data": {
+                            "id": "136664",
+                            "playerId": "5230",
+                            "auctionId": "32649",
+                            "maxBid": "200",
+                            "time": "1577817316",
+                            "deleted": "0"
+                        }
+                    }
+                ],
+                "operation": 1
+            }
+        },
+        {
+            "name": "Collection:Auction:bidden",
+            "data": {
+                "cache": [
+                    {
+                        "name": "Auction:30660",
+                        "data": {
+                            "id": 30660,
+                            "tribeId": 0,
+                            "itemTypeId": "113",
+                            "strength": "10",
+                            "bonuses": {
+                                "1": "10"
+                            },
+                            "amount": "3",
+                            "status": "2",
+                            "timeStart": "1577536017",
+                            "timeEnd": "1577622920",
+                            "price": "60",
+                            "bids": "9",
+                            "highestBid": "100",
+                            "highestBidderPlayerId": "5230",
+                            "highestBidderName": "lijok",
+                            "slot": -1,
+                            "images": [
+                                "scroll"
+                            ],
+                            "stackable": true
+                        }
+                    },
+                    {
+                        "name": "Auction:31210",
+                        "data": {
+                            "id": 31210,
+                            "tribeId": 0,
+                            "itemTypeId": "10",
+                            "strength": "9",
+                            "bonuses": {
+                                "3": "9"
+                            },
+                            "amount": "1",
+                            "status": "2",
+                            "timeStart": "1577580482",
+                            "timeEnd": "1577667056",
+                            "price": "133",
+                            "bids": "1",
+                            "highestBid": "200",
+                            "highestBidderPlayerId": "5230",
+                            "highestBidderName": "lijok",
+                            "slot": 1,
+                            "images": [
+                                "helmet3_0"
+                            ],
+                            "stackable": false
+                        }
+                    },
+                    {
+                        "name": "Auction:31374",
+                        "data": {
+                            "id": 31374,
+                            "tribeId": 0,
+                            "itemTypeId": "82",
+                            "strength": "16",
+                            "bonuses": {
+                                "14": "16"
+                            },
+                            "amount": "1",
+                            "status": "2",
+                            "timeStart": "1577609572",
+                            "timeEnd": "1577696452",
+                            "price": "146",
+                            "bids": "2",
+                            "highestBid": "360",
+                            "highestBidderPlayerId": "5230",
+                            "highestBidderName": "lijok",
+                            "slot": 4,
+                            "images": [
+                                "shirt0_0"
+                            ],
+                            "stackable": false
+                        }
+                    },
+                    {
+                        "name": "Auction:31381",
+                        "data": {
+                            "id": 31381,
+                            "tribeId": 3,
+                            "itemTypeId": "31",
+                            "strength": "400",
+                            "bonuses": {
+                                "11": 1,
+                                "12": 3,
+                                "13": "400"
+                            },
+                            "amount": "1",
+                            "status": "2",
+                            "timeStart": "1577609979",
+                            "timeEnd": "1577696379",
+                            "price": "640",
+                            "bids": "2",
+                            "highestBid": 0,
+                            "highestBidderPlayerId": "4319",
+                            "highestBidderName": "K\u00f6nigskinder",
+                            "slot": 2,
+                            "images": [
+                                "spear0_0"
+                            ],
+                            "stackable": false
+                        }
+                    },
+                    {
+                        "name": "Auction:31385",
+                        "data": {
+                            "id": 31385,
+                            "tribeId": 3,
+                            "itemTypeId": "43",
+                            "strength": "600",
+                            "bonuses": {
+                                "11": 6,
+                                "12": 9,
+                                "13": "600"
+                            },
+                            "amount": "1",
+                            "status": "2",
+                            "timeStart": "1577610090",
+                            "timeEnd": "1577696490",
+                            "price": "226",
+                            "bids": "1",
+                            "highestBid": "640",
+                            "highestBidderPlayerId": "5230",
+                            "highestBidderName": "lijok",
+                            "slot": 2,
+                            "images": [
+                                "spear1_0"
+                            ],
+                            "stackable": false
+                        }
+                    },
+                    {
+                        "name": "Auction:31453",
+                        "data": {
+                            "id": 31453,
+                            "tribeId": 0,
+                            "itemTypeId": "81",
+                            "strength": "31",
+                            "bonuses": {
+                                "10": "31"
+                            },
+                            "amount": "1",
+                            "status": "2",
+                            "timeStart": "1577615977",
+                            "timeEnd": "1577702377",
+                            "price": "27",
+                            "bids": "1",
+                            "highestBid": "100",
+                            "highestBidderPlayerId": "5230",
+                            "highestBidderName": "lijok",
+                            "slot": 3,
+                            "images": [
+                                "horn0_2"
+                            ],
+                            "stackable": false
+                        }
+                    },
+                    {
+                        "name": "Auction:32649",
+                        "data": {
+                            "id": 32649,
+                            "tribeId": 0,
+                            "itemTypeId": "119",
+                            "strength": "0",
+                            "bonuses": [],
+                            "amount": "30",
+                            "status": "1",
+                            "timeStart": "1577730994",
+                            "timeEnd": "1577817394",
+                            "price": "150",
+                            "bids": "0",
+                            "highestBid": 0,
+                            "highestBidderPlayerId": "0",
+                            "highestBidderName": "Nature",
+                            "slot": 7,
+                            "images": [
+                                "cage"
+                            ],
+                            "stackable": true
+                        }
+                    }
+                ],
+                "operation": 1
+            }
+        },
+        {
+            "name": "Collection:Auction:running",
+            "data": {
+                "cache": [
+                    {
+                        "name": "Auction:32649",
+                        "data": {
+                            "id": 32649,
+                            "tribeId": 0,
+                            "itemTypeId": "119",
+                            "strength": "0",
+                            "bonuses": [],
+                            "amount": "30",
+                            "status": "1",
+                            "timeStart": "1577730994",
+                            "timeEnd": 1577817616,
+                            "price": "150",
+                            "bids": 1,
+                            "highestBid": 200,
+                            "highestBidderPlayerId": "5230",
+                            "highestBidderName": "lijok",
+                            "slot": 7,
+                            "images": [
+                                "cage"
+                            ],
+                            "stackable": true
+                        }
+                    }
+                ],
+                "operation": 4
+            }
+        },
+        {
+            "name": "Collection:Auction:highestBidder",
+            "data": {
+                "cache": [
+                    {
+                        "name": "Auction:32649",
+                        "data": {
+                            "id": 32649,
+                            "tribeId": 0,
+                            "itemTypeId": "119",
+                            "strength": "0",
+                            "bonuses": [],
+                            "amount": "30",
+                            "status": "1",
+                            "timeStart": "1577730994",
+                            "timeEnd": "1577817616",
+                            "price": "150",
+                            "bids": "1",
+                            "highestBid": "200",
+                            "highestBidderPlayerId": "5230",
+                            "highestBidderName": "lijok",
+                            "slot": 7,
+                            "images": [
+                                "cage"
+                            ],
+                            "stackable": true
+                        }
+                    }
+                ],
+                "operation": 1
+            }
+        }
+    ],
+    "ignoreSerial": 2,
+    "time": 1577817316895,
+    "serialNo": 10615,
+    "response": []
+}

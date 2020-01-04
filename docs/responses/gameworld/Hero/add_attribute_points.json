@@ -1,0 +1,137 @@
+{
+    "cache": [
+        {
+            "name": "Village:534986754",
+            "data": {
+                "villageId": "534986754",
+                "playerId": "5230",
+                "name": "[00]",
+                "tribeId": "3",
+                "belongsToKing": "0",
+                "belongsToKingdom": 0,
+                "type": "1",
+                "population": "238",
+                "coordinates": {
+                    "x": "2",
+                    "y": "-58"
+                },
+                "isMainVillage": true,
+                "isTown": false,
+                "treasuresUsable": "0",
+                "treasures": "0",
+                "allowTributeCollection": "1",
+                "protectionGranted": "0",
+                "tributeCollectorPlayerId": 0,
+                "realTributePercent": 0.2,
+                "supplyBuildings": "238",
+                "supplyTroops": "361",
+                "production": {
+                    "1": 1174,
+                    "2": 1369,
+                    "3": 1106,
+                    "4": 575
+                },
+                "storage": {
+                    "1": 8135.5708333333,
+                    "2": 5122.875,
+                    "3": 8521.035555555,
+                    "4": 13158.674166667
+                },
+                "treasury": {
+                    "1": "0",
+                    "2": "0",
+                    "3": "0",
+                    "4": 0
+                },
+                "storageCapacity": {
+                    "1": "22500",
+                    "2": "22500",
+                    "3": "22500",
+                    "4": "15000"
+                },
+                "usedControlPoints": "0",
+                "availableControlPoints": "0",
+                "culturePoints": 589.1244097221,
+                "celebrationType": "0",
+                "celebrationEnd": "0",
+                "culturePointProduction": 354,
+                "treasureResourceBonus": "0",
+                "acceptance": 100,
+                "acceptanceProduction": 0.01666,
+                "tributes": {
+                    "1": 0,
+                    "2": 0,
+                    "3": 0,
+                    "4": 0
+                },
+                "tributesCapacity": "22500",
+                "tributeTreasures": 4,
+                "tributeProduction": 728,
+                "tributeProductionDetail": {
+                    "1": 234,
+                    "2": 273,
+                    "3": 221,
+                    "4": 0
+                },
+                "tributeTime": "0",
+                "tributesRequiredToFetch": 4500,
+                "estimatedWarehouseLevel": 13
+            }
+        },
+        {
+            "name": "Hero:5230",
+            "data": {
+                "playerId": "5230",
+                "villageId": "534986754",
+                "destVillageId": "535052291",
+                "status": "0",
+                "health": 12.175069444443,
+                "lastHealthTime": "1577817933",
+                "baseRegenerationRate": 30,
+                "regenerationRate": 46,
+                "fightStrength": 2000,
+                "fightStrengthPoints": 21,
+                "attBonusPoints": 0,
+                "defBonusPoints": 0,
+                "resBonusPoints": 7,
+                "resBonusType": 0,
+                "freePoints": 0,
+                "speed": 50,
+                "untilTime": "1577817484",
+                "bonuses": {
+                    "17": 14,
+                    "3": 9,
+                    "14": 16,
+                    "10": 31,
+                    "13": 1500,
+                    "unitBonuses": {
+                        "25": 10
+                    },
+                    "18": 6
+                },
+                "maxScrollsPerDay": "0",
+                "scrollsUsedToday": "0",
+                "waterbucketUsedToday": "0",
+                "ointmentsUsedToday": "25",
+                "adventurePointCardUsedToday": "0",
+                "resourceChestsUsedToday": "0",
+                "cropChestsUsedToday": "0",
+                "artworkUsedToday": "0",
+                "isMoving": false,
+                "adventurePoints": "0",
+                "adventurePointTime": "1577828190",
+                "levelUp": "0",
+                "xp": "1545",
+                "xpThisLevel": 1400,
+                "xpNextLevel": 1800,
+                "level": "7"
+            }
+        }
+    ],
+    "ignoreSerial": 2,
+    "time": 1577817933956,
+    "serialNo": 10676,
+    "response": {
+        "data": true
+    }
+}

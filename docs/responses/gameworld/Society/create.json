@@ -1,0 +1,70 @@
+{
+    "cache": [
+        {
+            "name": "Society:204",
+            "data": {
+                "groupId": 204,
+                "name": "test",
+                "members": [
+                    {
+                        "playerId": "5230",
+                        "name": "lijok",
+                        "isFounder": true,
+                        "isKing": false,
+                        "kingdomId": "0",
+                        "population": "109",
+                        "villages": 1
+                    }
+                ],
+                "societyId": 204,
+                "attitude": 1,
+                "targetType": 5,
+                "targetId": 204,
+                "sharedInformations": 3,
+                "profile": {
+                    "groupId": "204",
+                    "description": null
+                }
+            }
+        },
+        {
+            "name": "Collection:Society:",
+            "data": {
+                "cache": [
+                    {
+                        "name": "Society:204",
+                        "data": {
+                            "groupId": "204",
+                            "name": "test",
+                            "members": [
+                                {
+                                    "playerId": "5230",
+                                    "name": "lijok",
+                                    "isFounder": true,
+                                    "isKing": false,
+                                    "kingdomId": "0",
+                                    "population": "109",
+                                    "villages": 1
+                                }
+                            ],
+                            "societyId": "204",
+                            "attitude": "1",
+                            "targetType": "5",
+                            "targetId": "204",
+                            "sharedInformations": "3",
+                            "profile": {
+                                "groupId": "204",
+                                "description": null
+                            }
+                        }
+                    }
+                ],
+                "operation": 1
+            }
+        }
+    ],
+    "ignoreSerial": 1,
+    "time": 1577646850994,
+    "serialNo": 3813,
+    "response": []
+}

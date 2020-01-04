@@ -1,0 +1,117 @@
+{
+    "cache": [
+        {
+            "name": "Collection:OasisTroopRanking:",
+            "data": {
+                "cache": [
+                    {
+                        "name": "OasisTroopRanking:22186",
+                        "data": {
+                            "id": 22186,
+                            "oasisId": "534953986",
+                            "oasisType": "11",
+                            "playerId": "5230",
+                            "rank": 0,
+                            "amount": 0,
+                            "maxUsableTroops": 0,
+                            "usedByVillage": 534986754,
+                            "villageInfluence": 103,
+                            "bonus": {
+                                "1": 0,
+                                "2": 0,
+                                "3": 0,
+                                "4": 0
+                            },
+                            "troopProduction": 0
+                        }
+                    }
+                ],
+                "operation": 2
+            }
+        },
+        {
+            "name": "Village:534986754",
+            "data": {
+                "villageId": "534986754",
+                "playerId": "5230",
+                "name": "[00]",
+                "tribeId": "3",
+                "belongsToKing": "0",
+                "belongsToKingdom": 0,
+                "type": "1",
+                "population": "103",
+                "coordinates": {
+                    "x": "2",
+                    "y": "-58"
+                },
+                "isMainVillage": true,
+                "isTown": false,
+                "treasuresUsable": "0",
+                "treasures": "0",
+                "allowTributeCollection": "1",
+                "protectionGranted": "0",
+                "tributeCollectorPlayerId": 0,
+                "realTributePercent": 0.2,
+                "supplyBuildings": "103",
+                "supplyTroops": "14",
+                "production": {
+                    "1": 405,
+                    "2": 405,
+                    "3": 338,
+                    "4": 198
+                },
+                "storage": {
+                    "1": 1095.722720299,
+                    "2": 908.5896948614,
+                    "3": 684.29282740851,
+                    "4": 696.30392409697
+                },
+                "treasury": {
+                    "1": "0",
+                    "2": "0",
+                    "3": "0",
+                    "4": 0
+                },
+                "storageCapacity": {
+                    "1": "2300",
+                    "2": "2300",
+                    "3": "2300",
+                    "4": "2300"
+                },
+                "usedControlPoints": "0",
+                "availableControlPoints": "0",
+                "culturePoints": 29.809479166666,
+                "celebrationType": "0",
+                "celebrationEnd": "0",
+                "culturePointProduction": 177,
+                "treasureResourceBonus": "0",
+                "acceptance": 100,
+                "acceptanceProduction": 0.01666,
+                "tributes": {
+                    "1": 0,
+                    "2": 0,
+                    "3": 0,
+                    "4": 0
+                },
+                "tributesCapacity": "2300",
+                "tributeTreasures": 2,
+                "tributeProduction": 229,
+                "tributeProductionDetail": {
+                    "1": 81,
+                    "2": 81,
+                    "3": 67,
+                    "4": 0
+                },
+                "tributeTime": "0",
+                "tributesRequiredToFetch": 460,
+                "estimatedWarehouseLevel": 3
+            }
+        }
+    ],
+    "ignoreSerial": 2,
+    "time": 1577636494532,
+    "serialNo": 3038,
+    "response": {
+        "data": true
+    }
+}

@@ -1,0 +1,188 @@
+{
+    "time": 1577644614090,
+    "serialNo": 3525,
+    "response": {
+        "results": [
+            {
+                "rank": 0,
+                "points": 979735,
+                "kingdomId": 222,
+                "membersCount": 133,
+                "name": "Maki",
+                "village": "415",
+                "playerId": "141",
+                "treasuresLatestWeek": 58716,
+                "treasuresCurrent": 86936,
+                "victoryPointsLastWeek": 483152
+            },
+            {
+                "rank": 1,
+                "points": 778071,
+                "kingdomId": 207,
+                "membersCount": 88,
+                "name": "RU-ASAP",
+                "village": "387",
+                "playerId": "112",
+                "treasuresLatestWeek": 56000,
+                "treasuresCurrent": 73288,
+                "victoryPointsLastWeek": 303858
+            },
+            {
+                "rank": 2,
+                "points": 457551,
+                "kingdomId": 227,
+                "membersCount": 97,
+                "name": "AK",
+                "village": "261",
+                "playerId": "252",
+                "treasuresLatestWeek": 28708,
+                "treasuresCurrent": 36127,
+                "victoryPointsLastWeek": 255442
+            },
+            {
+                "rank": 3,
+                "points": 437469,
+                "kingdomId": 119,
+                "membersCount": 115,
+                "name": "NOVOPOL",
+                "village": "256",
+                "playerId": "987",
+                "treasuresLatestWeek": 31420,
+                "treasuresCurrent": 34937,
+                "victoryPointsLastWeek": 239022
+            },
+            {
+                "rank": 4,
+                "points": 420508,
+                "kingdomId": 88,
+                "membersCount": 97,
+                "name": "KINGDOMS",
+                "village": "310",
+                "playerId": "771",
+                "treasuresLatestWeek": 25633,
+                "treasuresCurrent": 36255,
+                "victoryPointsLastWeek": 209640
+            },
+            {
+                "rank": 5,
+                "points": 374423,
+                "kingdomId": 4,
+                "membersCount": 78,
+                "name": "Rebels",
+                "village": "226",
+                "playerId": "120",
+                "treasuresLatestWeek": 23421,
+                "treasuresCurrent": 35022,
+                "victoryPointsLastWeek": 179775
+            },
+            {
+                "rank": 6,
+                "points": 353730,
+                "kingdomId": 77,
+                "membersCount": 56,
+                "name": "Olymp",
+                "village": "193",
+                "playerId": "634",
+                "treasuresLatestWeek": 19653,
+                "treasuresCurrent": 29158,
+                "victoryPointsLastWeek": 172100
+            },
+            {
+                "rank": 7,
+                "points": 319223,
+                "kingdomId": 8,
+                "membersCount": 66,
+                "name": "Reborn",
+                "village": "194",
+                "playerId": "167",
+                "treasuresLatestWeek": 16722,
+                "treasuresCurrent": 29724,
+                "victoryPointsLastWeek": 157749
+            },
+            {
+                "rank": 8,
+                "points": 317461,
+                "kingdomId": 328,
+                "membersCount": 64,
+                "name": "NOVA",
+                "village": "179",
+                "playerId": "1878",
+                "treasuresLatestWeek": 17247,
+                "treasuresCurrent": 28498,
+                "victoryPointsLastWeek": 148783
+            },
+            {
+                "rank": 9,
+                "points": 306664,
+                "kingdomId": 32,
+                "membersCount": 61,
+                "name": "Northumb",
+                "village": "126",
+                "playerId": "1080",
+                "treasuresLatestWeek": 21611,
+                "treasuresCurrent": 16808,
+                "victoryPointsLastWeek": 178613
+            },
+            {
+                "rank": 10,
+                "points": 227254,
+                "kingdomId": 218,
+                "membersCount": 56,
+                "name": "Hungary",
+                "village": "195",
+                "playerId": "191",
+                "treasuresLatestWeek": 13315,
+                "treasuresCurrent": 20888,
+                "victoryPointsLastWeek": 113697
+            },
+            {
+                "rank": 11,
+                "points": 226291,
+                "kingdomId": 44,
+                "membersCount": 8,
+                "name": "~Hell~",
+                "village": "4",
+                "playerId": "134",
+                "treasuresLatestWeek": 9706,
+                "treasuresCurrent": 5347,
+                "victoryPointsLastWeek": 171428
+            },
+            {
+                "rank": 12,
+                "points": 218926,
+                "kingdomId": 112,
+                "membersCount": 46,
+                "name": "@PM",
+                "village": "160",
+                "playerId": "916",
+                "treasuresLatestWeek": 12455,
+                "treasuresCurrent": 17481,
+                "victoryPointsLastWeek": 116910
+            },
+            {
+                "rank": 13,
+                "points": 165037,
+                "kingdomId": 168,
+                "membersCount": 51,
+                "name": "-=UA=-",
+                "village": "173",
+                "playerId": "1261",
+                "treasuresLatestWeek": 9127,
+                "treasuresCurrent": 15068,
+                "victoryPointsLastWeek": 85763
+            },
+            {
+                "rank": 14,
+                "points": 162703,
+                "kingdomId": 151,
+                "membersCount": 35,
+                "name": "Los 3\u0398\u0398",
+                "village": "103",
+                "playerId": "323",
+                "treasuresLatestWeek": 6414,
+                "treasuresCurrent": 11794,
+                "victoryPointsLastWeek": 84745
+            }
+        ]
+    }
+}

@@ -1,0 +1,212 @@
+{
+    "cache": [
+        {
+            "name": "Building:739356",
+            "data": {
+                "buildingType": "2",
+                "villageId": "534986754",
+                "locationId": "6",
+                "lvl": "7",
+                "lvlNext": 8,
+                "isMaxLvl": false,
+                "lvlMax": 99,
+                "upgradeCosts": {
+                    "1": 2900,
+                    "2": 1450,
+                    "3": 2900,
+                    "4": 1810
+                },
+                "nextUpgradeCosts": {
+                    "7": {
+                        "1": 2900,
+                        "2": 1450,
+                        "3": 2900,
+                        "4": 1810
+                    },
+                    "8": {
+                        "1": 4840,
+                        "2": 2420,
+                        "3": 4840,
+                        "4": 3025
+                    },
+                    "9": {
+                        "1": 8080,
+                        "2": 4040,
+                        "3": 8080,
+                        "4": 5050
+                    },
+                    "10": {
+                        "1": 13500,
+                        "2": 6750,
+                        "3": 13500,
+                        "4": 8435
+                    },
+                    "11": {
+                        "1": 22540,
+                        "2": 11270,
+                        "3": 22540,
+                        "4": 14090
+                    },
+                    "12": {
+                        "1": 37645,
+                        "2": 18820,
+                        "3": 37645,
+                        "4": 23525
+                    },
+                    "13": {
+                        "1": 62865,
+                        "2": 31430,
+                        "3": 62865,
+                        "4": 39290
+                    }
+                },
+                "upgradeTime": 4740,
+                "nextUpgradeTimes": {
+                    "7": 4740,
+                    "8": 7080,
+                    "9": 10500,
+                    "10": 14100,
+                    "11": 17700,
+                    "12": 21300,
+                    "13": 26100
+                },
+                "upgradeSupplyUsage": 2,
+                "upgradeSupplyUsageSums": {
+                    "7": 10,
+                    "8": 12,
+                    "9": 14,
+                    "10": 16,
+                    "11": 18,
+                    "12": 20,
+                    "13": 22
+                },
+                "category": 3,
+                "sortOrder": 2,
+                "effect": [
+                    210,
+                    300,
+                    435,
+                    600,
+                    840,
+                    1125,
+                    1485
+                ]
+            }
+        },
+        {
+            "name": "Village:534986754",
+            "data": {
+                "villageId": "534986754",
+                "playerId": "5230",
+                "name": "[00]",
+                "tribeId": "3",
+                "belongsToKing": "0",
+                "belongsToKingdom": 0,
+                "type": "1",
+                "population": 248,
+                "coordinates": {
+                    "x": "2",
+                    "y": "-58"
+                },
+                "isMainVillage": true,
+                "isTown": false,
+                "treasuresUsable": "0",
+                "treasures": "0",
+                "allowTributeCollection": "1",
+                "protectionGranted": "0",
+                "tributeCollectorPlayerId": 0,
+                "realTributePercent": 0.2,
+                "supplyBuildings": 248,
+                "supplyTroops": "331",
+                "production": {
+                    "1": 1428,
+                    "2": 1369,
+                    "3": 1256,
+                    "4": 595
+                },
+                "storage": {
+                    "1": 10853.812499999,
+                    "2": 6859.9297222224,
+                    "3": 12477.293333332,
+                    "4": 8026.5577777782
+                },
+                "treasury": {
+                    "1": "0",
+                    "2": "0",
+                    "3": "0",
+                    "4": 0
+                },
+                "storageCapacity": {
+                    "1": "22500",
+                    "2": "22500",
+                    "3": "22500",
+                    "4": "15000"
+                },
+                "usedControlPoints": "0",
+                "availableControlPoints": "0",
+                "culturePoints": 666.36531249989,
+                "celebrationType": "0",
+                "celebrationEnd": "0",
+                "culturePointProduction": 369,
+                "treasureResourceBonus": "0",
+                "acceptance": 100,
+                "acceptanceProduction": 0.01666,
+                "tributes": {
+                    "1": 0,
+                    "2": 0,
+                    "3": 0,
+                    "4": 0
+                },
+                "tributesCapacity": "22500",
+                "tributeTreasures": 4,
+                "tributeProduction": 809,
+                "tributeProductionDetail": {
+                    "1": 285,
+                    "2": 273,
+                    "3": 251,
+                    "4": 0
+                },
+                "tributeTime": "0",
+                "tributesRequiredToFetch": 4500,
+                "estimatedWarehouseLevel": 13
+            }
+        },
+        {
+            "name": "BuildingQueue:534986754",
+            "data": {
+                "villageId": "534986754",
+                "tribeId": "3",
+                "freeSlots": {
+                    "1": 0,
+                    "2": 0,
+                    "4": 1
+                },
+                "queues": {
+                    "1": [],
+                    "2": [
+                        {
+                            "id": "3103485",
+                            "villageId": "534986754",
+                            "locationId": "17",
+                            "buildingType": "1",
+                            "queueType": "2",
+                            "timeStart": "1577836346",
+                            "finished": "1577838926",
+                            "isRubble": "0",
+                            "paid": "1",
+                            "waiting": false
+                        }
+                    ],
+                    "4": [],
+                    "5": []
+                },
+                "canUseInstantConstruction": true,
+                "canUseInstantConstructionOnlyInVillage": false
+            }
+        }
+    ],
+    "ignoreSerial": 3,
+    "time": 1577836346109,
+    "serialNo": 11171,
+    "response": []
+}

@@ -1,0 +1,119 @@
+{
+    "cache": [
+        {
+            "name": "Village:534986754",
+            "data": {
+                "villageId": "534986754",
+                "playerId": "5230",
+                "name": "[00]",
+                "tribeId": "3",
+                "belongsToKing": "0",
+                "belongsToKingdom": 0,
+                "type": "1",
+                "population": "216",
+                "coordinates": {
+                    "x": "2",
+                    "y": "-58"
+                },
+                "isMainVillage": true,
+                "isTown": false,
+                "treasuresUsable": "0",
+                "treasures": "0",
+                "allowTributeCollection": "1",
+                "protectionGranted": "0",
+                "tributeCollectorPlayerId": 0,
+                "realTributePercent": 0.2,
+                "supplyBuildings": "216",
+                "supplyTroops": "398",
+                "production": {
+                    "1": "1061",
+                    "2": "1163",
+                    "3": "885",
+                    "4": "541"
+                },
+                "storage": {
+                    "1": 3032.9472222222,
+                    "2": 2918.2305555556,
+                    "3": 4417.4583333333,
+                    "4": 4074.3303129877
+                },
+                "treasury": {
+                    "1": "0",
+                    "2": "0",
+                    "3": "0",
+                    "4": 0
+                },
+                "storageCapacity": {
+                    "1": "7875",
+                    "2": "7875",
+                    "3": "7875",
+                    "4": "7875"
+                },
+                "usedControlPoints": "0",
+                "availableControlPoints": "0",
+                "culturePoints": 497.04795138886,
+                "celebrationType": "0",
+                "celebrationEnd": "0",
+                "culturePointProduction": "318",
+                "treasureResourceBonus": "0",
+                "acceptance": 100,
+                "acceptanceProduction": "0.01666",
+                "tributes": {
+                    "1": 0,
+                    "2": 0,
+                    "3": 0,
+                    "4": 0
+                },
+                "tributesCapacity": "7875",
+                "tributeTreasures": 4,
+                "tributeProduction": 621,
+                "tributeProductionDetail": {
+                    "1": 212,
+                    "2": 232,
+                    "3": 177,
+                    "4": 0
+                },
+                "tributeTime": "0",
+                "tributesRequiredToFetch": 1575,
+                "estimatedWarehouseLevel": 8
+            }
+        },
+        {
+            "name": "UnitQueue:534986754",
+            "data": {
+                "villageId": "534986754",
+                "buildingTypes": {
+                    "36": [
+                        {
+                            "unitType": 99,
+                            "count": 64,
+                            "durationPerUnit": 146,
+                            "timeFinishedNext": 1577794040,
+                            "timeFinishedLast": 1577803238,
+                            "pause": -1
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "ignoreSerial": 2,
+    "time": 1577793894305,
+    "serialNo": 9451,
+    "response": {
+        "total": "83",
+        "used": "4",
+        "queue": 64,
+        "max": 147,
+        "unit": {
+            "costs": {
+                "1": 35,
+                "2": 30,
+                "3": 10,
+                "4": 20
+            },
+            "time": 146,
+            "crop": 0
+        }
+    }
+}

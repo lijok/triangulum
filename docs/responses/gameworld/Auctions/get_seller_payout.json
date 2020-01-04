@@ -1,0 +1,12 @@
+{
+    "time": 1577797487983,
+    "serialNo": 9827,
+    "response": {
+        "isNpcBuying": true,
+        "amount": "76",
+        "pricePerItem": 23,
+        "strengthFactor": 1,
+        "quality": 0,
+        "tier": 0
+    }
+}

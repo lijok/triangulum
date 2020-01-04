@@ -1,0 +1,171 @@
+{
+    "time": 1577817944397,
+    "serialNo": 10686,
+    "response": {
+        "sourceId": 0,
+        "sourceName": "",
+        "destId": 0,
+        "destType": 0,
+        "destName": "",
+        "sourcePlayerId": 0,
+        "sourcePlayerName": "attacker",
+        "sourceKingdomId": null,
+        "sourceKingdomTag": "",
+        "sourceTribeId": 3,
+        "destPlayerId": -1,
+        "destPlayerName": "Robber",
+        "destKingdomId": null,
+        "destKingdomTag": "",
+        "destTribeId": 3,
+        "destX": null,
+        "destY": null,
+        "attackType": 0,
+        "troopId": -1,
+        "capacity": 9245,
+        "bounty": null,
+        "ownRole": "defender",
+        "otherKingdomId": null,
+        "treasures": null,
+        "victoryPoints": null,
+        "victoryPointsCap": null,
+        "supply": 0,
+        "tributeBounty": null,
+        "stolenGoods": null,
+        "playerId": 0,
+        "time": 1577817944,
+        "modules": [
+            {
+                "name": "troops/attacker",
+                "body": {
+                    "tribeId": 3,
+                    "playerId": 0,
+                    "playerName": "attacker",
+                    "villageId": 0,
+                    "villageName": "",
+                    "originalTroops": {
+                        "1": 221,
+                        "2": 4,
+                        "3": 2,
+                        "4": 0,
+                        "5": 66,
+                        "6": 0,
+                        "7": 0,
+                        "8": 0,
+                        "9": 0,
+                        "10": 0,
+                        "11": 1
+                    },
+                    "lostTroops": {
+                        "1": 22,
+                        "2": 0,
+                        "3": 0,
+                        "4": 0,
+                        "5": 6,
+                        "6": 0,
+                        "7": 0,
+                        "8": 0,
+                        "9": 0,
+                        "10": 0,
+                        "11": 0
+                    }
+                }
+            },
+            {
+                "name": "troops/defender",
+                "body": {
+                    "tribeId": 3,
+                    "playerId": -1,
+                    "playerName": "Robber",
+                    "villageId": 0,
+                    "villageName": "",
+                    "originalTroops": {
+                        "1": 11,
+                        "2": 0,
+                        "3": 0,
+                        "4": 36,
+                        "5": 0,
+                        "6": 4,
+                        "7": 0,
+                        "8": 0,
+                        "9": 0,
+                        "10": 0,
+                        "11": 0
+                    },
+                    "lostTroops": {
+                        "1": 11,
+                        "2": 0,
+                        "3": 0,
+                        "4": 36,
+                        "5": 0,
+                        "6": 4,
+                        "7": 0,
+                        "8": 0,
+                        "9": 0,
+                        "10": 0,
+                        "11": 0
+                    }
+                }
+            },
+            {
+                "name": "troops/tribeSum",
+                "body": {
+                    "tribeId": 3,
+                    "playerId": -1,
+                    "playerName": "",
+                    "villageId": -1,
+                    "villageName": "",
+                    "originalTroops": {
+                        "1": 11,
+                        "2": 0,
+                        "3": 0,
+                        "4": 36,
+                        "5": 0,
+                        "6": 4,
+                        "7": 0,
+                        "8": 0,
+                        "9": 0,
+                        "10": 0,
+                        "11": 0
+                    },
+                    "lostTroops": {
+                        "1": 11,
+                        "2": 0,
+                        "3": 0,
+                        "4": 36,
+                        "5": 0,
+                        "6": 4,
+                        "7": 0,
+                        "8": 0,
+                        "9": 0,
+                        "10": 0,
+                        "11": 0
+                    }
+                }
+            }
+        ],
+        "statistics": {
+            "lossPercent": {
+                "attacker": 9.81,
+                "defender": 100
+            },
+            "totalEffective": {
+                "attacker": 10797.82,
+                "defender": 2297
+            },
+            "losses": {
+                "resources": {
+                    "attacker": 9730,
+                    "defender": 29025
+                },
+                "crop": {
+                    "attacker": 34,
+                    "defender": 95
+                },
+                "time": {
+                    "attacker": 1730,
+                    "defender": 5113
+                }
+            }
+        }
+    }
+}

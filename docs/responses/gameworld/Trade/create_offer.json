@@ -1,0 +1,124 @@
+{
+    "cache": [
+        {
+            "name": "Collection:TradeOffer:own:534986754",
+            "data": {
+                "cache": [
+                    {
+                        "name": "TradeOffer:181066",
+                        "data": {
+                            "offerId": 181066,
+                            "playerId": "5230",
+                            "playerName": null,
+                            "kingdomId": 0,
+                            "villageId": "534986754",
+                            "blockedMerchants": 1,
+                            "offeredResource": 4,
+                            "offeredAmount": 1125,
+                            "searchedResource": 2,
+                            "searchedAmount": 1125,
+                            "maximumDuration": 0,
+                            "duration": null,
+                            "limitKingdom": false,
+                            "limitDuration": false
+                        }
+                    }
+                ],
+                "operation": 2
+            }
+        },
+        {
+            "name": "Merchants:534986754",
+            "data": {
+                "villageId": "534986754",
+                "max": "5",
+                "inOffers": 1,
+                "inTransport": "0",
+                "carry": "1125",
+                "speed": "24"
+            }
+        },
+        {
+            "name": "Village:534986754",
+            "data": {
+                "villageId": "534986754",
+                "playerId": "5230",
+                "name": "[00]",
+                "tribeId": "3",
+                "belongsToKing": "0",
+                "belongsToKingdom": 0,
+                "type": "1",
+                "population": "238",
+                "coordinates": {
+                    "x": "2",
+                    "y": "-58"
+                },
+                "isMainVillage": true,
+                "isTown": false,
+                "treasuresUsable": "0",
+                "treasures": "0",
+                "allowTributeCollection": "1",
+                "protectionGranted": "0",
+                "tributeCollectorPlayerId": 0,
+                "realTributePercent": 0.2,
+                "supplyBuildings": "238",
+                "supplyTroops": "361",
+                "production": {
+                    "1": "1174",
+                    "2": "1369",
+                    "3": "1106",
+                    "4": "575"
+                },
+                "storage": {
+                    "1": 8149.5936111111,
+                    "2": 5139.2269444444,
+                    "3": 8534.2461111106,
+                    "4": 12040.542222223
+                },
+                "treasury": {
+                    "1": "0",
+                    "2": "0",
+                    "3": "0",
+                    "4": 0
+                },
+                "storageCapacity": {
+                    "1": "22500",
+                    "2": "22500",
+                    "3": "22500",
+                    "4": "15000"
+                },
+                "usedControlPoints": "0",
+                "availableControlPoints": "0",
+                "culturePoints": 589.30059027766,
+                "celebrationType": "0",
+                "celebrationEnd": "0",
+                "culturePointProduction": "354",
+                "treasureResourceBonus": "0",
+                "acceptance": 100,
+                "acceptanceProduction": "0.01666",
+                "tributes": {
+                    "1": 0,
+                    "2": 0,
+                    "3": 0,
+                    "4": 0
+                },
+                "tributesCapacity": "22500",
+                "tributeTreasures": 4,
+                "tributeProduction": 728,
+                "tributeProductionDetail": {
+                    "1": 234,
+                    "2": 273,
+                    "3": 221,
+                    "4": 0
+                },
+                "tributeTime": "0",
+                "tributesRequiredToFetch": 4500,
+                "estimatedWarehouseLevel": 13
+            }
+        }
+    ],
+    "ignoreSerial": 3,
+    "time": 1577817976954,
+    "serialNo": 10697,
+    "response": []
+}

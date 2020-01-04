@@ -1,0 +1,20 @@
+{
+    "cache": [
+        {
+            "name": "Collection:ReportFavorites:",
+            "data": {
+                "cache": [
+                    {
+                        "name": "ReportFavorites:5e089889c84eac44bb7766de",
+                        "data": "5e089889c84eac44bb7766de"
+                    }
+                ],
+                "operation": 2
+            }
+        }
+    ],
+    "ignoreSerial": 1,
+    "time": 1577646796792,
+    "serialNo": 3806,
+    "response": []
+}

@@ -1,0 +1,11 @@
+{
+    "time": 1577632395079,
+    "serialNo": 2823,
+    "response": {
+        "productionThisVillage": "177",
+        "productionAllVillages": "177",
+        "productionHero": null,
+        "currentCP": 21,
+        "neededCP": 1000
+    }
+}

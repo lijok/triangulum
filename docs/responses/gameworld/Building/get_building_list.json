@@ -1,0 +1,341 @@
+{
+    "time": 1577817961015,
+    "serialNo": 10692,
+    "response": {
+        "buildings": {
+            "buildable": [],
+            "notBuildable": [
+                {
+                    "buildingType": 5,
+                    "locationToBuild": 20,
+                    "villageType": 0,
+                    "requiredBuildings": [
+                        {
+                            "buildingType": 1,
+                            "requiredLevel": 10,
+                            "currentLevel": "7",
+                            "valid": false
+                        },
+                        {
+                            "buildingType": 15,
+                            "requiredLevel": 5,
+                            "currentLevel": "4",
+                            "valid": false
+                        }
+                    ],
+                    "error": "none",
+                    "category": 3,
+                    "sortOrder": 5,
+                    "upgradeCosts": {
+                        "1": 520,
+                        "2": 380,
+                        "3": 290,
+                        "4": 90
+                    },
+                    "upgradeSupplyUsage": 4,
+                    "upgradeTime": 145,
+                    "name": "SawMill"
+                },
+                {
+                    "buildingType": 6,
+                    "locationToBuild": 20,
+                    "villageType": 0,
+                    "requiredBuildings": [
+                        {
+                            "buildingType": 2,
+                            "requiredLevel": 10,
+                            "currentLevel": "8",
+                            "valid": false
+                        },
+                        {
+                            "buildingType": 15,
+                            "requiredLevel": 5,
+                            "currentLevel": "4",
+                            "valid": false
+                        }
+                    ],
+                    "error": "none",
+                    "category": 3,
+                    "sortOrder": 6,
+                    "upgradeCosts": {
+                        "1": 440,
+                        "2": 480,
+                        "3": 320,
+                        "4": 50
+                    },
+                    "upgradeSupplyUsage": 3,
+                    "upgradeTime": 145,
+                    "name": "BrickYard"
+                },
+                {
+                    "buildingType": 7,
+                    "locationToBuild": 20,
+                    "villageType": 0,
+                    "requiredBuildings": [
+                        {
+                            "buildingType": 3,
+                            "requiredLevel": 10,
+                            "currentLevel": "7",
+                            "valid": false
+                        },
+                        {
+                            "buildingType": 15,
+                            "requiredLevel": 5,
+                            "currentLevel": "4",
+                            "valid": false
+                        }
+                    ],
+                    "error": "none",
+                    "category": 3,
+                    "sortOrder": 7,
+                    "upgradeCosts": {
+                        "1": 200,
+                        "2": 450,
+                        "3": 510,
+                        "4": 120
+                    },
+                    "upgradeSupplyUsage": 6,
+                    "upgradeTime": 145,
+                    "name": "IronFoundry"
+                },
+                {
+                    "buildingType": 9,
+                    "locationToBuild": 20,
+                    "villageType": 0,
+                    "requiredBuildings": [
+                        {
+                            "buildingType": 4,
+                            "requiredLevel": 10,
+                            "currentLevel": "5",
+                            "valid": false
+                        },
+                        {
+                            "buildingType": 15,
+                            "requiredLevel": 5,
+                            "currentLevel": "4",
+                            "valid": false
+                        },
+                        {
+                            "buildingType": 8,
+                            "requiredLevel": 5,
+                            "currentLevel": "1",
+                            "valid": false
+                        }
+                    ],
+                    "error": "none",
+                    "category": 3,
+                    "sortOrder": 9,
+                    "upgradeCosts": {
+                        "1": 1200,
+                        "2": 1480,
+                        "3": 870,
+                        "4": 1600
+                    },
+                    "upgradeSupplyUsage": 4,
+                    "upgradeTime": 235,
+                    "name": "Bakery"
+                },
+                {
+                    "buildingType": 14,
+                    "locationToBuild": 20,
+                    "villageType": 0,
+                    "requiredBuildings": [
+                        {
+                            "buildingType": 16,
+                            "requiredLevel": 15,
+                            "currentLevel": "1",
+                            "valid": false
+                        }
+                    ],
+                    "error": "none",
+                    "descriptionParam": 20,
+                    "category": 2,
+                    "sortOrder": 14,
+                    "upgradeCosts": {
+                        "1": 1750,
+                        "2": 2250,
+                        "3": 1530,
+                        "4": 240
+                    },
+                    "upgradeSupplyUsage": 1,
+                    "upgradeTime": 115,
+                    "name": "TournamentSquare"
+                },
+                {
+                    "buildingType": 21,
+                    "locationToBuild": 20,
+                    "villageType": 0,
+                    "requiredBuildings": [
+                        {
+                            "buildingType": 15,
+                            "requiredLevel": 5,
+                            "currentLevel": "4",
+                            "valid": false
+                        },
+                        {
+                            "buildingType": 22,
+                            "requiredLevel": 10,
+                            "currentLevel": "5",
+                            "valid": false
+                        }
+                    ],
+                    "error": "none",
+                    "category": 2,
+                    "sortOrder": 21,
+                    "upgradeCosts": {
+                        "1": 460,
+                        "2": 510,
+                        "3": 600,
+                        "4": 320
+                    },
+                    "upgradeSupplyUsage": 3,
+                    "upgradeTime": 195,
+                    "name": "Workshop"
+                },
+                {
+                    "buildingType": 24,
+                    "locationToBuild": 20,
+                    "villageType": 0,
+                    "requiredBuildings": [
+                        {
+                            "buildingType": 15,
+                            "requiredLevel": 10,
+                            "currentLevel": "4",
+                            "valid": false
+                        },
+                        {
+                            "buildingType": 22,
+                            "requiredLevel": 10,
+                            "currentLevel": "5",
+                            "valid": false
+                        }
+                    ],
+                    "error": "none",
+                    "category": 1,
+                    "sortOrder": 24,
+                    "upgradeCosts": {
+                        "1": 1250,
+                        "2": 1110,
+                        "3": 1260,
+                        "4": 600
+                    },
+                    "upgradeSupplyUsage": 4,
+                    "upgradeTime": 200,
+                    "name": "TownHall"
+                },
+                {
+                    "buildingType": 25,
+                    "locationToBuild": 20,
+                    "villageType": 0,
+                    "requiredBuildings": [
+                        {
+                            "buildingType": 15,
+                            "requiredLevel": 5,
+                            "currentLevel": "4",
+                            "valid": false
+                        }
+                    ],
+                    "error": "none",
+                    "category": 1,
+                    "sortOrder": 25,
+                    "upgradeCosts": {
+                        "1": 580,
+                        "2": 460,
+                        "3": 350,
+                        "4": 180
+                    },
+                    "upgradeSupplyUsage": 1,
+                    "upgradeTime": 400,
+                    "name": "Residence"
+                },
+                {
+                    "buildingType": 26,
+                    "locationToBuild": 20,
+                    "villageType": 0,
+                    "requiredBuildings": [
+                        {
+                            "buildingType": 15,
+                            "requiredLevel": 5,
+                            "currentLevel": "4",
+                            "valid": false
+                        },
+                        {
+                            "buildingType": 18,
+                            "requiredLevel": 1,
+                            "currentLevel": "1",
+                            "valid": true
+                        }
+                    ],
+                    "error": "none",
+                    "category": 1,
+                    "sortOrder": 26,
+                    "upgradeCosts": {
+                        "1": 550,
+                        "2": 800,
+                        "3": 750,
+                        "4": 250
+                    },
+                    "upgradeSupplyUsage": 1,
+                    "upgradeTime": 1080,
+                    "name": "Palace"
+                },
+                {
+                    "buildingType": 28,
+                    "locationToBuild": 20,
+                    "villageType": 0,
+                    "requiredBuildings": [
+                        {
+                            "buildingType": 17,
+                            "requiredLevel": 20,
+                            "currentLevel": "5",
+                            "valid": false
+                        },
+                        {
+                            "buildingType": 20,
+                            "requiredLevel": 10,
+                            "currentLevel": "4",
+                            "valid": false
+                        }
+                    ],
+                    "error": "none",
+                    "category": 1,
+                    "sortOrder": 28,
+                    "upgradeCosts": {
+                        "1": 1400,
+                        "2": 1330,
+                        "3": 1200,
+                        "4": 400
+                    },
+                    "upgradeSupplyUsage": 3,
+                    "upgradeTime": 110,
+                    "name": "TradeOffice"
+                },
+                {
+                    "buildingType": 34,
+                    "locationToBuild": 20,
+                    "villageType": 0,
+                    "requiredBuildings": [
+                        {
+                            "buildingType": 15,
+                            "requiredLevel": 5,
+                            "currentLevel": "4",
+                            "valid": false
+                        }
+                    ],
+                    "error": "none",
+                    "category": 1,
+                    "sortOrder": 34,
+                    "upgradeCosts": {
+                        "1": 155,
+                        "2": 130,
+                        "3": 125,
+                        "4": 70
+                    },
+                    "upgradeSupplyUsage": 2,
+                    "upgradeTime": 10,
+                    "name": "StoneMason"
+                }
+            ]
+        }
+    }
+}

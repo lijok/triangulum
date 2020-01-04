@@ -1,0 +1,265 @@
+{
+    "time": 1577632427869,
+    "serialNo": 2825,
+    "response": {
+        "production": {
+            "1": {
+                "baseFactors": [
+                    {
+                        "resourceType": "1",
+                        "category": 1,
+                        "type": "1",
+                        "value": 66,
+                        "level": "4"
+                    },
+                    {
+                        "resourceType": "1",
+                        "category": 1,
+                        "type": "1",
+                        "value": 45,
+                        "level": "3"
+                    },
+                    {
+                        "resourceType": "1",
+                        "category": 1,
+                        "type": "1",
+                        "value": 45,
+                        "level": "3"
+                    },
+                    {
+                        "resourceType": "1",
+                        "category": 1,
+                        "type": "1",
+                        "value": 45,
+                        "level": "3"
+                    }
+                ],
+                "bonusFactors": [
+                    {
+                        "resourceType": 1,
+                        "category": 1,
+                        "type": 5,
+                        "value": 0,
+                        "level": 0
+                    }
+                ],
+                "globalBase": [
+                    {
+                        "resourceType": 1,
+                        "category": 3,
+                        "type": "5230",
+                        "value": 90,
+                        "level": 0
+                    }
+                ],
+                "globalBonus": [
+                    {
+                        "resourceType": 1,
+                        "category": 6,
+                        "type": 0,
+                        "value": 0.25,
+                        "level": 0
+                    }
+                ]
+            },
+            "2": {
+                "baseFactors": [
+                    {
+                        "resourceType": "2",
+                        "category": 1,
+                        "type": "2",
+                        "value": 66,
+                        "level": "4"
+                    },
+                    {
+                        "resourceType": "2",
+                        "category": 1,
+                        "type": "2",
+                        "value": 45,
+                        "level": "3"
+                    },
+                    {
+                        "resourceType": "2",
+                        "category": 1,
+                        "type": "2",
+                        "value": 45,
+                        "level": "3"
+                    },
+                    {
+                        "resourceType": "2",
+                        "category": 1,
+                        "type": "2",
+                        "value": 45,
+                        "level": "3"
+                    }
+                ],
+                "bonusFactors": [
+                    {
+                        "resourceType": 2,
+                        "category": 1,
+                        "type": 6,
+                        "value": 0,
+                        "level": 0
+                    }
+                ],
+                "globalBase": [
+                    {
+                        "resourceType": 2,
+                        "category": 3,
+                        "type": "5230",
+                        "value": 90,
+                        "level": 0
+                    }
+                ],
+                "globalBonus": [
+                    {
+                        "resourceType": 2,
+                        "category": 6,
+                        "type": 0,
+                        "value": 0.25,
+                        "level": 0
+                    }
+                ]
+            },
+            "3": {
+                "baseFactors": [
+                    {
+                        "resourceType": "3",
+                        "category": 1,
+                        "type": "3",
+                        "value": 45,
+                        "level": "3"
+                    },
+                    {
+                        "resourceType": "3",
+                        "category": 1,
+                        "type": "3",
+                        "value": 45,
+                        "level": "3"
+                    },
+                    {
+                        "resourceType": "3",
+                        "category": 1,
+                        "type": "3",
+                        "value": 45,
+                        "level": "3"
+                    },
+                    {
+                        "resourceType": "3",
+                        "category": 1,
+                        "type": "3",
+                        "value": 45,
+                        "level": "3"
+                    }
+                ],
+                "bonusFactors": [
+                    {
+                        "resourceType": 3,
+                        "category": 1,
+                        "type": 7,
+                        "value": 0,
+                        "level": 0
+                    }
+                ],
+                "globalBase": [
+                    {
+                        "resourceType": 3,
+                        "category": 3,
+                        "type": "5230",
+                        "value": 90,
+                        "level": 0
+                    }
+                ],
+                "globalBonus": [
+                    {
+                        "resourceType": 3,
+                        "category": 6,
+                        "type": 0,
+                        "value": 0.25,
+                        "level": 0
+                    }
+                ]
+            },
+            "4": {
+                "baseFactors": [
+                    {
+                        "resourceType": "4",
+                        "category": 1,
+                        "type": "4",
+                        "value": 27,
+                        "level": "2"
+                    },
+                    {
+                        "resourceType": "4",
+                        "category": 1,
+                        "type": "4",
+                        "value": 27,
+                        "level": "2"
+                    },
+                    {
+                        "resourceType": "4",
+                        "category": 1,
+                        "type": "4",
+                        "value": 27,
+                        "level": "2"
+                    },
+                    {
+                        "resourceType": "4",
+                        "category": 1,
+                        "type": "4",
+                        "value": 27,
+                        "level": "2"
+                    },
+                    {
+                        "resourceType": "4",
+                        "category": 1,
+                        "type": "4",
+                        "value": 27,
+                        "level": "2"
+                    },
+                    {
+                        "resourceType": "4",
+                        "category": 1,
+                        "type": "4",
+                        "value": 27,
+                        "level": "2"
+                    }
+                ],
+                "bonusFactors": [
+                    {
+                        "resourceType": 4,
+                        "category": 1,
+                        "type": 8,
+                        "value": 0,
+                        "level": 0
+                    },
+                    {
+                        "resourceType": 4,
+                        "category": 1,
+                        "type": 9,
+                        "value": 0,
+                        "level": 0
+                    }
+                ],
+                "globalBase": [
+                    {
+                        "resourceType": 4,
+                        "category": 3,
+                        "type": "5230",
+                        "value": 90,
+                        "level": 0
+                    }
+                ],
+                "globalBonus": [
+                    {
+                        "resourceType": 4,
+                        "category": 6,
+                        "type": 0,
+                        "value": 0.25,
+                        "level": 0
+                    }
+                ]
+            }
+        }
+    }
+}

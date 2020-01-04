@@ -1,0 +1,32 @@
+{
+    "cache": [
+        {
+            "name": "Society:203",
+            "data": {
+                "groupId": "203",
+                "name": "SECRET SOC",
+                "members": [],
+                "societyId": "203",
+                "attitude": "2",
+                "targetType": "1",
+                "targetId": "535085092",
+                "sharedInformations": "15",
+                "profile": {
+                    "groupId": "203",
+                    "description": "description"
+                }
+            }
+        },
+        {
+            "name": "Collection:Society:",
+            "data": {
+                "cache": [],
+                "operation": 1
+            }
+        }
+    ],
+    "ignoreSerial": 1,
+    "time": 1577646840142,
+    "serialNo": 3812,
+    "response": []
+}
