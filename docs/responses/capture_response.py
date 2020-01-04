@@ -52,6 +52,6 @@ def run(coro, scope='gameworld'):
     rsp = loop.run_until_complete(coro)
     name = str(coro).split('<coroutine object ')[1].split(' at')[0]
     controller, action = name.split('.')
-    pathlib.Path(f'docs/responses/{scope}/{controller}').mkdir(parents=True, exists_ok=True)
+    pathlib.Path(f'docs/responses/{scope}/{controller}').mkdir(parents=True, exist_ok=True)
     with open(f'docs/responses/{scope}/{controller}/{action}.json', 'w') as f:
         f.write(json.dumps(rsp, indent=4))
