@@ -193,6 +193,7 @@ class PremiumFeature(BaseController):
             params=params
         )
 
+    # TODO: How does this work when purchasing for the whole round?
     async def plus_account(self) -> dict:
         """Purchase a Travian Plus account for 10 Gold for a variable duration based
         on the speed of the game world
@@ -207,6 +208,7 @@ class PremiumFeature(BaseController):
             }
         )
 
+    # TODO: How does this work when purchasing for the whole round?
     async def production_bonus(self) -> dict:
         """Purchase a 25% wood, clay and iron production bonus for 20 Gold
         for a variable duration based on the speed of the game world
@@ -221,6 +223,7 @@ class PremiumFeature(BaseController):
             }
         )
 
+    # TODO: How does this work when purchasing for the whole round?
     async def crop_production_bonus(self) -> dict:
         """Purchase a 25% crop production bonus for 10 Gold
         for a variable duration based on the speed of the game world
