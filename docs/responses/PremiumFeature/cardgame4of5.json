@@ -1,0 +1,166 @@
+{
+    "cache": [
+        {
+            "name": "Player:8371",
+            "data": {
+                "playerId": "8371",
+                "name": "lijok",
+                "tribeId": "3",
+                "kingdomId": "0",
+                "kingdomTag": "",
+                "kingdomRole": "0",
+                "isKing": false,
+                "kingId": 0,
+                "kingstatus": "0",
+                "villages": [
+                    {
+                        "villageId": "538820613",
+                        "playerId": "8371",
+                        "name": "lijok's village",
+                        "tribeId": "3",
+                        "belongsToKing": "0",
+                        "belongsToKingdom": 0,
+                        "type": "1",
+                        "population": "9",
+                        "coordinates": {
+                            "x": "5",
+                            "y": "59"
+                        },
+                        "isMainVillage": true,
+                        "isTown": false,
+                        "treasuresUsable": "0",
+                        "treasures": "0",
+                        "allowTributeCollection": "1",
+                        "protectionGranted": "0",
+                        "tributeCollectorPlayerId": 0,
+                        "realTributePercent": 0.2,
+                        "supplyBuildings": "9",
+                        "supplyTroops": "2",
+                        "production": {
+                            "1": "28",
+                            "2": "28",
+                            "3": "28",
+                            "4": "33"
+                        },
+                        "storage": {
+                            "1": 402.61333333334,
+                            "2": 402.61333333334,
+                            "3": 402.61333333334,
+                            "4": 402.3075
+                        },
+                        "treasury": {
+                            "1": "0",
+                            "2": "0",
+                            "3": "0",
+                            "4": 0
+                        },
+                        "storageCapacity": {
+                            "1": "1000",
+                            "2": "1000",
+                            "3": "1000",
+                            "4": "1000"
+                        },
+                        "usedControlPoints": "0",
+                        "availableControlPoints": "0",
+                        "culturePoints": 99.949444444447,
+                        "celebrationType": "0",
+                        "celebrationEnd": "0",
+                        "culturePointProduction": "24",
+                        "treasureResourceBonus": "0",
+                        "acceptance": 100,
+                        "acceptanceProduction": "0.01666",
+                        "tributes": {
+                            "1": 0,
+                            "2": 0,
+                            "3": 0,
+                            "4": 0
+                        },
+                        "tributesCapacity": "1000",
+                        "tributeTreasures": 1,
+                        "tributeProduction": 15,
+                        "tributeProductionDetail": {
+                            "1": 5,
+                            "2": 5,
+                            "3": 5,
+                            "4": 0
+                        },
+                        "tributeTime": "0",
+                        "tributesRequiredToFetch": 200,
+                        "estimatedWarehouseLevel": 0
+                    }
+                ],
+                "population": "9",
+                "active": "1",
+                "prestige": 1184,
+                "level": 6,
+                "stars": {
+                    "bronze": 0,
+                    "silver": 0,
+                    "gold": 3
+                },
+                "nextLevelPrestige": 2000,
+                "hasNoobProtection": false,
+                "filterInformation": false,
+                "signupTime": "1577395824",
+                "vacationState": "0",
+                "uiLimitations": "2",
+                "gold": 0,
+                "silver": "150",
+                "deletionTime": "0",
+                "coronationDuration": 0,
+                "brewCelebration": "0",
+                "uiStatus": "-1",
+                "hintStatus": "0",
+                "spawnedOnMap": "1577478806",
+                "isActivated": "1",
+                "isInstant": "0",
+                "productionBonusTime": "0",
+                "cropProductionBonusTime": "1578539796",
+                "premiumFeatureAutoExtendFlags": "0",
+                "plusAccountTime": "1578539785",
+                "limitedPremiumFeatureFlags": "0",
+                "lastPaymentTime": "0",
+                "isPunished": false,
+                "limitationFlags": "0",
+                "limitation": "0",
+                "isBannedFromMessaging": false,
+                "bannedFromMessaging": "0",
+                "questVersion": "2",
+                "nextDailyQuestTime": 1578130226,
+                "dailyQuestsExchanged": "0",
+                "avatarIdentifier": "5140658",
+                "vacationStateStart": "0",
+                "vacationStateEnd": "0",
+                "usedVacationDays": "0"
+            }
+        }
+    ],
+    "ignoreSerial": 0,
+    "time": 1578107823153,
+    "serialNo": 1762,
+    "response": {
+        "result": {
+            "1": {
+                "rewardTypeId": 17,
+                "rewardAmount": 1
+            },
+            "2": {
+                "rewardTypeId": 1,
+                "rewardAmount": 19
+            },
+            "3": {
+                "rewardTypeId": 18,
+                "rewardAmount": 2
+            },
+            "4": {
+                "rewardTypeId": 19,
+                "rewardAmount": 1
+            },
+            "5": {
+                "rewardTypeId": 14,
+                "rewardAmount": 11
+            }
+        },
+        "type": "Cardgame4of5"
+    }
+}

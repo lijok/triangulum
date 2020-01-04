@@ -1,0 +1,162 @@
+{
+    "cache": [
+        {
+            "name": "Player:8371",
+            "data": {
+                "playerId": "8371",
+                "name": "lijok",
+                "tribeId": "3",
+                "kingdomId": "0",
+                "kingdomTag": "",
+                "kingdomRole": "0",
+                "isKing": false,
+                "kingId": 0,
+                "kingstatus": "0",
+                "villages": [
+                    {
+                        "villageId": "538820613",
+                        "playerId": "8371",
+                        "name": "lijok's village",
+                        "tribeId": "3",
+                        "belongsToKing": "0",
+                        "belongsToKingdom": 0,
+                        "type": "1",
+                        "population": "9",
+                        "coordinates": {
+                            "x": "5",
+                            "y": "59"
+                        },
+                        "isMainVillage": true,
+                        "isTown": false,
+                        "treasuresUsable": "0",
+                        "treasures": "0",
+                        "allowTributeCollection": "1",
+                        "protectionGranted": "0",
+                        "tributeCollectorPlayerId": 0,
+                        "realTributePercent": 0.2,
+                        "supplyBuildings": "9",
+                        "supplyTroops": "2",
+                        "production": {
+                            "1": "28",
+                            "2": "28",
+                            "3": "28",
+                            "4": "24"
+                        },
+                        "storage": {
+                            "1": 402.31777777778,
+                            "2": 402.31777777778,
+                            "3": 402.31777777778,
+                            "4": 401.98666666667
+                        },
+                        "treasury": {
+                            "1": "0",
+                            "2": "0",
+                            "3": "0",
+                            "4": 0
+                        },
+                        "storageCapacity": {
+                            "1": "800",
+                            "2": "800",
+                            "3": "800",
+                            "4": "800"
+                        },
+                        "usedControlPoints": "0",
+                        "availableControlPoints": "0",
+                        "culturePoints": 99.938888888891,
+                        "celebrationType": "0",
+                        "celebrationEnd": "0",
+                        "culturePointProduction": "24",
+                        "treasureResourceBonus": "0",
+                        "acceptance": 100,
+                        "acceptanceProduction": "0.01666",
+                        "tributes": {
+                            "1": 0,
+                            "2": 0,
+                            "3": 0,
+                            "4": 0
+                        },
+                        "tributesCapacity": "800",
+                        "tributeTreasures": 1,
+                        "tributeProduction": 15,
+                        "tributeProductionDetail": {
+                            "1": 5,
+                            "2": 5,
+                            "3": 5,
+                            "4": 0
+                        },
+                        "tributeTime": "0",
+                        "tributesRequiredToFetch": 160,
+                        "estimatedWarehouseLevel": 0
+                    }
+                ],
+                "population": "9",
+                "active": "1",
+                "prestige": 1184,
+                "level": 6,
+                "stars": {
+                    "bronze": 0,
+                    "silver": 0,
+                    "gold": 3
+                },
+                "nextLevelPrestige": 2000,
+                "hasNoobProtection": false,
+                "filterInformation": false,
+                "signupTime": "1577395824",
+                "vacationState": "0",
+                "uiLimitations": 2,
+                "gold": 30,
+                "silver": "150",
+                "deletionTime": "0",
+                "coronationDuration": 0,
+                "brewCelebration": "0",
+                "uiStatus": "-1",
+                "hintStatus": "0",
+                "spawnedOnMap": "1577478806",
+                "isActivated": "1",
+                "isInstant": "0",
+                "productionBonusTime": "0",
+                "cropProductionBonusTime": "0",
+                "premiumFeatureAutoExtendFlags": "0",
+                "plusAccountTime": 1578539785,
+                "limitedPremiumFeatureFlags": "0",
+                "lastPaymentTime": "0",
+                "isPunished": false,
+                "limitationFlags": "0",
+                "limitation": "0",
+                "isBannedFromMessaging": false,
+                "bannedFromMessaging": "0",
+                "questVersion": "2",
+                "nextDailyQuestTime": 1578130226,
+                "dailyQuestsExchanged": "0",
+                "avatarIdentifier": "5140658",
+                "vacationStateStart": "0",
+                "vacationStateEnd": "0",
+                "usedVacationDays": "0"
+            }
+        },
+        {
+            "name": "BuildingQueue:538820613",
+            "data": {
+                "villageId": "538820613",
+                "tribeId": "3",
+                "freeSlots": {
+                    "1": 1,
+                    "2": 1,
+                    "4": 1
+                },
+                "queues": {
+                    "1": [],
+                    "2": [],
+                    "4": [],
+                    "5": []
+                },
+                "canUseInstantConstruction": false,
+                "canUseInstantConstructionOnlyInVillage": false
+            }
+        }
+    ],
+    "ignoreSerial": 0,
+    "time": 1578107785873,
+    "serialNo": 1754,
+    "response": []
+}

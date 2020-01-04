@@ -1,0 +1,29 @@
+{
+    "time": 1578108143639,
+    "serialNo": 1810,
+    "response": {
+        "result": {
+            "1": {
+                "rewardTypeId": 7,
+                "rewardAmount": 1
+            },
+            "2": {
+                "rewardTypeId": 19,
+                "rewardAmount": 2
+            },
+            "3": {
+                "rewardTypeId": 13,
+                "rewardAmount": 1
+            },
+            "4": {
+                "rewardTypeId": 3,
+                "rewardAmount": 1
+            },
+            "5": {
+                "rewardTypeId": 3,
+                "rewardAmount": 1
+            }
+        },
+        "type": "CardgameSingle"
+    }
+}
