@@ -18,12 +18,15 @@ Examples:
         gameworld.change_vacation_state()
     ]:
         run(i)
+
+    run(lobby.player.get_all(), scope='lobby')
 """
 
 from triangulum.clients.lobby import LobbyClient
 import asyncio
 import json
 import os
+import pathlib
 
 EMAIL = os.environ['TRIANGULUM_EMAIL']
 PASSWORD = os.environ['TRIANGULUM_PASSWORD']
@@ -44,12 +47,11 @@ gameworld = loop.run_until_complete(
 )
 
 
-def run(coro):
+def run(coro, scope='gameworld'):
     loop = asyncio.get_event_loop()
     rsp = loop.run_until_complete(coro)
     name = str(coro).split('<coroutine object ')[1].split(' at')[0]
     controller, action = name.split('.')
-    if not os.path.exists(f'docs/responses/{controller}'):
-        os.mkdir(f'docs/responses/{controller}')
-    with open(f'docs/responses/{controller}/{action}.json', 'w') as f:
+    pathlib.Path(f'docs/responses/{scope}/{controller}').mkdir(parents=True, exists_ok=True)
+    with open(f'docs/responses/{scope}/{controller}/{action}.json', 'w') as f:
         f.write(json.dumps(rsp, indent=4))
