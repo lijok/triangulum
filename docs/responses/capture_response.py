@@ -53,5 +53,8 @@ def run(coro, scope='gameworld'):
     name = str(coro).split('<coroutine object ')[1].split(' at')[0]
     controller, action = name.split('.')
     pathlib.Path(f'docs/responses/{scope}/{controller}').mkdir(parents=True, exist_ok=True)
-    with open(f'docs/responses/{scope}/{controller}/{action}.json', 'w') as f:
-        f.write(json.dumps(rsp, indent=4))
+    if not os.path.exists(f'docs/responses/{scope}/{controller}/{action}.json'):
+        with open(f'docs/responses/{scope}/{controller}/{action}.json', 'w') as f:
+            f.write(json.dumps(rsp, indent=4))
+    else:
+        print(f'Skipping {scope} {controller} {action} as it already exists')
