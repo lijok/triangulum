@@ -184,6 +184,7 @@ class Player(BaseController):
             action='getMidnight'
         )
 
+    # TODO: These ids are incorrect, add ui_ids doc
     async def select_cards(
             self,
             first: bool,
