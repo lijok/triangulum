@@ -340,11 +340,11 @@ class Player(BaseController):
         )
 
     async def add_note(self, x: int, y: int) -> dict:
-        """Add a note of a particular size to the ui
+        """Create a note on the ui at a particular location
 
         Args:
-            x: Width of the note
-            y: Height of the note
+            x: X location of the note
+            y: Y location of the note
 
         Returns:
             dict
@@ -370,14 +370,14 @@ class Player(BaseController):
 
         Args:
             note_id: ID of the note
-            position_x: New width of the note *
-            position_y: New height of the note *
-            size_x: UNKNOWN *
-            size_y: UNKNOWN *
+            position_x: New position X of the note
+            position_y: New position Y of the note
+            size_x: Width of the note
+            size_y: Height of the note
             text: Text on the note
 
         Returns:
-
+            dict
         """
         return await self.invoke_action(
             action='changeNote',
