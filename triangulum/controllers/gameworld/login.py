@@ -8,7 +8,9 @@ class Login(BaseController):
         super().__init__(action_handler=action_handler, controller='login')
 
     async def logout(self) -> dict:
-        """UNKNOWN *
+        """Logs you out of the game
+
+        This invalidates your session
 
         Returns:
             dict
