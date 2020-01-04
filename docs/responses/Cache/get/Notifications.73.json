@@ -1,0 +1,19 @@
+{
+    "cache": [
+        {
+            "name": "Notifications:0",
+            "data": {
+                "pId": "73",
+                "type": 0,
+                "count": null,
+                "time": null,
+                "itemId": null,
+                "expireTime": null
+            }
+        }
+    ],
+    "ignoreSerial": 0,
+    "time": 1578074035191,
+    "serialNo": 26512,
+    "response": []
+}

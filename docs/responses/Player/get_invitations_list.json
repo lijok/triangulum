@@ -1,0 +1,27 @@
+{
+    "serialNo": 28199,
+    "response": {
+        "accepted": [
+            {
+                "invitedEmail": "lolprofiles@outlook.com",
+                "invitingTime": 1545138684,
+                "status": 2,
+                "invitedAccountId": "3680906",
+                "joinTime": 1545140134,
+                "bonus": [],
+                "invitedAccountName": "luler#EN"
+            }
+        ],
+        "open": [
+            {
+                "invitedEmail": "Tom@gmail.com",
+                "invitingTime": 1577622886,
+                "status": 0,
+                "invitedAccountId": "0",
+                "joinTime": 0,
+                "bonus": []
+            }
+        ],
+        "pendingBonusCount": 0
+    }
+}

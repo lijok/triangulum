@@ -1,0 +1,67 @@
+{
+    "time": 1578103816249,
+    "serialNo": 28202,
+    "response": {
+        "top10Attacker": [
+            {
+                "rank": 0,
+                "points": 2734,
+                "playerId": 4408,
+                "name": "scuba",
+                "kingdomRole": "0"
+            },
+            {
+                "rank": 1,
+                "points": 445,
+                "playerId": 5230,
+                "name": "lijok",
+                "kingdomRole": "2"
+            },
+            {
+                "rank": 2,
+                "points": 273,
+                "playerId": 5302,
+                "name": "tantuni",
+                "kingdomRole": "1"
+            },
+            {
+                "rank": 3,
+                "points": 29,
+                "playerId": 5122,
+                "name": "VISHAL",
+                "kingdomRole": "0"
+            }
+        ],
+        "top10Defender": [
+            {
+                "rank": 0,
+                "points": 231,
+                "playerId": 4408,
+                "name": "scuba",
+                "kingdomRole": "0"
+            },
+            {
+                "rank": 1,
+                "points": 189,
+                "playerId": 5302,
+                "name": "tantuni",
+                "kingdomRole": "1"
+            },
+            {
+                "rank": 2,
+                "points": 122,
+                "playerId": 5122,
+                "name": "VISHAL",
+                "kingdomRole": "0"
+            },
+            {
+                "rank": 3,
+                "points": 114,
+                "playerId": 5230,
+                "name": "lijok",
+                "kingdomRole": "2"
+            }
+        ],
+        "top10Climber": []
+    }
+}

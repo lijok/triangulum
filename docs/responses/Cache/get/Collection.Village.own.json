@@ -1,0 +1,94 @@
+{
+    "cache": [
+        {
+            "name": "Collection:Village:own",
+            "data": {
+                "cache": [
+                    {
+                        "name": "Village:534986754",
+                        "data": {
+                            "villageId": "534986754",
+                            "playerId": "5230",
+                            "name": "[01]",
+                            "tribeId": "3",
+                            "belongsToKing": "5302",
+                            "belongsToKingdom": "683",
+                            "type": "1",
+                            "population": "393",
+                            "coordinates": {
+                                "x": "2",
+                                "y": "-58"
+                            },
+                            "isMainVillage": true,
+                            "isTown": false,
+                            "treasuresUsable": "100",
+                            "treasures": "17",
+                            "allowTributeCollection": "0",
+                            "protectionGranted": "1",
+                            "tributeCollectorPlayerId": "5302",
+                            "realTributePercent": 0.2,
+                            "supplyBuildings": "393",
+                            "supplyTroops": "29",
+                            "production": {
+                                "1": "2652",
+                                "2": "2278",
+                                "3": "2097",
+                                "4": "1622"
+                            },
+                            "storage": {
+                                "1": 334.58500000003,
+                                "2": 408.95222222268,
+                                "3": 392.1491666668,
+                                "4": 344.79888888788
+                            },
+                            "treasury": {
+                                "1": "0",
+                                "2": "0",
+                                "3": "0",
+                                "4": 0
+                            },
+                            "storageCapacity": {
+                                "1": "22000",
+                                "2": "22000",
+                                "3": "22000",
+                                "4": "18000"
+                            },
+                            "usedControlPoints": "0",
+                            "availableControlPoints": "0",
+                            "culturePoints": 1895.985694439,
+                            "celebrationType": "0",
+                            "celebrationEnd": "0",
+                            "culturePointProduction": "525",
+                            "treasureResourceBonus": "17",
+                            "acceptance": 100,
+                            "acceptanceProduction": "0.01666",
+                            "tributes": {
+                                "1": 48,
+                                "2": 42,
+                                "3": 38,
+                                "4": 0
+                            },
+                            "tributesCapacity": "22000",
+                            "tributeTreasures": 0,
+                            "tributeProduction": 1404,
+                            "tributeProductionDetail": {
+                                "1": 530,
+                                "2": 455,
+                                "3": 419,
+                                "4": 0
+                            },
+                            "tributeTime": "1578030488",
+                            "tributesRequiredToFetch": 4400,
+                            "estimatedWarehouseLevel": 13
+                        }
+                    }
+                ],
+                "operation": 1
+            }
+        }
+    ],
+    "ignoreSerial": 0,
+    "time": 1578074034754,
+    "serialNo": 26497,
+    "response": []
+}

@@ -1,0 +1,28 @@
+{
+    "cache": [
+        {
+            "name": "Kingdom:0",
+            "data": {
+                "groupId": "0",
+                "members": [],
+                "tag": null,
+                "creationTime": "1578074035",
+                "kingdomType": 0,
+                "description": {
+                    "groupId": "0",
+                    "publicDescription": null,
+                    "internalDescription": ""
+                },
+                "diplomacy": {
+                    "treaties": [],
+                    "ownOffers": [],
+                    "foreignOffers": []
+                }
+            }
+        }
+    ],
+    "ignoreSerial": 0,
+    "time": 1578074035037,
+    "serialNo": 26506,
+    "response": []
+}

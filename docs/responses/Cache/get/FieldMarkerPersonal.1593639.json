@@ -1,0 +1,26 @@
+{
+    "cache": [
+        {
+            "name": "FieldMarkerPersonal:",
+            "data": {
+                "id": 0,
+                "regionId": 460407411,
+                "cellId": 1593639,
+                "creatorPlayerId": 0,
+                "isGlobal": 0,
+                "playerId": 0,
+                "kingdomId": 0,
+                "societyId": 0,
+                "text": null,
+                "timestamp": 1578074034,
+                "duration": 86400,
+                "minimizedState": 0,
+                "isClosed": 0
+            }
+        }
+    ],
+    "ignoreSerial": 0,
+    "time": 1578074034823,
+    "serialNo": 26500,
+    "response": []
+}

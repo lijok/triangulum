@@ -1,0 +1,70 @@
+{
+    "cache": [
+        {
+            "name": "Collection:QuestGiver:",
+            "data": {
+                "cache": [
+                    {
+                        "name": "QuestGiver:32420",
+                        "data": {
+                            "npcId": "-1",
+                            "questId": "10010",
+                            "dialog": "-2",
+                            "questStatus": "3"
+                        }
+                    },
+                    {
+                        "name": "QuestGiver:32421",
+                        "data": {
+                            "npcId": "0",
+                            "questId": "-1",
+                            "dialog": "-1",
+                            "questStatus": "-1"
+                        }
+                    },
+                    {
+                        "name": "QuestGiver:32422",
+                        "data": {
+                            "npcId": "9",
+                            "questId": "732",
+                            "dialog": "-2",
+                            "questStatus": "2"
+                        }
+                    },
+                    {
+                        "name": "QuestGiver:32423",
+                        "data": {
+                            "npcId": "1",
+                            "questId": "626",
+                            "dialog": "-2",
+                            "questStatus": "3"
+                        }
+                    },
+                    {
+                        "name": "QuestGiver:32424",
+                        "data": {
+                            "npcId": "3",
+                            "questId": "539",
+                            "dialog": "-2",
+                            "questStatus": "3"
+                        }
+                    },
+                    {
+                        "name": "QuestGiver:32425",
+                        "data": {
+                            "npcId": "11",
+                            "questId": "-1",
+                            "dialog": "-3",
+                            "questStatus": "3"
+                        }
+                    }
+                ],
+                "operation": 1
+            }
+        }
+    ],
+    "ignoreSerial": 0,
+    "time": 1578074034483,
+    "serialNo": 26486,
+    "response": []
+}

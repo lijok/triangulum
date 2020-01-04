@@ -1,0 +1,39 @@
+{
+    "cache": [
+        {
+            "name": "HeroItem:211609",
+            "data": {
+                "id": "211609",
+                "playerId": "5230",
+                "tribeId": 0,
+                "inSlot": "0",
+                "itemId": "120",
+                "itemType": "120",
+                "amount": "112",
+                "strength": "0",
+                "images": [
+                    "treasures"
+                ],
+                "bonuses": [],
+                "stackable": true,
+                "slot": -1,
+                "lastChange": "1578004207",
+                "hasSpeedBonus": false,
+                "inventorySlotNr": "7",
+                "previousOwners": 0,
+                "upgradeLevel": "0",
+                "upgradableItemType": false,
+                "itemQuality": 0,
+                "itemTier": 0,
+                "baseUpgradeBonus": [],
+                "cardGameItem": false,
+                "premiumItem": false,
+                "upgradedItem": false
+            }
+        }
+    ],
+    "ignoreSerial": 0,
+    "time": 1578074035010,
+    "serialNo": 26505,
+    "response": []
+}

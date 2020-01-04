@@ -1,0 +1,30 @@
+{
+    "cache": [
+        {
+            "name": "Auction:31111",
+            "data": {
+                "id": 31111,
+                "tribeId": null,
+                "itemTypeId": null,
+                "strength": null,
+                "bonuses": [],
+                "amount": null,
+                "status": null,
+                "timeStart": null,
+                "timeEnd": null,
+                "price": 0,
+                "bids": 0,
+                "highestBid": 0,
+                "highestBidderPlayerId": 0,
+                "highestBidderName": "Nature",
+                "slot": 0,
+                "images": null,
+                "stackable": false
+            }
+        }
+    ],
+    "ignoreSerial": 0,
+    "time": 1578074033634,
+    "serialNo": 26460,
+    "response": []
+}

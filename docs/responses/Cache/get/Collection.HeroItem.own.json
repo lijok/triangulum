@@ -1,0 +1,767 @@
+{
+    "cache": [
+        {
+            "name": "Collection:HeroItem:own",
+            "data": {
+                "cache": [
+                    {
+                        "name": "HeroItem:210389",
+                        "data": {
+                            "id": "210389",
+                            "playerId": "5230",
+                            "tribeId": 0,
+                            "inSlot": "6",
+                            "itemId": "109",
+                            "itemType": "109",
+                            "amount": "1",
+                            "strength": "14",
+                            "images": [
+                                "horse0_0"
+                            ],
+                            "bonuses": {
+                                "17": "14"
+                            },
+                            "stackable": false,
+                            "slot": 6,
+                            "lastChange": "1577622277",
+                            "hasSpeedBonus": true,
+                            "inventorySlotNr": "0",
+                            "previousOwners": 0,
+                            "upgradeLevel": "0",
+                            "upgradableItemType": false,
+                            "itemQuality": 1,
+                            "itemTier": 1,
+                            "baseUpgradeBonus": [],
+                            "cardGameItem": false,
+                            "premiumItem": false,
+                            "upgradedItem": false
+                        }
+                    },
+                    {
+                        "name": "HeroItem:210447",
+                        "data": {
+                            "id": "210447",
+                            "playerId": "5230",
+                            "tribeId": 0,
+                            "inSlot": "0",
+                            "itemId": "115",
+                            "itemType": "115",
+                            "amount": "1",
+                            "strength": "1",
+                            "images": [
+                                "book"
+                            ],
+                            "bonuses": {
+                                "20": "1"
+                            },
+                            "stackable": false,
+                            "slot": -1,
+                            "lastChange": "1577623491",
+                            "hasSpeedBonus": false,
+                            "inventorySlotNr": "3",
+                            "previousOwners": 0,
+                            "upgradeLevel": "0",
+                            "upgradableItemType": false,
+                            "itemQuality": 0,
+                            "itemTier": 0,
+                            "baseUpgradeBonus": [],
+                            "cardGameItem": false,
+                            "premiumItem": false,
+                            "upgradedItem": false
+                        }
+                    },
+                    {
+                        "name": "HeroItem:210527",
+                        "data": {
+                            "id": "210527",
+                            "playerId": "5230",
+                            "tribeId": 0,
+                            "inSlot": "0",
+                            "itemId": "119",
+                            "itemType": "119",
+                            "amount": "50",
+                            "strength": "0",
+                            "images": [
+                                "cage"
+                            ],
+                            "bonuses": [],
+                            "stackable": true,
+                            "slot": 7,
+                            "lastChange": "1577830618",
+                            "hasSpeedBonus": false,
+                            "inventorySlotNr": "4",
+                            "previousOwners": 1,
+                            "upgradeLevel": "0",
+                            "upgradableItemType": false,
+                            "itemQuality": 0,
+                            "itemTier": 0,
+                            "baseUpgradeBonus": [],
+                            "cardGameItem": false,
+                            "premiumItem": false,
+                            "upgradedItem": false
+                        }
+                    },
+                    {
+                        "name": "HeroItem:211119",
+                        "data": {
+                            "id": "211119",
+                            "playerId": "5230",
+                            "tribeId": 0,
+                            "inSlot": "0",
+                            "itemId": "134",
+                            "itemType": "134",
+                            "amount": "1",
+                            "strength": "0",
+                            "images": [
+                                "cropChest4",
+                                "cropChest5"
+                            ],
+                            "bonuses": {
+                                "25": 4
+                            },
+                            "stackable": true,
+                            "slot": -1,
+                            "lastChange": "1577638826",
+                            "hasSpeedBonus": false,
+                            "inventorySlotNr": "1",
+                            "previousOwners": 0,
+                            "upgradeLevel": "0",
+                            "upgradableItemType": false,
+                            "itemQuality": 0,
+                            "itemTier": 0,
+                            "baseUpgradeBonus": [],
+                            "cardGameItem": true,
+                            "premiumItem": false,
+                            "upgradedItem": false
+                        }
+                    },
+                    {
+                        "name": "HeroItem:211121",
+                        "data": {
+                            "id": "211121",
+                            "playerId": "5230",
+                            "tribeId": 0,
+                            "inSlot": "0",
+                            "itemId": "130",
+                            "itemType": "130",
+                            "amount": "1",
+                            "strength": "0",
+                            "images": [
+                                "resourceChest3",
+                                "resourceChest4"
+                            ],
+                            "bonuses": {
+                                "24": 3
+                            },
+                            "stackable": true,
+                            "slot": -1,
+                            "lastChange": "1577638826",
+                            "hasSpeedBonus": false,
+                            "inventorySlotNr": "6",
+                            "previousOwners": 0,
+                            "upgradeLevel": "0",
+                            "upgradableItemType": false,
+                            "itemQuality": 0,
+                            "itemTier": 0,
+                            "baseUpgradeBonus": [],
+                            "cardGameItem": true,
+                            "premiumItem": false,
+                            "upgradedItem": false
+                        }
+                    },
+                    {
+                        "name": "HeroItem:211609",
+                        "data": {
+                            "id": "211609",
+                            "playerId": "5230",
+                            "tribeId": 0,
+                            "inSlot": "0",
+                            "itemId": "120",
+                            "itemType": "120",
+                            "amount": "112",
+                            "strength": "0",
+                            "images": [
+                                "treasures"
+                            ],
+                            "bonuses": [],
+                            "stackable": true,
+                            "slot": -1,
+                            "lastChange": "1578004207",
+                            "hasSpeedBonus": false,
+                            "inventorySlotNr": "7",
+                            "previousOwners": 0,
+                            "upgradeLevel": "0",
+                            "upgradableItemType": false,
+                            "itemQuality": 0,
+                            "itemTier": 0,
+                            "baseUpgradeBonus": [],
+                            "cardGameItem": false,
+                            "premiumItem": false,
+                            "upgradedItem": false
+                        }
+                    },
+                    {
+                        "name": "HeroItem:211957",
+                        "data": {
+                            "id": "211957",
+                            "playerId": "5230",
+                            "tribeId": 0,
+                            "inSlot": "0",
+                            "itemId": "133",
+                            "itemType": "133",
+                            "amount": "2",
+                            "strength": "0",
+                            "images": [
+                                "cropChest3",
+                                "cropChest4"
+                            ],
+                            "bonuses": {
+                                "25": 3
+                            },
+                            "stackable": true,
+                            "slot": -1,
+                            "lastChange": "1577928748",
+                            "hasSpeedBonus": false,
+                            "inventorySlotNr": "8",
+                            "previousOwners": 0,
+                            "upgradeLevel": "0",
+                            "upgradableItemType": false,
+                            "itemQuality": 0,
+                            "itemTier": 0,
+                            "baseUpgradeBonus": [],
+                            "cardGameItem": true,
+                            "premiumItem": false,
+                            "upgradedItem": false
+                        }
+                    },
+                    {
+                        "name": "HeroItem:212187",
+                        "data": {
+                            "id": "212187",
+                            "playerId": "5230",
+                            "tribeId": 0,
+                            "inSlot": "0",
+                            "itemId": "117",
+                            "itemType": "117",
+                            "amount": "331",
+                            "strength": "25",
+                            "images": [
+                                "small_bandage"
+                            ],
+                            "bonuses": {
+                                "21": "25"
+                            },
+                            "stackable": true,
+                            "slot": 7,
+                            "lastChange": "1578066150",
+                            "hasSpeedBonus": false,
+                            "inventorySlotNr": "9",
+                            "previousOwners": 0,
+                            "upgradeLevel": "0",
+                            "upgradableItemType": false,
+                            "itemQuality": 0,
+                            "itemTier": 0,
+                            "baseUpgradeBonus": [],
+                            "cardGameItem": false,
+                            "premiumItem": false,
+                            "upgradedItem": false
+                        }
+                    },
+                    {
+                        "name": "HeroItem:212327",
+                        "data": {
+                            "id": "212327",
+                            "playerId": "5230",
+                            "tribeId": 0,
+                            "inSlot": "1",
+                            "itemId": "10",
+                            "itemType": "10",
+                            "amount": "1",
+                            "strength": "9",
+                            "images": [
+                                "helmet3_0"
+                            ],
+                            "bonuses": {
+                                "3": 9
+                            },
+                            "stackable": false,
+                            "slot": 1,
+                            "lastChange": "1577667056",
+                            "hasSpeedBonus": false,
+                            "inventorySlotNr": "0",
+                            "previousOwners": 3,
+                            "upgradeLevel": "0",
+                            "upgradableItemType": false,
+                            "itemQuality": 1,
+                            "itemTier": 1,
+                            "baseUpgradeBonus": {
+                                "3": 1
+                            },
+                            "cardGameItem": false,
+                            "premiumItem": false,
+                            "upgradedItem": false
+                        }
+                    },
+                    {
+                        "name": "HeroItem:213293",
+                        "data": {
+                            "id": "213293",
+                            "playerId": "5230",
+                            "tribeId": 3,
+                            "inSlot": "0",
+                            "itemId": "43",
+                            "itemType": "43",
+                            "amount": "1",
+                            "strength": "600",
+                            "images": [
+                                "spear1_0"
+                            ],
+                            "bonuses": {
+                                "11": 6,
+                                "12": 9,
+                                "13": 600
+                            },
+                            "stackable": false,
+                            "slot": 2,
+                            "lastChange": "1577696490",
+                            "hasSpeedBonus": false,
+                            "inventorySlotNr": "10",
+                            "previousOwners": 2,
+                            "upgradeLevel": "0",
+                            "upgradableItemType": false,
+                            "itemQuality": 1,
+                            "itemTier": 1,
+                            "baseUpgradeBonus": {
+                                "13": 50
+                            },
+                            "cardGameItem": false,
+                            "premiumItem": false,
+                            "upgradedItem": false
+                        }
+                    },
+                    {
+                        "name": "HeroItem:213595",
+                        "data": {
+                            "id": "213595",
+                            "playerId": "5230",
+                            "tribeId": 0,
+                            "inSlot": "0",
+                            "itemId": "81",
+                            "itemType": "81",
+                            "amount": "1",
+                            "strength": "31",
+                            "images": [
+                                "horn0_2"
+                            ],
+                            "bonuses": {
+                                "10": 31
+                            },
+                            "stackable": false,
+                            "slot": 3,
+                            "lastChange": "1577702377",
+                            "hasSpeedBonus": false,
+                            "inventorySlotNr": "2",
+                            "previousOwners": 1,
+                            "upgradeLevel": "0",
+                            "upgradableItemType": false,
+                            "itemQuality": 3,
+                            "itemTier": 3,
+                            "baseUpgradeBonus": {
+                                "10": 1
+                            },
+                            "cardGameItem": false,
+                            "premiumItem": false,
+                            "upgradedItem": false
+                        }
+                    },
+                    {
+                        "name": "HeroItem:213759",
+                        "data": {
+                            "id": "213759",
+                            "playerId": "5230",
+                            "tribeId": 3,
+                            "inSlot": "2",
+                            "itemId": "36",
+                            "itemType": "36",
+                            "amount": "1",
+                            "strength": "1500",
+                            "images": [
+                                "sword4_2"
+                            ],
+                            "bonuses": {
+                                "11": 2,
+                                "12": 5,
+                                "13": 1500
+                            },
+                            "stackable": false,
+                            "slot": 2,
+                            "lastChange": "1577706171",
+                            "hasSpeedBonus": false,
+                            "inventorySlotNr": "0",
+                            "previousOwners": 0,
+                            "upgradeLevel": "0",
+                            "upgradableItemType": false,
+                            "itemQuality": 3,
+                            "itemTier": 3,
+                            "baseUpgradeBonus": {
+                                "13": 200
+                            },
+                            "cardGameItem": false,
+                            "premiumItem": false,
+                            "upgradedItem": false
+                        }
+                    },
+                    {
+                        "name": "HeroItem:213933",
+                        "data": {
+                            "id": "213933",
+                            "playerId": "5230",
+                            "tribeId": 3,
+                            "inSlot": "0",
+                            "itemId": "42",
+                            "itemType": "42",
+                            "amount": "1",
+                            "strength": "1500",
+                            "images": [
+                                "staff0_2"
+                            ],
+                            "bonuses": {
+                                "11": 5,
+                                "12": 10,
+                                "13": 1500
+                            },
+                            "stackable": false,
+                            "slot": 2,
+                            "lastChange": "1577709481",
+                            "hasSpeedBonus": false,
+                            "inventorySlotNr": "11",
+                            "previousOwners": 0,
+                            "upgradeLevel": "0",
+                            "upgradableItemType": false,
+                            "itemQuality": 3,
+                            "itemTier": 3,
+                            "baseUpgradeBonus": {
+                                "13": 200
+                            },
+                            "cardGameItem": false,
+                            "premiumItem": false,
+                            "upgradedItem": false
+                        }
+                    },
+                    {
+                        "name": "HeroItem:214571",
+                        "data": {
+                            "id": "214571",
+                            "playerId": "5230",
+                            "tribeId": 0,
+                            "inSlot": "0",
+                            "itemId": "115",
+                            "itemType": "115",
+                            "amount": "1",
+                            "strength": "1",
+                            "images": [
+                                "book"
+                            ],
+                            "bonuses": {
+                                "20": "1"
+                            },
+                            "stackable": false,
+                            "slot": -1,
+                            "lastChange": "1577722558",
+                            "hasSpeedBonus": false,
+                            "inventorySlotNr": "12",
+                            "previousOwners": 0,
+                            "upgradeLevel": "0",
+                            "upgradableItemType": false,
+                            "itemQuality": 0,
+                            "itemTier": 0,
+                            "baseUpgradeBonus": [],
+                            "cardGameItem": false,
+                            "premiumItem": false,
+                            "upgradedItem": false
+                        }
+                    },
+                    {
+                        "name": "HeroItem:214974",
+                        "data": {
+                            "id": "214974",
+                            "playerId": "5230",
+                            "tribeId": 0,
+                            "inSlot": "5",
+                            "itemId": "102",
+                            "itemType": "102",
+                            "amount": "1",
+                            "strength": "6",
+                            "images": [
+                                "shoes2_2"
+                            ],
+                            "bonuses": {
+                                "18": 6
+                            },
+                            "stackable": false,
+                            "slot": 5,
+                            "lastChange": "1577732627",
+                            "hasSpeedBonus": true,
+                            "inventorySlotNr": "0",
+                            "previousOwners": 0,
+                            "upgradeLevel": "0",
+                            "upgradableItemType": false,
+                            "itemQuality": 3,
+                            "itemTier": 3,
+                            "baseUpgradeBonus": {
+                                "18": 1
+                            },
+                            "cardGameItem": false,
+                            "premiumItem": false,
+                            "upgradedItem": false
+                        }
+                    },
+                    {
+                        "name": "HeroItem:216104",
+                        "data": {
+                            "id": "216104",
+                            "playerId": "5230",
+                            "tribeId": 0,
+                            "inSlot": "0",
+                            "itemId": "124",
+                            "itemType": "124",
+                            "amount": "10",
+                            "strength": "5",
+                            "images": [
+                                "healing_potion"
+                            ],
+                            "bonuses": {
+                                "26": "5"
+                            },
+                            "stackable": true,
+                            "slot": 7,
+                            "lastChange": "1577757595",
+                            "hasSpeedBonus": false,
+                            "inventorySlotNr": "14",
+                            "previousOwners": 0,
+                            "upgradeLevel": "0",
+                            "upgradableItemType": false,
+                            "itemQuality": 0,
+                            "itemTier": 0,
+                            "baseUpgradeBonus": [],
+                            "cardGameItem": true,
+                            "premiumItem": false,
+                            "upgradedItem": false
+                        }
+                    },
+                    {
+                        "name": "HeroItem:216170",
+                        "data": {
+                            "id": "216170",
+                            "playerId": "5230",
+                            "tribeId": 0,
+                            "inSlot": "0",
+                            "itemId": "115",
+                            "itemType": "115",
+                            "amount": "1",
+                            "strength": "1",
+                            "images": [
+                                "book"
+                            ],
+                            "bonuses": {
+                                "20": "1"
+                            },
+                            "stackable": false,
+                            "slot": -1,
+                            "lastChange": "1577760502",
+                            "hasSpeedBonus": false,
+                            "inventorySlotNr": "5",
+                            "previousOwners": 0,
+                            "upgradeLevel": "0",
+                            "upgradableItemType": false,
+                            "itemQuality": 0,
+                            "itemTier": 0,
+                            "baseUpgradeBonus": [],
+                            "cardGameItem": false,
+                            "premiumItem": false,
+                            "upgradedItem": false
+                        }
+                    },
+                    {
+                        "name": "HeroItem:218376",
+                        "data": {
+                            "id": "218376",
+                            "playerId": "5230",
+                            "tribeId": 3,
+                            "inSlot": "0",
+                            "itemId": "38",
+                            "itemType": "38",
+                            "amount": "1",
+                            "strength": "1000",
+                            "images": [
+                                "bow0_1"
+                            ],
+                            "bonuses": {
+                                "11": 4,
+                                "12": 8,
+                                "13": 1000
+                            },
+                            "stackable": false,
+                            "slot": 2,
+                            "lastChange": "1577818025",
+                            "hasSpeedBonus": false,
+                            "inventorySlotNr": "13",
+                            "previousOwners": 2,
+                            "upgradeLevel": "0",
+                            "upgradableItemType": false,
+                            "itemQuality": 2,
+                            "itemTier": 2,
+                            "baseUpgradeBonus": {
+                                "13": 100
+                            },
+                            "cardGameItem": false,
+                            "premiumItem": false,
+                            "upgradedItem": false
+                        }
+                    },
+                    {
+                        "name": "HeroItem:220591",
+                        "data": {
+                            "id": "220591",
+                            "playerId": "5230",
+                            "tribeId": 0,
+                            "inSlot": "3",
+                            "itemId": "72",
+                            "itemType": "72",
+                            "amount": "1",
+                            "strength": "20",
+                            "images": [
+                                "telescope0_2"
+                            ],
+                            "bonuses": {
+                                "22": 20
+                            },
+                            "stackable": false,
+                            "slot": 3,
+                            "lastChange": "1577885059",
+                            "hasSpeedBonus": false,
+                            "inventorySlotNr": "0",
+                            "previousOwners": 0,
+                            "upgradeLevel": "0",
+                            "upgradableItemType": false,
+                            "itemQuality": 3,
+                            "itemTier": 3,
+                            "baseUpgradeBonus": {
+                                "22": 1
+                            },
+                            "cardGameItem": false,
+                            "premiumItem": false,
+                            "upgradedItem": false
+                        }
+                    },
+                    {
+                        "name": "HeroItem:221244",
+                        "data": {
+                            "id": "221244",
+                            "playerId": "5230",
+                            "tribeId": 0,
+                            "inSlot": "0",
+                            "itemId": "112",
+                            "itemType": "112",
+                            "amount": "34",
+                            "strength": "1",
+                            "images": [
+                                "ointment"
+                            ],
+                            "bonuses": {
+                                "14": "1"
+                            },
+                            "stackable": true,
+                            "slot": -1,
+                            "lastChange": "1577929113",
+                            "hasSpeedBonus": false,
+                            "inventorySlotNr": "15",
+                            "previousOwners": 0,
+                            "upgradeLevel": "0",
+                            "upgradableItemType": false,
+                            "itemQuality": 0,
+                            "itemTier": 0,
+                            "baseUpgradeBonus": [],
+                            "cardGameItem": false,
+                            "premiumItem": false,
+                            "upgradedItem": false
+                        }
+                    },
+                    {
+                        "name": "HeroItem:225065",
+                        "data": {
+                            "id": "225065",
+                            "playerId": "5230",
+                            "tribeId": 0,
+                            "inSlot": "4",
+                            "itemId": "84",
+                            "itemType": "84",
+                            "amount": "1",
+                            "strength": "42",
+                            "images": [
+                                "shirt0_2"
+                            ],
+                            "bonuses": {
+                                "14": "42"
+                            },
+                            "stackable": false,
+                            "slot": 4,
+                            "lastChange": "1578004720",
+                            "hasSpeedBonus": false,
+                            "inventorySlotNr": "0",
+                            "previousOwners": 0,
+                            "upgradeLevel": "0",
+                            "upgradableItemType": false,
+                            "itemQuality": 3,
+                            "itemTier": 3,
+                            "baseUpgradeBonus": {
+                                "13": 200
+                            },
+                            "cardGameItem": false,
+                            "premiumItem": false,
+                            "upgradedItem": false
+                        }
+                    },
+                    {
+                        "name": "HeroItem:225142",
+                        "data": {
+                            "id": "225142",
+                            "playerId": "5230",
+                            "tribeId": 0,
+                            "inSlot": "0",
+                            "itemId": "132",
+                            "itemType": "132",
+                            "amount": "1",
+                            "strength": "0",
+                            "images": [
+                                "resourceChest5"
+                            ],
+                            "bonuses": {
+                                "24": 5
+                            },
+                            "stackable": true,
+                            "slot": -1,
+                            "lastChange": "1578006075",
+                            "hasSpeedBonus": false,
+                            "inventorySlotNr": "16",
+                            "previousOwners": 0,
+                            "upgradeLevel": "0",
+                            "upgradableItemType": false,
+                            "itemQuality": 0,
+                            "itemTier": 0,
+                            "baseUpgradeBonus": [],
+                            "cardGameItem": true,
+                            "premiumItem": false,
+                            "upgradedItem": false
+                        }
+                    }
+                ],
+                "operation": 1
+            }
+        }
+    ],
+    "ignoreSerial": 0,
+    "time": 1578074034103,
+    "serialNo": 26475,
+    "response": []
+}

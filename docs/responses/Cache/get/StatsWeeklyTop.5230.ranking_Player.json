@@ -1,0 +1,751 @@
+{
+    "cache": [
+        {
+            "name": "StatsWeeklyTop:5230:ranking_Player",
+            "data": {
+                "top10Attacker": [
+                    {
+                        "rank": 0,
+                        "points": 179224,
+                        "playerId": "585",
+                        "name": "aga",
+                        "playerName": "aga",
+                        "tribeId": "2",
+                        "kingdomId": "194",
+                        "village": 7,
+                        "population": 3746,
+                        "stars": {
+                            "bronzeBadge": 1,
+                            "bronze": 0,
+                            "silver": 0,
+                            "gold": 0
+                        }
+                    },
+                    {
+                        "rank": 1,
+                        "points": 122739,
+                        "playerId": "394",
+                        "name": "TJP",
+                        "playerName": "TJP",
+                        "tribeId": "2",
+                        "kingdomId": "168",
+                        "village": 6,
+                        "population": 5427,
+                        "stars": {
+                            "silverBadge": 1,
+                            "bronze": 0,
+                            "silver": 0,
+                            "gold": 0
+                        }
+                    },
+                    {
+                        "rank": 2,
+                        "points": 114959,
+                        "playerId": "106",
+                        "name": "CoffeeShop",
+                        "playerName": "CoffeeShop",
+                        "tribeId": "2",
+                        "kingdomId": "222",
+                        "village": 9,
+                        "population": 8420,
+                        "stars": {
+                            "bronzeBadge": 1,
+                            "bronze": 0,
+                            "silver": 0,
+                            "gold": 0
+                        }
+                    },
+                    {
+                        "rank": 3,
+                        "points": 113606,
+                        "playerId": "120",
+                        "name": "Drunk",
+                        "playerName": "Drunk",
+                        "tribeId": "2",
+                        "kingdomId": "4",
+                        "village": 9,
+                        "population": 10409,
+                        "stars": {
+                            "bronze": 0,
+                            "silver": 3,
+                            "gold": 2
+                        }
+                    },
+                    {
+                        "rank": 4,
+                        "points": 93035,
+                        "playerId": "393",
+                        "name": "mrt72",
+                        "playerName": "mrt72",
+                        "tribeId": "2",
+                        "kingdomId": "194",
+                        "village": 6,
+                        "population": 6874,
+                        "stars": {
+                            "silverBadge": 1,
+                            "bronze": 0,
+                            "silver": 0,
+                            "gold": 0
+                        }
+                    },
+                    {
+                        "rank": 5,
+                        "points": 92683,
+                        "playerId": "155",
+                        "name": "Bronx",
+                        "playerName": "Bronx",
+                        "tribeId": "2",
+                        "kingdomId": "222",
+                        "village": 10,
+                        "population": 8080,
+                        "stars": {
+                            "bronze": 0,
+                            "silver": 3,
+                            "gold": 1
+                        }
+                    },
+                    {
+                        "rank": 6,
+                        "points": 90204,
+                        "playerId": "274",
+                        "name": "4iorniy",
+                        "playerName": "4iorniy",
+                        "tribeId": "2",
+                        "kingdomId": "207",
+                        "village": 10,
+                        "population": 7382,
+                        "stars": {
+                            "bronze": 0,
+                            "silver": 0,
+                            "gold": 3
+                        }
+                    },
+                    {
+                        "rank": 7,
+                        "points": 73679,
+                        "playerId": "3224",
+                        "name": "DEADLY ASSASIN",
+                        "playerName": "DEADLY ASSASIN",
+                        "tribeId": "1",
+                        "kingdomId": "222",
+                        "village": 5,
+                        "population": 6366,
+                        "stars": {
+                            "silverBadge": 1,
+                            "bronze": 0,
+                            "silver": 0,
+                            "gold": 0
+                        }
+                    },
+                    {
+                        "rank": 8,
+                        "points": 73284,
+                        "playerId": "404",
+                        "name": "baccins",
+                        "playerName": "baccins",
+                        "tribeId": "2",
+                        "kingdomId": "222",
+                        "village": 7,
+                        "population": 4243,
+                        "stars": {
+                            "silverBadge": 1,
+                            "bronze": 0,
+                            "silver": 0,
+                            "gold": 0
+                        }
+                    },
+                    {
+                        "rank": 9,
+                        "points": 67869,
+                        "playerId": "929",
+                        "name": "tassatar",
+                        "playerName": "tassatar",
+                        "tribeId": "1",
+                        "kingdomId": "222",
+                        "village": 9,
+                        "population": 7134,
+                        "stars": {
+                            "bronzeBadge": 1,
+                            "bronze": 0,
+                            "silver": 0,
+                            "gold": 0
+                        }
+                    }
+                ],
+                "top10Attacker_ranking_Player": [
+                    {
+                        "rank": 1119,
+                        "points": 543,
+                        "playerId": "5230",
+                        "name": "lijok",
+                        "playerName": "lijok",
+                        "tribeId": "3",
+                        "kingdomId": "683",
+                        "village": 1,
+                        "population": 393,
+                        "stars": {
+                            "bronze": 0,
+                            "silver": 0,
+                            "gold": 3
+                        }
+                    }
+                ],
+                "top10Defender": [
+                    {
+                        "rank": 0,
+                        "points": 53515,
+                        "playerId": "674",
+                        "name": "\u041a\u043e\u0442\u0430\u0437\u0430\u0440\u0431",
+                        "playerName": "\u041a\u043e\u0442\u0430\u0437\u0430\u0440\u0431",
+                        "tribeId": "1",
+                        "kingdomId": "77",
+                        "village": 6,
+                        "population": 5161,
+                        "stars": {
+                            "bronze": 0,
+                            "silver": 0,
+                            "gold": 3
+                        }
+                    },
+                    {
+                        "rank": 1,
+                        "points": 48036,
+                        "playerId": "1498",
+                        "name": "WindiR",
+                        "playerName": "WindiR",
+                        "tribeId": "3",
+                        "kingdomId": "328",
+                        "village": 10,
+                        "population": 9167,
+                        "stars": {
+                            "bronze": 0,
+                            "silver": 3,
+                            "gold": 1
+                        }
+                    },
+                    {
+                        "rank": 2,
+                        "points": 44522,
+                        "playerId": "1035",
+                        "name": "Masterlink",
+                        "playerName": "Masterlink",
+                        "tribeId": "3",
+                        "kingdomId": "77",
+                        "village": 6,
+                        "population": 5557,
+                        "stars": {
+                            "bronzeBadge": 1,
+                            "bronze": 0,
+                            "silver": 0,
+                            "gold": 0
+                        }
+                    },
+                    {
+                        "rank": 3,
+                        "points": 42450,
+                        "playerId": "771",
+                        "name": "THOMPE",
+                        "playerName": "THOMPE",
+                        "tribeId": "3",
+                        "kingdomId": "88",
+                        "village": 8,
+                        "population": 8367,
+                        "stars": {
+                            "bronzeBadge": 1,
+                            "bronze": 0,
+                            "silver": 0,
+                            "gold": 0
+                        }
+                    },
+                    {
+                        "rank": 4,
+                        "points": 40815,
+                        "playerId": "882",
+                        "name": "Kjuba",
+                        "playerName": "Kjuba",
+                        "tribeId": "3",
+                        "kingdomId": "8",
+                        "village": 5,
+                        "population": 5522,
+                        "stars": {
+                            "bronze": 0,
+                            "silver": 3,
+                            "gold": 0
+                        }
+                    },
+                    {
+                        "rank": 5,
+                        "points": 39550,
+                        "playerId": "138",
+                        "name": "VanDzy",
+                        "playerName": "VanDzy",
+                        "tribeId": "1",
+                        "kingdomId": "77",
+                        "village": 9,
+                        "population": 8137,
+                        "stars": {
+                            "bronze": 0,
+                            "silver": 3,
+                            "gold": 0
+                        }
+                    },
+                    {
+                        "rank": 6,
+                        "points": 35807,
+                        "playerId": "873",
+                        "name": "Maci_x",
+                        "playerName": "Maci_x",
+                        "tribeId": "3",
+                        "kingdomId": "119",
+                        "village": 7,
+                        "population": 7892,
+                        "stars": {
+                            "bronzeBadge": 1,
+                            "bronze": 0,
+                            "silver": 0,
+                            "gold": 0
+                        }
+                    },
+                    {
+                        "rank": 7,
+                        "points": 34154,
+                        "playerId": "1111",
+                        "name": "C64",
+                        "playerName": "C64",
+                        "tribeId": "3",
+                        "kingdomId": "142",
+                        "village": 8,
+                        "population": 4723,
+                        "stars": {
+                            "silverBadge": 1,
+                            "bronze": 0,
+                            "silver": 0,
+                            "gold": 0
+                        }
+                    },
+                    {
+                        "rank": 8,
+                        "points": 33540,
+                        "playerId": "568",
+                        "name": "Teebrot",
+                        "playerName": "Teebrot",
+                        "tribeId": "3",
+                        "kingdomId": "4",
+                        "village": 12,
+                        "population": 10786,
+                        "stars": {
+                            "bronze": 0,
+                            "silver": 0,
+                            "gold": 3
+                        }
+                    },
+                    {
+                        "rank": 9,
+                        "points": 30887,
+                        "playerId": "1383",
+                        "name": "Nahuel",
+                        "playerName": "Nahuel",
+                        "tribeId": "3",
+                        "kingdomId": "168",
+                        "village": 6,
+                        "population": 5474,
+                        "stars": {
+                            "bronze": 3,
+                            "silver": 2,
+                            "gold": 0
+                        }
+                    }
+                ],
+                "top10Defender_ranking_Player": [
+                    {
+                        "rank": 952,
+                        "points": 114,
+                        "playerId": "5230",
+                        "name": "lijok",
+                        "playerName": "lijok",
+                        "tribeId": "3",
+                        "kingdomId": "683",
+                        "village": 1,
+                        "population": 393,
+                        "stars": {
+                            "bronze": 0,
+                            "silver": 0,
+                            "gold": 3
+                        }
+                    }
+                ],
+                "top10Climber": [
+                    {
+                        "rank": 0,
+                        "points": 730,
+                        "playerId": "5276",
+                        "name": "Sayonara",
+                        "playerName": "Sayonara",
+                        "tribeId": "1",
+                        "kingdomId": "88",
+                        "village": 3,
+                        "population": 670,
+                        "stars": {
+                            "bronze": 3,
+                            "silver": 1,
+                            "gold": 0
+                        }
+                    },
+                    {
+                        "rank": 1,
+                        "points": 661,
+                        "playerId": "5288",
+                        "name": "Crooked Tooth",
+                        "playerName": "Crooked Tooth",
+                        "tribeId": "1",
+                        "kingdomId": "222",
+                        "village": 2,
+                        "population": 503,
+                        "stars": {
+                            "silverBadge": 1,
+                            "bronze": 0,
+                            "silver": 0,
+                            "gold": 0
+                        }
+                    },
+                    {
+                        "rank": 2,
+                        "points": 631,
+                        "playerId": "5302",
+                        "name": "tantuni",
+                        "playerName": "tantuni",
+                        "tribeId": "2",
+                        "kingdomId": "683",
+                        "village": 2,
+                        "population": 519,
+                        "stars": {
+                            "bronze": 2,
+                            "silver": 0,
+                            "gold": 0
+                        }
+                    },
+                    {
+                        "rank": 3,
+                        "points": 617,
+                        "playerId": "5231",
+                        "name": "Komatar",
+                        "playerName": "Komatar",
+                        "tribeId": "2",
+                        "kingdomId": "0",
+                        "village": 3,
+                        "population": 587,
+                        "stars": {
+                            "bronze": 3,
+                            "silver": 1,
+                            "gold": 0
+                        }
+                    },
+                    {
+                        "rank": 4,
+                        "points": 615,
+                        "playerId": "5254",
+                        "name": "RIIP",
+                        "playerName": "RIIP",
+                        "tribeId": "3",
+                        "kingdomId": "392",
+                        "village": 2,
+                        "population": 460,
+                        "stars": {
+                            "bronzeBadge": 1,
+                            "bronze": 0,
+                            "silver": 0,
+                            "gold": 0
+                        }
+                    },
+                    {
+                        "rank": 5,
+                        "points": 586,
+                        "playerId": "5278",
+                        "name": "LIETUVA",
+                        "playerName": "LIETUVA",
+                        "tribeId": "3",
+                        "kingdomId": "681",
+                        "village": 2,
+                        "population": 428,
+                        "stars": {
+                            "bronze": 0,
+                            "silver": 3,
+                            "gold": 1
+                        }
+                    },
+                    {
+                        "rank": 6,
+                        "points": 581,
+                        "playerId": "5257",
+                        "name": "Caeles",
+                        "playerName": "Caeles",
+                        "tribeId": "1",
+                        "kingdomId": "679",
+                        "village": 2,
+                        "population": 434,
+                        "stars": {
+                            "bronze": 2,
+                            "silver": 0,
+                            "gold": 0
+                        }
+                    },
+                    {
+                        "rank": 7,
+                        "points": 564,
+                        "playerId": "5226",
+                        "name": "Finest One",
+                        "playerName": "Finest One",
+                        "tribeId": "1",
+                        "kingdomId": "392",
+                        "village": 2,
+                        "population": 344,
+                        "stars": {
+                            "bronzeBadge": 1,
+                            "bronze": 0,
+                            "silver": 0,
+                            "gold": 0
+                        }
+                    },
+                    {
+                        "rank": 8,
+                        "points": 562,
+                        "playerId": "5182",
+                        "name": "Hans",
+                        "playerName": "Hans",
+                        "tribeId": "2",
+                        "kingdomId": "222",
+                        "village": 3,
+                        "population": 857,
+                        "stars": {
+                            "bronze": 2,
+                            "silver": 0,
+                            "gold": 0
+                        }
+                    },
+                    {
+                        "rank": 9,
+                        "points": 558,
+                        "playerId": "5237",
+                        "name": "bob",
+                        "playerName": "bob",
+                        "tribeId": "1",
+                        "kingdomId": "112",
+                        "village": 2,
+                        "population": 455,
+                        "stars": {
+                            "bronze": 3,
+                            "silver": 0,
+                            "gold": 0
+                        }
+                    }
+                ],
+                "top10Climber_ranking_Player": [
+                    {
+                        "rank": 40,
+                        "points": 412,
+                        "playerId": "5230",
+                        "name": "lijok",
+                        "playerName": "lijok",
+                        "tribeId": "3",
+                        "kingdomId": "683",
+                        "village": 1,
+                        "population": 393,
+                        "stars": {
+                            "bronze": 0,
+                            "silver": 0,
+                            "gold": 3
+                        }
+                    }
+                ],
+                "top10Robber": [
+                    {
+                        "rank": 0,
+                        "points": 28936637,
+                        "playerId": "281",
+                        "name": "Favorit",
+                        "playerName": "Favorit",
+                        "tribeId": "3",
+                        "kingdomId": "207",
+                        "village": 12,
+                        "population": 8428,
+                        "stars": {
+                            "bronzeBadge": 1,
+                            "bronze": 0,
+                            "silver": 0,
+                            "gold": 0
+                        }
+                    },
+                    {
+                        "rank": 1,
+                        "points": 19920897,
+                        "playerId": "181",
+                        "name": "Rozpadly_strom",
+                        "playerName": "Rozpadly_strom",
+                        "tribeId": "2",
+                        "kingdomId": "88",
+                        "village": 10,
+                        "population": 7452,
+                        "stars": {
+                            "silverBadge": 1,
+                            "bronze": 0,
+                            "silver": 0,
+                            "gold": 0
+                        }
+                    },
+                    {
+                        "rank": 2,
+                        "points": 18410319,
+                        "playerId": "929",
+                        "name": "tassatar",
+                        "playerName": "tassatar",
+                        "tribeId": "1",
+                        "kingdomId": "222",
+                        "village": 9,
+                        "population": 7134,
+                        "stars": {
+                            "bronzeBadge": 1,
+                            "bronze": 0,
+                            "silver": 0,
+                            "gold": 0
+                        }
+                    },
+                    {
+                        "rank": 3,
+                        "points": 17550458,
+                        "playerId": "568",
+                        "name": "Teebrot",
+                        "playerName": "Teebrot",
+                        "tribeId": "3",
+                        "kingdomId": "4",
+                        "village": 12,
+                        "population": 10786,
+                        "stars": {
+                            "bronze": 0,
+                            "silver": 0,
+                            "gold": 3
+                        }
+                    },
+                    {
+                        "rank": 4,
+                        "points": 13814145,
+                        "playerId": "1510",
+                        "name": "Toffy",
+                        "playerName": "Toffy",
+                        "tribeId": "2",
+                        "kingdomId": "4",
+                        "village": 10,
+                        "population": 6747,
+                        "stars": {
+                            "bronze": 0,
+                            "silver": 0,
+                            "gold": 3
+                        }
+                    },
+                    {
+                        "rank": 5,
+                        "points": 13401266,
+                        "playerId": "375",
+                        "name": "ST-ST",
+                        "playerName": "ST-ST",
+                        "tribeId": "1",
+                        "kingdomId": "207",
+                        "village": 10,
+                        "population": 7876,
+                        "stars": {
+                            "bronze": 0,
+                            "silver": 0,
+                            "gold": 3
+                        }
+                    },
+                    {
+                        "rank": 6,
+                        "points": 12408276,
+                        "playerId": "1333",
+                        "name": "mooiboi",
+                        "playerName": "mooiboi",
+                        "tribeId": "1",
+                        "kingdomId": "222",
+                        "village": 17,
+                        "population": 13052,
+                        "stars": {
+                            "bronze": 0,
+                            "silver": 0,
+                            "gold": 3
+                        }
+                    },
+                    {
+                        "rank": 7,
+                        "points": 12336209,
+                        "playerId": "2100",
+                        "name": "ComingSoon",
+                        "playerName": "ComingSoon",
+                        "tribeId": "2",
+                        "kingdomId": "222",
+                        "village": 10,
+                        "population": 7712,
+                        "stars": {
+                            "bronze": 0,
+                            "silver": 0,
+                            "gold": 3
+                        }
+                    },
+                    {
+                        "rank": 8,
+                        "points": 11002965,
+                        "playerId": "209",
+                        "name": "Dealer",
+                        "playerName": "Dealer",
+                        "tribeId": "1",
+                        "kingdomId": "207",
+                        "village": 10,
+                        "population": 8944,
+                        "stars": {
+                            "bronzeBadge": 1,
+                            "bronze": 0,
+                            "silver": 0,
+                            "gold": 0
+                        }
+                    },
+                    {
+                        "rank": 9,
+                        "points": 10842420,
+                        "playerId": "317",
+                        "name": "BeBe",
+                        "playerName": "BeBe",
+                        "tribeId": "1",
+                        "kingdomId": "8",
+                        "village": 5,
+                        "population": 4743,
+                        "stars": {
+                            "bronze": 0,
+                            "silver": 3,
+                            "gold": 1
+                        }
+                    }
+                ],
+                "top10Robber_ranking_Player": [
+                    {
+                        "rank": 1118,
+                        "points": 40415,
+                        "playerId": "5230",
+                        "name": "lijok",
+                        "playerName": "lijok",
+                        "tribeId": "3",
+                        "kingdomId": "683",
+                        "village": 1,
+                        "population": 393,
+                        "stars": {
+                            "bronze": 0,
+                            "silver": 0,
+                            "gold": 3
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "ignoreSerial": 0,
+    "time": 1578074035826,
+    "serialNo": 26529,
+    "response": []
+}

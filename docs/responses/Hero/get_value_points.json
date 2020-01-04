@@ -1,0 +1,15 @@
+{
+    "time": 1578103814748,
+    "serialNo": 28178,
+    "response": {
+        "fightStrength": 80,
+        "fightStrengthBaseLevel": 4,
+        "attBonus": 0.2,
+        "defBonus": 0.2,
+        "resBonusSingle": 60,
+        "resBonusAll": 15,
+        "resBonusBaseSingle": 240,
+        "resBonusBaseAll": 60,
+        "maxPerSkill": 100
+    }
+}

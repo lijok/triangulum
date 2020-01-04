@@ -1,0 +1,234 @@
+{
+    "time": 1578103815565,
+    "serialNo": 28196,
+    "response": {
+        "conditions": [
+            {
+                "id": "61572",
+                "avatarIdentifier": "5143462",
+                "conditionType": "15",
+                "controlValue": "0",
+                "achievedValue": "21",
+                "finalValue": 21,
+                "croppedValue": 3,
+                "threshold": 3,
+                "fulfilled": 1,
+                "type": "15"
+            },
+            {
+                "id": "61583",
+                "avatarIdentifier": "5143462",
+                "conditionType": "1",
+                "controlValue": "0",
+                "achievedValue": "1",
+                "finalValue": 1,
+                "croppedValue": 1,
+                "threshold": 1,
+                "fulfilled": 1,
+                "type": "1"
+            },
+            {
+                "id": "61584",
+                "avatarIdentifier": "5143462",
+                "conditionType": "8",
+                "controlValue": "0",
+                "achievedValue": "49",
+                "finalValue": 49,
+                "croppedValue": 10,
+                "threshold": 10,
+                "fulfilled": 1,
+                "type": "8"
+            },
+            {
+                "id": "61585",
+                "avatarIdentifier": "5143462",
+                "conditionType": "3",
+                "controlValue": "0",
+                "achievedValue": "9",
+                "finalValue": 9,
+                "croppedValue": 7,
+                "threshold": 7,
+                "fulfilled": 1,
+                "type": "3"
+            },
+            {
+                "id": "61587",
+                "avatarIdentifier": "5143462",
+                "conditionType": "2",
+                "controlValue": "0",
+                "achievedValue": "35",
+                "finalValue": 35,
+                "croppedValue": 7,
+                "threshold": 7,
+                "fulfilled": 1,
+                "type": "2"
+            },
+            {
+                "id": "61590",
+                "avatarIdentifier": "5143462",
+                "conditionType": "4",
+                "controlValue": "0",
+                "achievedValue": "3",
+                "finalValue": 3,
+                "croppedValue": 3,
+                "threshold": 3,
+                "fulfilled": 1,
+                "type": "4"
+            },
+            {
+                "id": "61591",
+                "avatarIdentifier": "5143462",
+                "conditionType": "5",
+                "controlValue": "123",
+                "achievedValue": "410",
+                "finalValue": 287,
+                "croppedValue": 100,
+                "threshold": 100,
+                "fulfilled": 1,
+                "type": "5"
+            },
+            {
+                "id": "61592",
+                "avatarIdentifier": "5143462",
+                "conditionType": "6",
+                "controlValue": "2",
+                "achievedValue": "8",
+                "finalValue": 6,
+                "croppedValue": 1,
+                "threshold": 1,
+                "fulfilled": 1,
+                "type": "6"
+            },
+            {
+                "id": "61593",
+                "avatarIdentifier": "5143462",
+                "conditionType": "7",
+                "controlValue": "0",
+                "achievedValue": "0",
+                "finalValue": 0,
+                "croppedValue": 0,
+                "threshold": 1,
+                "fulfilled": 0,
+                "type": "7"
+            },
+            {
+                "id": "61594",
+                "avatarIdentifier": "5143462",
+                "conditionType": "9",
+                "controlValue": "1952",
+                "achievedValue": 1510,
+                "finalValue": 442,
+                "croppedValue": 1,
+                "threshold": 1,
+                "fulfilled": 1,
+                "type": "ranking"
+            }
+        ],
+        "top10rankings": [
+            {
+                "type": "top10Attacker",
+                "rank": 1129,
+                "prestige": 0
+            },
+            {
+                "type": "top10Defender",
+                "rank": 1024,
+                "prestige": 0
+            },
+            {
+                "type": "top10Climber",
+                "rank": 36,
+                "prestige": 0
+            },
+            {
+                "type": "top10Robber",
+                "rank": 1188,
+                "prestige": 0
+            }
+        ],
+        "rankings": [
+            {
+                "id": "61594",
+                "avatarIdentifier": "5143462",
+                "conditionType": "9",
+                "controlValue": "1952",
+                "achievedValue": 1510,
+                "finalValue": 442,
+                "croppedValue": 1,
+                "threshold": 1,
+                "fulfilled": 1,
+                "type": "ranking"
+            },
+            {
+                "id": "61595",
+                "avatarIdentifier": "5143462",
+                "conditionType": "10",
+                "controlValue": "1903",
+                "achievedValue": 1453,
+                "finalValue": 450,
+                "croppedValue": 1,
+                "threshold": 1,
+                "fulfilled": 1,
+                "type": "ranking"
+            },
+            {
+                "id": "61596",
+                "avatarIdentifier": "5143462",
+                "conditionType": "11",
+                "controlValue": "2042",
+                "achievedValue": 1572,
+                "finalValue": 470,
+                "croppedValue": 1,
+                "threshold": 1,
+                "fulfilled": 1,
+                "type": "ranking"
+            },
+            {
+                "id": "61597",
+                "avatarIdentifier": "5143462",
+                "conditionType": "12",
+                "controlValue": "6564",
+                "achievedValue": 4608,
+                "finalValue": 1956,
+                "croppedValue": 1,
+                "threshold": 1,
+                "fulfilled": 1,
+                "type": "ranking"
+            },
+            {
+                "id": "61598",
+                "avatarIdentifier": "5143462",
+                "conditionType": "13",
+                "controlValue": "1950",
+                "achievedValue": 1550,
+                "finalValue": 400,
+                "croppedValue": 1,
+                "threshold": 1,
+                "fulfilled": 1,
+                "type": "ranking"
+            },
+            {
+                "id": "61599",
+                "avatarIdentifier": "5143462",
+                "conditionType": "14",
+                "controlValue": "0",
+                "achievedValue": "0",
+                "finalValue": 0,
+                "croppedValue": 0,
+                "threshold": 1,
+                "fulfilled": 0,
+                "type": "ranking"
+            }
+        ],
+        "globalPrestige": 1184,
+        "weekPrestigeAmount": 9,
+        "gameworldPrestige": "5",
+        "nextLevelGlobalPrestige": 2000,
+        "prestigeStars": {
+            "bronze": 0,
+            "silver": 0,
+            "gold": 3
+        },
+        "remainingDays": 2
+    }
+}

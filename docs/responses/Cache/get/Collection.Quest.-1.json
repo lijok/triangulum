@@ -1,0 +1,31 @@
+{
+    "cache": [
+        {
+            "name": "Collection:Quest:-1",
+            "data": {
+                "cache": [
+                    {
+                        "name": "Quest:10010",
+                        "data": {
+                            "id": 10010,
+                            "questGiver": -1,
+                            "status": 3,
+                            "progress": 0,
+                            "finishedSteps": 0,
+                            "finalStep": 94,
+                            "data": 0,
+                            "rewards": {
+                                "4": 200
+                            }
+                        }
+                    }
+                ],
+                "operation": 1
+            }
+        }
+    ],
+    "ignoreSerial": 0,
+    "time": 1578074034453,
+    "serialNo": 26485,
+    "response": []
+}

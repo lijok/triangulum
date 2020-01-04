@@ -1,0 +1,36 @@
+{
+    "cache": [
+        {
+            "name": "UnitQueue:534986754",
+            "data": {
+                "villageId": "534986754",
+                "buildingTypes": {
+                    "19": [
+                        {
+                            "unitType": "22",
+                            "count": "2",
+                            "durationPerUnit": "168",
+                            "timeFinishedNext": 1578074179,
+                            "timeFinishedLast": "1578074347",
+                            "pause": "-1"
+                        }
+                    ],
+                    "36": [
+                        {
+                            "unitType": "99",
+                            "count": "92",
+                            "durationPerUnit": "57",
+                            "timeFinishedNext": 1578074040,
+                            "timeFinishedLast": "1578079227",
+                            "pause": "-1"
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "ignoreSerial": 0,
+    "time": 1578074035947,
+    "serialNo": 26531,
+    "response": []
+}

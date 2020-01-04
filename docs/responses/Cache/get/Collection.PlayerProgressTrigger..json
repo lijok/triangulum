@@ -1,0 +1,78 @@
+{
+    "cache": [
+        {
+            "name": "Collection:PlayerProgressTrigger:",
+            "data": {
+                "cache": [
+                    {
+                        "name": "PlayerProgressTrigger:0_1",
+                        "data": {
+                            "id": "0_1",
+                            "playerId": "5230",
+                            "type": "4",
+                            "subType": "",
+                            "triggered": false,
+                            "lastUse": 0,
+                            "data": {
+                                "534986754": 0
+                            }
+                        }
+                    },
+                    {
+                        "name": "PlayerProgressTrigger:0_1",
+                        "data": {
+                            "id": "0_1",
+                            "playerId": "5230",
+                            "type": "2",
+                            "subType": "",
+                            "triggered": false,
+                            "lastUse": "1578002967",
+                            "data": []
+                        }
+                    },
+                    {
+                        "name": "PlayerProgressTrigger:0_1",
+                        "data": {
+                            "id": "0_1",
+                            "playerId": "5230",
+                            "type": "3",
+                            "subType": "",
+                            "triggered": false,
+                            "lastUse": "1578066150",
+                            "data": []
+                        }
+                    },
+                    {
+                        "name": "PlayerProgressTrigger:0_1",
+                        "data": {
+                            "id": "0_1",
+                            "playerId": "5230",
+                            "type": "1",
+                            "subType": "",
+                            "triggered": false,
+                            "lastUse": "1577929306",
+                            "data": []
+                        }
+                    },
+                    {
+                        "name": "PlayerProgressTrigger:0_1",
+                        "data": {
+                            "id": "0_1",
+                            "playerId": "5230",
+                            "type": "5",
+                            "subType": "",
+                            "triggered": false,
+                            "lastUse": "1577622886",
+                            "data": []
+                        }
+                    }
+                ],
+                "operation": 1
+            }
+        }
+    ],
+    "ignoreSerial": 0,
+    "time": 1578074034356,
+    "serialNo": 26483,
+    "response": []
+}

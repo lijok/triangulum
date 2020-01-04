@@ -1,0 +1,27 @@
+{
+    "cache": [
+        {
+            "name": "Collection:Notifications:timed",
+            "data": {
+                "cache": [
+                    {
+                        "name": "Notifications:82",
+                        "data": {
+                            "pId": "5230",
+                            "type": 82,
+                            "count": 1,
+                            "time": "1575888603",
+                            "itemId": 0,
+                            "expireTime": 1575975003
+                        }
+                    }
+                ],
+                "operation": 1
+            }
+        }
+    ],
+    "ignoreSerial": 0,
+    "time": 1578074034307,
+    "serialNo": 26481,
+    "response": []
+}

@@ -1,0 +1,29 @@
+{
+    "cache": [
+        {
+            "name": "Troops:-1",
+            "data": {
+                "troopId": -1,
+                "tribeId": null,
+                "playerId": null,
+                "playerName": null,
+                "villageId": null,
+                "villageName": null,
+                "villageIdLocation": null,
+                "villageNameLocation": "",
+                "playerIdLocation": null,
+                "playerNameLocation": "",
+                "filter": null,
+                "villageIdSupply": null,
+                "status": null,
+                "units": [],
+                "supplyTroops": null,
+                "capacity": 0
+            }
+        }
+    ],
+    "ignoreSerial": 0,
+    "time": 1578074035915,
+    "serialNo": 26530,
+    "response": []
+}

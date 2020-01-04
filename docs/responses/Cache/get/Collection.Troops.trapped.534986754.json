@@ -1,0 +1,62 @@
+{
+    "cache": [
+        {
+            "name": "Collection:Troops:trapped:534986754",
+            "data": {
+                "cache": [
+                    {
+                        "name": "Troops:6604815",
+                        "data": {
+                            "troopId": "6604815",
+                            "tribeId": "1",
+                            "playerId": "348",
+                            "playerName": "Sara96",
+                            "villageId": "535674907",
+                            "villageName": "Kir\u00e1lyv\u00e1r",
+                            "villageIdLocation": "534986754",
+                            "villageNameLocation": "",
+                            "playerIdLocation": "5230",
+                            "playerNameLocation": "",
+                            "filter": "",
+                            "villageIdSupply": "535674907",
+                            "status": "trap",
+                            "units": {
+                                "1": "4"
+                            },
+                            "supplyTroops": "4",
+                            "capacity": 200
+                        }
+                    },
+                    {
+                        "name": "Troops:7054402",
+                        "data": {
+                            "troopId": "7054402",
+                            "tribeId": "1",
+                            "playerId": "1333",
+                            "playerName": "mooiboi",
+                            "villageId": "535478282",
+                            "villageName": "01 Cheers",
+                            "villageIdLocation": "534986754",
+                            "villageNameLocation": "",
+                            "playerIdLocation": "5230",
+                            "playerNameLocation": "",
+                            "filter": "",
+                            "villageIdSupply": "535478282",
+                            "status": "trap",
+                            "units": {
+                                "5": "11"
+                            },
+                            "supplyTroops": "22",
+                            "capacity": 1100
+                        }
+                    }
+                ],
+                "operation": 1
+            }
+        }
+    ],
+    "ignoreSerial": 0,
+    "time": 1578074034706,
+    "serialNo": 26495,
+    "response": []
+}

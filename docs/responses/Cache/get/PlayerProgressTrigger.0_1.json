@@ -1,0 +1,20 @@
+{
+    "cache": [
+        {
+            "name": "PlayerProgressTrigger:0_1",
+            "data": {
+                "id": "0_1",
+                "playerId": "0",
+                "type": "1",
+                "subType": "",
+                "triggered": false,
+                "lastUse": 0,
+                "data": []
+            }
+        }
+    ],
+    "ignoreSerial": 0,
+    "time": 1578074035481,
+    "serialNo": 26519,
+    "response": []
+}

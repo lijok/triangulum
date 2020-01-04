@@ -1,0 +1,25 @@
+{
+    "cache": [
+        {
+            "name": "SocietyStats:5230:destVillageId:535085092",
+            "data": {
+                "id": null,
+                "playerId": "5230",
+                "destVillageId": "535085092",
+                "destPlayerId": 0,
+                "destKingdomId": 0,
+                "destSocietyId": 0,
+                "resourcesSent": 0,
+                "resourcesStolen": 0,
+                "troopsKilled": 0,
+                "troopsLost": 0,
+                "treasuresStolen": 0,
+                "troopsDeployed": 0
+            }
+        }
+    ],
+    "ignoreSerial": 0,
+    "time": 1578074035737,
+    "serialNo": 26528,
+    "response": []
+}

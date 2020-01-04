@@ -1,0 +1,37 @@
+{
+    "cache": [
+        {
+            "name": "Collection:OasisTroopRanking:",
+            "data": {
+                "cache": [
+                    {
+                        "name": "OasisTroopRanking:22186",
+                        "data": {
+                            "id": "22186",
+                            "oasisId": "534953986",
+                            "oasisType": "11",
+                            "playerId": "5230",
+                            "rank": "1",
+                            "amount": "27",
+                            "maxUsableTroops": 250,
+                            "usedByVillage": "534986754",
+                            "villageInfluence": "393",
+                            "bonus": {
+                                "1": 25,
+                                "2": 0,
+                                "3": 0,
+                                "4": 25
+                            },
+                            "troopProduction": 81
+                        }
+                    }
+                ],
+                "operation": 1
+            }
+        }
+    ],
+    "ignoreSerial": 0,
+    "time": 1578074034332,
+    "serialNo": 26482,
+    "response": []
+}

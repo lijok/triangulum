@@ -1,0 +1,57 @@
+{
+    "cache": [
+        {
+            "name": "Hero:5230",
+            "data": {
+                "playerId": "5230",
+                "villageId": "534986754",
+                "destVillageId": "534921218",
+                "status": "0",
+                "health": 89.039166666666,
+                "lastHealthTime": "1578103814",
+                "baseRegenerationRate": 30,
+                "regenerationRate": 72,
+                "fightStrength": 2720,
+                "fightStrengthPoints": "30",
+                "attBonusPoints": "0",
+                "defBonusPoints": "0",
+                "resBonusPoints": "10",
+                "resBonusType": "0",
+                "freePoints": "0",
+                "speed": 38,
+                "untilTime": "1578100167",
+                "bonuses": {
+                    "17": 14,
+                    "3": 9,
+                    "13": 1500,
+                    "unitBonuses": {
+                        "22": 5
+                    },
+                    "22": 20,
+                    "14": 42,
+                    "23": 2000
+                },
+                "maxScrollsPerDay": "0",
+                "scrollsUsedToday": "0",
+                "waterbucketUsedToday": "0",
+                "ointmentsUsedToday": "0",
+                "adventurePointCardUsedToday": "0",
+                "resourceChestsUsedToday": "0",
+                "cropChestsUsedToday": "0",
+                "artworkUsedToday": "0",
+                "isMoving": false,
+                "adventurePoints": "0",
+                "adventurePointTime": "1578103842",
+                "levelUp": 0,
+                "xp": "3167",
+                "xpThisLevel": 2750,
+                "xpNextLevel": 3300,
+                "level": "10"
+            }
+        }
+    ],
+    "ignoreSerial": 0,
+    "time": 1578103814860,
+    "serialNo": 28182,
+    "response": []
+}

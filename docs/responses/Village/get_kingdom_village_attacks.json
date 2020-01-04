@@ -1,0 +1,117 @@
+{
+    "cache": [
+        {
+            "name": "Collection:TroopsMovementInfo:attackVillage:534921220",
+            "data": {
+                "cache": [
+                    {
+                        "name": "TroopsMovementInfo:7235358",
+                        "data": {
+                            "troopId": "7235358",
+                            "villageIdStart": "536035359",
+                            "villageIdTarget": "534921220",
+                            "playerIdTarget": "5004",
+                            "coordinateID": 0,
+                            "timeStart": 0,
+                            "timeFinish": "1578105749",
+                            "movementType": "4",
+                            "resources": {
+                                "1": 0,
+                                "2": 0,
+                                "3": 0,
+                                "4": 0
+                            },
+                            "treasures": "0",
+                            "spyTarget": 0,
+                            "catapultTarget1": 0,
+                            "catapultTarget2": 0,
+                            "merchants": "0"
+                        }
+                    },
+                    {
+                        "name": "TroopsMovementInfo:7237231",
+                        "data": {
+                            "troopId": "7237231",
+                            "villageIdStart": "535674907",
+                            "villageIdTarget": "534921220",
+                            "playerIdTarget": "5004",
+                            "coordinateID": 0,
+                            "timeStart": 0,
+                            "timeFinish": "1578106896",
+                            "movementType": "4",
+                            "resources": {
+                                "1": 0,
+                                "2": 0,
+                                "3": 0,
+                                "4": 0
+                            },
+                            "treasures": "0",
+                            "spyTarget": 0,
+                            "catapultTarget1": 0,
+                            "catapultTarget2": 0,
+                            "merchants": "0"
+                        }
+                    },
+                    {
+                        "name": "TroopsMovementInfo:7238213",
+                        "data": {
+                            "troopId": "7238213",
+                            "villageIdStart": "535478282",
+                            "villageIdTarget": "534921220",
+                            "playerIdTarget": "5004",
+                            "coordinateID": 0,
+                            "timeStart": 0,
+                            "timeFinish": "1578105105",
+                            "movementType": "4",
+                            "resources": {
+                                "1": 0,
+                                "2": 0,
+                                "3": 0,
+                                "4": 0
+                            },
+                            "treasures": "0",
+                            "spyTarget": 0,
+                            "catapultTarget1": 0,
+                            "catapultTarget2": 0,
+                            "merchants": "0"
+                        }
+                    }
+                ],
+                "operation": 1
+            }
+        }
+    ],
+    "ignoreSerial": 0,
+    "time": 1578103816311,
+    "serialNo": 28204,
+    "response": {
+        "villages": {
+            "535085064": "300",
+            "534888451": "5174",
+            "535019527": "569",
+            "535019525": "1174",
+            "534986759": "1174",
+            "534921220": "5004",
+            "535052296": "599",
+            "534986757": "1174",
+            "535117829": "5122",
+            "535085058": "5101",
+            "-22813": "-2",
+            "535183358": "0",
+            "535183360": "0",
+            "535117825": "0",
+            "534953986": "0",
+            "535281667": "0",
+            "535052292": "0",
+            "535019524": "0",
+            "535052294": "0",
+            "534986758": "1174",
+            "535052293": "1174",
+            "535085057": "2101",
+            "535085059": "5122",
+            "534986754": "5230",
+            "535085062": "5302",
+            "535085061": "5302"
+        }
+    }
+}

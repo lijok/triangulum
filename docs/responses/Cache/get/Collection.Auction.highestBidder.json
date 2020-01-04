@@ -1,0 +1,15 @@
+{
+    "cache": [
+        {
+            "name": "Collection:Auction:highestBidder",
+            "data": {
+                "cache": [],
+                "operation": 1
+            }
+        }
+    ],
+    "ignoreSerial": 0,
+    "time": 1578074033800,
+    "serialNo": 26465,
+    "response": []
+}

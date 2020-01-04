@@ -1,0 +1,34 @@
+{
+    "cache": [
+        {
+            "name": "Village:-22389",
+            "data": {
+                "villageId": "-22389",
+                "playerId": "-1",
+                "name": "Robber hideout I",
+                "tribeId": "1",
+                "belongsToKing": "0",
+                "belongsToKingdom": 0,
+                "type": "5",
+                "population": "0",
+                "coordinates": {
+                    "x": "3",
+                    "y": "-59"
+                },
+                "isMainVillage": false,
+                "isTown": false,
+                "treasuresUsable": "0",
+                "treasures": "21",
+                "allowTributeCollection": "1",
+                "protectionGranted": "0",
+                "tributeCollectorPlayerId": 0,
+                "realTributePercent": 0.2,
+                "position": "534953987"
+            }
+        }
+    ],
+    "ignoreSerial": 0,
+    "time": 1578074035997,
+    "serialNo": 26533,
+    "response": []
+}

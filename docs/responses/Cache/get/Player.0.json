@@ -1,0 +1,37 @@
+{
+    "cache": [
+        {
+            "name": "Player:0",
+            "data": {
+                "playerId": "0",
+                "name": "Nature",
+                "tribeId": "4",
+                "kingdomId": "0",
+                "kingdomTag": "",
+                "kingdomRole": "0",
+                "isKing": false,
+                "kingId": 0,
+                "kingstatus": "0",
+                "villages": [],
+                "population": "0",
+                "active": "1",
+                "prestige": 0,
+                "level": -3,
+                "stars": {
+                    "bronze": 0,
+                    "silver": 0,
+                    "gold": 0
+                },
+                "nextLevelPrestige": 25,
+                "hasNoobProtection": false,
+                "filterInformation": true,
+                "signupTime": "1574327481",
+                "vacationState": "0"
+            }
+        }
+    ],
+    "ignoreSerial": 0,
+    "time": 1578074035314,
+    "serialNo": 26516,
+    "response": []
+}

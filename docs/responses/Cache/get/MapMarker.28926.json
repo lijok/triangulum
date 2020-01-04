@@ -1,0 +1,21 @@
+{
+    "cache": [
+        {
+            "name": "MapMarker:28926",
+            "data": {
+                "id": "28926",
+                "owner": null,
+                "ownerId": null,
+                "creatorPlayerId": null,
+                "type": null,
+                "targetId": null,
+                "color": null,
+                "targetName": null
+            }
+        }
+    ],
+    "ignoreSerial": 0,
+    "time": 1578074035121,
+    "serialNo": 26509,
+    "response": []
+}

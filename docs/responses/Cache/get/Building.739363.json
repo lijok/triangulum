@@ -1,0 +1,92 @@
+{
+    "cache": [
+        {
+            "name": "Building:",
+            "data": {
+                "buildingType": 0,
+                "villageId": "739363",
+                "locationId": 0,
+                "lvl": 0,
+                "lvlNext": 1,
+                "isMaxLvl": false,
+                "lvlMax": null,
+                "upgradeCosts": {
+                    "1": 0,
+                    "2": 0,
+                    "3": 0,
+                    "4": 0
+                },
+                "nextUpgradeCosts": [
+                    {
+                        "1": 0,
+                        "2": 0,
+                        "3": 0,
+                        "4": 0
+                    },
+                    {
+                        "1": 0,
+                        "2": 0,
+                        "3": 0,
+                        "4": 0
+                    },
+                    {
+                        "1": 0,
+                        "2": 0,
+                        "3": 0,
+                        "4": 0
+                    },
+                    {
+                        "1": 0,
+                        "2": 0,
+                        "3": 0,
+                        "4": 0
+                    },
+                    {
+                        "1": 0,
+                        "2": 0,
+                        "3": 0,
+                        "4": 0
+                    },
+                    {
+                        "1": 0,
+                        "2": 0,
+                        "3": 0,
+                        "4": 0
+                    },
+                    {
+                        "1": 0,
+                        "2": 0,
+                        "3": 0,
+                        "4": 0
+                    }
+                ],
+                "upgradeTime": 0,
+                "nextUpgradeTimes": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "upgradeSupplyUsage": null,
+                "upgradeSupplyUsageSums": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "category": null,
+                "sortOrder": null
+            }
+        }
+    ],
+    "ignoreSerial": 0,
+    "time": 1578074033662,
+    "serialNo": 26461,
+    "response": []
+}

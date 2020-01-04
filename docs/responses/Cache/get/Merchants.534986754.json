@@ -1,0 +1,19 @@
+{
+    "cache": [
+        {
+            "name": "Merchants:534986754",
+            "data": {
+                "villageId": "534986754",
+                "max": "5",
+                "inOffers": "0",
+                "inTransport": "0",
+                "carry": "1125",
+                "speed": "24"
+            }
+        }
+    ],
+    "ignoreSerial": 0,
+    "time": 1578074035145,
+    "serialNo": 26510,
+    "response": []
+}

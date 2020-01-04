@@ -1,0 +1,20 @@
+{
+    "cache": [
+        {
+            "name": "Voucher:5230",
+            "data": {
+                "playerId": "5230",
+                "hasVouchers": {
+                    "cardgameSingle": 0,
+                    "finishNow": 0,
+                    "NPCTrader": 0,
+                    "traderArriveInstantly": 0
+                }
+            }
+        }
+    ],
+    "ignoreSerial": 0,
+    "time": 1578074036053,
+    "serialNo": 26535,
+    "response": []
+}

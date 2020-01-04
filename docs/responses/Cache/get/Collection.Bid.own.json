@@ -1,0 +1,104 @@
+{
+    "cache": [
+        {
+            "name": "Collection:Bid:own",
+            "data": {
+                "cache": [
+                    {
+                        "name": "Bid:131127",
+                        "data": {
+                            "id": "131127",
+                            "playerId": "5230",
+                            "auctionId": "30660",
+                            "maxBid": "100",
+                            "time": "1577622620",
+                            "deleted": "0"
+                        }
+                    },
+                    {
+                        "name": "Bid:132508",
+                        "data": {
+                            "id": "132508",
+                            "playerId": "5230",
+                            "auctionId": "31210",
+                            "maxBid": "200",
+                            "time": "1577666756",
+                            "deleted": "0"
+                        }
+                    },
+                    {
+                        "name": "Bid:132869",
+                        "data": {
+                            "id": "132869",
+                            "playerId": "5230",
+                            "auctionId": "31374",
+                            "maxBid": "360",
+                            "time": "1577696152",
+                            "deleted": "0"
+                        }
+                    },
+                    {
+                        "name": "Bid:132872",
+                        "data": {
+                            "id": "132872",
+                            "playerId": "5230",
+                            "auctionId": "31381",
+                            "maxBid": "640",
+                            "time": "1577696175",
+                            "deleted": "0"
+                        }
+                    },
+                    {
+                        "name": "Bid:132874",
+                        "data": {
+                            "id": "132874",
+                            "playerId": "5230",
+                            "auctionId": "31385",
+                            "maxBid": "640",
+                            "time": "1577696180",
+                            "deleted": "0"
+                        }
+                    },
+                    {
+                        "name": "Bid:133041",
+                        "data": {
+                            "id": "133041",
+                            "playerId": "5230",
+                            "auctionId": "31453",
+                            "maxBid": "100",
+                            "time": "1577700854",
+                            "deleted": "0"
+                        }
+                    },
+                    {
+                        "name": "Bid:136664",
+                        "data": {
+                            "id": "136664",
+                            "playerId": "5230",
+                            "auctionId": "32649",
+                            "maxBid": "200",
+                            "time": "1577817316",
+                            "deleted": "0"
+                        }
+                    },
+                    {
+                        "name": "Bid:136665",
+                        "data": {
+                            "id": "136665",
+                            "playerId": "5230",
+                            "auctionId": "32656",
+                            "maxBid": "500",
+                            "time": "1577817328",
+                            "deleted": "0"
+                        }
+                    }
+                ],
+                "operation": 1
+            }
+        }
+    ],
+    "ignoreSerial": 0,
+    "time": 1578074033847,
+    "serialNo": 26467,
+    "response": []
+}

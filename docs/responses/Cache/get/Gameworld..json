@@ -1,0 +1,22 @@
+{
+    "cache": [
+        {
+            "name": "Gameworld:",
+            "data": {
+                "status": 0,
+                "acpineStatus": -1,
+                "data": [],
+                "messageTitle": "Maintenance work",
+                "messageText": "Dear players,[br][br]We\u2019re currently updating this world to a new version. This means the world will be unavailable for about 5-15 minutes. For more information about the update, please go the game forum. {{forumLink}}[br][br]Thank you for your understanding![br][br]Your Travian Kingdoms Team",
+                "startTime": "1574764217",
+                "worldWonderActivated": 0,
+                "maintenance": false,
+                "kingdomChangeDenied": 0
+            }
+        }
+    ],
+    "ignoreSerial": 0,
+    "time": 1578074034845,
+    "serialNo": 26501,
+    "response": []
+}

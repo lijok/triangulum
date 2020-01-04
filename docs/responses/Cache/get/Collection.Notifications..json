@@ -1,0 +1,38 @@
+{
+    "cache": [
+        {
+            "name": "Collection:Notifications:",
+            "data": {
+                "cache": [
+                    {
+                        "name": "Notifications:8",
+                        "data": {
+                            "pId": "5230",
+                            "type": 8,
+                            "count": 1,
+                            "time": "1578073879",
+                            "itemId": "5e0f7f17c84eace251776723",
+                            "expireTime": 0
+                        }
+                    },
+                    {
+                        "name": "Notifications:6",
+                        "data": {
+                            "pId": "5230",
+                            "type": 6,
+                            "count": 1,
+                            "time": "1578073705",
+                            "itemId": "5e0f7e69c84eac951c776709",
+                            "expireTime": 0
+                        }
+                    }
+                ],
+                "operation": 1
+            }
+        }
+    ],
+    "ignoreSerial": 0,
+    "time": 1578074034244,
+    "serialNo": 26479,
+    "response": []
+}

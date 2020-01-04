@@ -1,0 +1,51 @@
+{
+    "cache": [
+        {
+            "name": "MapDetails:539377681",
+            "data": {
+                "isOasis": true,
+                "oasisType": "30",
+                "hasVillage": "0",
+                "hasNPC": 0,
+                "resType": "0",
+                "isHabitable": 0,
+                "landscape": "3455",
+                "oasisBonus": {
+                    "1": 0,
+                    "2": 0,
+                    "3": 25,
+                    "4": 0
+                },
+                "troops": {
+                    "troopId": "4515169",
+                    "tribeId": "4",
+                    "playerId": "0",
+                    "playerName": null,
+                    "villageId": "539377681",
+                    "villageName": null,
+                    "villageIdLocation": "539377681",
+                    "villageNameLocation": "",
+                    "playerIdLocation": "0",
+                    "playerNameLocation": "",
+                    "filter": null,
+                    "villageIdSupply": "539377681",
+                    "status": "home",
+                    "units": [],
+                    "supplyTroops": "0",
+                    "capacity": 0
+                },
+                "kingdomId": 0,
+                "ownKingdomInfluence": 0,
+                "defBonus": 0,
+                "ownRank": 0,
+                "playersWithTroops": [],
+                "oasisStatus": "3",
+                "ownTroops": null
+            }
+        }
+    ],
+    "ignoreSerial": 0,
+    "time": 1578074035093,
+    "serialNo": 26508,
+    "response": []
+}

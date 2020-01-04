@@ -1,0 +1,39 @@
+{
+    "cache": [
+        {
+            "name": "Collection:Troops:elsewhere:534986754",
+            "data": {
+                "cache": [
+                    {
+                        "name": "Troops:7139459",
+                        "data": {
+                            "troopId": "7139459",
+                            "tribeId": "3",
+                            "playerId": "5230",
+                            "playerName": "lijok",
+                            "villageId": "534986754",
+                            "villageName": "[01]",
+                            "villageIdLocation": "534953986",
+                            "villageNameLocation": "",
+                            "playerIdLocation": "0",
+                            "playerNameLocation": "",
+                            "filter": "",
+                            "villageIdSupply": "534986754",
+                            "status": "support",
+                            "units": {
+                                "2": "27"
+                            },
+                            "supplyTroops": "27",
+                            "capacity": 1215
+                        }
+                    }
+                ],
+                "operation": 1
+            }
+        }
+    ],
+    "ignoreSerial": 0,
+    "time": 1578074034630,
+    "serialNo": 26492,
+    "response": []
+}

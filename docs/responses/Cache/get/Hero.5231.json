@@ -1,0 +1,18 @@
+{
+    "cache": [
+        {
+            "name": "Hero:5231",
+            "data": {
+                "playerId": "5231",
+                "xp": "2495",
+                "xpThisLevel": 2250,
+                "xpNextLevel": 2750,
+                "level": "9"
+            }
+        }
+    ],
+    "ignoreSerial": 0,
+    "time": 1578074034891,
+    "serialNo": 26503,
+    "response": []
+}

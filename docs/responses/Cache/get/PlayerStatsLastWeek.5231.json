@@ -1,0 +1,30 @@
+{
+    "cache": [
+        {
+            "name": "PlayerStatsLastWeek:5231",
+            "data": {
+                "playerId": "5231",
+                "population": {
+                    "rank": "2035",
+                    "value": "88"
+                },
+                "off": {
+                    "rank": "1848",
+                    "value": "12"
+                },
+                "def": {
+                    "rank": "2041",
+                    "value": "0"
+                },
+                "hero": {
+                    "rank": "1981",
+                    "value": "444"
+                }
+            }
+        }
+    ],
+    "ignoreSerial": 0,
+    "time": 1578074035535,
+    "serialNo": 26521,
+    "response": []
+}

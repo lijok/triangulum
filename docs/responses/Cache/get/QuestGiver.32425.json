@@ -1,0 +1,17 @@
+{
+    "cache": [
+        {
+            "name": "QuestGiver:0",
+            "data": {
+                "npcId": null,
+                "questId": -1,
+                "dialog": -1,
+                "questStatus": 0
+            }
+        }
+    ],
+    "ignoreSerial": 0,
+    "time": 1578074035583,
+    "serialNo": 26522,
+    "response": []
+}

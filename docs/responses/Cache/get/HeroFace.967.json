@@ -1,0 +1,26 @@
+{
+    "cache": [
+        {
+            "name": "HeroFace:967",
+            "data": {
+                "playerId": "967",
+                "fetchedFromLobby": "1",
+                "gender": "0",
+                "hairColor": "3",
+                "face": {
+                    "mouth": "1",
+                    "beard": "8",
+                    "hair": "12",
+                    "eye": "12",
+                    "eyebrow": "5",
+                    "ear": "7",
+                    "nose": "1"
+                }
+            }
+        }
+    ],
+    "ignoreSerial": 0,
+    "time": 1578074034987,
+    "serialNo": 26504,
+    "response": []
+}
