@@ -28,3 +28,21 @@ class Dual(BaseController):
                 'email': email,
             }
         )
+
+    async def remove(self, avatar_identifier: int, dual_account_identifier: int) -> dict:
+        """Remove a dual player from the account.
+
+        Args:
+            avatar_identifier: ID of the gameworld avatar
+            dual_account_identifier: ID of the dual account
+
+        Returns:
+            dict
+        """
+        return await self.invoke_action(
+            action='add',
+            params={
+                'avatarIdentifier': avatar_identifier,
+                'dualAccountIdentifier': dual_account_identifier
+            }
+        )
