@@ -151,7 +151,7 @@ class Hero(BaseController):
 
     @cached(TTLCache(MAX_SIZE, TTL))
     async def get_duration_to_closest_village_with_influence(self, village_id: int) -> dict:
-        """UNKNOWN *
+        """UNKNOWN * Triggered when trying to sell treasures
 
         Args:
             village_id: ID of the village
