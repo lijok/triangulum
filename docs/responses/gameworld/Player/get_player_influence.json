@@ -1,0 +1,277 @@
+{
+    "serialNo": 36337,
+    "response": {
+        "534790139": {
+            "villageId": "534790139",
+            "dominating": true,
+            "connected": false,
+            "dominatingPlayerId": "5230",
+            "lastFetchPlayerId": "769",
+            "lastFetchTimestamp": "1577742190"
+        },
+        "534790140": {
+            "villageId": "534790140",
+            "dominating": true,
+            "connected": false,
+            "dominatingPlayerId": "5230",
+            "lastFetchPlayerId": "239",
+            "lastFetchTimestamp": "1578206103"
+        },
+        "534921206": {
+            "villageId": "534921206",
+            "dominating": true,
+            "connected": false,
+            "dominatingPlayerId": "5230",
+            "lastFetchPlayerId": "239",
+            "lastFetchTimestamp": "1578230218"
+        },
+        "534953971": {
+            "villageId": "534953971",
+            "dominating": true,
+            "connected": false,
+            "dominatingPlayerId": "5230",
+            "lastFetchPlayerId": "239",
+            "lastFetchTimestamp": "1578230218"
+        },
+        "534953975": {
+            "villageId": "534953975",
+            "dominating": true,
+            "connected": false,
+            "dominatingPlayerId": "5230",
+            "lastFetchPlayerId": "239",
+            "lastFetchTimestamp": "1578230218"
+        },
+        "535019507": {
+            "villageId": "535019507",
+            "dominating": true,
+            "connected": false,
+            "dominatingPlayerId": "5230",
+            "lastFetchPlayerId": "239",
+            "lastFetchTimestamp": "1578230218"
+        },
+        "535019509": {
+            "villageId": "535019509",
+            "dominating": true,
+            "connected": false,
+            "dominatingPlayerId": "5230",
+            "lastFetchPlayerId": "239",
+            "lastFetchTimestamp": "1578206101"
+        },
+        "534986746": {
+            "villageId": "534986746",
+            "dominating": true,
+            "connected": false,
+            "dominatingPlayerId": "5230",
+            "lastFetchPlayerId": "916",
+            "lastFetchTimestamp": "1578211426"
+        },
+        "534888451": {
+            "villageId": "534888451",
+            "dominating": true,
+            "connected": true,
+            "dominatingPlayerId": 5230,
+            "lastFetchPlayerId": "5230",
+            "lastFetchTimestamp": "1577998822"
+        },
+        "534921220": {
+            "villageId": "534921220",
+            "dominating": true,
+            "connected": true,
+            "dominatingPlayerId": 5230,
+            "lastFetchPlayerId": "4744",
+            "lastFetchTimestamp": "1577399018"
+        },
+        "534953990": {
+            "villageId": "534953990",
+            "dominating": true,
+            "connected": true,
+            "dominatingPlayerId": 5230,
+            "lastFetchPlayerId": "4744",
+            "lastFetchTimestamp": "1576528505"
+        },
+        "534986757": {
+            "villageId": "534986757",
+            "dominating": true,
+            "connected": true,
+            "dominatingPlayerId": 5230,
+            "lastFetchPlayerId": "4744",
+            "lastFetchTimestamp": "1577346650"
+        },
+        "534986758": {
+            "villageId": "534986758",
+            "dominating": true,
+            "connected": true,
+            "dominatingPlayerId": 5230,
+            "lastFetchPlayerId": "4744",
+            "lastFetchTimestamp": "1577317934"
+        },
+        "535019525": {
+            "villageId": "535019525",
+            "dominating": true,
+            "connected": true,
+            "dominatingPlayerId": 5230,
+            "lastFetchPlayerId": "5302",
+            "lastFetchTimestamp": "1578030500"
+        },
+        "535085046": {
+            "villageId": "535085046",
+            "dominating": true,
+            "connected": false,
+            "dominatingPlayerId": "5230",
+            "lastFetchPlayerId": "239",
+            "lastFetchTimestamp": "1578206100"
+        },
+        "535150578": {
+            "villageId": "535150578",
+            "dominating": true,
+            "connected": false,
+            "dominatingPlayerId": "5230",
+            "lastFetchPlayerId": "239",
+            "lastFetchTimestamp": "1578142213"
+        },
+        "535150580": {
+            "villageId": "535150580",
+            "dominating": true,
+            "connected": false,
+            "dominatingPlayerId": "5230",
+            "lastFetchPlayerId": "239",
+            "lastFetchTimestamp": "1578230218"
+        },
+        "535183348": {
+            "villageId": "535183348",
+            "dominating": true,
+            "connected": false,
+            "dominatingPlayerId": "5230",
+            "lastFetchPlayerId": "239",
+            "lastFetchTimestamp": "1578230218"
+        },
+        "535183351": {
+            "villageId": "535183351",
+            "dominating": true,
+            "connected": false,
+            "dominatingPlayerId": "5230",
+            "lastFetchPlayerId": "239",
+            "lastFetchTimestamp": "1578230218"
+        },
+        "535052287": {
+            "villageId": "535052287",
+            "dominating": true,
+            "connected": true,
+            "dominatingPlayerId": 5230,
+            "lastFetchPlayerId": "5230",
+            "lastFetchTimestamp": "1578217626"
+        },
+        "535052293": {
+            "villageId": "535052293",
+            "dominating": true,
+            "connected": true,
+            "dominatingPlayerId": 5230,
+            "lastFetchPlayerId": "5302",
+            "lastFetchTimestamp": "1578030493"
+        },
+        "535085057": {
+            "villageId": "535085057",
+            "dominating": true,
+            "connected": true,
+            "dominatingPlayerId": 5230,
+            "lastFetchPlayerId": "453",
+            "lastFetchTimestamp": "1575233366"
+        },
+        "535085058": {
+            "villageId": "535085058",
+            "dominating": true,
+            "connected": true,
+            "dominatingPlayerId": 5230,
+            "lastFetchPlayerId": "5230",
+            "lastFetchTimestamp": "1577998821"
+        },
+        "535248909": {
+            "villageId": "535248909",
+            "dominating": true,
+            "connected": false,
+            "dominatingPlayerId": "5230",
+            "lastFetchPlayerId": "141",
+            "lastFetchTimestamp": "1578214109"
+        },
+        "535248914": {
+            "villageId": "535248914",
+            "dominating": true,
+            "connected": false,
+            "dominatingPlayerId": "5230",
+            "lastFetchPlayerId": "141",
+            "lastFetchTimestamp": "1578214109"
+        },
+        "535347186": {
+            "villageId": "535347186",
+            "dominating": true,
+            "connected": false,
+            "dominatingPlayerId": "5230",
+            "lastFetchPlayerId": "239",
+            "lastFetchTimestamp": "1578230218"
+        },
+        "535314428": {
+            "villageId": "535314428",
+            "dominating": true,
+            "connected": false,
+            "dominatingPlayerId": "5230",
+            "lastFetchPlayerId": "3085",
+            "lastFetchTimestamp": "1575447408"
+        },
+        "535478268": {
+            "villageId": "535478268",
+            "dominating": true,
+            "connected": false,
+            "dominatingPlayerId": "5230",
+            "lastFetchPlayerId": "1390",
+            "lastFetchTimestamp": "1578229879"
+        },
+        "535379974": {
+            "villageId": "535379974",
+            "dominating": true,
+            "connected": false,
+            "dominatingPlayerId": "5230",
+            "lastFetchPlayerId": "141",
+            "lastFetchTimestamp": "1578214109"
+        },
+        "535379978": {
+            "villageId": "535379978",
+            "dominating": true,
+            "connected": false,
+            "dominatingPlayerId": "5230",
+            "lastFetchPlayerId": "141",
+            "lastFetchTimestamp": "1578214109"
+        },
+        "535478280": {
+            "villageId": "535478280",
+            "dominating": true,
+            "connected": false,
+            "dominatingPlayerId": "5230",
+            "lastFetchPlayerId": "141",
+            "lastFetchTimestamp": "1578214109"
+        },
+        "535314452": {
+            "villageId": "535314452",
+            "dominating": true,
+            "connected": false,
+            "dominatingPlayerId": "5230",
+            "lastFetchPlayerId": "142",
+            "lastFetchTimestamp": "1578230125"
+        },
+        "535379986": {
+            "villageId": "535379986",
+            "dominating": true,
+            "connected": false,
+            "dominatingPlayerId": "5230",
+            "lastFetchPlayerId": "141",
+            "lastFetchTimestamp": "1578214109"
+        },
+        "535412756": {
+            "villageId": "535412756",
+            "dominating": true,
+            "connected": false,
+            "dominatingPlayerId": "5230",
+            "lastFetchPlayerId": "141",
+            "lastFetchTimestamp": "1578214109"
+        }
+    }
+}

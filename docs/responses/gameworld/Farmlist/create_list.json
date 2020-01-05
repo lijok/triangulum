@@ -1,0 +1,38 @@
+{
+    "cache": [
+        {
+            "name": "Collection:FarmList:",
+            "data": {
+                "cache": [
+                    {
+                        "name": "FarmList:4866",
+                        "data": {
+                            "listId": 4866,
+                            "listName": "test2",
+                            "lastSent": 0,
+                            "lastChanged": 0,
+                            "units": {
+                                "1": 0,
+                                "2": 0,
+                                "3": 0,
+                                "4": 0,
+                                "5": 0,
+                                "6": 0
+                            },
+                            "orderNr": 1,
+                            "villageIds": [],
+                            "entryIds": [],
+                            "isDefault": false,
+                            "maxEntriesCount": 100
+                        }
+                    }
+                ],
+                "operation": 2
+            }
+        }
+    ],
+    "ignoreSerial": 1,
+    "time": 1578239547642,
+    "serialNo": 35178,
+    "response": []
+}

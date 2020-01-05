@@ -1,0 +1,48 @@
+{
+    "cache": [
+        {
+            "name": "Collection:Troops:trapped:534986754",
+            "data": {
+                "cache": [
+                    {
+                        "name": "Troops:6604815",
+                        "data": ""
+                    }
+                ],
+                "operation": 3
+            }
+        },
+        {
+            "name": "UnitQueue:534986754",
+            "data": {
+                "villageId": "534986754",
+                "buildingTypes": {
+                    "19": [
+                        {
+                            "unitType": "22",
+                            "count": "52",
+                            "durationPerUnit": "168",
+                            "timeFinishedNext": 1578239717,
+                            "timeFinishedLast": "1578248285",
+                            "pause": "-1"
+                        }
+                    ],
+                    "36": [
+                        {
+                            "unitType": "99",
+                            "count": 402,
+                            "durationPerUnit": "28",
+                            "timeFinishedNext": 1578239639,
+                            "timeFinishedLast": 1578250867,
+                            "pause": "-1"
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "ignoreSerial": 2,
+    "time": 1578239627237,
+    "serialNo": 35225,
+    "response": []
+}

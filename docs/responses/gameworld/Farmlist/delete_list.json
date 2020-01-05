@@ -1,0 +1,22 @@
+{
+    "cache": [
+        {
+            "name": "Collection:FarmList:",
+            "data": {
+                "cache": [
+                    {
+                        "name": "FarmList:4867",
+                        "data": ""
+                    }
+                ],
+                "operation": 3
+            }
+        }
+    ],
+    "ignoreSerial": 1,
+    "time": 1578239593476,
+    "serialNo": 35212,
+    "response": {
+        "data": true
+    }
+}

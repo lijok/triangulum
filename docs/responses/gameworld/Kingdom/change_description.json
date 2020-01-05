@@ -1,0 +1,41 @@
+{
+    "cache": [
+        {
+            "name": "Kingdom:715",
+            "data": {
+                "groupId": "715",
+                "members": [
+                    {
+                        "playerId": 5230,
+                        "name": "lijok",
+                        "isKing": true,
+                        "isDuke": false,
+                        "kingdomRole": "1",
+                        "kingdomId": "715",
+                        "population": "1083",
+                        "victoryPoints": "0",
+                        "villages": 1,
+                        "vicekingConnection": "0"
+                    }
+                ],
+                "tag": "TestKin",
+                "creationTime": "1578241284",
+                "kingdomType": "0",
+                "description": {
+                    "groupId": "715",
+                    "publicDescription": "test description",
+                    "internalDescription": null
+                },
+                "diplomacy": {
+                    "treaties": [],
+                    "ownOffers": [],
+                    "foreignOffers": []
+                }
+            }
+        }
+    ],
+    "ignoreSerial": 1,
+    "time": 1578241556728,
+    "serialNo": 36459,
+    "response": []
+}

@@ -1,0 +1,38 @@
+{
+    "time": 1578241341259,
+    "serialNo": 36352,
+    "response": {
+        "534986754": {
+            "villageId": "534986754",
+            "villageName": "[00]",
+            "population": "1083",
+            "influence": 1083,
+            "treasureBonus": 1,
+            "size": 4.2,
+            "level": 4,
+            "currentCells": 57,
+            "nextCells": 57,
+            "playerId": "5230",
+            "players": {
+                "5230": {
+                    "name": "lijok",
+                    "cells": 49
+                },
+                "4744": {
+                    "name": "zoodiberlino",
+                    "cells": 1
+                },
+                "916": {
+                    "name": "Kano",
+                    "cells": 2
+                },
+                "5302": {
+                    "name": "tantuni",
+                    "cells": 5
+                }
+            },
+            "currentFrom": 1000,
+            "currentTo": 10000
+        }
+    }
+}

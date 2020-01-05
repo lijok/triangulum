@@ -1,0 +1,12 @@
+{
+    "time": 1578239890079,
+    "serialNo": 35349,
+    "response": {
+        "errors": [
+            {
+                "message": "TradeRouteInvalidTarget",
+                "params": null
+            }
+        ]
+    }
+}

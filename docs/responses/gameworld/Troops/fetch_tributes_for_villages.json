@@ -1,0 +1,202 @@
+{
+    "cache": [
+        {
+            "name": "Collection:Troops:moving:534986754",
+            "data": {
+                "cache": [
+                    {
+                        "name": "Troops:7746825",
+                        "data": {
+                            "troopId": 7746825,
+                            "tribeId": "3",
+                            "playerId": "5230",
+                            "playerName": null,
+                            "villageId": "534986754",
+                            "villageName": null,
+                            "villageIdLocation": "535052287",
+                            "villageNameLocation": "",
+                            "playerIdLocation": "3094",
+                            "playerNameLocation": "",
+                            "filter": null,
+                            "villageIdSupply": "534986754",
+                            "status": "transit",
+                            "units": [],
+                            "supplyTroops": 0,
+                            "capacity": 0,
+                            "movement": {
+                                "troopId": 7746825,
+                                "villageIdStart": "535052287",
+                                "villageIdTarget": "534986754",
+                                "playerIdTarget": "5230",
+                                "coordinateID": 0,
+                                "timeStart": "1578241333",
+                                "timeFinish": 1578243496,
+                                "movementType": 12,
+                                "resources": {
+                                    "1": 248,
+                                    "2": 282,
+                                    "3": 270,
+                                    "4": 0
+                                },
+                                "treasures": 0,
+                                "spyTarget": 0,
+                                "catapultTarget1": 0,
+                                "catapultTarget2": 0,
+                                "merchants": 0
+                            }
+                        }
+                    }
+                ],
+                "operation": 2
+            }
+        },
+        {
+            "name": "Collection:Village:kingdom",
+            "data": {
+                "cache": [
+                    {
+                        "name": "Village:535052287",
+                        "data": {
+                            "villageId": "535052287",
+                            "playerId": "3094",
+                            "name": "B~Ballerbyn\u2122",
+                            "tribeId": "3",
+                            "belongsToKing": "5230",
+                            "belongsToKingdom": "715",
+                            "type": "0",
+                            "population": "377",
+                            "coordinates": {
+                                "x": "-1",
+                                "y": "-56"
+                            },
+                            "isMainVillage": false,
+                            "isTown": false,
+                            "treasuresUsable": "0",
+                            "treasures": "0",
+                            "allowTributeCollection": "1",
+                            "protectionGranted": "1",
+                            "tributeCollectorPlayerId": 5230,
+                            "realTributePercent": 0.2,
+                            "production": {
+                                "1": "2640",
+                                "2": "3000",
+                                "3": "2880",
+                                "4": "871"
+                            },
+                            "storage": {
+                                "1": 800,
+                                "2": 800,
+                                "3": 800,
+                                "4": 1214
+                            },
+                            "treasury": {
+                                "1": 0,
+                                "2": 0,
+                                "3": 0,
+                                "4": 0
+                            },
+                            "storageCapacity": {
+                                "1": "800",
+                                "2": "800",
+                                "3": "800",
+                                "4": "26000"
+                            },
+                            "bonusCulturePointProduction": 0.00092708333333333,
+                            "tributesRequiredToFetch": 160,
+                            "tributes": {
+                                "1": 0,
+                                "2": 0,
+                                "3": 0
+                            },
+                            "tributesCapacity": "800",
+                            "tributeTreasures": 0,
+                            "tributeProduction": 1704,
+                            "tributeProductionDetail": {
+                                "1": 528,
+                                "2": 600,
+                                "3": 576,
+                                "4": 0
+                            },
+                            "tributeTime": "1578241333",
+                            "estimatedWarehouseLevel": 0
+                        }
+                    }
+                ],
+                "operation": 4
+            }
+        },
+        {
+            "name": "Village:535052287",
+            "data": {
+                "villageId": "535052287",
+                "playerId": "3094",
+                "name": "B~Ballerbyn\u2122",
+                "tribeId": "3",
+                "belongsToKing": "5230",
+                "belongsToKingdom": "715",
+                "type": "0",
+                "population": "377",
+                "coordinates": {
+                    "x": "-1",
+                    "y": "-56"
+                },
+                "isMainVillage": false,
+                "isTown": false,
+                "treasuresUsable": "0",
+                "treasures": "0",
+                "allowTributeCollection": "1",
+                "protectionGranted": "1",
+                "tributeCollectorPlayerId": 5230,
+                "realTributePercent": 0.2,
+                "production": {
+                    "1": "2640",
+                    "2": "3000",
+                    "3": "2880",
+                    "4": "871"
+                },
+                "storage": {
+                    "1": 800,
+                    "2": 800,
+                    "3": 800,
+                    "4": 1214
+                },
+                "treasury": {
+                    "1": 0,
+                    "2": 0,
+                    "3": 0,
+                    "4": 0
+                },
+                "storageCapacity": {
+                    "1": "800",
+                    "2": "800",
+                    "3": "800",
+                    "4": "26000"
+                },
+                "bonusCulturePointProduction": 0.00092708333333333,
+                "tributesRequiredToFetch": 160,
+                "tributes": {
+                    "1": 0,
+                    "2": 0,
+                    "3": 0
+                },
+                "tributesCapacity": "800",
+                "tributeTreasures": 0,
+                "tributeProduction": 1704,
+                "tributeProductionDetail": {
+                    "1": 528,
+                    "2": 600,
+                    "3": 576,
+                    "4": 0
+                },
+                "tributeTime": "1578241333",
+                "estimatedWarehouseLevel": 0
+            }
+        }
+    ],
+    "ignoreSerial": 3,
+    "time": 1578241333899,
+    "serialNo": 36339,
+    "response": [
+        true
+    ]
+}

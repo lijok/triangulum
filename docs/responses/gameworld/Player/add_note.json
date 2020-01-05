@@ -1,0 +1,27 @@
+{
+    "cache": [
+        {
+            "name": "Collection:Notepad:",
+            "data": {
+                "cache": [
+                    {
+                        "name": "Notepad:1883",
+                        "data": {
+                            "id": 1883,
+                            "positionX": 50,
+                            "positionY": 50,
+                            "sizeX": 0,
+                            "sizeY": 0,
+                            "text": ""
+                        }
+                    }
+                ],
+                "operation": 2
+            }
+        }
+    ],
+    "ignoreSerial": 1,
+    "time": 1578239042828,
+    "serialNo": 35007,
+    "response": []
+}

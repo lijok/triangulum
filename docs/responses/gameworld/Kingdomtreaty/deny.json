@@ -1,0 +1,152 @@
+{
+    "cache": [
+        {
+            "name": "Kingdom:715",
+            "data": {
+                "groupId": "715",
+                "members": [
+                    {
+                        "playerId": 5230,
+                        "name": "lijok",
+                        "isKing": true,
+                        "isDuke": false,
+                        "kingdomRole": "1",
+                        "kingdomId": "715",
+                        "population": "1083",
+                        "victoryPoints": "0",
+                        "villages": 1,
+                        "vicekingConnection": "0"
+                    }
+                ],
+                "tag": "TestKing",
+                "creationTime": "1578241284",
+                "kingdomType": "0",
+                "description": {
+                    "groupId": "715",
+                    "publicDescription": null,
+                    "internalDescription": null
+                },
+                "diplomacy": {
+                    "treaties": [
+                        {
+                            "id": "1010",
+                            "kingdomId": "715",
+                            "otherKingdomId": "8",
+                            "type": "2",
+                            "status": "2",
+                            "offered": "1578241351",
+                            "otherKingdomTag": "Reborn"
+                        }
+                    ],
+                    "ownOffers": [
+                        {
+                            "id": "1014",
+                            "kingdomId": "715",
+                            "otherKingdomId": "32",
+                            "type": "1",
+                            "status": "0",
+                            "offered": "1578241359",
+                            "otherKingdomTag": "Northumb"
+                        }
+                    ],
+                    "foreignOffers": []
+                }
+            }
+        },
+        {
+            "name": "Kingdom:48",
+            "data": {
+                "groupId": "48",
+                "members": [
+                    {
+                        "playerId": 2587,
+                        "name": "_D_K_G_",
+                        "isKing": false,
+                        "isDuke": false,
+                        "kingdomRole": "0",
+                        "kingdomId": "48",
+                        "population": "3445",
+                        "victoryPoints": "0",
+                        "villages": 5,
+                        "vicekingConnection": "0"
+                    },
+                    {
+                        "playerId": 2707,
+                        "name": "Ser",
+                        "isKing": false,
+                        "isDuke": false,
+                        "kingdomRole": "0",
+                        "kingdomId": "48",
+                        "population": "1734",
+                        "victoryPoints": "0",
+                        "villages": 3,
+                        "vicekingConnection": "0"
+                    },
+                    {
+                        "playerId": 482,
+                        "name": "f\u0131rt\u0131na",
+                        "isKing": true,
+                        "isDuke": false,
+                        "kingdomRole": "1",
+                        "kingdomId": "48",
+                        "population": "4704",
+                        "victoryPoints": "18533",
+                        "villages": 6,
+                        "vicekingConnection": "0"
+                    },
+                    {
+                        "playerId": 2369,
+                        "name": "harabe",
+                        "isKing": false,
+                        "isDuke": true,
+                        "kingdomRole": "2",
+                        "kingdomId": "48",
+                        "population": "3156",
+                        "victoryPoints": "2394",
+                        "villages": 5,
+                        "vicekingConnection": "0"
+                    },
+                    {
+                        "playerId": 2750,
+                        "name": "DoctoR3",
+                        "isKing": false,
+                        "isDuke": true,
+                        "kingdomRole": "2",
+                        "kingdomId": "48",
+                        "population": "3226",
+                        "victoryPoints": "1696",
+                        "villages": 4,
+                        "vicekingConnection": "0"
+                    }
+                ],
+                "tag": "anadolu",
+                "creationTime": "1574774539",
+                "kingdomType": "0",
+                "description": {
+                    "groupId": "48",
+                    "publicDescription": null,
+                    "internalDescription": null
+                },
+                "diplomacy": {
+                    "treaties": [],
+                    "ownOffers": [
+                        {
+                            "id": "886",
+                            "kingdomId": "48",
+                            "otherKingdomId": "32",
+                            "type": "1",
+                            "status": "0",
+                            "offered": "1577045216",
+                            "otherKingdomTag": "Northumb"
+                        }
+                    ],
+                    "foreignOffers": []
+                }
+            }
+        }
+    ],
+    "ignoreSerial": 2,
+    "time": 1578241361098,
+    "serialNo": 36362,
+    "response": []
+}

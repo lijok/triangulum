@@ -1,0 +1,13 @@
+{
+    "time": 1578240331339,
+    "serialNo": 35562,
+    "response": {
+        "resources": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 3802
+        },
+        "deltaForNextUse": 24869
+    }
+}

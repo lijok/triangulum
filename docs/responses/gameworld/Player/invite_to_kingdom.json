@@ -1,0 +1,75 @@
+{
+    "cache": [
+        {
+            "name": "Village:534921220",
+            "data": {
+                "villageId": "534921220",
+                "playerId": "5004",
+                "name": "Gnargnia",
+                "tribeId": "3",
+                "belongsToKing": "5230",
+                "belongsToKingdom": "715",
+                "type": "1",
+                "population": "329",
+                "coordinates": {
+                    "x": "4",
+                    "y": "-60"
+                },
+                "isMainVillage": true,
+                "isTown": false,
+                "treasuresUsable": "0",
+                "treasures": "0",
+                "allowTributeCollection": "1",
+                "protectionGranted": 1,
+                "tributeCollectorPlayerId": 5230,
+                "realTributePercent": 0.2,
+                "production": {
+                    "1": "264",
+                    "2": "226",
+                    "3": "264",
+                    "4": "1568"
+                },
+                "storage": {
+                    "1": 367,
+                    "2": 363,
+                    "3": 367,
+                    "4": 499
+                },
+                "treasury": {
+                    "1": 0,
+                    "2": 0,
+                    "3": 0,
+                    "4": 0
+                },
+                "storageCapacity": {
+                    "1": "38000",
+                    "2": "38000",
+                    "3": "38000",
+                    "4": "26000"
+                },
+                "bonusCulturePointProduction": 0.00075,
+                "tributesRequiredToFetch": 7600,
+                "tributes": {
+                    "1": 3,
+                    "2": 2,
+                    "3": 3
+                },
+                "tributesCapacity": "38000",
+                "tributeTreasures": 0,
+                "tributeProduction": 149,
+                "tributeProductionDetail": {
+                    "1": 52,
+                    "2": 45,
+                    "3": 52,
+                    "4": 0
+                },
+                "tributeTime": "1577399018",
+                "estimatedWarehouseLevel": 16
+            }
+        }
+    ],
+    "ignoreSerial": 1,
+    "time": 1578241306417,
+    "serialNo": 36304,
+    "response": []
+}

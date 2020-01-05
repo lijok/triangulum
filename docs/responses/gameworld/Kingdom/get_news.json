@@ -1,0 +1,79 @@
+{
+    "time": 1578241339337,
+    "serialNo": 36351,
+    "response": {
+        "news": [
+            {
+                "id": "25345",
+                "kingdomId": "715",
+                "agentId": "5230",
+                "agentName": "lijok",
+                "victimId": "5174",
+                "victimName": "Slish",
+                "type": "3",
+                "time": "1578241336"
+            },
+            {
+                "id": "25344",
+                "kingdomId": "715",
+                "agentId": "5230",
+                "agentName": "lijok",
+                "victimId": "5101",
+                "victimName": "Reported",
+                "type": "3",
+                "time": "1578241335"
+            },
+            {
+                "id": "25343",
+                "kingdomId": "715",
+                "agentId": "5230",
+                "agentName": "lijok",
+                "victimId": "3094",
+                "victimName": "bbyxgold",
+                "type": "3",
+                "time": "1578241321"
+            },
+            {
+                "id": "25342",
+                "kingdomId": "715",
+                "agentId": "5230",
+                "agentName": "lijok",
+                "victimId": "2101",
+                "victimName": "Stern",
+                "type": "3",
+                "time": "1578241320"
+            },
+            {
+                "id": "25341",
+                "kingdomId": "715",
+                "agentId": "5230",
+                "agentName": "lijok",
+                "victimId": "1174",
+                "victimName": "Huppari",
+                "type": "3",
+                "time": "1578241311"
+            },
+            {
+                "id": "25340",
+                "kingdomId": "715",
+                "agentId": "5230",
+                "agentName": "lijok",
+                "victimId": "5004",
+                "victimName": "nemesjs193",
+                "type": "3",
+                "time": "1578241306"
+            },
+            {
+                "id": "25339",
+                "kingdomId": "715",
+                "agentId": "5230",
+                "agentName": "lijok",
+                "victimId": "715",
+                "victimName": "TestKing",
+                "type": "0",
+                "time": "1578241284"
+            }
+        ],
+        "count": "7"
+    }
+}

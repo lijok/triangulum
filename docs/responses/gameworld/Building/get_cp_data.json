@@ -1,0 +1,56 @@
+{
+    "time": 1578240185733,
+    "serialNo": 35475,
+    "response": {
+        "expansionSlots": {
+            "numberOfVillages": "0",
+            "numberOfTowns": "1",
+            "slots": [
+                {
+                    "slotNumber": 3,
+                    "culturePoints": 5000,
+                    "required": 773
+                },
+                {
+                    "slotNumber": 4,
+                    "culturePoints": 10000,
+                    "required": 5773
+                },
+                {
+                    "slotNumber": 5,
+                    "culturePoints": 20000,
+                    "required": 15773
+                },
+                {
+                    "slotNumber": 6,
+                    "culturePoints": 40000,
+                    "required": 35773
+                },
+                {
+                    "slotNumber": 7,
+                    "culturePoints": 70000,
+                    "required": 65773
+                },
+                {
+                    "slotNumber": 8,
+                    "culturePoints": 110000,
+                    "required": 105773
+                },
+                {
+                    "slotNumber": 9,
+                    "culturePoints": 150000,
+                    "required": 145773
+                }
+            ],
+            "producedCulturePoints": 4227,
+            "nextVillagePossible": 5000,
+            "timeNeeded": 1578268430
+        },
+        "cpProduction": {
+            "activeVillage": "2364",
+            "otherVillages": 0,
+            "hero": 0,
+            "sum": 2364
+        }
+    }
+}

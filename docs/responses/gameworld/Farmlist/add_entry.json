@@ -1,0 +1,107 @@
+{
+    "cache": [
+        {
+            "name": "Collection:FarmListEntry:4575",
+            "data": {
+                "cache": [
+                    {
+                        "name": "FarmListEntry:125654",
+                        "data": {
+                            "entryId": 125654,
+                            "villageId": 537542712,
+                            "villageName": "Thor",
+                            "units": {
+                                "1": 0,
+                                "2": 0,
+                                "3": 0,
+                                "4": 0,
+                                "5": 0,
+                                "6": 0
+                            },
+                            "targetOwnerId": "4907",
+                            "belongsToKing": "1450",
+                            "population": "345",
+                            "coords": {
+                                "x": "56",
+                                "y": "20"
+                            },
+                            "isOasis": false,
+                            "lastReport": null
+                        }
+                    }
+                ],
+                "operation": 5
+            }
+        },
+        {
+            "name": "FarmList:4575",
+            "data": {
+                "listId": "4575",
+                "listName": "Startup farm list",
+                "lastSent": "0",
+                "lastChanged": 1578240261,
+                "units": {
+                    "1": "1",
+                    "2": "0",
+                    "3": "0",
+                    "4": "0",
+                    "5": "0",
+                    "6": "0"
+                },
+                "orderNr": "0",
+                "villageIds": [
+                    "534921220",
+                    "537542712"
+                ],
+                "entryIds": [
+                    "110371",
+                    "125654"
+                ],
+                "isDefault": true,
+                "maxEntriesCount": 10
+            }
+        },
+        {
+            "name": "Collection:FarmList:",
+            "data": {
+                "cache": [
+                    {
+                        "name": "FarmList:4575",
+                        "data": {
+                            "listId": "4575",
+                            "listName": "Startup farm list",
+                            "lastSent": "0",
+                            "lastChanged": 1578240261,
+                            "units": {
+                                "1": "1",
+                                "2": "0",
+                                "3": "0",
+                                "4": "0",
+                                "5": "0",
+                                "6": "0"
+                            },
+                            "orderNr": "0",
+                            "villageIds": [
+                                "534921220",
+                                "537542712"
+                            ],
+                            "entryIds": [
+                                "110371",
+                                "125654"
+                            ],
+                            "isDefault": true,
+                            "maxEntriesCount": 10
+                        }
+                    }
+                ],
+                "operation": 5
+            }
+        }
+    ],
+    "ignoreSerial": 3,
+    "time": 1578240261614,
+    "serialNo": 35533,
+    "response": {
+        "data": true
+    }
+}

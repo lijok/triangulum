@@ -1,0 +1,107 @@
+{
+    "cache": [
+        {
+            "name": "Collection:FarmListEntry:4575",
+            "data": {
+                "cache": [
+                    {
+                        "name": "FarmListEntry:125635",
+                        "data": {
+                            "entryId": 125635,
+                            "villageId": "534888451",
+                            "villageName": "01. Aurora",
+                            "units": {
+                                "1": 0,
+                                "2": 0,
+                                "3": 0,
+                                "4": 0,
+                                "5": 0,
+                                "6": 0
+                            },
+                            "targetOwnerId": "5174",
+                            "belongsToKing": "0",
+                            "population": "116",
+                            "coords": {
+                                "x": "3",
+                                "y": "-61"
+                            },
+                            "isOasis": false,
+                            "lastReport": null
+                        }
+                    }
+                ],
+                "operation": 5
+            }
+        },
+        {
+            "name": "FarmList:4575",
+            "data": {
+                "listId": "4575",
+                "listName": "Startup farm list",
+                "lastSent": "0",
+                "lastChanged": 1578239521,
+                "units": {
+                    "1": "1",
+                    "2": "0",
+                    "3": "0",
+                    "4": "0",
+                    "5": "0",
+                    "6": "0"
+                },
+                "orderNr": "0",
+                "villageIds": [
+                    "534888451",
+                    "534921220"
+                ],
+                "entryIds": [
+                    "125635",
+                    "110371"
+                ],
+                "isDefault": true,
+                "maxEntriesCount": 10
+            }
+        },
+        {
+            "name": "Collection:FarmList:",
+            "data": {
+                "cache": [
+                    {
+                        "name": "FarmList:4575",
+                        "data": {
+                            "listId": "4575",
+                            "listName": "Startup farm list",
+                            "lastSent": "0",
+                            "lastChanged": 1578239521,
+                            "units": {
+                                "1": "1",
+                                "2": "0",
+                                "3": "0",
+                                "4": "0",
+                                "5": "0",
+                                "6": "0"
+                            },
+                            "orderNr": "0",
+                            "villageIds": [
+                                "534888451",
+                                "534921220"
+                            ],
+                            "entryIds": [
+                                "125635",
+                                "110371"
+                            ],
+                            "isDefault": true,
+                            "maxEntriesCount": 10
+                        }
+                    }
+                ],
+                "operation": 5
+            }
+        }
+    ],
+    "ignoreSerial": 3,
+    "time": 1578239521302,
+    "serialNo": 35159,
+    "response": {
+        "data": true
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "cache": [
+        {
+            "name": "Notepad:1883",
+            "data": {
+                "id": 1883,
+                "positionX": 50,
+                "positionY": 50,
+                "sizeX": 384,
+                "sizeY": 141,
+                "text": "test"
+            }
+        }
+    ],
+    "ignoreSerial": 1,
+    "time": 1578239055277,
+    "serialNo": 35018,
+    "response": []
+}
