@@ -1,0 +1,75 @@
+{
+    "cache": [
+        {
+            "name": "Collection:FarmListEntry:4866",
+            "data": {
+                "cache": [
+                    {
+                        "name": "FarmListEntry:125636",
+                        "data": {
+                            "entryId": "125636",
+                            "villageId": "534921220",
+                            "villageName": "Gnargnia",
+                            "units": {
+                                "1": "1",
+                                "2": "2",
+                                "3": "0",
+                                "4": "3",
+                                "5": "4",
+                                "6": "5"
+                            },
+                            "targetOwnerId": "5004",
+                            "belongsToKing": "0",
+                            "population": "329",
+                            "coords": {
+                                "x": "4",
+                                "y": "-60"
+                            },
+                            "isOasis": false,
+                            "lastReport": null
+                        }
+                    }
+                ],
+                "operation": 5
+            }
+        },
+        {
+            "name": "Collection:FarmList:",
+            "data": {
+                "cache": [
+                    {
+                        "name": "FarmList:4866",
+                        "data": {
+                            "listId": "4866",
+                            "listName": "test4",
+                            "lastSent": "1578239613",
+                            "lastChanged": 1578240247,
+                            "units": {
+                                "1": 1,
+                                "2": 2,
+                                "3": 0,
+                                "4": 3,
+                                "5": 4,
+                                "6": 5
+                            },
+                            "orderNr": "1",
+                            "villageIds": [
+                                "534921220"
+                            ],
+                            "entryIds": [
+                                "125636"
+                            ],
+                            "isDefault": false,
+                            "maxEntriesCount": 100
+                        }
+                    }
+                ],
+                "operation": 5
+            }
+        }
+    ],
+    "ignoreSerial": 2,
+    "time": 1578243416496,
+    "serialNo": 37035,
+    "response": []
+}
