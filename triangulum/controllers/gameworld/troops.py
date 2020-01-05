@@ -235,7 +235,7 @@ class Troops(BaseController):
         )
 
     async def disband(self, troop_id: int) -> dict:
-        """Disband troops being held in traps *
+        """UNKNOWN *
 
         Args:
             troop_id: UNKNOWN *
@@ -245,6 +245,22 @@ class Troops(BaseController):
         """
         return await self.invoke_action(
             action='disband',
+            params={
+                'troopId': troop_id,
+            }
+        )
+
+    async def release(self, troop_id: int) -> dict:
+        """Release troops being held in traps *
+
+        Args:
+            troop_id: UNKNOWN *
+
+        Returns:
+            dict
+        """
+        return await self.invoke_action(
+            action='release',
             params={
                 'troopId': troop_id,
             }
