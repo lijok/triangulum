@@ -1,0 +1,78 @@
+{
+    "cache": [
+        {
+            "name": "Collection:Notification:",
+            "data": {
+                "cache": [
+                    {
+                        "name": "Notification:6384390",
+                        "data": ""
+                    }
+                ],
+                "operation": 3
+            }
+        },
+        {
+            "name": "Collection:Achievement:",
+            "data": {
+                "cache": [
+                    {
+                        "name": "Achievement:17243341",
+                        "data": {
+                            "id": "17243341",
+                            "type": "68",
+                            "value": "50",
+                            "level": 3,
+                            "category": 5,
+                            "maxLevel": 5,
+                            "increasing": true,
+                            "prestige": 4,
+                            "startValue": 50,
+                            "endValue": 100,
+                            "completedLevels": [
+                                {
+                                    "value": 10,
+                                    "prestige": 1,
+                                    "collected": "1537006996"
+                                },
+                                {
+                                    "value": 25,
+                                    "prestige": 2,
+                                    "collected": "1537581052"
+                                },
+                                {
+                                    "value": 50,
+                                    "prestige": 3,
+                                    "collected": "1578243215"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "operation": 5
+            }
+        },
+        {
+            "name": "PrestigeDetails:15376",
+            "data": {
+                "globalPrestige": 1187,
+                "level": 9,
+                "nextLevel": 10,
+                "stars": {
+                    "gold": 3
+                },
+                "finishedGameWorldsPrestige": "652",
+                "activeGameWorldsPrestige": "6",
+                "nextLevelPrestigePoints": 2000,
+                "currentLevelPrestigePoints": 1000,
+                "levelProgressPercentage": 18.7,
+                "achievementPrestige": "529"
+            }
+        }
+    ],
+    "time": "1578243215",
+    "serialNo": 466,
+    "response": {
+        "data": true
+    }
+}

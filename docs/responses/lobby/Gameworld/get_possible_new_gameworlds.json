@@ -1,0 +1,124 @@
+{
+    "serialNo": 425,
+    "response": {
+        "recommended": [],
+        "other": [],
+        "cluster": [
+            "en",
+            "gb",
+            "us"
+        ],
+        "commingSoon": [
+            {
+                "worldName": "COM5",
+                "country": "en",
+                "applicationCountryId": "en",
+                "speedGame": 1,
+                "worldStartTime": 1578402000,
+                "specialRules": [
+                    "none"
+                ]
+            },
+            {
+                "worldName": "COM1X3",
+                "country": "en",
+                "applicationCountryId": "en",
+                "speedGame": 3,
+                "worldStartTime": 1579611600,
+                "specialRules": [
+                    "none"
+                ]
+            },
+            {
+                "worldName": "RU2",
+                "country": "ru",
+                "applicationCountryId": "ru",
+                "speedGame": 1,
+                "worldStartTime": 1578402000,
+                "specialRules": [
+                    "none"
+                ]
+            },
+            {
+                "worldName": "ARABIAX3",
+                "country": "ae",
+                "applicationCountryId": "ae",
+                "speedGame": 3,
+                "worldStartTime": 1579006800,
+                "specialRules": [
+                    "none"
+                ]
+            },
+            {
+                "worldName": "CZX3",
+                "country": "cz",
+                "applicationCountryId": "cz",
+                "speedGame": 3,
+                "worldStartTime": 1579006800,
+                "specialRules": [
+                    "none"
+                ]
+            },
+            {
+                "worldName": "DEX3",
+                "country": "de",
+                "applicationCountryId": "de",
+                "speedGame": 3,
+                "worldStartTime": 1579006800,
+                "specialRules": [
+                    "none"
+                ]
+            },
+            {
+                "worldName": "ESX3",
+                "country": "es",
+                "applicationCountryId": "es",
+                "speedGame": 3,
+                "worldStartTime": 1579006800,
+                "specialRules": [
+                    "none"
+                ]
+            },
+            {
+                "worldName": "FRX3",
+                "country": "fr",
+                "applicationCountryId": "fr",
+                "speedGame": 3,
+                "worldStartTime": 1579006800,
+                "specialRules": [
+                    "none"
+                ]
+            },
+            {
+                "worldName": "ITX3",
+                "country": "it",
+                "applicationCountryId": "it",
+                "speedGame": 3,
+                "worldStartTime": 1579006800,
+                "specialRules": [
+                    "none"
+                ]
+            },
+            {
+                "worldName": "TRX3",
+                "country": "tr",
+                "applicationCountryId": "tr",
+                "speedGame": 3,
+                "worldStartTime": 1579006800,
+                "specialRules": [
+                    "none"
+                ]
+            },
+            {
+                "worldName": "RU1X3",
+                "country": "ru",
+                "applicationCountryId": "ru",
+                "speedGame": 3,
+                "worldStartTime": 1579611600,
+                "specialRules": [
+                    "none"
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,381 @@
+{
+    "cache": [
+        {
+            "name": "Collection:Sitter:3:en:5143462",
+            "data": {
+                "cache": [
+                    {
+                        "name": "Sitter:",
+                        "data": {
+                            "id": null,
+                            "sittedByUserAccountIdentifier": "15376",
+                            "avatarIdentifier": "5143462",
+                            "avatarName": "lijok",
+                            "consumersId": 815,
+                            "type": 4,
+                            "rights": {
+                                "1": false,
+                                "2": false,
+                                "3": false,
+                                "4": false
+                            },
+                            "ownerAccountName": "Lijok",
+                            "sittedByAccountName": "Lijok",
+                            "worldName": "COM2X3",
+                            "lastClick": "1578242159",
+                            "spawnedOnMap": "1577621703",
+                            "limitation": "0",
+                            "suspensionTime": "0",
+                            "deletionTime": "0",
+                            "isBanned": false,
+                            "isSuspended": false
+                        }
+                    },
+                    {
+                        "name": "Sitter:4778077",
+                        "data": {
+                            "id": "4778077",
+                            "sittedByUserAccountIdentifier": "676871",
+                            "avatarIdentifier": "5143462",
+                            "avatarName": "lijok",
+                            "consumersId": "815",
+                            "type": "2",
+                            "rights": {
+                                "1": false,
+                                "2": false,
+                                "3": false,
+                                "4": false
+                            },
+                            "ownerAccountName": "Lijok",
+                            "sittedByAccountName": "Relict",
+                            "worldName": "COM2X3",
+                            "lastClick": "0",
+                            "spawnedOnMap": "1577621703",
+                            "limitation": "0",
+                            "suspensionTime": "0",
+                            "deletionTime": "0",
+                            "isBanned": false,
+                            "isSuspended": false
+                        }
+                    }
+                ],
+                "operation": 1
+            }
+        },
+        {
+            "name": "Collection:Sitter:3:5143462",
+            "data": {
+                "cache": [
+                    {
+                        "name": "Sitter:",
+                        "data": {
+                            "id": null,
+                            "sittedByUserAccountIdentifier": "15376",
+                            "avatarIdentifier": "5143462",
+                            "avatarName": "lijok",
+                            "consumersId": 815,
+                            "type": 4,
+                            "rights": {
+                                "1": false,
+                                "2": false,
+                                "3": false,
+                                "4": false
+                            },
+                            "ownerAccountName": "Lijok",
+                            "sittedByAccountName": "Lijok",
+                            "worldName": "COM2X3",
+                            "lastClick": "1578242159",
+                            "spawnedOnMap": "1577621703",
+                            "limitation": "0",
+                            "suspensionTime": "0",
+                            "deletionTime": "0",
+                            "isBanned": false,
+                            "isSuspended": false
+                        }
+                    },
+                    {
+                        "name": "Sitter:4778077",
+                        "data": {
+                            "id": "4778077",
+                            "sittedByUserAccountIdentifier": "676871",
+                            "avatarIdentifier": "5143462",
+                            "avatarName": "lijok",
+                            "consumersId": "815",
+                            "type": "2",
+                            "rights": {
+                                "1": false,
+                                "2": false,
+                                "3": false,
+                                "4": false
+                            },
+                            "ownerAccountName": "Lijok",
+                            "sittedByAccountName": "Relict",
+                            "worldName": "COM2X3",
+                            "lastClick": "0",
+                            "spawnedOnMap": "1577621703",
+                            "limitation": "0",
+                            "suspensionTime": "0",
+                            "deletionTime": "0",
+                            "isBanned": false,
+                            "isSuspended": false
+                        }
+                    }
+                ],
+                "operation": 1
+            }
+        },
+        {
+            "name": "Collection:Sitter:3:gb:5143462",
+            "data": {
+                "cache": [
+                    {
+                        "name": "Sitter:",
+                        "data": {
+                            "id": null,
+                            "sittedByUserAccountIdentifier": "15376",
+                            "avatarIdentifier": "5143462",
+                            "avatarName": "lijok",
+                            "consumersId": 815,
+                            "type": 4,
+                            "rights": {
+                                "1": false,
+                                "2": false,
+                                "3": false,
+                                "4": false
+                            },
+                            "ownerAccountName": "Lijok",
+                            "sittedByAccountName": "Lijok",
+                            "worldName": "COM2X3",
+                            "lastClick": "1578242159",
+                            "spawnedOnMap": "1577621703",
+                            "limitation": "0",
+                            "suspensionTime": "0",
+                            "deletionTime": "0",
+                            "isBanned": false,
+                            "isSuspended": false
+                        }
+                    },
+                    {
+                        "name": "Sitter:4778077",
+                        "data": {
+                            "id": "4778077",
+                            "sittedByUserAccountIdentifier": "676871",
+                            "avatarIdentifier": "5143462",
+                            "avatarName": "lijok",
+                            "consumersId": "815",
+                            "type": "2",
+                            "rights": {
+                                "1": false,
+                                "2": false,
+                                "3": false,
+                                "4": false
+                            },
+                            "ownerAccountName": "Lijok",
+                            "sittedByAccountName": "Relict",
+                            "worldName": "COM2X3",
+                            "lastClick": "0",
+                            "spawnedOnMap": "1577621703",
+                            "limitation": "0",
+                            "suspensionTime": "0",
+                            "deletionTime": "0",
+                            "isBanned": false,
+                            "isSuspended": false
+                        }
+                    }
+                ],
+                "operation": 1
+            }
+        },
+        {
+            "name": "Collection:Sitter:3:5143462",
+            "data": {
+                "cache": [
+                    {
+                        "name": "Sitter:",
+                        "data": {
+                            "id": null,
+                            "sittedByUserAccountIdentifier": "15376",
+                            "avatarIdentifier": "5143462",
+                            "avatarName": "lijok",
+                            "consumersId": 815,
+                            "type": 4,
+                            "rights": {
+                                "1": false,
+                                "2": false,
+                                "3": false,
+                                "4": false
+                            },
+                            "ownerAccountName": "Lijok",
+                            "sittedByAccountName": "Lijok",
+                            "worldName": "COM2X3",
+                            "lastClick": "1578242159",
+                            "spawnedOnMap": "1577621703",
+                            "limitation": "0",
+                            "suspensionTime": "0",
+                            "deletionTime": "0",
+                            "isBanned": false,
+                            "isSuspended": false
+                        }
+                    },
+                    {
+                        "name": "Sitter:4778077",
+                        "data": {
+                            "id": "4778077",
+                            "sittedByUserAccountIdentifier": "676871",
+                            "avatarIdentifier": "5143462",
+                            "avatarName": "lijok",
+                            "consumersId": "815",
+                            "type": "2",
+                            "rights": {
+                                "1": false,
+                                "2": false,
+                                "3": false,
+                                "4": false
+                            },
+                            "ownerAccountName": "Lijok",
+                            "sittedByAccountName": "Relict",
+                            "worldName": "COM2X3",
+                            "lastClick": "0",
+                            "spawnedOnMap": "1577621703",
+                            "limitation": "0",
+                            "suspensionTime": "0",
+                            "deletionTime": "0",
+                            "isBanned": false,
+                            "isSuspended": false
+                        }
+                    }
+                ],
+                "operation": 1
+            }
+        },
+        {
+            "name": "Collection:Sitter:3:us:5143462",
+            "data": {
+                "cache": [
+                    {
+                        "name": "Sitter:",
+                        "data": {
+                            "id": null,
+                            "sittedByUserAccountIdentifier": "15376",
+                            "avatarIdentifier": "5143462",
+                            "avatarName": "lijok",
+                            "consumersId": 815,
+                            "type": 4,
+                            "rights": {
+                                "1": false,
+                                "2": false,
+                                "3": false,
+                                "4": false
+                            },
+                            "ownerAccountName": "Lijok",
+                            "sittedByAccountName": "Lijok",
+                            "worldName": "COM2X3",
+                            "lastClick": "1578242159",
+                            "spawnedOnMap": "1577621703",
+                            "limitation": "0",
+                            "suspensionTime": "0",
+                            "deletionTime": "0",
+                            "isBanned": false,
+                            "isSuspended": false
+                        }
+                    },
+                    {
+                        "name": "Sitter:4778077",
+                        "data": {
+                            "id": "4778077",
+                            "sittedByUserAccountIdentifier": "676871",
+                            "avatarIdentifier": "5143462",
+                            "avatarName": "lijok",
+                            "consumersId": "815",
+                            "type": "2",
+                            "rights": {
+                                "1": false,
+                                "2": false,
+                                "3": false,
+                                "4": false
+                            },
+                            "ownerAccountName": "Lijok",
+                            "sittedByAccountName": "Relict",
+                            "worldName": "COM2X3",
+                            "lastClick": "0",
+                            "spawnedOnMap": "1577621703",
+                            "limitation": "0",
+                            "suspensionTime": "0",
+                            "deletionTime": "0",
+                            "isBanned": false,
+                            "isSuspended": false
+                        }
+                    }
+                ],
+                "operation": 1
+            }
+        },
+        {
+            "name": "Collection:Sitter:3:5143462",
+            "data": {
+                "cache": [
+                    {
+                        "name": "Sitter:",
+                        "data": {
+                            "id": null,
+                            "sittedByUserAccountIdentifier": "15376",
+                            "avatarIdentifier": "5143462",
+                            "avatarName": "lijok",
+                            "consumersId": 815,
+                            "type": 4,
+                            "rights": {
+                                "1": false,
+                                "2": false,
+                                "3": false,
+                                "4": false
+                            },
+                            "ownerAccountName": "Lijok",
+                            "sittedByAccountName": "Lijok",
+                            "worldName": "COM2X3",
+                            "lastClick": "1578242159",
+                            "spawnedOnMap": "1577621703",
+                            "limitation": "0",
+                            "suspensionTime": "0",
+                            "deletionTime": "0",
+                            "isBanned": false,
+                            "isSuspended": false
+                        }
+                    },
+                    {
+                        "name": "Sitter:4778077",
+                        "data": {
+                            "id": "4778077",
+                            "sittedByUserAccountIdentifier": "676871",
+                            "avatarIdentifier": "5143462",
+                            "avatarName": "lijok",
+                            "consumersId": "815",
+                            "type": "2",
+                            "rights": {
+                                "1": false,
+                                "2": false,
+                                "3": false,
+                                "4": false
+                            },
+                            "ownerAccountName": "Lijok",
+                            "sittedByAccountName": "Relict",
+                            "worldName": "COM2X3",
+                            "lastClick": "0",
+                            "spawnedOnMap": "1577621703",
+                            "limitation": "0",
+                            "suspensionTime": "0",
+                            "deletionTime": "0",
+                            "isBanned": false,
+                            "isSuspended": false
+                        }
+                    }
+                ],
+                "operation": 1
+            }
+        }
+    ],
+    "time": "1578242975",
+    "serialNo": 459,
+    "response": {
+        "data": true
+    }
+}

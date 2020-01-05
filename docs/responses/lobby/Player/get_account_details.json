@@ -1,0 +1,34 @@
+{
+    "serialNo": 439,
+    "response": {
+        "id": 15376,
+        "accountType": "Account",
+        "email": "test_account@outlook.com",
+        "newEmail": null,
+        "sitters": [],
+        "duals": [],
+        "isActivated": true,
+        "isInstant": false,
+        "facebookId": null,
+        "vkontakteId": null,
+        "googleId": null,
+        "customerGroup": {
+            "key": 3,
+            "name": "Workers"
+        },
+        "dwhData": {
+            "customerGroup": {
+                "key": 3,
+                "name": "Workers"
+            }
+        },
+        "newsletter": [
+            {
+                "newsletterId": 4,
+                "newsletterName": "Travian Games GmbH",
+                "newsletterTerms": "",
+                "subscribed": false
+            }
+        ]
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "serialNo": 446,
+    "response": [
+        {
+            "worldName": "COM2X3",
+            "consumersId": "815",
+            "prestigeAmount": "5",
+            "worldStartTime": "1574773200",
+            "worldEndTime": "-1",
+            "country": "en",
+            "specialRules": "",
+            "signupTime": "1577621566",
+            "avatarIdentifier": "5143462",
+            "avatarName": "lijok",
+            "userAccountIdentifier": "15376",
+            "applicationInstanceId": null,
+            "gameRound": null
+        },
+        {
+            "worldName": "COM4",
+            "consumersId": "817",
+            "prestigeAmount": "1",
+            "worldStartTime": "1575982800",
+            "worldEndTime": "-1",
+            "country": "en",
+            "specialRules": "",
+            "signupTime": "1577395824",
+            "avatarIdentifier": "5140658",
+            "avatarName": "lijok",
+            "userAccountIdentifier": "15376",
+            "applicationInstanceId": null,
+            "gameRound": null
+        }
+    ]
+}

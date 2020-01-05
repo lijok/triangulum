@@ -1,0 +1,26 @@
+{
+    "cache": [
+        {
+            "name": "AvatarInformation:5140658",
+            "data": {
+                "avatarIdentifier": "5140658",
+                "userAccountIdentifier": "15376",
+                "signupTime": "1577395824",
+                "ranking": 3418,
+                "population": "9",
+                "villages": 1,
+                "lastLogin": "1578108254",
+                "lastClick": "1578108254",
+                "buildingQueue": 0,
+                "buildingQueueMaster": 0,
+                "incomingAttacks": 0,
+                "nextIncomingAttack": -1,
+                "spawnedOnMap": "1577478806",
+                "deletionTime": 0
+            }
+        }
+    ],
+    "time": "1578242932",
+    "serialNo": 457,
+    "response": []
+}

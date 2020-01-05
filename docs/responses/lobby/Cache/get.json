@@ -1,0 +1,337 @@
+{
+    "cache": [
+        {
+            "name": "Collection:Avatar:",
+            "data": {
+                "cache": [
+                    {
+                        "name": "Avatar:5140658",
+                        "data": {
+                            "userAccountIdentifier": "15376",
+                            "avatarIdentifier": "5140658",
+                            "avatarName": "lijok",
+                            "consumersId": "817",
+                            "worldName": "COM4",
+                            "country": "en",
+                            "accountName": "Lijok",
+                            "isBanned": false,
+                            "isSuspended": false,
+                            "suspensionTime": "0",
+                            "limitation": "0",
+                            "banReason": "0",
+                            "banPaymentProvider": ""
+                        }
+                    },
+                    {
+                        "name": "Avatar:5140684",
+                        "data": {
+                            "userAccountIdentifier": "15376",
+                            "avatarIdentifier": "5140684",
+                            "avatarName": "lijok",
+                            "consumersId": "814",
+                            "worldName": "COM6",
+                            "country": "en",
+                            "accountName": "Lijok",
+                            "isBanned": false,
+                            "isSuspended": false,
+                            "suspensionTime": "0",
+                            "limitation": "0",
+                            "banReason": "0",
+                            "banPaymentProvider": ""
+                        }
+                    },
+                    {
+                        "name": "Avatar:5140766",
+                        "data": {
+                            "userAccountIdentifier": "15376",
+                            "avatarIdentifier": "5140766",
+                            "avatarName": "lijok",
+                            "consumersId": "805",
+                            "worldName": "COM3",
+                            "country": "en",
+                            "accountName": "Lijok",
+                            "isBanned": false,
+                            "isSuspended": false,
+                            "suspensionTime": "0",
+                            "limitation": "0",
+                            "banReason": "0",
+                            "banPaymentProvider": ""
+                        }
+                    },
+                    {
+                        "name": "Avatar:5143462",
+                        "data": {
+                            "userAccountIdentifier": "15376",
+                            "avatarIdentifier": "5143462",
+                            "avatarName": "lijok",
+                            "consumersId": "815",
+                            "worldName": "COM2X3",
+                            "country": "en",
+                            "accountName": "Lijok",
+                            "isBanned": false,
+                            "isSuspended": false,
+                            "suspensionTime": "0",
+                            "limitation": "0",
+                            "banReason": "0",
+                            "banPaymentProvider": ""
+                        }
+                    }
+                ],
+                "operation": 1
+            }
+        },
+        {
+            "name": "Collection:Sitter:2:en:5143462",
+            "data": {
+                "cache": [],
+                "operation": 1
+            }
+        },
+        {
+            "name": "Collection:GameWorld:gb",
+            "data": {
+                "cache": [
+                    {
+                        "name": "GameWorld:791",
+                        "data": {
+                            "consumersId": "791",
+                            "identifier": "travian-ks-en-com2",
+                            "country": "en",
+                            "region": "international",
+                            "status": "3",
+                            "gameId": "30",
+                            "applicationId": "travian-ks",
+                            "applicationCountryId": "en",
+                            "applicationInstanceId": "com2",
+                            "worldName": "COM2",
+                            "worldStartTime": "1566907200",
+                            "playersRegistered": "950",
+                            "playersActive": "843",
+                            "playersOnline": "282",
+                            "worldCapacity": "0",
+                            "recommended": "",
+                            "blacklisted": "0",
+                            "baseUrl": "https:\\/\\/com2.kingdoms.com",
+                            "daysSinceStart": 131,
+                            "speedGame": "1",
+                            "speedTroops": "1",
+                            "specialRules": [
+                                "none"
+                            ],
+                            "canTransferMoney": "1",
+                            "tribes": {
+                                "1": "320",
+                                "2": "189",
+                                "3": "441"
+                            },
+                            "wwIsActivated": 1,
+                            "currentWWLevel": 68,
+                            "maxWWLevel": 100
+                        }
+                    },
+                    {
+                        "name": "GameWorld:793",
+                        "data": {
+                            "consumersId": "793",
+                            "identifier": "travian-ks-en-com8",
+                            "country": "en",
+                            "region": "international",
+                            "status": "3",
+                            "gameId": "30",
+                            "applicationId": "travian-ks",
+                            "applicationCountryId": "en",
+                            "applicationInstanceId": "com8",
+                            "worldName": "COM8",
+                            "worldStartTime": "1568116800",
+                            "playersRegistered": "725",
+                            "playersActive": "597",
+                            "playersOnline": "190",
+                            "worldCapacity": "0",
+                            "recommended": "",
+                            "blacklisted": "0",
+                            "baseUrl": "https:\\/\\/com8.kingdoms.com",
+                            "daysSinceStart": 117,
+                            "speedGame": "1",
+                            "speedTroops": "1",
+                            "specialRules": [
+                                "none"
+                            ],
+                            "canTransferMoney": "1",
+                            "tribes": {
+                                "1": "240",
+                                "2": "136",
+                                "3": "349"
+                            },
+                            "wwIsActivated": 1,
+                            "currentWWLevel": 3,
+                            "maxWWLevel": 100
+                        }
+                    },
+                    {
+                        "name": "GameWorld:805",
+                        "data": {
+                            "consumersId": "805",
+                            "identifier": "travian-ks-en-com3",
+                            "country": "en",
+                            "region": "international",
+                            "status": "2",
+                            "gameId": "30",
+                            "applicationId": "travian-ks",
+                            "applicationCountryId": "en",
+                            "applicationInstanceId": "com3",
+                            "worldName": "COM3",
+                            "worldStartTime": "1570536000",
+                            "playersRegistered": "1188",
+                            "playersActive": "996",
+                            "playersOnline": "320",
+                            "worldCapacity": "0",
+                            "recommended": "",
+                            "blacklisted": "0",
+                            "baseUrl": "https:\\/\\/com3.kingdoms.com",
+                            "daysSinceStart": 89,
+                            "speedGame": "1",
+                            "speedTroops": "1",
+                            "specialRules": [
+                                "none"
+                            ],
+                            "canTransferMoney": "1",
+                            "tribes": {
+                                "1": "380",
+                                "2": "227",
+                                "3": "581"
+                            },
+                            "wwIsActivated": 0,
+                            "currentWWLevel": 0,
+                            "maxWWLevel": 100
+                        }
+                    },
+                    {
+                        "name": "GameWorld:814",
+                        "data": {
+                            "consumersId": "814",
+                            "identifier": "travian-ks-en-com6",
+                            "country": "en",
+                            "region": "international",
+                            "status": "2",
+                            "gameId": "30",
+                            "applicationId": "travian-ks",
+                            "applicationCountryId": "en",
+                            "applicationInstanceId": "com6",
+                            "worldName": "COM6",
+                            "worldStartTime": "1573563600",
+                            "playersRegistered": "1717",
+                            "playersActive": "1209",
+                            "playersOnline": "308",
+                            "worldCapacity": "0",
+                            "recommended": "1",
+                            "blacklisted": "0",
+                            "baseUrl": "https:\\/\\/com6.kingdoms.com",
+                            "daysSinceStart": 54,
+                            "speedGame": "1",
+                            "speedTroops": "1",
+                            "specialRules": [
+                                "none"
+                            ],
+                            "canTransferMoney": "1",
+                            "tribes": {
+                                "1": "553",
+                                "2": "314",
+                                "3": "850"
+                            },
+                            "wwIsActivated": 0,
+                            "currentWWLevel": 0,
+                            "maxWWLevel": 100
+                        }
+                    },
+                    {
+                        "name": "GameWorld:815",
+                        "data": {
+                            "consumersId": "815",
+                            "identifier": "travian-ks-en-com2x3",
+                            "country": "en",
+                            "region": "international",
+                            "status": "2",
+                            "gameId": "30",
+                            "applicationId": "travian-ks",
+                            "applicationCountryId": "en",
+                            "applicationInstanceId": "com2x3",
+                            "worldName": "COM2X3",
+                            "worldStartTime": "1574773200",
+                            "playersRegistered": "1991",
+                            "playersActive": "1768",
+                            "playersOnline": "594",
+                            "worldCapacity": "0",
+                            "recommended": "",
+                            "blacklisted": "0",
+                            "baseUrl": "https:\\/\\/com2x3.kingdoms.com",
+                            "daysSinceStart": 40,
+                            "speedGame": "3",
+                            "speedTroops": "2",
+                            "specialRules": [
+                                "none"
+                            ],
+                            "canTransferMoney": "1",
+                            "tribes": {
+                                "1": "669",
+                                "2": "403",
+                                "3": "919"
+                            },
+                            "wwIsActivated": 0,
+                            "currentWWLevel": 0,
+                            "maxWWLevel": 100
+                        }
+                    },
+                    {
+                        "name": "GameWorld:817",
+                        "data": {
+                            "consumersId": "817",
+                            "identifier": "travian-ks-en-com4",
+                            "country": "en",
+                            "region": "international",
+                            "status": "2",
+                            "gameId": "30",
+                            "applicationId": "travian-ks",
+                            "applicationCountryId": "en",
+                            "applicationInstanceId": "com4",
+                            "worldName": "COM4",
+                            "worldStartTime": "1575982800",
+                            "playersRegistered": "3845",
+                            "playersActive": "2015",
+                            "playersOnline": "484",
+                            "worldCapacity": "0",
+                            "recommended": "1",
+                            "blacklisted": "0",
+                            "baseUrl": "https:\\/\\/com4.kingdoms.com",
+                            "daysSinceStart": 26,
+                            "speedGame": "1",
+                            "speedTroops": "1",
+                            "specialRules": [
+                                "none"
+                            ],
+                            "canTransferMoney": "1",
+                            "tribes": {
+                                "1": "1232",
+                                "2": "718",
+                                "3": "1895"
+                            },
+                            "wwIsActivated": 0,
+                            "currentWWLevel": 0,
+                            "maxWWLevel": 100
+                        }
+                    }
+                ],
+                "operation": 1
+            }
+        },
+        {
+            "name": "Collection:Sitter:3:en:5143462",
+            "data": {
+                "cache": [],
+                "operation": 1
+            }
+        }
+    ],
+    "time": "1578242184",
+    "serialNo": 431,
+    "response": []
+}
