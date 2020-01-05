@@ -26,6 +26,11 @@ class Payment(BaseController):
         )
 
     async def get_smallest_package(self, feature_price: int) -> dict:
+        """UNKNOWN *
+
+        Args:
+            feature_price: UNKNOWN *
+        """
         raise ActionNotImplementedError
 
         # return await self.invoke_action(

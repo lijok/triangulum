@@ -175,9 +175,6 @@ class FarmList(BaseController):
         Args:
             name: New name for the farm list
             list_id: ID of the farm list
-
-        Returns:
-
         """
         return await self.invoke_action(
             action='editList',

@@ -262,9 +262,6 @@ class Building(BaseController):
         Args:
             village_id: ID of the village
             event_id: ID of the event
-
-        Returns:
-
         """
         return await self.invoke_action(
             action='cancel',

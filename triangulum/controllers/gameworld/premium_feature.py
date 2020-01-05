@@ -241,6 +241,9 @@ class PremiumFeature(BaseController):
     async def tribute_fetch_instantly(self, destination_village_id: int) -> dict:
         """Instantly fetch tribute for the price of 1 gold.
 
+        Args:
+            destination_village_id: ID of the village from which tributes are being fetched
+
         Returns:
             dict
         """

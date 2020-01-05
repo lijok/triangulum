@@ -15,6 +15,12 @@ class Trade(BaseController):
 
     # TODO
     async def change_trade_route_status(self, id: int, status: int) -> dict:
+        """Activate or deactivate a trade route *
+
+        Args:
+            id: ID of the trade route
+            status: Status of the trade route *
+        """
         raise ActionNotImplementedError
 
         # return await self.invoke_action(

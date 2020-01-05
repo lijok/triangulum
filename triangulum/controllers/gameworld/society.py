@@ -106,9 +106,6 @@ class Society(BaseController):
 
         Args:
             id: ID of the invitation
-
-        Returns:
-
         """
         return await self.invoke_action(
             action='declineInvitation',
@@ -123,9 +120,6 @@ class Society(BaseController):
         Args:
             group_id: ID of the secret society
             description: New description
-
-        Returns:
-
         """
         return await self.invoke_action(
             action='changeDescription',

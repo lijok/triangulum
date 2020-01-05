@@ -490,6 +490,12 @@ class Player(BaseController):
     # requestAction = 1
     # url = "https://com2x3.kingdoms.com/#/page:village/villId:536887296/subtab:Bids/playerId:5230/profileTab:settings/window:profile/prosubtab:Avatar/overlayprofile:startDeletion"
     async def request_verification(self, request_action: RequestAction, url: str) -> dict:
+        """UNKNOWN *
+
+        Args:
+            request_action: UNKNOWN *
+            url: UNKNOWN *
+        """
         raise ActionNotImplementedError
 
         # return await self.invoke_action(
@@ -503,6 +509,11 @@ class Player(BaseController):
     # TODO: This is the other part of request_verification, where we send the token
     # that we receive in response to request_verification
     async def verify_action(self, token: str) -> dict:
+        """UNKNOWN *
+
+        Args:
+            token: UNKNOWN *
+        """
         raise ActionNotImplementedError
 
         # return await self.invoke_action(
@@ -664,6 +675,13 @@ class Player(BaseController):
         )
 
     async def report_player(self, room_id: str, player_id: int, reason: ReportPlayerReason) -> dict:
+        """Report a player
+
+        Args:
+            room_id: UNKNOWN *
+            player_id: UNKNOWN *
+            reason: UNKNOWN *
+        """
         raise ActionNotImplementedError
 
         # return await self.invoke_action(

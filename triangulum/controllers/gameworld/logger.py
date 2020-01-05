@@ -10,6 +10,14 @@ class Logger(BaseController):
         super().__init__(action_handler=action_handler, controller='logger')
 
     async def log_message(self, message: str, prefix: str, log_type: LogType, details: str) -> dict:
+        """UNKNOWN *
+
+        Args:
+            message: UNKNOWN *
+            prefix: UNKNOWN *
+            log_type: UNKNOWN *
+            details: UNKNOWN *
+        """
         raise ActionNotImplementedError
 
         # return await self.invoke_action(

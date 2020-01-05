@@ -12,13 +12,18 @@ class Cache(BaseController):
         super().__init__(action_handler=action_handler, controller='cache')
 
     # TODO: Implement proper cache control
-    @cached(TTLCache(MAX_SIZE, TTL))
+    # @cached(TTLCache(MAX_SIZE, TTL))
     async def get(self, names: list) -> dict:
-        raise ActionNotImplementedError
+        """UNKNOWN *
 
-        # return await self.invoke_action(
-        #     action='get',
-        #     params={
-        #         'names': names,
-        #     }
-        # )
+        Args:
+            names: UNKNOWN *
+        """
+        # raise ActionNotImplementedError
+
+        return await self.invoke_action(
+            action='get',
+            params={
+                'names': names,
+            }
+        )

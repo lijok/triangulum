@@ -24,6 +24,11 @@ class Troops(BaseController):
         troop_id: int,
         # marker: Marker
     ) -> dict:
+        """UNKNOWN *
+
+        Args:
+            troop_id: UNKNOWN *
+        """
         raise ActionNotImplementedError
 
         # return await self.invoke_action(
@@ -187,6 +192,31 @@ class Troops(BaseController):
             natar_bonus: int,
             hero_mounted: list
     ) -> dict:
+        """UNKNOWN *
+
+        Args:
+            attack_type: UNKNOWN *
+            attacker_tribe: UNKNOWN *
+            attacker_units: UNKNOWN *
+            defender_tribe: UNKNOWN *
+            defender_units: UNKNOWN *
+            hero_off_bonus: UNKNOWN *
+            hero_def_bonus: UNKNOWN *
+            hero_item_type: UNKNOWN *
+            hero_fight_strength: UNKNOWN *
+            attacker_research: UNKNOWN *
+            defender_research: UNKNOWN *
+            att_population: UNKNOWN *
+            def_population: UNKNOWN *
+            catapult_target_level: UNKNOWN *
+            catapult_target_level2: UNKNOWN *
+            mason_level: UNKNOWN *
+            wall_level: UNKNOWN *
+            palace_level: UNKNOWN *
+            moat_level: UNKNOWN *
+            natar_bonus: UNKNOWN *
+            hero_mounted: UNKNOWN *
+        """
         raise ActionNotImplementedError
 
         # return await self.invoke_action(
