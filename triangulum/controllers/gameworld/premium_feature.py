@@ -237,3 +237,16 @@ class PremiumFeature(BaseController):
                 'featureName': 'cropProductionBonus'
             }
         )
+
+    async def tribute_fetch_instantly(self, destination_village_id: int) -> dict:
+        """Instantly fetch tribute for the price of 1 gold.
+
+        Returns:
+            dict
+        """
+        return await self.invoke_action(
+            action='bookFeature',
+            params={
+                'featureName': 'tributeFetchInstantly'
+            }
+        )
