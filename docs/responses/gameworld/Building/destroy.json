@@ -1,0 +1,54 @@
+{
+    "cache": [
+        {
+            "name": "BuildingQueue:534986754",
+            "data": {
+                "villageId": "534986754",
+                "tribeId": "3",
+                "freeSlots": {
+                    "1": 1,
+                    "2": 1,
+                    "4": 0
+                },
+                "queues": {
+                    "1": [],
+                    "2": [],
+                    "4": [
+                        {
+                            "id": "3416980",
+                            "villageId": "534986754",
+                            "locationId": "25",
+                            "buildingType": "36",
+                            "queueType": "4",
+                            "timeStart": "0",
+                            "finished": "1578220823",
+                            "isRubble": "0",
+                            "paid": "0",
+                            "waiting": false
+                        }
+                    ],
+                    "5": [
+                        {
+                            "villageId": "534986754",
+                            "locationId": 28,
+                            "buildingType": "27",
+                            "queueType": 5,
+                            "timeStart": "1578220836",
+                            "finished": 1578221331,
+                            "isRubble": 0,
+                            "paid": 0,
+                            "id": 3416994,
+                            "waiting": false
+                        }
+                    ]
+                },
+                "canUseInstantConstruction": false,
+                "canUseInstantConstructionOnlyInVillage": false
+            }
+        }
+    ],
+    "ignoreSerial": 1,
+    "time": 1578220836167,
+    "serialNo": 33400,
+    "response": []
+}

@@ -1,0 +1,10 @@
+{
+    "time": 1578220823834,
+    "serialNo": 33395,
+    "response": {
+        "homeProductionPerDay": "21",
+        "currentTerritoryBonusFactor": 1,
+        "maxTerritoryBonusFactor": 1.25,
+        "currentTerritoryBonusBoundary": "100"
+    }
+}
