@@ -1,0 +1,22 @@
+{% for scope, controllers in docs.items() %}
+#{{ scope[0]|upper }}{{ scope[1:] }} Controllers
+{% for controller, actions in controllers.items() %}
+##{{ controller[0]|upper }}{{ controller[1:] }}
+{% for action, doc in actions.items() %}
+###{{ action }}
+{% if doc.returns %}
+```json
+{{ doc.returns }}
+```
+{% endif %}
+{{ doc.short_description }}
+{% if doc.long_description %}{{ doc.long_description }}{% endif %}
+{% if doc.args %}
+Parameter | Type | Default | Description
+--------- | --------- | --------- | --------- |
+{% for arg in doc.args %}{{ arg.name }} | {{ arg.type }} | {{ arg.default }} | {{ arg.description }}
+{% endfor %}
+{% endif %}
+{% endfor %}
+{% endfor %}
+{% endfor %}
