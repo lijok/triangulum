@@ -4,7 +4,7 @@
 ##{{ controller[0]|upper }}{{ controller[1:] }}
 {% for action, doc in actions.items() %}
 ###{{ action }}
-{% if doc.returns %}
+{% if doc.returns and doc.returns != 'null' %}
 ```json
 {{ doc.returns }}
 ```
