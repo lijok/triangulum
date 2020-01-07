@@ -9,9 +9,6 @@ class Login(BaseController):
 
     async def logout(self) -> dict:
         """[*]
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='logout'

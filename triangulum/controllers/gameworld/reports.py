@@ -27,9 +27,6 @@ class Reports(BaseController):
             count: Last index of the reports to retrieve
             filters: List of filters to filter the reports through
             also_get_total_number: Also get the total number of reports
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='getLastReports',
@@ -55,9 +52,6 @@ class Reports(BaseController):
             id: ID of the report
             collection: Report owners, i.e own, kingdom or society *
             security_code: UNKNOWN *
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='getFullReport',
@@ -75,9 +69,6 @@ class Reports(BaseController):
             id: ID of the report
             collection: Report owners, i.e own, kingdom or society *
             security_code: UNKNOWN *
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='markAsFavorite',
@@ -105,9 +96,6 @@ class Reports(BaseController):
                 i.e kingdom ID if share_with == ShareReportWith.KINGDOM
             share_message: Message to send together with the report
             collection: Report owners, i.e own, kingdom or society *
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='shareReport',
@@ -125,9 +113,6 @@ class Reports(BaseController):
 
         Args:
             body_id: UNKNOWN *
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='removeAsFavorite',

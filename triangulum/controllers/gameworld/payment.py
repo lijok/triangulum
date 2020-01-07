@@ -14,9 +14,6 @@ class Payment(BaseController):
 
         Args:
             shop_version: UNKNOWN *
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='getPaymentShopUrl',

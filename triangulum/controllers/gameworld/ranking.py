@@ -18,9 +18,6 @@ class Ranking(BaseController):
         Args:
             start: Index of the first ranking you wish to receive back
             end: Index of the last ranking you wish to receive back
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='getKingdomVictoryPointsWithTreasures',
@@ -36,9 +33,6 @@ class Ranking(BaseController):
 
         Args:
             kingdom_id: ID of the kingdom
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='getKingdomStats',
@@ -62,9 +56,6 @@ class Ranking(BaseController):
             end: Index of the last ranking you wish to receive back
             ranking_category: Ranking category you wish to receive information about
             _id: ID of an entity selection (through a UI mechanism) for which to return extra info
-
-        Returns:
-            dict
         """
         params = {
             'start': start,
@@ -86,9 +77,6 @@ class Ranking(BaseController):
 
         Args:
             ranking_category: Ranking category to get information for
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='getRankingAveragePoints',
@@ -105,9 +93,6 @@ class Ranking(BaseController):
         Args:
             id: UNKNOWN *
             ranking_category: Ranking category
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='getRankAndCount',
@@ -121,9 +106,6 @@ class Ranking(BaseController):
     @cached(TTLCache(MAX_SIZE, TTL))
     async def get_world_stats(self) -> dict:
         """Get statistics about the game world such as the race and troops distributions
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='getWorldStats'
@@ -132,9 +114,6 @@ class Ranking(BaseController):
     @cached(TTLCache(MAX_SIZE, TTL))
     async def get_kingdom_internal_ranking(self) -> dict:
         """Get internal kingdom rankings
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='getKingdomInternalRanking'

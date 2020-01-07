@@ -12,9 +12,6 @@ class Notification(BaseController):
 
         Args:
             id: UNKNOWN *
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='markAsRead',

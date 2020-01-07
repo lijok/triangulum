@@ -9,9 +9,6 @@ class Achievements(BaseController):
 
     async def update(self) -> dict:
         """[*]
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='update'
@@ -22,9 +19,6 @@ class Achievements(BaseController):
 
         Args:
             achievement_id: ID of the achievement
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='collectReward',

@@ -15,9 +15,6 @@ class Map(BaseController):
     @cached(TTLCache(MAX_SIZE, TTL))
     async def get_heatmap_maximums(self) -> dict:
         """[*]
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='getHeatmapMaximums'
@@ -29,9 +26,6 @@ class Map(BaseController):
 
         Args:
             region_id_collection: List of region IDs to fetch the information for
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='getByRegionIds',
@@ -46,9 +40,6 @@ class Map(BaseController):
         Args:
             markers: List of Marker objects to be edited / added on the map cell
             field_message: Message to be placed on the cell
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='editMapMarkers',
@@ -71,9 +62,6 @@ class Map(BaseController):
             cell_id: ID of the cell on which the marker is placed
             is_global: Whether the toggle is global *
             minimize_state: State of the toggle (minimzed/maximized)
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='fieldMarkerMinimize',
@@ -90,9 +78,6 @@ class Map(BaseController):
         Args:
             id: ID of the marker
             is_global: Whether the closure is global *
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='fieldMarkerClose',
@@ -108,9 +93,6 @@ class Map(BaseController):
         Args:
             id: ID of the marker
             is_global: Whether the deletion is global *
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='fieldMarkerDelete',
@@ -126,9 +108,6 @@ class Map(BaseController):
 
         Args:
             king_id: Player ID of the king of the kingdom
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='getKingdomInfluenceStatistics',

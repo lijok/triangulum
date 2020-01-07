@@ -15,9 +15,6 @@ class Kingdom(BaseController):
 
         Args:
             governor_player_id: ID of the governor player
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='cancelGovernor',
@@ -32,9 +29,6 @@ class Kingdom(BaseController):
 
         Args:
             id: ID of the invitation
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='acceptInvitation',
@@ -49,9 +43,6 @@ class Kingdom(BaseController):
 
         Args:
             village_id: ID of the village
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='getTop3NearbyKings',
@@ -66,9 +57,6 @@ class Kingdom(BaseController):
         Args:
             village_id: ID of the village
             tag: UNKNOWN *
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='startCoronationCeremony',
@@ -83,9 +71,6 @@ class Kingdom(BaseController):
 
         Args:
             tag: UNKNOWN *
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='changeTag',
@@ -100,9 +85,6 @@ class Kingdom(BaseController):
         Args:
             player_id: ID of the player to invite
             custom_text: Message to include in the invitation
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='promoteToDuke',
@@ -118,9 +100,6 @@ class Kingdom(BaseController):
         Args:
             group_id: ID of the kingdom
             public_description: Description to set
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='changeDescription',
@@ -135,9 +114,6 @@ class Kingdom(BaseController):
 
         Args:
             id: ID of the invitation
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='declineInvitation',
@@ -149,9 +125,6 @@ class Kingdom(BaseController):
     @cached(TTLCache(MAX_SIZE, TTL))
     async def get_fight_strength_ranks(self) -> dict:
         """[*]Get Fight Strength rankings of your kingdom
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='getFightStrengthRanks'
@@ -164,9 +137,6 @@ class Kingdom(BaseController):
         Args:
             start: Index to start fetching from
             count: Index to stop fetching at
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='getNews',
@@ -182,9 +152,6 @@ class Kingdom(BaseController):
         Args:
             group_id: ID of the kingdom
             internal_description: Description to be set
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='changeInternalDescription',
@@ -200,9 +167,6 @@ class Kingdom(BaseController):
 
         Args:
             kingdom_id: ID of the kingdom
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='getDukeCandidate',
@@ -213,9 +177,6 @@ class Kingdom(BaseController):
 
     async def cancel_kingdom(self) -> dict:
         """Disband a kingdom
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='cancelKingdom'

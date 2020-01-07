@@ -21,9 +21,6 @@ class Player(BaseController):
         Args:
             device_dimension_x: UI PARAM X dimension of the device
             device_dimension_y: UI PARAM Y dimension of the device
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='getAll',
@@ -34,9 +31,6 @@ class Player(BaseController):
 
     async def get_referral_direction(self) -> dict:
         """[*]
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='getReferralDirection'
@@ -47,9 +41,6 @@ class Player(BaseController):
 
         Args:
             tribe_id: Tribe identifier
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='chooseTribe',
@@ -61,9 +52,6 @@ class Player(BaseController):
     @cached(TTLCache(MAX_SIZE, TTL))
     async def check_king_registration_rule(self) -> dict:
         """Check whether the player qualifies to play as a king *
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='checkKingRegistrationRule'
@@ -72,9 +60,6 @@ class Player(BaseController):
     @cached(TTLCache(MAX_SIZE, TTL))
     async def get_system_message(self) -> dict:
         """Get system messages
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='getSystemMessage'
@@ -83,9 +68,6 @@ class Player(BaseController):
     @cached(TTLCache(MAX_SIZE, TTL))
     async def get_achievement_notifications(self) -> dict:
         """[-]Get notifications of new achievements
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='getAchievementNotifications'
@@ -96,9 +78,6 @@ class Player(BaseController):
 
         Args:
             time_type: Time type to use
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='changeTimeType',
@@ -114,9 +93,6 @@ class Player(BaseController):
             cnt: UNKNOWN *
             last_global_message_time: UNKNOWN *
             last_id: UNKNOWN *
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='ping',
@@ -129,9 +105,6 @@ class Player(BaseController):
 
     async def delete_all_notifications(self) -> dict:
         """[-]Delete all notifications
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='deleteAllNotifications'
@@ -140,9 +113,6 @@ class Player(BaseController):
     @cached(TTLCache(MAX_SIZE, TTL))
     async def get_open_chat_windows(self) -> dict:
         """[-]Get info on open chat windows
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='getOpenChatWindows'
@@ -153,9 +123,6 @@ class Player(BaseController):
 
         Args:
             notification_type: Type of notification
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='deleteNotification',
@@ -166,9 +133,6 @@ class Player(BaseController):
 
     async def get_cardgame_result(self) -> dict:
         """Get results of a finished cardgame *
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='getCardgameResult'
@@ -176,9 +140,6 @@ class Player(BaseController):
 
     async def get_midnight(self) -> dict:
         """[*-]
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='getMidnight'
@@ -201,9 +162,6 @@ class Player(BaseController):
             third: Toggle to select third card
             fourth: Toggle to select fourth card
             fifth: Toggle to select fifth card
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='selectCards',
@@ -221,9 +179,6 @@ class Player(BaseController):
     @cached(TTLCache(MAX_SIZE, TTL))
     async def get_invitation_ref_link(self) -> dict:
         """Get referral url
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='getInvitationRefLink'
@@ -235,9 +190,6 @@ class Player(BaseController):
 
         Args:
             player_id: ID of the player
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='getPlayerInfo',
@@ -251,9 +203,6 @@ class Player(BaseController):
 
         Args:
             windows: ID of the windows
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='setOpenChatWindows',
@@ -308,9 +257,6 @@ class Player(BaseController):
             notepads_visible: Toggle notepad visibility
             _time_zone: Timezone to use
             _time_zone_string: Timezone string to use
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='changeSettings',
@@ -346,9 +292,6 @@ class Player(BaseController):
         Args:
             x: X location of the note
             y: Y location of the note
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='addNote',
@@ -376,9 +319,6 @@ class Player(BaseController):
             size_x: Width of the note
             size_y: Height of the note
             text: Text on the note
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='changeNote',
@@ -399,9 +339,6 @@ class Player(BaseController):
 
         Args:
             id: ID of the note
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='removeNote',
@@ -412,9 +349,6 @@ class Player(BaseController):
 
     async def get_activity_streams(self) -> dict:
         """[*]
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='getActivityStreams'
@@ -423,9 +357,6 @@ class Player(BaseController):
     @cached(TTLCache(MAX_SIZE, TTL))
     async def get_prestige_conditions(self) -> dict:
         """Get conditions for weekly prestige point acquisition
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='getPrestigeConditions'
@@ -437,9 +368,6 @@ class Player(BaseController):
 
         Args:
             kingdom_id: ID of a kingdom
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='getRobberVillagesAmount',
@@ -450,9 +378,6 @@ class Player(BaseController):
 
     async def reset_activity_stream(self) -> dict:
         """[*]
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='resetActivityStream'
@@ -464,9 +389,6 @@ class Player(BaseController):
 
         Args:
             help_type: Type of help notice to trigger *
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='triggerInGameHelpNotice',
@@ -477,9 +399,6 @@ class Player(BaseController):
 
     async def change_vacation_state(self) -> dict:
         """[*]
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='changeVacationState'
@@ -525,9 +444,6 @@ class Player(BaseController):
 
     async def abort_deletion(self) -> dict:
         """Abort account deletion
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='abortDeletion'
@@ -538,9 +454,6 @@ class Player(BaseController):
 
         Args:
             public_site_key: Public site key provided by the external tool
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='requestExternalLogin',
@@ -551,9 +464,6 @@ class Player(BaseController):
 
     async def update_player_profile_content(self) -> dict:
         """[*]
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='updatePlayerProfileContent'
@@ -564,9 +474,6 @@ class Player(BaseController):
 
         Args:
             description: New description
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='editProfile',
@@ -577,9 +484,6 @@ class Player(BaseController):
 
     async def get_invitations_list(self) -> dict:
         """[*]Get list of friend invitations
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='getInvitationsList'
@@ -593,9 +497,6 @@ class Player(BaseController):
             email: UNKNOWN *
             own_name: UNKNOWN *
             message: UNKNOWN *
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='sendInvitation',
@@ -612,9 +513,6 @@ class Player(BaseController):
 
         Args:
             room_id: ID of the conversation room
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='reportConversation',
@@ -629,9 +527,6 @@ class Player(BaseController):
         Args:
             room_id: ID of the room
             comment: Comment to attach to the report
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='reportConversationFinalize',
@@ -647,9 +542,6 @@ class Player(BaseController):
 
         Args:
             village_id: ID of the players village
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='getPlayerInfluence',
@@ -663,9 +555,6 @@ class Player(BaseController):
 
         Args:
             village_id: ID of the village within area of influence of a player to invite
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='inviteToKingdom',

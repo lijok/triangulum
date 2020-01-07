@@ -16,9 +16,6 @@ class Village(BaseController):
 
         Args:
             id: id of the special
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='clickSpecial',
@@ -32,9 +29,6 @@ class Village(BaseController):
 
         Args:
             village_id: id of the village to toggle
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='toggleAllowTributeCollection',
@@ -50,9 +44,6 @@ class Village(BaseController):
         Args:
             oasis_id: id of the oasis
             player_id: id of the player
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='getVillagesWithInfluenceOnOasisForPlayer',
@@ -64,9 +55,6 @@ class Village(BaseController):
 
     async def get_kingdom_village_attacks(self) -> dict:
         """Fetch all incoming attacks on villages within your kingdom
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='getKingdomVillageAttacks'
@@ -78,9 +66,6 @@ class Village(BaseController):
 
         Args:
             village_id: id of the village
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='getProductionDetails',
@@ -95,9 +80,6 @@ class Village(BaseController):
         Args:
             oasis_id: id of the oasis
             village_id: id of the village
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='useOasis',
@@ -113,9 +95,6 @@ class Village(BaseController):
         Args:
             oasis_id: id of the oasis
             village_id: id of the village
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='clearOasis',
@@ -131,9 +110,6 @@ class Village(BaseController):
         Args:
             village_id: id of the village
             village_name: new name of the village
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='updateName',
@@ -148,9 +124,6 @@ class Village(BaseController):
 
         Args:
             village_id: id of the village
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='checkUnitProduction',
@@ -165,9 +138,6 @@ class Village(BaseController):
 
         Args:
             village_id: id of the village the treasury is in
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='getTreasuriesCapacity',
@@ -182,9 +152,6 @@ class Village(BaseController):
 
         Args:
             village_id: id of the village
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='getVictoryPointsAndInfluenceBonus',

@@ -36,9 +36,6 @@ class Trade(BaseController):
 
         Args:
             id: ID of the trade route
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='deleteTradeRoute',
@@ -56,9 +53,6 @@ class Trade(BaseController):
             source_village_id: ID of the village from which resources will be sent
             dest_village_id: ID of the village to which resources will be sent
             dest_village_name: Name of the village to which resources will be sent
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='checkTarget',
@@ -87,9 +81,6 @@ class Trade(BaseController):
             searched_resource: Type of the sought after resource
             searched_amount: Amount of resources sought after
             kingdom_only: Toggle whether this trade offer is only available to your kingdom members
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='createOffer',
@@ -108,9 +99,6 @@ class Trade(BaseController):
 
         Args:
             offer_id: ID of the offer
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='cancelOffer',
@@ -138,9 +126,6 @@ class Trade(BaseController):
             rate: Rate for which to search
             start: Starting index from which to return the list of offers
             count: Amount of offers to return
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='getOfferList',
@@ -160,9 +145,6 @@ class Trade(BaseController):
         Args:
             offer_id: ID of the offer
             village_id: ID of the village from which to trade the resources
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='acceptOffer',
@@ -186,9 +168,6 @@ class Trade(BaseController):
             recurrences: Amount of times to repeat the sending of the resources
             resources: Resource amounts to be sent
             source_village_id: ID of the village from which to send the resources
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='sendResources',

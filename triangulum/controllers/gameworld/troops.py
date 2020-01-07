@@ -44,9 +44,6 @@ class Troops(BaseController):
 
         Args:
             troop_id: ID of the movement
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='abortTroopMovement',
@@ -76,9 +73,6 @@ class Troops(BaseController):
             redeploy_hero: Whether to send the hero along *
             hero_present: Whether to send the hero along *
             selected_units: Units to be sent
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='checkTarget',
@@ -112,9 +106,6 @@ class Troops(BaseController):
             units: Units to be sent
             spy_mission: Type of the spy mission (spy for resources or defences and troops)
                 this will be ignored if the movement type is not TroopMovementType.SPY
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='send',
@@ -135,9 +126,6 @@ class Troops(BaseController):
             list_id: ID of the farm list
             entry_ids: List of entry IDs of the farm list
             village_id: ID of the village from which to begin the raid
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='startPartialFarmListRaid',
@@ -154,9 +142,6 @@ class Troops(BaseController):
         Args:
             list_ids: ID of the farm list
             village_id: ID of the village from which to begin the raid
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='startFarmListRaid',
@@ -252,9 +237,6 @@ class Troops(BaseController):
         Args:
             troop_id: ID of the movement
             units: Units to move home
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='moveTroopsHome',
@@ -269,9 +251,6 @@ class Troops(BaseController):
 
         Args:
             troop_id: UNKNOWN *
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='disband',
@@ -285,9 +264,6 @@ class Troops(BaseController):
 
         Args:
             troop_id: UNKNOWN *
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='release',

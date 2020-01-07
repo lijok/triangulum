@@ -35,9 +35,6 @@ class Hero(BaseController):
             def_bonus_points: Points to assign to Defence Bonus
             res_bonus_points: Points to assign to Resource Bonus
             res_bonus_type: Resource bonus type to use
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='addAttributePoints',
@@ -57,9 +54,6 @@ class Hero(BaseController):
             id: Item ID
             amount: How many of the items to merge
             village_id: ID of the village *
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='mergeItem',
@@ -100,9 +94,6 @@ class Hero(BaseController):
             player_id: ID of the player
             beard:  ID of beard look
             fetched_from_lobby: UNKNOWN *
-
-        Returns:
-            dict
         """
 
         return await self.invoke_action(
@@ -126,9 +117,6 @@ class Hero(BaseController):
 
     async def get_last_inventory_view(self) -> dict:
         """[*-]
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='getLastInventoryView'
@@ -137,9 +125,6 @@ class Hero(BaseController):
     @cached(TTLCache(MAX_SIZE, TTL))
     async def get_treasure_sell_price(self) -> dict:
         """Get the price for selling a treasure in resources
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='getTreasureSellPrice'
@@ -151,9 +136,6 @@ class Hero(BaseController):
 
         Args:
             village_id: ID of the village
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='getDurationToClosestVillageWithInfluence',
@@ -169,9 +151,6 @@ class Hero(BaseController):
             id: ID of the item
             amount: Amount to use
             village_id: ID of the village in which to use the item
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='useItem',
@@ -184,9 +163,6 @@ class Hero(BaseController):
 
     async def set_last_inventory_view(self) -> dict:
         """[*]
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='setLastInventoryView'
@@ -199,9 +175,6 @@ class Hero(BaseController):
         Args:
             percent: UNNOWN *
             resource_type: Type of resource
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='getResourceForResourceChest',
@@ -217,9 +190,6 @@ class Hero(BaseController):
         Args:
             upgrade_item_id: ID of the item that applies the upgrade
             target_item_id: ID of the item on which to apply the upgrade that's applied by upgrade_item_id
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='upgradeItem',
@@ -234,9 +204,6 @@ class Hero(BaseController):
 
         Args:
             village_id: ID of the village to revive the Hero in
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='revive',
@@ -247,9 +214,6 @@ class Hero(BaseController):
 
     async def confirm_hero_level_up(self) -> dict:
         """[*]
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='confirmHeroLevelUp'
@@ -261,9 +225,6 @@ class Hero(BaseController):
         Args:
             id1: ID of the first item
             id2: ID of the second item
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='switchItems',

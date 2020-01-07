@@ -11,9 +11,6 @@ class Login(BaseController):
         """Logs you out of the game
 
         This invalidates your session
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='logout'

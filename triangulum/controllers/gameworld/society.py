@@ -18,9 +18,6 @@ class Society(BaseController):
 
         Args:
             village_id: ID of a village
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='getSharedInformations',
@@ -56,9 +53,6 @@ class Society(BaseController):
                 on eachothers villages
             share_additional_village_information: Toggle for whether additional information is shared between
                 the members of the society, such as crop production and troop counts
-
-        Returns:
-            dict
         """
         params = {
                 'name': name,
@@ -87,9 +81,6 @@ class Society(BaseController):
             group_id: ID of the secret society
             player_names: List of player names to be invited
             custom_text: Message to include with the invitation
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='invite',
@@ -134,9 +125,6 @@ class Society(BaseController):
 
         Args:
             group_id: ID of the secret society
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='close',

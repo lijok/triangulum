@@ -14,9 +14,6 @@ class Quest(BaseController):
     @cached(TTLCache(MAX_SIZE, TTL))
     async def get_puzzle(self) -> dict:
         """[-]Get the map puzzle during registration
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='getPuzzle'
@@ -27,9 +24,6 @@ class Quest(BaseController):
 
         Args:
             moves: List of moves that provide a solution to the puzzle
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='solvePuzzle',
@@ -53,9 +47,6 @@ class Quest(BaseController):
             dialog_id: ID of the dialog
             command: Command to supply
             input: Input for the command if the command requires one, such as when using Command.SET_NAME
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='dialogAction',
@@ -73,9 +64,6 @@ class Quest(BaseController):
         Args:
             quest_id: ID of a quest
             village_id: ID of a village
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='checkRewardCollectible',
@@ -91,9 +79,6 @@ class Quest(BaseController):
         Args:
             quest_id: ID of the quest
             village_id: ID of the village to claim the reward in
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='collectReward',
@@ -108,9 +93,6 @@ class Quest(BaseController):
 
         Args:
             quest_id: ID of the daily quest
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='resetDailyQuest',

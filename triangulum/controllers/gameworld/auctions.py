@@ -20,9 +20,6 @@ class Auctions(BaseController):
             filter_item_type: Item type to filter by
             filter_slot: Hero item slot to filter by
             page: Running auction page
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='getRunningAuctionAmount',
@@ -45,9 +42,6 @@ class Auctions(BaseController):
             filter_item_type: Item type to filter by
             filter_slot: Hero item slot to filter by
             page: Running auction page
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='getRunningAuctionPage',
@@ -64,9 +58,6 @@ class Auctions(BaseController):
         Args:
             auction_id: ID of the auction entry
             bid_amount: Amount in Silver to bid for the item
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='placeBid',
@@ -82,9 +73,6 @@ class Auctions(BaseController):
         Args:
             item_id: ID of an item you wish to auction
             amount: Amount of items you wish to auction
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='getSellerPayout',
@@ -100,9 +88,6 @@ class Auctions(BaseController):
         Args:
             item_id: ID of an item you wish to auction
             amount: Amount of items you wish to auction
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='sellItem',

@@ -14,9 +14,6 @@ class FarmList(BaseController):
         Args:
             village_id: ID of a village
             list_id: ID of a farm list
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='toggleEntry',
@@ -33,9 +30,6 @@ class FarmList(BaseController):
         Args:
             current_village_id: ID of the village the farm list is being accessed from
             farm_list_ids: List of farm list IDs to run checks for
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='getAttackInfo',
@@ -55,9 +49,6 @@ class FarmList(BaseController):
         Args:
             entry_ids: List of IDs of entries in the farm list
             units: Units assigned for the entries in entry_ids
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='editTroops',
@@ -72,9 +63,6 @@ class FarmList(BaseController):
 
         Args:
             name: Name of the farm list
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='createList',
@@ -90,9 +78,6 @@ class FarmList(BaseController):
             village_id: ID of the village the farm list is being accessed from *
             new_list_id: ID of the farm list an entry is to be copied into
             entry_id: ID of the entry in the farm list from which we're copying over
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='copyEntry',
@@ -108,9 +93,6 @@ class FarmList(BaseController):
 
         Args:
             list_id: ID of the farm list
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='deleteList',
@@ -124,9 +106,6 @@ class FarmList(BaseController):
 
         Args:
             entry_id: ID of a farm list entry to be deleted
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='deleteEntry',
@@ -140,9 +119,6 @@ class FarmList(BaseController):
 
         Args:
             village_id: ID of a farm list entry candidate
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='checkTarget',
@@ -157,9 +133,6 @@ class FarmList(BaseController):
         Args:
             village_id: ID of a village to be added to the farm list
             list_id: ID of the farm list
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='addEntry',
@@ -189,9 +162,6 @@ class FarmList(BaseController):
 
         Args:
             list_ids: Ordered list of farm list IDs in which to sort the farm lists
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='changeListOrder',

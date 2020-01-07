@@ -13,9 +13,6 @@ class Error(BaseController):
         Args:
             player_id: ID of the player
             error: Error message
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='logJavascriptError',

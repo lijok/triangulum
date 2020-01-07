@@ -31,9 +31,6 @@ class KingdomTreaty(BaseController):
 
         Args:
             id: ID of the proposition
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='deny',
@@ -47,9 +44,6 @@ class KingdomTreaty(BaseController):
 
         Args:
             id: ID of the treaty
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='cancel',

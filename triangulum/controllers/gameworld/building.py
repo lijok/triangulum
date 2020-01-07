@@ -19,9 +19,6 @@ class Building(BaseController):
         Args:
             village_id: ID of the village
             location_id: ID of the location of the Town Hall
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='getCelebrationList',
@@ -37,9 +34,6 @@ class Building(BaseController):
         Args:
             village_id: ID of the village
             celebration_type: Type of the celebration
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='startCelebration',
@@ -57,9 +51,6 @@ class Building(BaseController):
         Args:
             village_id: ID of the village
             location_id: ID of the location
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='getBuildingList',
@@ -76,9 +67,6 @@ class Building(BaseController):
         Args:
             village_id: ID of the village
             location_id: ID of the location
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='getTrapperInfos',
@@ -95,9 +83,6 @@ class Building(BaseController):
             village_id: ID of the village
             location_id: ID of the trapper location
             amount: Amount of traps to be built
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='buildTraps',
@@ -115,9 +100,6 @@ class Building(BaseController):
             village_id: ID of the village
             location_id: ID of the building location
             building_type: Type of the building
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='upgrade',
@@ -135,9 +117,6 @@ class Building(BaseController):
         Args:
             village_id: ID of the village
             location_id: ID of the recruitment building (i.e barracks, stable, workshop) location
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='getRecruitList',
@@ -159,9 +138,6 @@ class Building(BaseController):
             village_id: ID of the village
             location_id: ID of the recruitment building (i.e barracks, stable, workshop) location
             units: Collection of units to be recruited
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='recruitUnits',
@@ -189,9 +165,6 @@ class Building(BaseController):
             building_type: Type of the building
             reserve_resources: Whether to reserve resources for the task
             count: Count of tasks to reserve (appears to be hardcoded as 1 by the API)
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='useMasterBuilder',
@@ -210,9 +183,6 @@ class Building(BaseController):
 
         Args:
             village_id: ID of the village
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='getOasisList',
@@ -227,9 +197,6 @@ class Building(BaseController):
 
         Args:
             village_id: ID of the village
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='getCulturePointBalance',
@@ -244,9 +211,6 @@ class Building(BaseController):
         Args:
             village_id: ID of the village
             entry_id: Master builder entry ID
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='reserveResources',
@@ -285,9 +249,6 @@ class Building(BaseController):
             location_id: ID of the research building location
             building_type: Type of the research building
             unit_type: Type of the unit
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='researchUnit',
@@ -306,9 +267,6 @@ class Building(BaseController):
             village_id: ID of the village
             shift_from: Current position in the master builder reservation queue
             shift_to: Desired position in the master builder reservation queue
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='shiftMasterBuilder',
@@ -325,9 +283,6 @@ class Building(BaseController):
         Args:
             village_id: ID of the village
             location_id: ID of the building location
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='destroy',
@@ -340,9 +295,6 @@ class Building(BaseController):
     @cached(TTLCache(MAX_SIZE, TTL))
     async def get_treasury_transformations(self) -> dict:
         """Get information on treasury transformations in your gameworld account
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='getTreasuryTransformations'
@@ -354,9 +306,6 @@ class Building(BaseController):
         Args:
             village_id: ID of the village the treasury is located in
             location_id: ID of the treasury building location
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='transformTreasury',
@@ -372,9 +321,6 @@ class Building(BaseController):
 
         Args:
             village_id: ID of a village
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='getCpData',

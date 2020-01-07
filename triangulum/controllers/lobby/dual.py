@@ -15,9 +15,6 @@ class Dual(BaseController):
             consumers_id: UNKNOWN *
             avatar_name: UNKNOWN *
             email: Email address of the player *
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='add',
@@ -35,9 +32,6 @@ class Dual(BaseController):
         Args:
             avatar_identifier: ID of the gameworld avatar
             dual_account_identifier: ID of the dual account
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='add',

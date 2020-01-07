@@ -17,9 +17,6 @@ class Player(BaseController):
 
         Args:
             country: Country to switch to
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='switchCountry',
@@ -33,9 +30,6 @@ class Player(BaseController):
 
         Args:
             account_name: New name for the account *
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='saveName',
@@ -47,9 +41,6 @@ class Player(BaseController):
     @cached(TTLCache(MAX_SIZE, TTL))
     async def get_all(self) -> dict:
         """Get all information about the account including the information about all avatars *
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='getAll'
@@ -58,9 +49,6 @@ class Player(BaseController):
     @cached(TTLCache(MAX_SIZE, TTL))
     async def get_avatar_data(self) -> dict:
         """Get data about your account on a particular game world
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='getAvatarData'
@@ -70,9 +58,6 @@ class Player(BaseController):
     async def get_prestige_on_worlds(self) -> dict:
         """Get the prestige quantities obtained on different game worlds the account
         is currently a part of
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='getPrestigeOnWorlds',
@@ -84,9 +69,6 @@ class Player(BaseController):
     @cached(TTLCache(MAX_SIZE, TTL))
     async def get_account_details(self) -> dict:
         """Get details about the account *
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='getAccountDetails'
@@ -97,9 +79,6 @@ class Player(BaseController):
 
         Args:
             avatar_identifier: ID of the avatar
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='deleteAvatar',
@@ -113,9 +92,6 @@ class Player(BaseController):
 
         Args:
             avatar_identifier: ID of the avatar
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='abortDeletion',

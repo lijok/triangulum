@@ -16,9 +16,6 @@ class PremiumFeature(BaseController):
 
         Args:
             auto_extend_flags: Premium feature auto extension flags to be toggled
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='saveAutoExtendFlags',
@@ -32,9 +29,6 @@ class PremiumFeature(BaseController):
 
         Args:
             troop_id: ID of the trade movement
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='bookFeature',
@@ -51,9 +45,6 @@ class PremiumFeature(BaseController):
 
         Args:
             selected_card: Number representing the card selection from 1 to 5
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='bookFeature',
@@ -68,9 +59,6 @@ class PremiumFeature(BaseController):
     async def cardgame4of5(self) -> dict:
         """Purchase a cardgame with 4 card selections for 20 gold
         Note that you will need to play the card game using Player.select_cards
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='bookFeature',
@@ -88,9 +76,6 @@ class PremiumFeature(BaseController):
             1x Book of Wisdom
             20x Ointment
             20x Small Bandage
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='bookFeature',
@@ -105,9 +90,6 @@ class PremiumFeature(BaseController):
             1st slot: 50 Gold
             2nd slot: 75 Gold
             3rd slot: 100 Gold
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='bookFeature',
@@ -128,9 +110,6 @@ class PremiumFeature(BaseController):
         Args:
             amount: Amount to exchange
             currency_type: Currency type to exchange from
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='bookFeature',
@@ -149,9 +128,6 @@ class PremiumFeature(BaseController):
         Args:
             village_id: ID of the village whose resources to redistribute
             distribute_res: Resource distribution values
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='bookFeature',
@@ -172,9 +148,6 @@ class PremiumFeature(BaseController):
             village_id: ID of the village in which the queue resides
             queue_type: Type of the queue to use Finish Now on
             price: UNKNOWN *
-
-        Returns:
-            dict
         """
         params = {
             'featureName': 'finishNow',
@@ -197,9 +170,6 @@ class PremiumFeature(BaseController):
     async def plus_account(self) -> dict:
         """Purchase a Travian Plus account for 10 Gold for a variable duration based
         on the speed of the game world
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='bookFeature',
@@ -212,9 +182,6 @@ class PremiumFeature(BaseController):
     async def production_bonus(self) -> dict:
         """Purchase a 25% wood, clay and iron production bonus for 20 Gold
         for a variable duration based on the speed of the game world
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='bookFeature',
@@ -227,9 +194,6 @@ class PremiumFeature(BaseController):
     async def crop_production_bonus(self) -> dict:
         """Purchase a 25% crop production bonus for 10 Gold
         for a variable duration based on the speed of the game world
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='bookFeature',
@@ -243,9 +207,6 @@ class PremiumFeature(BaseController):
 
         Args:
             destination_village_id: ID of the village from which tributes are being fetched
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='bookFeature',

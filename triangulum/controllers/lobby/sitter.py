@@ -15,9 +15,6 @@ class Sitter(BaseController):
             consumers_id: UNKNOWN *
             avatar_name: UNKNOWN *
             email: UNKNOWN *
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='add',
@@ -47,9 +44,6 @@ class Sitter(BaseController):
             can_send_reinforcements: Toggle whether the sitter can send reinforcements
             can_send_resources: Toggle whether the sitter can send resources
             can_buy_and_spend_gold: Toggle whether the sitter can buy and spend gold
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='setPermissions',
@@ -71,9 +65,6 @@ class Sitter(BaseController):
         Args:
             avatar_identifier: ID of your avatar on a particular game world
             sitter_account_identifier: ID of the sitters avatar on a particular game world
-
-        Returns:
-            dict
         """
         return await self.invoke_action(
             action='remove',
