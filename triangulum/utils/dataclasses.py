@@ -2,7 +2,7 @@ from dataclasses import dataclass
 from enum import Enum
 
 from triangulum.utils.enums import RomanUnit, TeutonUnit, GaulUnit, MarkerType, MarkerColor, MarkerEditType, \
-    MarkerDuration, FieldMessageType, MapFilterValues, AttacksFilterValues, Resource
+    MarkerDuration, FieldMessageType, MapFilterValues, AttacksFilterValues, Resource, HeroItemBonus
 
 
 @dataclass
@@ -204,3 +204,46 @@ class Resources(_Resources):
     CLAY: int
     IRON: int
     CROP: int
+
+
+@dataclass
+class Bonuses(_Base):
+    _ENUM = HeroItemBonus
+
+    XP: int = None
+    BARRACKS: int = None
+    STABLE: int = None
+    WORKSHOP: int = None
+    SPEED_RETURN: int = None
+    SPEED_OWN_VILLAGES: int = None
+    SPEED_KINGDOM_VILLAGES: int = None
+    SPEED_STAMINA: int = None
+    RAID: int = None
+    NATARS: int = None
+    UNIT_ID: int = None
+    UNIT_STRENGTH: int = None
+    FIGHT_STRENGTH: int = None
+    HEALTH_REGEN: int = None
+    CULTURE_POINTS: int = None
+    ARMOR: int = None
+    SPEED_HERO: int = None
+    SPEED_HORSE: int = None
+    RESKILL: int = None
+    TROOP_HEALING: int = None
+    EYESIGHT: int = None
+    CHICKEN: int = None
+    RESOURCES: int = None
+    CROP: int = None
+    POTION: int = None
+
+    def with_zeros(self):
+        return {
+            str(self._ENUM[bonus_type].value): bonus_value
+            for bonus_type, bonus_value in dict(self).items()
+        }
+
+    def without_zeros(self):
+        return {
+            str(self._ENUM[bonus_type].value): bonus_value
+            for bonus_type, bonus_value in dict(self).items() if bonus_value > 0
+        }
