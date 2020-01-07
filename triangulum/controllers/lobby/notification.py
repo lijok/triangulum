@@ -8,7 +8,7 @@ class Notification(BaseController):
         super().__init__(action_handler=action_handler, controller='notification')
 
     async def mark_as_read(self, id: int) -> dict:
-        """UNKNOWN *
+        """[*]
 
         Args:
             id: UNKNOWN *

@@ -8,7 +8,7 @@ class Login(BaseController):
         super().__init__(action_handler=action_handler, controller='login')
 
     async def logout(self) -> dict:
-        """UNKNOWN *
+        """[*]
 
         Returns:
             dict

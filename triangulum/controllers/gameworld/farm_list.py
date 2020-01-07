@@ -9,7 +9,7 @@ class FarmList(BaseController):
         super().__init__(action_handler=action_handler, controller='farmList')
 
     async def toggle_entry(self, village_id: int, list_id: int) -> dict:
-        """UNKNOWN
+        """Toggle a village to be present in a farmlist
 
         Args:
             village_id: ID of a village
@@ -50,7 +50,7 @@ class FarmList(BaseController):
     # the list of numbers doesn't go beyond 6 or so, and each one has a different
     # enum assignment
     async def edit_troops(self, entry_ids: list, units: Union[RomanUnits, TeutonUnits, GaulUnits]) -> dict:
-        """Edit the assignment of attack units for entries in a farm list
+        """[*]Edit the assignment of attack units for entries in a farm list
 
         Args:
             entry_ids: List of IDs of entries in the farm list
@@ -184,8 +184,8 @@ class FarmList(BaseController):
             }
         )
 
-    async def change_list_order(self, list_ids: list) -> dict:  # TODO: Check this
-        """Change the order of farm lists in your farm lists view
+    async def change_list_order(self, list_ids: list) -> dict:
+        """[*-]Change the order of farm lists in your farm lists view
 
         Args:
             list_ids: Ordered list of farm list IDs in which to sort the farm lists

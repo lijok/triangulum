@@ -8,7 +8,7 @@ class Achievements(BaseController):
         super().__init__(action_handler=action_handler, controller='achievements')
 
     async def update(self) -> dict:
-        """UNKNOWN *
+        """[*]
 
         Returns:
             dict

@@ -33,7 +33,7 @@ class Player(BaseController):
         )
 
     async def get_referral_direction(self) -> dict:
-        """UNKNOWN *
+        """[*]
 
         Returns:
             dict
@@ -82,7 +82,7 @@ class Player(BaseController):
 
     @cached(TTLCache(MAX_SIZE, TTL))
     async def get_achievement_notifications(self) -> dict:
-        """Get notifications of new achievements
+        """[-]Get notifications of new achievements
 
         Returns:
             dict
@@ -92,7 +92,7 @@ class Player(BaseController):
         )
 
     async def change_time_type(self, time_type: SettingsTimeType) -> dict:
-        """Change time type used
+        """[-]Change time type used
 
         Args:
             time_type: Time type to use
@@ -108,7 +108,7 @@ class Player(BaseController):
         )
 
     async def ping(self, cnt: int, last_global_message_time: float, last_id: int) -> dict:
-        """UNKNOWN *
+        """[*]
 
         Args:
             cnt: UNKNOWN *
@@ -128,7 +128,7 @@ class Player(BaseController):
         )
 
     async def delete_all_notifications(self) -> dict:
-        """Delete all notifications
+        """[-]Delete all notifications
 
         Returns:
             dict
@@ -139,7 +139,7 @@ class Player(BaseController):
 
     @cached(TTLCache(MAX_SIZE, TTL))
     async def get_open_chat_windows(self) -> dict:
-        """Get info on open chat windows
+        """[-]Get info on open chat windows
 
         Returns:
             dict
@@ -149,7 +149,7 @@ class Player(BaseController):
         )
 
     async def delete_notification(self, notification_type: NotificationType) -> dict:
-        """Delete a single notification of a particular type
+        """[-]Delete a single notification of a particular type
 
         Args:
             notification_type: Type of notification
@@ -175,7 +175,7 @@ class Player(BaseController):
         )
 
     async def get_midnight(self) -> dict:
-        """UNKNOWN *
+        """[*-]
 
         Returns:
             dict
@@ -247,7 +247,7 @@ class Player(BaseController):
         )
 
     async def set_open_chat_windows(self, windows: list) -> dict:
-        """Set open chat windows
+        """[-]Set open chat windows
 
         Args:
             windows: ID of the windows
@@ -341,7 +341,7 @@ class Player(BaseController):
         )
 
     async def add_note(self, x: int, y: int) -> dict:
-        """Create a note on the ui at a particular location
+        """[-]Create a note on the ui at a particular location
 
         Args:
             x: X location of the note
@@ -367,7 +367,7 @@ class Player(BaseController):
             size_y: int,
             text: str
     ) -> dict:
-        """Change note data on the UI
+        """[-]Change note data on the UI
 
         Args:
             note_id: ID of the note
@@ -395,7 +395,7 @@ class Player(BaseController):
         )
 
     async def remove_note(self, id: int) -> dict:
-        """Permanently deletes a note
+        """[-]Permanently deletes a note
 
         Args:
             id: ID of the note
@@ -411,7 +411,7 @@ class Player(BaseController):
         )
 
     async def get_activity_streams(self) -> dict:
-        """UNKNOWN
+        """[*]
 
         Returns:
             dict
@@ -433,7 +433,7 @@ class Player(BaseController):
 
     @cached(TTLCache(MAX_SIZE, TTL))
     async def get_robber_villages_amount(self, kingdom_id: int) -> dict:
-        """UNKNOWN *
+        """[*]
 
         Args:
             kingdom_id: ID of a kingdom
@@ -449,7 +449,7 @@ class Player(BaseController):
         )
 
     async def reset_activity_stream(self) -> dict:
-        """UNKNOWN
+        """[*]
 
         Returns:
             dict
@@ -476,7 +476,7 @@ class Player(BaseController):
         )
 
     async def change_vacation_state(self) -> dict:
-        """UNKNOWN
+        """[*]
 
         Returns:
             dict
@@ -490,7 +490,7 @@ class Player(BaseController):
     # requestAction = 1
     # url = "https://com2x3.kingdoms.com/#/page:village/villId:536887296/subtab:Bids/playerId:5230/profileTab:settings/window:profile/prosubtab:Avatar/overlayprofile:startDeletion"
     async def request_verification(self, request_action: RequestAction, url: str) -> dict:
-        """UNKNOWN *
+        """[*-]
 
         Args:
             request_action: UNKNOWN *
@@ -509,7 +509,7 @@ class Player(BaseController):
     # TODO: This is the other part of request_verification, where we send the token
     # that we receive in response to request_verification
     async def verify_action(self, token: str) -> dict:
-        """UNKNOWN *
+        """[*-]
 
         Args:
             token: UNKNOWN *
@@ -550,7 +550,7 @@ class Player(BaseController):
         )
 
     async def update_player_profile_content(self) -> dict:
-        """UNKNOWN *
+        """[*]
 
         Returns:
             dict
@@ -576,7 +576,7 @@ class Player(BaseController):
         )
 
     async def get_invitations_list(self) -> dict:
-        """Get list of friend invitations *
+        """[*]Get list of friend invitations
 
         Returns:
             dict
@@ -586,7 +586,7 @@ class Player(BaseController):
         )
 
     async def send_invitation(self, friend_name: str, email: str, own_name: str, message: str) -> dict:
-        """UNKNOWN *
+        """[*]
 
         Args:
             friend_name: UNKNOWN *
@@ -608,7 +608,7 @@ class Player(BaseController):
         )
 
     async def report_conversation(self, room_id: str) -> dict:
-        """Begin a report on a conversation
+        """[-]Begin a report on a conversation
 
         Args:
             room_id: ID of the conversation room
@@ -624,7 +624,7 @@ class Player(BaseController):
         )
 
     async def report_conversation_finalize(self, room_id: str, comment: str) -> dict:
-        """Finalize the report initiated by report_conversation
+        """[-]Finalize the report initiated by report_conversation
 
         Args:
             room_id: ID of the room
@@ -643,7 +643,7 @@ class Player(BaseController):
 
     @cached(TTLCache(MAX_SIZE, TTL))
     async def get_player_influence(self, village_id: int) -> dict:
-        """Get influence over a player and their village *
+        """[*]Get influence over a player and their village
 
         Args:
             village_id: ID of the players village
@@ -675,7 +675,7 @@ class Player(BaseController):
         )
 
     async def report_player(self, room_id: str, player_id: int, reason: ReportPlayerReason) -> dict:
-        """Report a player
+        """[-]Report a player
 
         Args:
             room_id: UNKNOWN *

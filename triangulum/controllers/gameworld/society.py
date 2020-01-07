@@ -14,7 +14,7 @@ class Society(BaseController):
 
     @cached(TTLCache(MAX_SIZE, TTL))
     async def get_shared_informations(self, village_id: int) -> dict:
-        """UNKNOWN *
+        """[*]
 
         Args:
             village_id: ID of a village

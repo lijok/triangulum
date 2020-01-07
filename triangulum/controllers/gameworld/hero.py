@@ -13,11 +13,7 @@ class Hero(BaseController):
 
     @cached(TTLCache(MAX_SIZE, TTL))
     async def get_value_points(self) -> dict:
-        """UNKNOWN
-
-        Returns:
-            dict
-
+        """[*]
         """
         return await self.invoke_action(
             action='getValuePoints'
@@ -129,7 +125,7 @@ class Hero(BaseController):
         )
 
     async def get_last_inventory_view(self) -> dict:
-        """UNKNOWN *
+        """[*-]
 
         Returns:
             dict
@@ -151,7 +147,7 @@ class Hero(BaseController):
 
     @cached(TTLCache(MAX_SIZE, TTL))
     async def get_duration_to_closest_village_with_influence(self, village_id: int) -> dict:
-        """UNKNOWN * Triggered when trying to sell treasures
+        """[*]Triggered when trying to sell treasures
 
         Args:
             village_id: ID of the village
@@ -187,7 +183,7 @@ class Hero(BaseController):
         )
 
     async def set_last_inventory_view(self) -> dict:
-        """UNKNOWN *
+        """[*]
 
         Returns:
             dict
@@ -198,7 +194,7 @@ class Hero(BaseController):
 
     @cached(TTLCache(MAX_SIZE, TTL))
     async def get_resource_for_resource_chest(self, percent: int, resource_type: Resource) -> dict:
-        """UNKNOWN *
+        """[*]
 
         Args:
             percent: UNNOWN *
@@ -250,7 +246,7 @@ class Hero(BaseController):
         )
 
     async def confirm_hero_level_up(self) -> dict:
-        """UNKNOWN *
+        """[*]
 
         Returns:
             dict

@@ -15,7 +15,7 @@ class Trade(BaseController):
 
     # TODO
     async def change_trade_route_status(self, id: int, status: int) -> dict:
-        """Activate or deactivate a trade route *
+        """[*]Activate or deactivate a trade route
 
         Args:
             id: ID of the trade route

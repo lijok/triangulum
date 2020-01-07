@@ -24,7 +24,7 @@ class Troops(BaseController):
         troop_id: int,
         # marker: Marker
     ) -> dict:
-        """UNKNOWN *
+        """[*]
 
         Args:
             troop_id: UNKNOWN *
@@ -102,7 +102,7 @@ class Troops(BaseController):
         units: Union[RomanUnits, TeutonUnits, GaulUnits],
         spy_mission: SpyMissionType = None
     ) -> dict:
-        """
+        """Send troops
 
         Args:
             dest_village_id: Movement destination village name
@@ -192,7 +192,7 @@ class Troops(BaseController):
             natar_bonus: int,
             hero_mounted: list
     ) -> dict:
-        """UNKNOWN *
+        """[*]
 
         Args:
             attack_type: UNKNOWN *
@@ -247,7 +247,7 @@ class Troops(BaseController):
         # )
 
     async def move_troops_home(self, troop_id: int, units: Union[RomanUnits, TeutonUnits, GaulUnits]) -> dict:
-        """UNKNOWN *
+        """[*]
 
         Args:
             troop_id: ID of the movement
@@ -265,7 +265,7 @@ class Troops(BaseController):
         )
 
     async def disband(self, troop_id: int) -> dict:
-        """UNKNOWN *
+        """[*]
 
         Args:
             troop_id: UNKNOWN *
@@ -281,7 +281,7 @@ class Troops(BaseController):
         )
 
     async def release(self, troop_id: int) -> dict:
-        """Release troops being held in traps *
+        """[*]Release troops being held in traps
 
         Args:
             troop_id: UNKNOWN *

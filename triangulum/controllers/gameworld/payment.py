@@ -10,7 +10,7 @@ class Payment(BaseController):
         super().__init__(action_handler=action_handler, controller='payment')
 
     async def get_payment_shop_url(self, shop_version: ShopVersion) -> dict:
-        """UNKNOWN *
+        """[*-]
 
         Args:
             shop_version: UNKNOWN *
@@ -26,7 +26,7 @@ class Payment(BaseController):
         )
 
     async def get_smallest_package(self, feature_price: int) -> dict:
-        """UNKNOWN *
+        """[*-]
 
         Args:
             feature_price: UNKNOWN *

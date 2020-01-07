@@ -12,7 +12,7 @@ class Village(BaseController):
 
     # This is for clicking on a hidden thing on the UI that gives you an achievement
     async def click_special(self, id: int) -> dict:
-        """Click on a special event entity in the UI which rewards you with an achievement
+        """[-]Click on a special event entity in the UI which rewards you with an achievement
 
         Args:
             id: id of the special

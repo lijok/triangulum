@@ -13,7 +13,7 @@ class Quest(BaseController):
 
     @cached(TTLCache(MAX_SIZE, TTL))
     async def get_puzzle(self) -> dict:
-        """Get the map puzzle during registration
+        """[-]Get the map puzzle during registration
 
         Returns:
             dict
@@ -23,7 +23,7 @@ class Quest(BaseController):
         )
 
     async def solve_puzzle(self, moves: list) -> dict:
-        """Provide a solution to the puzzle received using get_puzzle
+        """[-]Provide a solution to the puzzle received using get_puzzle
 
         Args:
             moves: List of moves that provide a solution to the puzzle
@@ -45,7 +45,7 @@ class Quest(BaseController):
         command: DialogActionCommand,
         input: str = ""
     ) -> dict:
-        """Supply an action / answer to a quest dialog during registration
+        """[-]Supply an action / answer to a quest dialog during registration
         such as your name, whether you wish to be a duke or a king etc
 
         Args:

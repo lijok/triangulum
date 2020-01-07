@@ -100,7 +100,7 @@ class Ranking(BaseController):
 
     @cached(TTLCache(MAX_SIZE, TTL))
     async def get_rank_and_count(self, id: int, ranking_category: RankingCategory) -> dict:
-        """UNKNOWN *
+        """[*]
 
         Args:
             id: UNKNOWN *

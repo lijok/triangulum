@@ -29,7 +29,7 @@ class Player(BaseController):
         )
 
     async def save_name(self, account_name: str) -> dict:
-        """Change your account name *
+        """[*]Change your account name
 
         Args:
             account_name: New name for the account *

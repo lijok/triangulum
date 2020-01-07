@@ -12,7 +12,7 @@ class Cache(BaseController):
 
     # @cached(TTLCache(MAX_SIZE, TTL))
     async def get(self, names: list) -> dict:
-        """UNKNOWN *
+        """[*]
 
         Args:
             names: UNKNOWN *

@@ -61,7 +61,7 @@ class Kingdom(BaseController):
         )
 
     async def start_coronation_ceremony(self, village_id: int, tag: str) -> dict:
-        """UNKNOWN *
+        """[*]
 
         Args:
             village_id: ID of the village
@@ -79,7 +79,7 @@ class Kingdom(BaseController):
         )
 
     async def change_tag(self, tag: str) -> dict:
-        """UNKNOWN *
+        """[*]
 
         Args:
             tag: UNKNOWN *
@@ -148,7 +148,7 @@ class Kingdom(BaseController):
 
     @cached(TTLCache(MAX_SIZE, TTL))
     async def get_fight_strength_ranks(self) -> dict:
-        """Get Fight Strength rankings of your kingdom *
+        """[*]Get Fight Strength rankings of your kingdom
 
         Returns:
             dict
@@ -159,7 +159,7 @@ class Kingdom(BaseController):
 
     @cached(TTLCache(MAX_SIZE, TTL))
     async def get_news(self, start: int, count: int) -> dict:
-        """UNKNOWN
+        """[*-]
 
         Args:
             start: Index to start fetching from

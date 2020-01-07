@@ -14,7 +14,7 @@ class Map(BaseController):
 
     @cached(TTLCache(MAX_SIZE, TTL))
     async def get_heatmap_maximums(self) -> dict:
-        """UNKNOWN *
+        """[*]
 
         Returns:
             dict
@@ -64,8 +64,7 @@ class Map(BaseController):
         is_global: bool,
         minimize_state: FieldMarkerPersonalMinimized
     ) -> dict:
-        """UI ACTION
-        Minimizes / maximizes a field marker so that it's (not)shown by default next time
+        """[-]Minimizes / maximizes a field marker so that it's (not)shown by default next time
         the player enters the map over the UI
 
         Args:
@@ -86,8 +85,7 @@ class Map(BaseController):
         )
 
     async def field_marker_close(self, id: int, is_global: bool) -> dict:
-        """UI ACTION
-        Closes a field marker so that it's no longer shown on the UI
+        """[-]Closes a field marker so that it's no longer shown on the UI
 
         Args:
             id: ID of the marker
@@ -105,7 +103,7 @@ class Map(BaseController):
         )
 
     async def field_marker_delete(self, id: int, is_global: bool) -> dict:
-        """Delete a field marker
+        """[-]Delete a field marker
 
         Args:
             id: ID of the marker
