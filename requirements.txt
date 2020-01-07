@@ -1,3 +1,4 @@
 ﻿aiohttp==3.6.2
 yarl==1.4.2
 cachetools==4.0.0
+docstring-parser=0.5
