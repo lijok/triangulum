@@ -2,7 +2,8 @@ from dataclasses import dataclass
 from typing import List
 
 from triangulum.utils.dataclasses import Bonuses
-from triangulum.utils.enums import PlayerTribe, HeroItemType, HeroItemSlot, AuctionImages
+from triangulum.utils.enums import PlayerTribe, HeroItemType, HeroItemSlot, AuctionImages, Country, \
+    PlayerPunishmentAction, PlayerPunishmentStrikeReason
 from triangulum.utils.types import BoolInt, Timestamp, ScalarId
 
 
@@ -30,3 +31,20 @@ class Auction(_Base):
     slot: HeroItemSlot
     images: List[AuctionImages]
     stackable: bool
+
+
+@dataclass
+class Avatar(_Base):
+    userAccountIdentifier: ScalarId
+    avatarIdentifier: ScalarId
+    avatarName: str
+    consumersId: ScalarId
+    worldName: str
+    country: Country
+    accountName: str
+    isBanned: bool
+    isSuspended: bool
+    suspensionTime: Timestamp
+    limitation: PlayerPunishmentAction
+    banReason: PlayerPunishmentStrikeReason
+    banPaymentProvider: str
