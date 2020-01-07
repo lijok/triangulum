@@ -1267,3 +1267,7 @@ class Country(Enum):
     CZECH_REPUBLIC = 'cz'
     SAUDI_ARABIA = 'ae'
 
+
+class AuctionImages(Enum):
+    SCROLL = 'scroll'
+    WATER_BUCKET = 'water_bucket'
