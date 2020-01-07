@@ -44,6 +44,14 @@ There are 2 environment variables that need to be set to activate the caching me
 - TRIANGULUM_CACHE_MAX_SIZE = specifies the maximum number of cached entries for a given function
 - TRIANGULUM_CACHE_TTL = specifies the time to live in seconds for any cached content
 
+## Docs
+Docs are in the process of being built.
+We use identifiers for docstrings, which are expressed as a list of symbols prepended to each docstring
+
+Symbol definitions:
+* \*: Unknown / possibly incorrect documentation
+* \-: UI Action, should not be used in normal circumstances
+
 ## Missing Controllers
 > There are 3 controllers that have not yet been implemented
 > * cheat
