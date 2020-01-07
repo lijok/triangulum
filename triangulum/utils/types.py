@@ -19,6 +19,22 @@ class ScalarId(_Base):
 
 
 @dataclass
+class BoolInt(_Base):
+    value: bool
+
+    @property
+    def as_bool(self):
+        return self.value
+
+    @property
+    def as_int(self):
+        if self.value:
+            return 1
+        else:
+            return 0
+
+
+@dataclass
 class VillageId(_Base):
     x: int = None
     y: int = None
