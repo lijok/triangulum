@@ -14,6 +14,11 @@ class _Base:
 
 
 @dataclass
+class ScalarId(_Base):
+    id: int
+
+
+@dataclass
 class VillageId(_Base):
     x: int = None
     y: int = None
