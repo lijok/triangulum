@@ -6,7 +6,8 @@ from triangulum.utils.enums import RomanUnit, TeutonUnit, GaulUnit, MarkerType, 
     MarkerDuration, FieldMessageType, MapFilterValues, AttacksFilterValues, Resource, HeroItemBonus, PlayerTribe, \
     HeroItemType, AuctionStatus, HeroItemSlot, Country, PlayerPunishmentStrikeReason, BuildingType, BuildingCategory, \
     HeroStatus, Gender, PlayerKingdomRole, KingdomType, KingdomState, VillageOasisStatus, ResourceVillageType, \
-    PlayerVacationState, QuestVersion, CelebrationType, PlayerProgressTriggerType, QuestGiver, QuestStatus
+    PlayerVacationState, QuestVersion, CelebrationType, PlayerProgressTriggerType, QuestGiver, QuestStatus, Language, \
+    SettingsTimeType, SettingsTimeFormat, OnlineStatusFilter, SettingsPremiumConfirmation
 from triangulum.utils.types import ScalarId, Timestamp, BoolInt, VillageId, LocationId, Coordinates
 from triangulum.utils.util import unit_id_to_unit_nr
 
@@ -784,3 +785,29 @@ class Session(_Base):
     type: int  # TODO: Enum this
     rights: str  # TODO: Enum this
 
+
+@dataclass
+class Settings(_Base):
+    player_id: ScalarId
+    premium_confirmation: SettingsPremiumConfirmation
+    lang: Language
+    online_status_filter: OnlineStatusFilter
+    extended_simulator: bool
+    music_volume: int
+    sound_volume: int
+    ui_sound_volume: int
+    mute_all: bool
+    time_type: SettingsTimeType
+    time_zone: float
+    time_zone_string: str  # TODO: This is that weird time formatting
+    time_zone_switcher: BoolInt
+    time_format: SettingsTimeFormat
+    attacks_filter: AttacksFilter
+    map_filter: MapFilter
+    disable_tab_notifications: BoolInt
+    enable_tab_notifications: bool
+    disable_animations: bool
+    notpads_visible: bool
+    disable_help_notifications: bool
+    enable_help_notifications: BoolInt
+    enable_welcome_screen: BoolInt
