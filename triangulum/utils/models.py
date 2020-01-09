@@ -532,3 +532,14 @@ class MapDetails(_Base):
     population: int
     tribe: PlayerTribe
     treasures: int
+
+
+@dataclass
+class Merchants(_Base):
+    village_id: VillageId
+    max: int
+    in_offers: int
+    in_transport: int
+    carry: int
+    speed: int
+
