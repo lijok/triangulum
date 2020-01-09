@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 from enum import Enum
-from typing import List
+from typing import List, Union
 
 from triangulum.utils.enums import RomanUnit, TeutonUnit, GaulUnit, MarkerType, MarkerColor, MarkerEditType, \
     MarkerDuration, FieldMessageType, MapFilterValues, AttacksFilterValues, Resource, HeroItemBonus, PlayerTribe, \
@@ -279,3 +279,21 @@ class Avatar(_Base):  # Lobby
     limitation: int  # TODO: Check what this is, could be an enum, could be PlayerPunishmentType
     ban_reason: PlayerPunishmentStrikeReason
     ban_payment_provider: str
+
+
+@dataclass
+class AvatarInformation(_Base):  # Lobby
+    avatar_identifier: int
+    user_account_identifier: ScalarId
+    signup_time: Timestamp
+    ranking: int
+    population: int
+    villages: int
+    last_login: Timestamp
+    last_click: Timestamp
+    building_queue: int
+    building_queue_master: int
+    incoming_attacks: int
+    next_incoming_attack: Timestamp
+    spawned_on_map: Timestamp
+    deletion_time: Timestamp
