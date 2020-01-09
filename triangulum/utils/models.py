@@ -372,3 +372,19 @@ class FarmListEntry(_Base):
     coords: Coordinates
     is_oasis: bool
     last_report: int  # TODO: Possible a ScalarId
+
+
+@dataclass
+class GroupInvitation(_Base):
+    id: ScalarId
+    group_id: ScalarId
+    group_name: str
+    player_id: ScalarId
+    player_name: str
+    invited_by: ScalarId
+    invited_by_name: str
+    invited_as: int  # TODO: This is probably an enum that we don't have
+    invitation_time: Timestamp
+    custom_text: str
+    cell_id: int  # TODO: This might be something else than an int
+    invited_by_role: int  # TODO: same as invited_as
