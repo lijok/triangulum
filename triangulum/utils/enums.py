@@ -983,21 +983,6 @@ class RomanUnit(Enum):  # TODO: Double check that this is right
     SENATOR = 9
     SETTLER = 10
 
-    @staticmethod
-    def simulator_order():
-        return [
-            RomanUnit.LEGIONNAIRE,
-            RomanUnit.PRAETORIAN,
-            RomanUnit.IMPERIAN,
-            RomanUnit.EQUITES_LEGATI,
-            RomanUnit.EQUITES_IMPERATORIS,
-            RomanUnit.EQUITES_CAESARIS,
-            RomanUnit.BATTERING_RAM,
-            RomanUnit.FIRE_CATAPULT,
-            RomanUnit.SENATOR,
-            RomanUnit.SETTLER
-        ]
-
 
 class TeutonUnit(Enum):  # TODO: Double check that this is right
     CLUBSWINGER = 11
@@ -1011,21 +996,6 @@ class TeutonUnit(Enum):  # TODO: Double check that this is right
     CHIEF = 19
     SETTLER = 20
 
-    @staticmethod
-    def simulator_order():
-        return [
-            TeutonUnit.LEGIONNAIRE,
-            TeutonUnit.PRAETORIAN,
-            TeutonUnit.IMPERIAN,
-            TeutonUnit.EQUITES_LEGATI,
-            TeutonUnit.EQUITES_IMPERATORIS,
-            TeutonUnit.EQUITES_CAESARIS,
-            TeutonUnit.BATTERING_RAM,
-            TeutonUnit.FIRE_CATAPULT,
-            TeutonUnit.SENATOR,
-            TeutonUnit.SETTLER
-        ]
-
 
 class GaulUnit(Enum):  # TODO: Double check that this is right
     PHALANX = 21
@@ -1038,21 +1008,6 @@ class GaulUnit(Enum):  # TODO: Double check that this is right
     TREBUCHET = 28
     CHIEFTAIN = 29
     SETTLER = 30
-
-    @staticmethod
-    def simulator_order():
-        return [
-            GaulUnit.LEGIONNAIRE,
-            GaulUnit.PRAETORIAN,
-            GaulUnit.IMPERIAN,
-            GaulUnit.EQUITES_LEGATI,
-            GaulUnit.EQUITES_IMPERATORIS,
-            GaulUnit.EQUITES_CAESARIS,
-            GaulUnit.BATTERING_RAM,
-            GaulUnit.FIRE_CATAPULT,
-            GaulUnit.SENATOR,
-            GaulUnit.SETTLER
-        ]
 
 
 class KingdomTreatyType(Enum):

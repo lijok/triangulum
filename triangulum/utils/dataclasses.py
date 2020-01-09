@@ -2,14 +2,15 @@ from dataclasses import dataclass
 from enum import Enum
 
 from triangulum.utils.enums import RomanUnit, TeutonUnit, GaulUnit, MarkerType, MarkerColor, MarkerEditType, \
-    MarkerDuration, FieldMessageType, MapFilterValues, AttacksFilterValues, Resource, HeroItemBonus
+    MarkerDuration, FieldMessageType, MapFilterValues, AttacksFilterValues, Resource, HeroItemBonus, PlayerTribe
+from triangulum.utils.util import unit_id_to_unit_nr
 
 
 @dataclass
 class _Base:
     def __iter__(self):
         for key, val in self.__dict__.items():
-            if key != '_ENUM':
+            if not key.startswith('_'):
                 yield key, val
 
 
@@ -31,33 +32,21 @@ class _Units(_Base):
 
     def combat_format_with_zeros(self):
         return {
-            str(self._ENUM.simulator_order().index(self._ENUM[unit_name]) + 1): unit_qty
+            str(unit_id_to_unit_nr(self._ENUM[unit_name].value)): unit_qty
             for unit_name, unit_qty in dict(self).items()
         }
 
     def combat_format_without_zeros(self):
         return {
-            str(self._ENUM.simulator_order().index(self._ENUM[unit_name]) + 1): unit_qty
+            str(unit_id_to_unit_nr(self._ENUM[unit_name].value)): unit_qty
             for unit_name, unit_qty in dict(self).items() if unit_qty > 0
         }
-
-# TODO:
-# The following Units classes have HERO attribute which their
-# corresponding _ENUMs do not.
-# This is because the ENUMs express unique values for each
-# unit type, while the "combat" mechanisms such as fight_simulate
-# and send, in the troops controller, do not care for the enumerable
-# unique values, but instead require the positional values such as 1, 2, 3..
-# for the unit selection.
-# Which means that in all cases, for the combat mechanisms, the HERO comes up
-# as the 11th index, while it in itself does not have a unique ENUM
-# This needs to be made cleaner, however, as of writing this
-# I couldn't come up with anything better
 
 
 @dataclass
 class RomanUnits(_Units):
     _ENUM: Enum = RomanUnit
+    _TRIBE: PlayerTribe = PlayerTribe.ROMAN.value
 
     LEGIONNAIRE: int = 0
     PRAETORIAN: int = 0
@@ -75,6 +64,7 @@ class RomanUnits(_Units):
 @dataclass
 class TeutonUnits(_Units):
     _ENUM: Enum = TeutonUnit
+    _TRIBE: PlayerTribe = PlayerTribe.TEUTON.value
 
     CLUBSWINGER: int = 0
     SPEARFIGHTER: int = 0
@@ -92,6 +82,7 @@ class TeutonUnits(_Units):
 @dataclass
 class GaulUnits(_Units):
     _ENUM: Enum = GaulUnit
+    _TRIBE: PlayerTribe = PlayerTribe.GAUL.value
 
     PHALANX: int = 0
     SWORDSMAN: int = 0
