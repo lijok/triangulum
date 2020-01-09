@@ -774,3 +774,13 @@ class Research(_Base):
     research_queue_full: bool
     upgrade_queue_full: bool
     units: List[Unit]
+
+
+@dataclass
+class Session(_Base):
+    session_id: str
+    avatar_identifier: ScalarId
+    user_account_identifier: ScalarId
+    type: int  # TODO: Enum this
+    rights: str  # TODO: Enum this
+
