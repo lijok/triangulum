@@ -5,7 +5,8 @@ from typing import List, Union, Dict
 from triangulum.utils.enums import RomanUnit, TeutonUnit, GaulUnit, MarkerType, MarkerColor, MarkerEditType, \
     MarkerDuration, FieldMessageType, MapFilterValues, AttacksFilterValues, Resource, HeroItemBonus, PlayerTribe, \
     HeroItemType, AuctionStatus, HeroItemSlot, Country, PlayerPunishmentStrikeReason, BuildingType, BuildingCategory, \
-    HeroStatus, Gender, PlayerKingdomRole, KingdomType, KingdomState, VillageOasisStatus, ResourceVillageType
+    HeroStatus, Gender, PlayerKingdomRole, KingdomType, KingdomState, VillageOasisStatus, ResourceVillageType, \
+    PlayerVacationState, QuestVersion, CelebrationType
 from triangulum.utils.types import ScalarId, Timestamp, BoolInt, VillageId, LocationId, Coordinates
 from triangulum.utils.util import unit_id_to_unit_nr
 
@@ -589,3 +590,117 @@ class OasisTroopRanking(_Base):
     village_influence: int
     bonus: ResourceBonuses
     troop_production: int
+
+
+@dataclass
+class Stars(_Base):
+    bronze: int
+    silver: int
+    gold: int
+
+
+@dataclass
+class Storage(_Resources):
+    _ENUM = Resource
+
+    WOOD: float
+    CLAY: float
+    IRON: float
+    CROP: float
+
+
+@dataclass
+class Village(_Base):
+    village_id: VillageId
+    player_id: ScalarId
+    name: str
+    tribe_id: PlayerTribe
+    belongs_to_king: ScalarId
+    belongs_to_kingdom: ScalarId
+    type: int  # TODO: Enum this
+    population: int
+    coordinates: Coordinates
+    is_main_village: bool
+    is_town: bool
+    treasures_usable: int
+    treasures: int
+    allow_tribute_collection: BoolInt
+    protection_granted: BoolInt
+    tribute_collector_player_id: ScalarId
+    real_tribute_percent: float
+    supply_buildings: int  # TODO: What's this?
+    supply_troops: int  # TODO: What's this?
+    production: Resources
+    storage: Storage
+    treasury: dict  # TODO: What's this?
+    storage_capacity: Storage
+    used_control_points: int  # TODO: What's this?
+    available_control_points: int  # TODO: What's this?
+    culture_points: float
+    celebration_type: CelebrationType
+    celebration_end: Timestamp
+    culture_point_production: int
+    treasure_resource_bonus: int
+    acceptance: int  # TODO: What's this?
+    acceptance_production: float
+    tributes: Resources
+    tributes_capacity: int
+    tribute_treasures: int
+    tribute_production: int
+    tribute_production_detail: Resources
+    tribute_time: Timestamp
+    tributes_required_to_fetch: int
+    estimated_warehouse_level: int
+
+
+@dataclass
+class Player(_Base):
+    player_id: ScalarId
+    name: str
+    tribe_id: PlayerTribe
+    kingdom_id: ScalarId
+    kingdom_tag: str
+    kingdom_role: PlayerKingdomRole
+    is_king: bool
+    king_id: ScalarId
+    kingstatus: int  # TODO: Enum this
+    villages: List[Village]
+    population: int
+    active: BoolInt
+    prestige: int
+    level: int
+    stars: Stars
+    next_level_prestige: int
+    has_noob_protection: bool
+    filter_information: bool
+    signup_time: Timestamp
+    vacation_state: PlayerVacationState
+    ui_limitations: int  # TODO: Enum this
+    gold: int
+    silver: int
+    deletion_time: Timestamp
+    coronation_duration: int
+    brew_celebration: BoolInt
+    ui_status: int  # TODO: What's this?
+    hint_status: int  # TODO: What's this?
+    spawned_on_map: Timestamp
+    is_activated: BoolInt
+    is_instant: BoolInt
+    production_bonus_time: Timestamp
+    crop_production_bonus_time: Timestamp
+    premium_feature_auto_extend_flags: int  # TODO: How does this behave?
+    plus_account_time: Timestamp
+    limited_premium_feature_flags: int  # TODO: How does this behave?
+    last_payment_time: Timestamp
+    is_punished: bool
+    limitation_flags: int  # TODO: Enum this
+    limitation: int  # TODO: Enum this
+    is_banned_from_messaging: bool
+    banned_from_messaging: BoolInt  # TODO: Could be a Timestamp
+    quest_version: QuestVersion
+    next_daily_quest_time: Timestamp
+    daily_quests_exchanged: BoolInt  # TODO: Could be an int
+    avatar_identifier: ScalarId
+    vacation_state_start: Timestamp
+    vacation_state_end: Timestamp
+    used_vacation_days: int

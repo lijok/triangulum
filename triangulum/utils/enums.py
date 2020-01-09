@@ -1155,8 +1155,8 @@ class Gender(Enum):
 
 
 class CelebrationType(Enum):
-    # TODO
-    pass
+    SMALL = 1  # TODO: Double check this
+    LARGE = 2  # TODO: Double check this
 
 
 class RomanUnit(Enum):  # TODO: Double check that this is right
@@ -1410,3 +1410,13 @@ class Country(Enum):
 class AuctionImages(Enum):
     SCROLL = 'scroll'
     WATER_BUCKET = 'water_bucket'
+
+
+class ResourceVillageType(Enum):  # Based on crop fields
+    # TODO: Add more of these
+    SIX = 4446
+
+
+class QuestVersion(Enum):
+    ONE = 1
+    TWO = 2
