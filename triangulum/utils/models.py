@@ -435,4 +435,32 @@ class HeroFace(_Base):
     fetched_from_lobby: BoolInt
     gender: Gender
     hair_color: int  # As in assets
-    face: Dict[]  # TODO: Is there a better way to express this?
+    face: dict  # TODO: Is there a better way to express this?
+
+
+@dataclass
+class HeroItem(_Base):
+    id: ScalarId
+    player_id: ScalarId
+    tribe_id: PlayerTribe
+    in_slot: BoolInt
+    item_id: HeroItemType
+    item_type: HeroItemType
+    amount: int
+    strength: int
+    images: List[str]
+    bonuses: Bonuses
+    stackable: bool
+    slot: int  # TODO: Enum Hero slots
+    last_change: Timestamp
+    has_speed_bonus: bool
+    inventory_slot_nr: int
+    previous_owners: int
+    upgrade_level: int
+    upgradable_item_type: bool
+    item_quality: int
+    item_tier: int
+    base_upgrade_bonus: Bonuses
+    card_game_item: bool
+    premium_item: bool
+    upgraded_item: bool
