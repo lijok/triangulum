@@ -6,7 +6,7 @@ from triangulum.utils.enums import RomanUnit, TeutonUnit, GaulUnit, MarkerType, 
     MarkerDuration, FieldMessageType, MapFilterValues, AttacksFilterValues, Resource, HeroItemBonus, PlayerTribe, \
     HeroItemType, AuctionStatus, HeroItemSlot, Country, PlayerPunishmentStrikeReason, BuildingType, BuildingCategory, \
     HeroStatus, Gender, PlayerKingdomRole, KingdomType, KingdomState, VillageOasisStatus, ResourceVillageType, \
-    PlayerVacationState, QuestVersion, CelebrationType
+    PlayerVacationState, QuestVersion, CelebrationType, PlayerProgressTriggerType
 from triangulum.utils.types import ScalarId, Timestamp, BoolInt, VillageId, LocationId, Coordinates
 from triangulum.utils.util import unit_id_to_unit_nr
 
@@ -709,3 +709,15 @@ class Player(_Base):
 @dataclass
 class PlayerProfile(_Base):
     description: str
+
+
+@dataclass
+class PlayerProgressTrigger(_Base):
+    id: str  # TODO: These look weird, could possible be an enum
+    player_id: ScalarId
+    type: PlayerProgressTriggerType
+    sub_type: int  # TODO: Enum these
+    triggered: bool
+    last_use: Timestamp
+    data: dict  # TODO: What's this?
+
