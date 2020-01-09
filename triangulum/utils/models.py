@@ -338,3 +338,10 @@ class BuildingQueue(_Base):
     can_use_instant_construction: bool
     can_use_instant_construction_only_in_village: bool
 
+
+@dataclass
+class CardgameRolls(_Base):
+    player_id: ScalarId
+    free_rolls: int
+    has_daily_roll: BoolInt
+
