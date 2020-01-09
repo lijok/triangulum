@@ -5,7 +5,7 @@ from typing import List, Union, Dict
 from triangulum.utils.enums import RomanUnit, TeutonUnit, GaulUnit, MarkerType, MarkerColor, MarkerEditType, \
     MarkerDuration, FieldMessageType, MapFilterValues, AttacksFilterValues, Resource, HeroItemBonus, PlayerTribe, \
     HeroItemType, AuctionStatus, HeroItemSlot, Country, PlayerPunishmentStrikeReason, BuildingType, BuildingCategory
-from triangulum.utils.types import ScalarId, Timestamp, BoolInt, VillageId, LocationId
+from triangulum.utils.types import ScalarId, Timestamp, BoolInt, VillageId, LocationId, Coordinates
 from triangulum.utils.util import unit_id_to_unit_nr
 
 
@@ -359,3 +359,16 @@ class FarmList(_Base):
     is_default: bool
     max_entries_count: int
 
+
+@dataclass
+class FarmListEntry(_Base):
+    entry_id: ScalarId
+    village_id: VillageId
+    village_name: str
+    units: Union[GaulUnits, RomanUnits, TeutonUnits]  # TODO: This is the complex ones with unit_nr
+    target_owner_id: ScalarId
+    belongs_to_king: ScalarId
+    population: int
+    coords: Coordinates
+    is_oasis: bool
+    last_report: int  # TODO: Possible a ScalarId
