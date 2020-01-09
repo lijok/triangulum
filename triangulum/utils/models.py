@@ -5,7 +5,7 @@ from typing import List, Union, Dict
 from triangulum.utils.enums import RomanUnit, TeutonUnit, GaulUnit, MarkerType, MarkerColor, MarkerEditType, \
     MarkerDuration, FieldMessageType, MapFilterValues, AttacksFilterValues, Resource, HeroItemBonus, PlayerTribe, \
     HeroItemType, AuctionStatus, HeroItemSlot, Country, PlayerPunishmentStrikeReason, BuildingType, BuildingCategory, \
-    HeroStatus, Gender
+    HeroStatus, Gender, PlayerKingdomRole, KingdomType, KingdomState
 from triangulum.utils.types import ScalarId, Timestamp, BoolInt, VillageId, LocationId, Coordinates
 from triangulum.utils.util import unit_id_to_unit_nr
 
@@ -464,3 +464,53 @@ class HeroItem(_Base):
     card_game_item: bool
     premium_item: bool
     upgraded_item: bool
+
+
+@dataclass
+class KingdomMember(_Base):
+    player_id: ScalarId
+    name: str
+    is_king: bool
+    is_duke: bool
+    kingdom_role: PlayerKingdomRole
+    kingdom_id: ScalarId
+    population: int
+    victory_points: int
+    villages: int
+    viceking_connection: int  # TODO: What's this?
+
+
+@dataclass
+class GroupDescription(_Base):
+    group_id: ScalarId
+    public_description: str
+    internal_description: str
+
+
+@dataclass
+class Treaty(_Base):
+    id: ScalarId
+    kingdom_id: ScalarId
+    other_kingdom_id: ScalarId
+    type: KingdomState
+    offered: Timestamp
+    other_kingdom_tag: str
+    status: int = 2  # TODO: Can a status be other than 2?
+
+
+@dataclass
+class Diplomacy(_Base):
+    treaties: List[Treaty]
+    own_offers: List[Treaty]  # TODO: Double check this
+    foreign_offers: List[Treaty]  # TODO: Double check this
+
+
+@dataclass
+class Kingdom(_Base):
+    group_id: ScalarId
+    members: List[KingdomMember]
+    tag: str
+    creation_time: Timestamp
+    kingdom_type: KingdomType
+    description: GroupDescription
+    diplomacy: Diplomacy
