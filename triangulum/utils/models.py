@@ -5,7 +5,7 @@ from typing import List, Union, Dict
 from triangulum.utils.enums import RomanUnit, TeutonUnit, GaulUnit, MarkerType, MarkerColor, MarkerEditType, \
     MarkerDuration, FieldMessageType, MapFilterValues, AttacksFilterValues, Resource, HeroItemBonus, PlayerTribe, \
     HeroItemType, AuctionStatus, HeroItemSlot, Country, PlayerPunishmentStrikeReason, BuildingType, BuildingCategory, \
-    HeroStatus
+    HeroStatus, Gender
 from triangulum.utils.types import ScalarId, Timestamp, BoolInt, VillageId, LocationId, Coordinates
 from triangulum.utils.util import unit_id_to_unit_nr
 
@@ -427,3 +427,12 @@ class Hero(_Base):
     xp_this_level: int
     xp_next_level: int
     level: int
+
+
+@dataclass
+class HeroFace(_Base):
+    player_id: ScalarId
+    fetched_from_lobby: BoolInt
+    gender: Gender
+    hair_color: int  # As in assets
+    face: Dict[]  # TODO: Is there a better way to express this?
