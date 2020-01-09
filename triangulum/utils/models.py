@@ -732,3 +732,11 @@ class Quest(_Base):
     final_step: int
     data: list  # TODO: What's this?
     rewards: dict  # TODO: Express this better
+
+
+@dataclass
+class QuestGiver(_Base):
+    npc_id: QuestGiver
+    quest_id: int
+    dialog: int  # TODO: What's this?
+    quest_status: QuestStatus
