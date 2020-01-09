@@ -103,3 +103,8 @@ class Coordinates(_Base):  # TODO: Could this be VillageId instead?
     @property
     def as_map_id(self):
         return coordinates_to_map_id(x=self.x, y=self.y)
+
+
+@dataclass
+class TroopId(_Base):
+    value: int
