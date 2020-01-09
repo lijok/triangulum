@@ -552,3 +552,40 @@ class Notepad(_Base):
     size_x: int
     size_y: int
     text: str
+
+
+@dataclass
+class ResourceBonuses(_Base):
+    _ENUM = Resource
+
+    WOOD: int
+    CLAY: int
+    IRON: int
+    CROP: int
+
+    def with_zeros(self):
+        return {
+            str(self._ENUM[bonus_type].value): bonus_value
+            for bonus_type, bonus_value in dict(self).items()
+        }
+
+    def without_zeros(self):
+        return {
+            str(self._ENUM[bonus_type].value): bonus_value
+            for bonus_type, bonus_value in dict(self).items() if bonus_value > 0
+        }
+
+
+@dataclass
+class OasisTroopRanking(_Base):
+    id: ScalarId
+    oasis_id: VillageId
+    oasis_type: int  # TODO: Enum this
+    player_id: ScalarId
+    rank: int
+    amount: int
+    max_usable_troops: int
+    used_by_village: VillageId
+    village_influence: int
+    bonus: ResourceBonuses
+    troop_production: int
