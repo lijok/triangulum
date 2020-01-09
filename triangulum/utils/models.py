@@ -8,8 +8,8 @@ from triangulum.utils.enums import RomanUnit, TeutonUnit, GaulUnit, MarkerType, 
     HeroStatus, Gender, PlayerKingdomRole, KingdomType, KingdomState, VillageOasisStatus, ResourceVillageType, \
     PlayerVacationState, QuestVersion, CelebrationType, PlayerProgressTriggerType, QuestGiver, QuestStatus, Language, \
     SettingsTimeType, SettingsTimeFormat, OnlineStatusFilter, SettingsPremiumConfirmation, SocietyAttitude, \
-    DarkSocietyTarget, BrightSocietyTarget
-from triangulum.utils.types import ScalarId, Timestamp, BoolInt, VillageId, LocationId, Coordinates
+    DarkSocietyTarget, BrightSocietyTarget, TroopStatus, TroopMovementType, SpyMissionType
+from triangulum.utils.types import ScalarId, Timestamp, BoolInt, VillageId, LocationId, Coordinates, TroopId
 from triangulum.utils.util import unit_id_to_unit_nr
 
 
@@ -860,3 +860,44 @@ class TradeOffer(_Base):
     duration: int
     limit_kingdom: bool
     limit_duration: bool
+
+
+@dataclass
+class TroopsMovementInfo(_Base):
+    troop_id: TroopId
+    village_id_start: VillageId
+    village_id_target: VillageId
+    player_id_target: ScalarId
+    coordinate_id: int  # TODO: What's this?
+    time_start: Timestamp
+    time_finish: Timestamp
+    movement_type: TroopMovementType
+    resources: Resources
+    treasures: int
+    spy_target: SpyMissionType  # TODO: Could be an int enum
+    catapult_target1: BuildingType  # TODO: Can you target every single BuildingType?
+    catapult_target2: BuildingType  # TODO: Can you target every single BuildingType?
+    merchants: int
+    recurrences: int
+    recurrences_total: int
+
+
+@dataclass
+class Troops(_Base):
+    troop_id: TroopId
+    tribe_id: PlayerTribe
+    player_id: ScalarId
+    player_name: str
+    village_id: VillageId
+    village_name: str
+    village_id_location: VillageId
+    village_name_location: str  # TODO: What's this?
+    player_id_location: int  # TODO: What's this?
+    player_name_location: str  # TODO: What's this?
+    filter: str  # TODO: What's this?
+    village_id_supply: int  # TODO: What's this?
+    status: TroopStatus
+    units: Union[RomanUnits, TeutonUnits, GaulUnits]
+    supply_troops: int  # TODO: What's this?
+    capacity: int  # TODO: What'st his?
+    movement: TroopsMovementInfo
