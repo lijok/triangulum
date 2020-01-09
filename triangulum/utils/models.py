@@ -4,7 +4,7 @@ from typing import List
 
 from triangulum.utils.enums import RomanUnit, TeutonUnit, GaulUnit, MarkerType, MarkerColor, MarkerEditType, \
     MarkerDuration, FieldMessageType, MapFilterValues, AttacksFilterValues, Resource, HeroItemBonus, PlayerTribe, \
-    HeroItemType, AuctionStatus, HeroItemSlot
+    HeroItemType, AuctionStatus, HeroItemSlot, Country, PlayerPunishmentStrikeReason
 from triangulum.utils.types import ScalarId, Timestamp
 from triangulum.utils.util import unit_id_to_unit_nr
 
@@ -262,3 +262,20 @@ class Auction(_Base):
     slot: HeroItemSlot
     images: List[str]  # List of strings such as "artwork", "axe0_2", "helmet2_1" etc
     stackable: bool
+
+
+@dataclass
+class Avatar(_Base):  # Lobby
+    user_account_identifier: ScalarId
+    avatar_identifier: int
+    avatar_name: str
+    consumers_id: int
+    world_name: str
+    country: Country
+    account_name: str
+    is_banned: bool
+    is_suspended: bool
+    suspension_time: int
+    limitation: int  # TODO: Check what this is, could be an enum, could be PlayerPunishmentType
+    ban_reason: PlayerPunishmentStrikeReason
+    ban_payment_provider: str
