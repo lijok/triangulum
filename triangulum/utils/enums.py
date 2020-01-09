@@ -543,9 +543,9 @@ class KingdomType(Enum):
 
 
 class KingdomState(Enum):
-    NAP = 0
-    BND = 1
-    WAR = 2
+    NAP = 0  # Non attack pact
+    BND = 1  # Allied
+    WAR = 2  # War
 
 
 class KingdomFightValuesType(Enum):
@@ -1196,11 +1196,6 @@ class GaulUnit(Enum):  # TODO: Double check that this is right
     TREBUCHET = 28
     CHIEFTAIN = 29
     SETTLER = 30
-
-
-class KingdomTreatyType(Enum):
-    # TODO
-    pass
 
 
 class LogType(Enum):

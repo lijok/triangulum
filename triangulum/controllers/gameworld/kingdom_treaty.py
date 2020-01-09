@@ -1,7 +1,7 @@
 from collections import Callable
 
 from triangulum.controllers.base import BaseController
-from triangulum.utils.enums import KingdomTreatyType
+from triangulum.utils.enums import KingdomState
 from triangulum.utils.exceptions import ActionNotImplementedError
 
 
@@ -9,7 +9,7 @@ class KingdomTreaty(BaseController):
     def __init__(self, action_handler: Callable):
         super().__init__(action_handler=action_handler, controller='kingdomTreaty')
 
-    async def offer(self, kingdom_id: int, type: KingdomTreatyType) -> dict:
+    async def offer(self, kingdom_id: int, type: KingdomState) -> dict:
         """Offer a treaty between yourself / your kingdom and another kingdom
 
         Args:
