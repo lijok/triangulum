@@ -4,7 +4,8 @@ from typing import List, Union, Dict
 
 from triangulum.utils.enums import RomanUnit, TeutonUnit, GaulUnit, MarkerType, MarkerColor, MarkerEditType, \
     MarkerDuration, FieldMessageType, MapFilterValues, AttacksFilterValues, Resource, HeroItemBonus, PlayerTribe, \
-    HeroItemType, AuctionStatus, HeroItemSlot, Country, PlayerPunishmentStrikeReason, BuildingType, BuildingCategory
+    HeroItemType, AuctionStatus, HeroItemSlot, Country, PlayerPunishmentStrikeReason, BuildingType, BuildingCategory, \
+    HeroStatus
 from triangulum.utils.types import ScalarId, Timestamp, BoolInt, VillageId, LocationId, Coordinates
 from triangulum.utils.util import unit_id_to_unit_nr
 
@@ -388,3 +389,41 @@ class GroupInvitation(_Base):
     custom_text: str
     cell_id: int  # TODO: This might be something else than an int
     invited_by_role: int  # TODO: same as invited_as
+
+
+@dataclass
+class Hero(_Base):
+    player_id: ScalarId
+    village_id: VillageId
+    dest_village_id: VillageId
+    status: HeroStatus
+    health: float
+    last_health_time: Timestamp
+    base_regeneration_rate: int
+    regeneration_rate: int
+    fight_strength: int
+    fight_strength_points: int
+    att_bonus_points: int
+    def_bonus_points: int
+    res_bonus_points: int
+    res_bonus_type: int
+    free_points: int
+    speed: int
+    until_time: Timestamp
+    bonuses: Bonuses  # TODO: Has a unitBonuses inside that wont render with this model
+    max_scrolls_per_day: int
+    scrolls_used_today: int
+    waterbucket_used_today: int
+    ointments_used_today: int
+    adventure_point_card_used_today: int
+    resource_chests_used_today: int
+    crop_chests_used_today: int
+    artwork_used_today: int
+    is_moving: bool
+    adventure_points: int
+    adventure_point_time: Timestamp
+    level_up: BoolInt
+    xp: int
+    xp_this_level: int
+    xp_next_level: int
+    level: int
