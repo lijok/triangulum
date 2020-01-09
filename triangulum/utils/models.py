@@ -5,7 +5,7 @@ from typing import List, Union
 from triangulum.utils.enums import RomanUnit, TeutonUnit, GaulUnit, MarkerType, MarkerColor, MarkerEditType, \
     MarkerDuration, FieldMessageType, MapFilterValues, AttacksFilterValues, Resource, HeroItemBonus, PlayerTribe, \
     HeroItemType, AuctionStatus, HeroItemSlot, Country, PlayerPunishmentStrikeReason
-from triangulum.utils.types import ScalarId, Timestamp
+from triangulum.utils.types import ScalarId, Timestamp, BoolInt
 from triangulum.utils.util import unit_id_to_unit_nr
 
 
@@ -297,3 +297,13 @@ class AvatarInformation(_Base):  # Lobby
     next_incoming_attack: Timestamp
     spawned_on_map: Timestamp
     deletion_time: Timestamp
+
+
+@dataclass
+class Bid(_Base):
+    id: ScalarId
+    player_id: ScalarId
+    auction_id: ScalarId
+    max_bid: int
+    time: Timestamp
+    deleted: BoolInt
