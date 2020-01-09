@@ -345,3 +345,17 @@ class CardgameRolls(_Base):
     free_rolls: int
     has_daily_roll: BoolInt
 
+
+@dataclass
+class FarmList(_Base):
+    list_id: ScalarId
+    list_name: str
+    last_sent: Timestamp
+    last_changed: Timestamp
+    units: Union[GaulUnits, RomanUnits, TeutonUnits]  # TODO: This is the complex ones with unit_nr
+    order_nr: int
+    village_ids: List[VillageId]
+    entry_ids: List[ScalarId]
+    is_default: bool
+    max_entries_count: int
+
