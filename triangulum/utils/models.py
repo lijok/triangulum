@@ -7,7 +7,8 @@ from triangulum.utils.enums import RomanUnit, TeutonUnit, GaulUnit, MarkerType, 
     HeroItemType, AuctionStatus, HeroItemSlot, Country, PlayerPunishmentStrikeReason, BuildingType, BuildingCategory, \
     HeroStatus, Gender, PlayerKingdomRole, KingdomType, KingdomState, VillageOasisStatus, ResourceVillageType, \
     PlayerVacationState, QuestVersion, CelebrationType, PlayerProgressTriggerType, QuestGiver, QuestStatus, Language, \
-    SettingsTimeType, SettingsTimeFormat, OnlineStatusFilter, SettingsPremiumConfirmation
+    SettingsTimeType, SettingsTimeFormat, OnlineStatusFilter, SettingsPremiumConfirmation, SocietyAttitude, \
+    DarkSocietyTarget, BrightSocietyTarget
 from triangulum.utils.types import ScalarId, Timestamp, BoolInt, VillageId, LocationId, Coordinates
 from triangulum.utils.util import unit_id_to_unit_nr
 
@@ -811,3 +812,33 @@ class Settings(_Base):
     disable_help_notifications: bool
     enable_help_notifications: BoolInt
     enable_welcome_screen: BoolInt
+
+
+@dataclass
+class SocietyMember(_Base):
+    player_id: ScalarId
+    name: str
+    is_founder: bool
+    is_king: bool
+    kingdom_id: ScalarId
+    population: int
+    villages: int
+
+
+@dataclass
+class SocietyProfile(_Base):
+    group_id: ScalarId
+    description: str
+
+
+@dataclass
+class Society(_Base):
+    group_id: ScalarId
+    name: str
+    members: List[SocietyMember]
+    society_id: ScalarId
+    attitude: SocietyAttitude
+    target_type: Union[BrightSocietyTarget, DarkSocietyTarget]
+    target_id: VillageId
+    shared_informations: int  # TODO: Enum these values and add a scalar filter like val
+    profile: SocietyProfile
