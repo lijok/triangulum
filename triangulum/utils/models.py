@@ -740,3 +740,37 @@ class QuestGiver(_Base):
     quest_id: int
     dialog: int  # TODO: What's this?
     quest_status: QuestStatus
+
+
+@dataclass
+class UnitStats(_Base):
+    attack: float
+    defence: float
+    defence_cavalry: float
+
+
+@dataclass
+class UnitResearchStats(UnitStats):
+    level: int
+
+
+@dataclass
+class Unit(_Base):
+    unit_type: Union[RomanUnit, TeutonUnit, GaulUnit]  # TODO: We probably need a non union for these
+    unit_level: int
+    costs: Resources
+    time: int
+    can_research: bool
+    can_upgrade: bool
+    units_in_upgrade: int
+    required: list  # TODO: What's this?
+    max_level: int
+    current_strength: UnitStats
+    research_strength: List[UnitResearchStats]
+
+
+@dataclass
+class Research(_Base):
+    research_queue_full: bool
+    upgrade_queue_full: bool
+    units: List[Unit]
