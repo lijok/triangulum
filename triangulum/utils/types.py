@@ -35,29 +35,28 @@ class TroopId(int):
     pass
 
 
-@dataclass
-class VillageId(_Base):
-    x: int = None
-    y: int = None
-    id: Union[int, str] = None
+class VillageId(int):
 
     @property
     def as_coords(self):
-        if self.x and self.y:
-            return self.x, self.y
-        elif self.id:
-            return map_id_to_coordinates(map_id=int(self.id))
-        else:
-            raise EmptyType('id or x and y required')
+        return map_id_to_coordinates(map_id=int(self.real))
+
+
+@dataclass
+class Coordinates(_Base):
+    x: int
+    y: int
 
     @property
-    def as_id(self):
-        if self.id:
-            return int(self.id)
-        elif self.x and self.y:
-            return coordinates_to_map_id(x=self.x, y=self.y)
-        else:
-            raise EmptyType('id or x and y required')
+    def as_dict(self):
+        return {
+            'x': self.x,
+            'y': self.y
+        }
+
+    @property
+    def as_map_id(self):
+        return coordinates_to_map_id(x=self.x, y=self.y)
 
 
 @dataclass
@@ -77,20 +76,5 @@ class Timestamp(_Base):
         return str(self.as_datetime)
 
 
-@dataclass
-class Coordinates(_Base):  # TODO: Could this be VillageId instead?
-    x: int
-    y: int
-
-    @property
-    def as_dict(self):
-        return {
-            'x': self.x,
-            'y': self.y
-        }
-
-    @property
-    def as_map_id(self):
-        return coordinates_to_map_id(x=self.x, y=self.y)
 
 
