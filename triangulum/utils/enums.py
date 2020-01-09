@@ -307,6 +307,187 @@ class HeroItemBonus(Enum):
 
 class HeroItemType(Enum):
     NONE = 0
+
+    # Helmet of Health
+    HELMET_OF_REGENERATION = 3
+    HELMET_OF_HEALTH = 5
+    HELMET_OF_HEALING = 6
+
+    # Helmet of Culture
+    HELMET_OF_THE_GLADIATOR = 7
+    HELMET_OF_THE_TRIBUNE = 8
+    HELMET_OF_THE_CONSUL = 9
+
+    # Helmet of Cavalry
+    HELMET_OF_THE_HORSEMAN = 10
+    HELMET_OF_THE_CAVALRY = 11
+    HELMET_OF_THE_HEAVY_CAVALRY = 12
+
+    # Helmet of Infantry
+    HELMET_OF_THE_MERCENARY = 13
+    HELMET_OF_THE_WARRIOR = 14
+    HELMET_OF_THE_ARCHON = 15
+
+    # Swords of the Legionnaire
+    SHORT_SWORD_OF_THE_LEGIONNAIRE = 16
+    SWORD_OF_THE_LEGIONNAIRE = 17
+    LONG_SWORD_OF_THE_LEGIONNAIRE = 18
+
+    # Swords of the Praetorian
+    SHORT_SWORD_OF_THE_PRAETORIAN = 19
+    SWORD_OF_THE_PRAETORIAN = 20
+    LONG_SWORD_OF_THE_PRAETORIAN = 21
+
+    # Swords of the Imperian
+    SHORT_SWORD_OF_THE_IMPERIAN = 22
+    SWORD_OF_THE_IMPERIAN = 23
+    LONG_SWORD_OF_THE_IMPERIAN = 24
+
+    # Sword of the Imperatoris
+    SHORT_SWORD_OF_THE_IMPERATORIS = 25
+    SWORD_OF_THE_IMPERATORIS = 26
+    LONG_SWORD_OF_THE_IMPERATORIS = 27
+
+    # Lance of the Caesaris
+    LIGHT_LANCE_OF_THE_CAESARIS = 28
+    LANCE_OF_THE_CAESARIS = 29
+    HEAVY_LANCE_OF_THE_CAESARIS = 30
+
+    # Spear of the Phalanx
+    SPEAR_OF_THE_PHALANX = 31
+    PIKE_OF_THE_PHALANX = 32
+    LANCE_OF_THE_PHALANX = 33
+
+    # Sword of the Swordsman
+    SHORT_SWORD_OF_THE_SWORDSMAN = 34
+    SWORD_OF_THE_SWORDSMAN = 35
+    LONG_SWORD_OF_THE_SWORDSMAN = 36
+
+    # Bow of the Theutates
+    SHORT_BOW_OF_THE_THEUTATES = 37
+    BOW_OF_THE_THEUTATES = 38
+    LONG_BOW_OF_THE_THEUTATES = 39
+
+    # Staff of the Druidrider
+    WALKING_STAFF_OF_THE_DRUIDRIDER = 40
+    STAFF_OF_THE_DRUIDRIDER = 41
+    FIGHTING_STAFF_OF_THE_DRUIDRIDER = 42
+
+    # Lance of the Haeduan
+    LIGHT_LANCE_OF_THE_HAEDUAN = 43
+    LANCE_OF_THE_HAEDUAN = 44
+    HEAVY_LANCE_OF_THE_HAEDUAN = 45
+
+    # Club of the Barbarian
+    CLUB_OF_THE_CLUBSWINGER = 46
+    MACE_OF_THE_CLUBSWINGER = 47
+    MORNING_STAR_OF_THE_CLUBSWINGER = 48
+
+    # Spear of the Spearfighter
+    SPEAR_OF_THE_SPEARFIGHTER = 49
+    SPIKE_OF_THE_SPEARFIGHTER = 50
+    LANCE_OF_THE_SPEARFIGHTER = 51
+
+    # Axe of the Axeman
+    HATCHET_OF_THE_AXEMAN = 52
+    AXE_OF_THE_AXEMAN = 53
+    BATTLE_AXE_OF_THE_AXEMAN = 54
+
+    # Hammer of the Paladin
+    LIGHT_HAMMER_OF_THE_PALADIN = 55
+    HAMMER_OF_THE_PALADIN = 56
+    HEAVY_HAMMER_OF_THE_PALADIN = 57
+
+    # Sword of the Teutonic Knight
+    SHORT_SWORD_OF_THE_TEUTON_KNIGHT = 58
+    SWORD_OF_THE_TEUTON_KNIGHT = 59
+    LONG_SWORD_OF_THE_TEUTON_KNIGHT = 60
+
+    # Map
+    SMALL_MAP = 61
+    MAP = 62
+    LARGE_MAP = 63
+
+    # Pennant
+    SMALL_PENNANT = 64
+    PENNANT = 65
+    GREAT_PENNANT = 66
+
+    # Large Standard
+    SMALL_STANDARD = 67
+    STANDARD = 68
+    GREAT_STANDARD = 69
+
+    # Spy Glass
+    SMALL_SPY_GLASS = 70
+    SPY_GLASS = 71
+    GREAT_SPY_GLASS = 72
+
+    # Pouch
+    POUCH_OF_THE_THIEF = 73
+    BAG_OF_THE_THIEF = 74
+    SACK_OF_THE_THIEF = 75
+
+    # Shield
+    SMALL_SHIELD = 76
+    SHIELD = 77
+    LARGE_SHIELD = 78
+
+    # Horn
+    SMALL_HORN_OF_THE_NATARIAN = 79
+    HORN_OF_THE_NATARIAN = 80
+    HUGE_HORN_OF_THE_NATARIAN = 81
+
+    # Armors of Health
+    ARMOR_OF_REGENERATION = 82
+    ARMOR_OF_HEALTH = 83
+    ARMOR_OF_HEALING = 84
+
+    # Scale Armors
+    LIGHT_SCALE_ARMOR = 85
+    SCALE_ARMOR = 86
+    HEAVY_SCALE_ARMOR = 87
+
+    # Breast-Plate Armors
+    LIGHT_BREAST_PLATE_ARMOR = 88
+    BREAST_PLACE_ARMOR = 89
+    HEAVY_BREAST_PLATE_ARMOR = 90
+
+    # Chainmail Armors
+    LIGHT_CHAINMAIL = 91
+    CHAINMAIL = 92
+    HEAVY_CHAINMAIL = 93
+
+    # Shoes of Awareness
+    BOOTS_OF_KNOWLEDGE = 94
+    BOOTS_OF_ENLIGHTEMENT = 95
+    BOOTS_OF_WISDOM = 96
+
+    # Shoes of Endurance
+    BOOTS_OF_THE_MERCENARY = 97
+    BOOTS_OF_THE_WARRIOR = 98
+    BOOTS_OF_THE_ARCHON = 99
+
+    # Spurs
+    SMALL_SPURS = 100
+    SPURS = 101
+    NASTY_SPURS = 102
+
+    # Black Horse
+    BLACK_GELDING = 103
+    BLACK_THOROUGHBRED = 104
+    BLACK_WARHORSE = 105
+
+    # White Horse
+    WHITE_GELDING = 106
+    WHITE_THOROUGHBRED = 107
+    WHITE_WARHORSE = 108
+
+    # Brown Horse
+    BROWN_GELDING = 109
+    BROWN_THOROUGHBRED = 110
+    BROWN_WARHORSE = 111
+
     OINTMENT = 112
     SCROLLS = 113
     WATERBUCKET = 114
@@ -316,6 +497,13 @@ class HeroItemType(Enum):
     BANDAGE_33 = 118
     CAGES = 119
     TREASURES = 120
+
+    # Boots of the Chicken
+    # All of these are named the same
+    BOOTS_OF_THE_CHICKEN_TIER_1 = 121
+    BOOTS_OF_THE_CHICKEN_TIER_2 = 122
+    BOOTS_OF_THE_CHICKEN_TIER_3 = 123
+
     HEALING_POTION = 124
     ARMOR_UPGRADE = 125
     WEAPON_UPGRADE = 126
