@@ -76,3 +76,30 @@ class Timestamp(_Base):
     @property
     def as_datetime_string(self):
         return str(self.as_datetime)
+
+
+@dataclass
+class LocationId(_Base):
+    value: int
+
+
+@dataclass
+class BuildingLvl(_Base):
+    value: int
+
+
+@dataclass
+class Coordinates(_Base):  # TODO: Could this be VillageId instead?
+    x: int
+    y: int
+
+    @property
+    def as_dict(self):
+        return {
+            'x': self.x,
+            'y': self.y
+        }
+
+    @property
+    def as_map_id(self):
+        return coordinates_to_map_id(x=self.x, y=self.y)
