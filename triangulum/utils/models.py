@@ -543,3 +543,12 @@ class Merchants(_Base):
     carry: int
     speed: int
 
+
+@dataclass
+class Notepad(_Base):
+    id: ScalarId
+    position_x: int
+    position_y: int
+    size_x: int
+    size_y: int
+    text: str
