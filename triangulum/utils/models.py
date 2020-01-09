@@ -5,7 +5,7 @@ from typing import List, Union, Dict
 from triangulum.utils.enums import RomanUnit, TeutonUnit, GaulUnit, MarkerType, MarkerColor, MarkerEditType, \
     MarkerDuration, FieldMessageType, MapFilterValues, AttacksFilterValues, Resource, HeroItemBonus, PlayerTribe, \
     HeroItemType, AuctionStatus, HeroItemSlot, Country, PlayerPunishmentStrikeReason, BuildingType, BuildingCategory, \
-    HeroStatus, Gender, PlayerKingdomRole, KingdomType, KingdomState
+    HeroStatus, Gender, PlayerKingdomRole, KingdomType, KingdomState, VillageOasisStatus, ResourceVillageType
 from triangulum.utils.types import ScalarId, Timestamp, BoolInt, VillageId, LocationId, Coordinates
 from triangulum.utils.util import unit_id_to_unit_nr
 
@@ -514,3 +514,21 @@ class Kingdom(_Base):
     kingdom_type: KingdomType
     description: GroupDescription
     diplomacy: Diplomacy
+
+
+@dataclass
+class MapDetails(_Base):
+    is_oasis: bool
+    oasis_type: VillageOasisStatus  # TODO: Double check this
+    has_village: BoolInt
+    has_npc: BoolInt
+    res_type: ResourceVillageType
+    is_habitable: BoolInt
+    landscape: int  # TODO: Enum this?
+    player_id: ScalarId
+    player_name: str
+    kingdom_id: ScalarId
+    kingdom_tag: str
+    population: int
+    tribe: PlayerTribe
+    treasures: int
