@@ -4,7 +4,7 @@ from cachetools import TTLCache
 
 from triangulum.controllers.base import BaseController
 from triangulum.utils.cache import cached, MAX_SIZE, TTL
-from triangulum.utils.dataclasses import GaulUnits, TeutonUnits, RomanUnits
+from triangulum.utils.models import GaulUnits, TeutonUnits, RomanUnits
 from triangulum.utils.enums import TroopMovementType, SpyMissionType, PlayerTribe
 from triangulum.utils.exceptions import ActionNotImplementedError
 

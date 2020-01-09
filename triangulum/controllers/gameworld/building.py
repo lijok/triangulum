@@ -4,7 +4,7 @@ from cachetools import TTLCache
 
 from triangulum.controllers.base import BaseController
 from triangulum.utils.cache import cached, MAX_SIZE, TTL
-from triangulum.utils.dataclasses import RomanUnits, TeutonUnits, GaulUnits
+from triangulum.utils.models import RomanUnits, TeutonUnits, GaulUnits
 from triangulum.utils.enums import CelebrationType, BuildingType, RomanUnit, TeutonUnit, GaulUnit
 
 

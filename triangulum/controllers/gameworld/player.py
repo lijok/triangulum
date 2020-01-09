@@ -4,7 +4,7 @@ from cachetools import TTLCache
 
 from triangulum.controllers.base import BaseController
 from triangulum.utils.cache import cached, MAX_SIZE, TTL
-from triangulum.utils.dataclasses import MapFilter, AttacksFilter
+from triangulum.utils.models import MapFilter, AttacksFilter
 from triangulum.utils.enums import PlayerTribe, SettingsTimeType, NotificationType, SettingsPremiumConfirmation, \
     Language, SettingsTimeFormat, OnlineStatusFilter, PlayerProgressTriggerHelpPage, RequestAction, ReportPlayerReason
 from triangulum.utils.exceptions import ActionNotImplementedError

@@ -1,7 +1,7 @@
 from typing import Union, Callable
 
 from triangulum.controllers.base import BaseController
-from triangulum.utils.dataclasses import RomanUnits, TeutonUnits, GaulUnits
+from triangulum.utils.models import RomanUnits, TeutonUnits, GaulUnits
 
 
 class FarmList(BaseController):

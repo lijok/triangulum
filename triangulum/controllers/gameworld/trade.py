@@ -4,7 +4,7 @@ from cachetools import TTLCache
 
 from triangulum.controllers.base import BaseController
 from triangulum.utils.cache import cached, MAX_SIZE, TTL
-from triangulum.utils.dataclasses import Resources
+from triangulum.utils.models import Resources
 from triangulum.utils.enums import Resource, TradeRate
 from triangulum.utils.exceptions import ActionNotImplementedError
 

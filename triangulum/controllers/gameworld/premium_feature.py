@@ -1,7 +1,7 @@
 from collections import Callable
 
 from triangulum.controllers.base import BaseController
-from triangulum.utils.dataclasses import Resources
+from triangulum.utils.models import Resources
 from triangulum.utils.enums import PremiumFeatureAutoExtendFlags, CurrencyType, FinishNowCost, BuildingQueueType
 
 
