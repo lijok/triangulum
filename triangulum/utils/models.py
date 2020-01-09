@@ -1,8 +1,11 @@
 from dataclasses import dataclass
 from enum import Enum
+from typing import List
 
 from triangulum.utils.enums import RomanUnit, TeutonUnit, GaulUnit, MarkerType, MarkerColor, MarkerEditType, \
-    MarkerDuration, FieldMessageType, MapFilterValues, AttacksFilterValues, Resource, HeroItemBonus, PlayerTribe
+    MarkerDuration, FieldMessageType, MapFilterValues, AttacksFilterValues, Resource, HeroItemBonus, PlayerTribe, \
+    HeroItemType, AuctionStatus, HeroItemSlot
+from triangulum.utils.types import ScalarId, Timestamp
 from triangulum.utils.util import unit_id_to_unit_nr
 
 
@@ -238,3 +241,24 @@ class Bonuses(_Base):
             str(self._ENUM[bonus_type].value): bonus_value
             for bonus_type, bonus_value in dict(self).items() if bonus_value > 0
         }
+
+
+@dataclass
+class Auction(_Base):
+    id: ScalarId
+    tribe_id: PlayerTribe
+    item_type_id: HeroItemType
+    strength: int
+    bonuses: Bonuses
+    amount: int
+    status: AuctionStatus
+    time_start: Timestamp
+    time_end: Timestamp
+    price: int
+    bids: int
+    highest_bid: int
+    highest_bidder_player_id: ScalarId
+    highest_bidder_name: str
+    slot: HeroItemSlot
+    images: List[str]  # List of strings such as "artwork", "axe0_2", "helmet2_1" etc
+    stackable: bool
