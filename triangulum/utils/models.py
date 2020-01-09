@@ -1,11 +1,11 @@
 from dataclasses import dataclass
 from enum import Enum
-from typing import List, Union
+from typing import List, Union, Dict
 
 from triangulum.utils.enums import RomanUnit, TeutonUnit, GaulUnit, MarkerType, MarkerColor, MarkerEditType, \
     MarkerDuration, FieldMessageType, MapFilterValues, AttacksFilterValues, Resource, HeroItemBonus, PlayerTribe, \
-    HeroItemType, AuctionStatus, HeroItemSlot, Country, PlayerPunishmentStrikeReason
-from triangulum.utils.types import ScalarId, Timestamp, BoolInt
+    HeroItemType, AuctionStatus, HeroItemSlot, Country, PlayerPunishmentStrikeReason, BuildingType, BuildingCategory
+from triangulum.utils.types import ScalarId, Timestamp, BoolInt, VillageId, LocationId
 from triangulum.utils.util import unit_id_to_unit_nr
 
 
@@ -307,3 +307,23 @@ class Bid(_Base):
     max_bid: int
     time: Timestamp
     deleted: BoolInt
+
+
+@dataclass
+class Building(_Base):
+    building_type: BuildingType
+    village_id: VillageId
+    location_id: LocationId
+    lvl: int
+    lvl_next: int
+    is_max_lvl: bool
+    lvl_max: int
+    upgrade_costs: Resources
+    next_upgrade_costs: Dict[Resources]  # TODO: Is there a better way to express this?
+    upgrade_time: int
+    next_upgrade_times: dict  # TODO: Is there a better way to express this?
+    upgrade_supply_usage: int  # crop usage / pop increase of next lvl
+    upgrade_supply_usage_sums: dict  # TODO: Is there a better way to express this?
+    category: BuildingCategory
+    sort_order: BuildingType  # TODO: Unsure what this is but it's always the same as building_type
+    effect: List[int]  # TODO: Is there a better way to express this?
