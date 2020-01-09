@@ -1274,6 +1274,7 @@ class RankingType(Enum):
     VILLAGE = 'ranking_Village'
     KINGDOM = 'ranking_Kingdom'
 
+
 class RankingSubtype(Enum):
     POPULATION = 'population'
     OFFENSIVE_POINTS = 'offPoints'
