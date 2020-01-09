@@ -59,17 +59,15 @@ class Coordinates(_Base):
         return coordinates_to_map_id(x=self.x, y=self.y)
 
 
-@dataclass
-class Timestamp(_Base):
-    value: float = time()
+class Timestamp(int):
 
     @property
     def as_t5_timestamp(self):
-        return int('{:.2f}'.format(self.value).replace('.', ''))
+        return int('{:.2f}'.format(self.real).replace('.', ''))
 
     @property
     def as_datetime(self):
-        return datetime.fromtimestamp(self.value)
+        return datetime.fromtimestamp(float(self.real))
 
     @property
     def as_datetime_string(self):
