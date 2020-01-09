@@ -704,3 +704,8 @@ class Player(_Base):
     vacation_state_start: Timestamp
     vacation_state_end: Timestamp
     used_vacation_days: int
+
+
+@dataclass
+class PlayerProfile(_Base):
+    description: str
