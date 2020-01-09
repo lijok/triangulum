@@ -15,25 +15,24 @@ class _Base:
     pass
 
 
-@dataclass
-class ScalarId(_Base):
-    id: int
+class ScalarId(int):
+    pass
 
 
-@dataclass
-class BoolInt(_Base):
-    value: bool
+class BoolInt(int):
+    pass
 
-    @property
-    def as_bool(self):
-        return self.value
 
-    @property
-    def as_int(self):
-        if self.value:
-            return 1
-        else:
-            return 0
+class LocationId(int):
+    pass
+
+
+class BuildingLvl(int):
+    pass
+
+
+class TroopId(int):
+    pass
 
 
 @dataclass
@@ -79,16 +78,6 @@ class Timestamp(_Base):
 
 
 @dataclass
-class LocationId(_Base):
-    value: int
-
-
-@dataclass
-class BuildingLvl(_Base):
-    value: int
-
-
-@dataclass
 class Coordinates(_Base):  # TODO: Could this be VillageId instead?
     x: int
     y: int
@@ -105,6 +94,3 @@ class Coordinates(_Base):  # TODO: Could this be VillageId instead?
         return coordinates_to_map_id(x=self.x, y=self.y)
 
 
-@dataclass
-class TroopId(_Base):
-    value: int
