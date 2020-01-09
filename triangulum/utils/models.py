@@ -327,3 +327,14 @@ class Building(_Base):
     category: BuildingCategory
     sort_order: BuildingType  # TODO: Unsure what this is but it's always the same as building_type
     effect: List[int]  # TODO: Is there a better way to express this?
+
+
+@dataclass
+class BuildingQueue(_Base):
+    village_id: VillageId
+    tribe_id: PlayerTribe
+    free_slots: dict  # TODO: Is there a better way to express this?
+    queues: Dict[List[Dict]]  # TODO: Is there a better way to express this?
+    can_use_instant_construction: bool
+    can_use_instant_construction_only_in_village: bool
+
