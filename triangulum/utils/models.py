@@ -842,3 +842,21 @@ class Society(_Base):
     target_id: VillageId
     shared_informations: int  # TODO: Enum these values and add a scalar filter like val
     profile: SocietyProfile
+
+
+@dataclass
+class TradeOffer(_Base):
+    offer_id: ScalarId
+    player_id: ScalarId
+    player_name: str
+    kingdom_id: ScalarId
+    village_id: VillageId
+    blocked_merchants: int
+    offered_resource: Resource
+    offered_amount: int
+    searched_resource: Resource
+    searched_amount: int
+    maximum_duration: int
+    duration: int
+    limit_kingdom: bool
+    limit_duration: bool
