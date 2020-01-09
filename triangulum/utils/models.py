@@ -901,3 +901,40 @@ class Troops(_Base):
     supply_troops: int  # TODO: What's this?
     capacity: int  # TODO: What'st his?
     movement: TroopsMovementInfo
+
+
+@dataclass
+class UnitQueueItem(_Base):
+    unit_type: Union[RomanUnit, TeutonUnit, GaulUnit]  # TODO: We probably need a non union for these
+    count: int
+    duration_per_unit: int
+    time_finished_next: Timestamp
+    time_finished_last: Timestamp
+    pause: BoolInt
+
+
+@dataclass
+class UnitResearchQueueItem(_Base):
+    unit_type: Union[RomanUnit, TeutonUnit, GaulUnit]  # TODO: We probably need a non union for these
+    research_level: int
+    start_time: Timestamp
+    finished: Timestamp
+    pause: BoolInt
+
+
+@dataclass
+class UnitQueue(_Base):
+    village_id: VillageId
+    building_types: dict  # TODO
+    # building_types: {
+    #     36: List[UnitQueueItem]
+    # }
+
+
+@dataclass
+class UnitResearchQueue(_Base):
+    village_id: VillageId
+    building_types: dict  # TODO
+    # building_types: {
+    #     22: List[UnitResearchQueueItem]
+    # }
