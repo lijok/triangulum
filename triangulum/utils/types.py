@@ -1,9 +1,11 @@
 from dataclasses import dataclass
 from datetime import datetime
+from enum import Enum
 from time import time
 from typing import Union
 
-from triangulum.utils.util import map_id_to_coordinates, coordinates_to_map_id
+
+from triangulum.utils.util import map_id_to_coordinates, coordinates_to_map_id, filter_value_to_enums
 
 
 class EmptyType(Exception):
@@ -74,5 +76,14 @@ class Timestamp(int):
         return str(self.as_datetime)
 
 
+class FilterScalar(int):
+    def __new__(cls, value, enum):
+        new = super().__new__(cls, value)
+        new.enum = enum
 
+        return new
+
+    @property
+    def as_enums(self):
+        return filter_value_to_enums(enum=self.enum, value=self.real)
 
