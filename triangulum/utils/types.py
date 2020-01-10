@@ -12,11 +12,6 @@ class EmptyType(Exception):
     """Type has been instantiated without any parameters"""
 
 
-@dataclass
-class _Base:
-    pass
-
-
 class ScalarId(int):
     pass
 
