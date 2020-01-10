@@ -27,13 +27,6 @@ class TroopId(int):
     pass
 
 
-class VillageId(int):
-
-    @property
-    def as_coords(self):
-        return map_id_to_coordinates(map_id=int(self.real))
-
-
 class MapId(int):
     def __new__(cls, map_id=None, x=None, y=None):
         if not map_id:
