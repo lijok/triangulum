@@ -2,13 +2,7 @@ from dataclasses import dataclass
 from enum import Enum
 from typing import List, Union, Dict
 
-from triangulum.utils.enums import RomanUnit, TeutonUnit, GaulUnit, MarkerType, MarkerColor, MarkerEditType, \
-    MarkerDuration, FieldMessageType, Resource, HeroItemBonus, PlayerTribe, HeroItemType, AuctionStatus, HeroItemSlot, \
-    Country, PlayerPunishmentStrikeReason, BuildingType, BuildingCategory, \
-    HeroStatus, Gender, PlayerKingdomRole, KingdomType, KingdomState, VillageOasisStatus, ResourceVillageType, \
-    PlayerVacationState, QuestVersion, CelebrationType, PlayerProgressTriggerType, QuestGiver, QuestStatus, Language, \
-    SettingsTimeType, SettingsTimeFormat, OnlineStatusFilter, SettingsPremiumConfirmation, SocietyAttitude, \
-    DarkSocietyTarget, BrightSocietyTarget, TroopStatus, TroopMovementType, SpyMissionType
+from triangulum.utils import enums
 from triangulum.utils.types import ScalarId, Timestamp, BoolInt, LocationId, MapId, TroopId, FilterScalar
 from triangulum.utils.util import unit_id_to_unit_nr
 
@@ -52,8 +46,8 @@ class _Units(_Base):
 
 @dataclass
 class RomanUnits(_Units):
-    _ENUM: Enum = RomanUnit
-    _TRIBE: PlayerTribe = PlayerTribe.ROMAN.value
+    _ENUM: Enum = enums.RomanUnit
+    _TRIBE: enums.PlayerTribe = enums.PlayerTribe.ROMAN.value
 
     LEGIONNAIRE: int = 0
     PRAETORIAN: int = 0
@@ -70,8 +64,8 @@ class RomanUnits(_Units):
 
 @dataclass
 class TeutonUnits(_Units):
-    _ENUM: Enum = TeutonUnit
-    _TRIBE: PlayerTribe = PlayerTribe.TEUTON.value
+    _ENUM: Enum = enums.TeutonUnit
+    _TRIBE: enums.PlayerTribe = enums.PlayerTribe.TEUTON.value
 
     CLUBSWINGER: int = 0
     SPEARFIGHTER: int = 0
@@ -88,8 +82,8 @@ class TeutonUnits(_Units):
 
 @dataclass
 class GaulUnits(_Units):
-    _ENUM: Enum = GaulUnit
-    _TRIBE: PlayerTribe = PlayerTribe.GAUL.value
+    _ENUM: Enum = enums.GaulUnit
+    _TRIBE: enums.PlayerTribe = enums.PlayerTribe.GAUL.value
 
     PHALANX: int = 0
     SWORDSMAN: int = 0
@@ -107,9 +101,9 @@ class GaulUnits(_Units):
 @dataclass
 class Marker:
     OWNER: int
-    TYPE: MarkerType
-    COLOR: MarkerColor
-    EDIT_TYPE: MarkerEditType
+    TYPE: enums.MarkerType
+    COLOR: enums.MarkerColor
+    EDIT_TYPE: enums.MarkerEditType
     OWNER_ID: int
     TARGET_ID: int
 
@@ -127,8 +121,8 @@ class Marker:
 @dataclass
 class FieldMessage:
     TEXT: str
-    TYPE: FieldMessageType
-    DURATION: MarkerDuration
+    TYPE: enums.FieldMessageType
+    DURATION: enums.MarkerDuration
     CELL_ID: int
     TARGET_ID: int
 
@@ -161,7 +155,7 @@ class _Resources(_Base):
 
 @dataclass
 class Resources(_Resources):
-    _ENUM = Resource
+    _ENUM = enums.Resource
 
     WOOD: int
     CLAY: int
@@ -171,7 +165,7 @@ class Resources(_Resources):
 
 @dataclass
 class Bonuses(_Base):
-    _ENUM = HeroItemBonus
+    _ENUM = enums.HeroItemBonus
 
     XP: int = None
     BARRACKS: int = None
@@ -215,12 +209,12 @@ class Bonuses(_Base):
 @dataclass
 class Auction(_Base):
     id: ScalarId
-    tribe_id: PlayerTribe
-    item_type_id: HeroItemType
+    tribe_id: enums.PlayerTribe
+    item_type_id: enums.HeroItemType
     strength: int
     bonuses: Bonuses
     amount: int
-    status: AuctionStatus
+    status: enums.AuctionStatus
     time_start: Timestamp
     time_end: Timestamp
     price: int
@@ -228,7 +222,7 @@ class Auction(_Base):
     highest_bid: int
     highest_bidder_player_id: ScalarId
     highest_bidder_name: str
-    slot: HeroItemSlot
+    slot: enums.HeroItemSlot
     images: List[str]  # List of strings such as "artwork", "axe0_2", "helmet2_1" etc
     stackable: bool
 
@@ -240,13 +234,13 @@ class Avatar(_Base):  # Lobby
     avatar_name: str
     consumers_id: int
     world_name: str
-    country: Country
+    country: enums.Country
     account_name: str
     is_banned: bool
     is_suspended: bool
     suspension_time: int
     limitation: int  # TODO: Check what this is, could be an enum, could be PlayerPunishmentType
-    ban_reason: PlayerPunishmentStrikeReason
+    ban_reason: enums.PlayerPunishmentStrikeReason
     ban_payment_provider: str
 
 
@@ -280,7 +274,7 @@ class Bid(_Base):
 
 @dataclass
 class Building(_Base):
-    building_type: BuildingType
+    building_type: enums.BuildingType
     village_id: MapId
     location_id: LocationId
     lvl: int
@@ -293,15 +287,15 @@ class Building(_Base):
     next_upgrade_times: dict  # TODO: Is there a better way to express this?
     upgrade_supply_usage: int  # crop usage / pop increase of next lvl
     upgrade_supply_usage_sums: dict  # TODO: Is there a better way to express this?
-    category: BuildingCategory
-    sort_order: BuildingType  # TODO: Unsure what this is but it's always the same as building_type
+    category: enums.BuildingCategory
+    sort_order: enums.BuildingType  # TODO: Unsure what this is but it's always the same as building_type
     effect: List[int]  # TODO: Is there a better way to express this?
 
 
 @dataclass
 class BuildingQueue(_Base):
     village_id: MapId
-    tribe_id: PlayerTribe
+    tribe_id: enums.PlayerTribe
     free_slots: dict  # TODO: Is there a better way to express this?
     queues: Dict[int, List[dict]]  # TODO: Is there a better way to express this?
     can_use_instant_construction: bool
@@ -364,7 +358,7 @@ class Hero(_Base):
     player_id: ScalarId
     village_id: MapId
     dest_village_id: MapId
-    status: HeroStatus
+    status: enums.HeroStatus
     health: float
     last_health_time: Timestamp
     base_regeneration_rate: int
@@ -401,7 +395,7 @@ class Hero(_Base):
 class HeroFace(_Base):
     player_id: ScalarId
     fetched_from_lobby: BoolInt
-    gender: Gender
+    gender: enums.Gender
     hair_color: int  # As in assets
     face: dict  # TODO: Is there a better way to express this?
 
@@ -410,10 +404,10 @@ class HeroFace(_Base):
 class HeroItem(_Base):
     id: ScalarId
     player_id: ScalarId
-    tribe_id: PlayerTribe
+    tribe_id: enums.PlayerTribe
     in_slot: BoolInt
-    item_id: HeroItemType
-    item_type: HeroItemType
+    item_id: enums.HeroItemType
+    item_type: enums.HeroItemType
     amount: int
     strength: int
     images: List[str]
@@ -440,7 +434,7 @@ class KingdomMember(_Base):
     name: str
     is_king: bool
     is_duke: bool
-    kingdom_role: PlayerKingdomRole
+    kingdom_role: enums.PlayerKingdomRole
     kingdom_id: ScalarId
     population: int
     victory_points: int
@@ -460,7 +454,7 @@ class Treaty(_Base):
     id: ScalarId
     kingdom_id: ScalarId
     other_kingdom_id: ScalarId
-    type: KingdomState
+    type: enums.KingdomState
     offered: Timestamp
     other_kingdom_tag: str
     status: int = 2  # TODO: Can a status be other than 2?
@@ -479,7 +473,7 @@ class Kingdom(_Base):
     members: List[KingdomMember]
     tag: str
     creation_time: Timestamp
-    kingdom_type: KingdomType
+    kingdom_type: enums.KingdomType
     description: GroupDescription
     diplomacy: Diplomacy
 
@@ -487,10 +481,10 @@ class Kingdom(_Base):
 @dataclass
 class MapDetails(_Base):
     is_oasis: bool
-    oasis_type: VillageOasisStatus  # TODO: Double check this
+    oasis_type: enums.VillageOasisStatus  # TODO: Double check this
     has_village: BoolInt
     has_npc: BoolInt
-    res_type: ResourceVillageType
+    res_type: enums.ResourceVillageType
     is_habitable: BoolInt
     landscape: int  # TODO: Enum this?
     player_id: ScalarId
@@ -498,7 +492,7 @@ class MapDetails(_Base):
     kingdom_id: ScalarId
     kingdom_tag: str
     population: int
-    tribe: PlayerTribe
+    tribe: enums.PlayerTribe
     treasures: int
 
 
@@ -524,7 +518,7 @@ class Notepad(_Base):
 
 @dataclass
 class ResourceBonuses(_Base):
-    _ENUM = Resource
+    _ENUM = enums.Resource
 
     WOOD: int
     CLAY: int
@@ -568,7 +562,7 @@ class Stars(_Base):
 
 @dataclass
 class Storage(_Resources):
-    _ENUM = Resource
+    _ENUM = enums.Resource
 
     WOOD: float
     CLAY: float
@@ -581,7 +575,7 @@ class Village(_Base):
     village_id: MapId
     player_id: ScalarId
     name: str
-    tribe_id: PlayerTribe
+    tribe_id: enums.PlayerTribe
     belongs_to_king: ScalarId
     belongs_to_kingdom: ScalarId
     type: int  # TODO: Enum this
@@ -604,7 +598,7 @@ class Village(_Base):
     used_control_points: int  # TODO: What's this?
     available_control_points: int  # TODO: What's this?
     culture_points: float
-    celebration_type: CelebrationType
+    celebration_type: enums.CelebrationType
     celebration_end: Timestamp
     culture_point_production: int
     treasure_resource_bonus: int
@@ -624,10 +618,10 @@ class Village(_Base):
 class Player(_Base):
     player_id: ScalarId
     name: str
-    tribe_id: PlayerTribe
+    tribe_id: enums.PlayerTribe
     kingdom_id: ScalarId
     kingdom_tag: str
-    kingdom_role: PlayerKingdomRole
+    kingdom_role: enums.PlayerKingdomRole
     is_king: bool
     king_id: ScalarId
     kingstatus: int  # TODO: Enum this
@@ -641,7 +635,7 @@ class Player(_Base):
     has_noob_protection: bool
     filter_information: bool
     signup_time: Timestamp
-    vacation_state: PlayerVacationState
+    vacation_state: enums.PlayerVacationState
     ui_limitations: int  # TODO: Enum this
     gold: int
     silver: int
@@ -664,7 +658,7 @@ class Player(_Base):
     limitation: int  # TODO: Enum this
     is_banned_from_messaging: bool
     banned_from_messaging: BoolInt  # TODO: Could be a Timestamp
-    quest_version: QuestVersion
+    quest_version: enums.QuestVersion
     next_daily_quest_time: Timestamp
     daily_quests_exchanged: BoolInt  # TODO: Could be an int
     avatar_identifier: ScalarId
@@ -682,7 +676,7 @@ class PlayerProfile(_Base):
 class PlayerProgressTrigger(_Base):
     id: str  # TODO: These look weird, could possible be an enum
     player_id: ScalarId
-    type: PlayerProgressTriggerType
+    type: enums.PlayerProgressTriggerType
     sub_type: int  # TODO: Enum these
     triggered: bool
     last_use: Timestamp
@@ -692,8 +686,8 @@ class PlayerProgressTrigger(_Base):
 @dataclass
 class Quest(_Base):
     id: int
-    quest_giver: QuestGiver
-    status: QuestStatus
+    quest_giver: enums.QuestGiver
+    status: enums.QuestStatus
     progress: int
     finished_steps: int
     final_step: int
@@ -703,10 +697,10 @@ class Quest(_Base):
 
 @dataclass
 class QuestGiver(_Base):
-    npc_id: QuestGiver
+    npc_id: enums.QuestGiver
     quest_id: int
     dialog: int  # TODO: What's this?
-    quest_status: QuestStatus
+    quest_status: enums.QuestStatus
 
 
 @dataclass
@@ -723,7 +717,7 @@ class UnitResearchStats(UnitStats):
 
 @dataclass
 class Unit(_Base):
-    unit_type: Union[RomanUnit, TeutonUnit, GaulUnit]  # TODO: We probably need a non union for these
+    unit_type: Union[enums.RomanUnit, enums.TeutonUnit, enums.GaulUnit]  # TODO: We probably need a non union for these
     unit_level: int
     costs: Resources
     time: int
@@ -755,19 +749,19 @@ class Session(_Base):
 @dataclass
 class Settings(_Base):
     player_id: ScalarId
-    premium_confirmation: SettingsPremiumConfirmation
-    lang: Language
-    online_status_filter: OnlineStatusFilter
+    premium_confirmation: enums.SettingsPremiumConfirmation
+    lang: enums.Language
+    online_status_filter: enums.OnlineStatusFilter
     extended_simulator: bool
     music_volume: int
     sound_volume: int
     ui_sound_volume: int
     mute_all: bool
-    time_type: SettingsTimeType
+    time_type: enums.SettingsTimeType
     time_zone: float
     time_zone_string: str  # TODO: This is that weird time formatting
     time_zone_switcher: BoolInt
-    time_format: SettingsTimeFormat
+    time_format: enums.SettingsTimeFormat
     attacks_filter: FilterScalar
     map_filter: FilterScalar
     disable_tab_notifications: BoolInt
@@ -802,8 +796,8 @@ class Society(_Base):
     name: str
     members: List[SocietyMember]
     society_id: ScalarId
-    attitude: SocietyAttitude
-    target_type: Union[BrightSocietyTarget, DarkSocietyTarget]
+    attitude: enums.SocietyAttitude
+    target_type: Union[enums.BrightSocietyTarget, enums.DarkSocietyTarget]
     target_id: MapId
     shared_informations: int  # TODO: Enum these values and add a scalar filter like val
     profile: SocietyProfile
@@ -817,9 +811,9 @@ class TradeOffer(_Base):
     kingdom_id: ScalarId
     village_id: MapId
     blocked_merchants: int
-    offered_resource: Resource
+    offered_resource: enums.Resource
     offered_amount: int
-    searched_resource: Resource
+    searched_resource: enums.Resource
     searched_amount: int
     maximum_duration: int
     duration: int
@@ -836,12 +830,12 @@ class TroopsMovementInfo(_Base):
     coordinate_id: int  # TODO: What's this?
     time_start: Timestamp
     time_finish: Timestamp
-    movement_type: TroopMovementType
+    movement_type: enums.TroopMovementType
     resources: Resources
     treasures: int
-    spy_target: SpyMissionType  # TODO: Could be an int enum
-    catapult_target1: BuildingType  # TODO: Can you target every single BuildingType?
-    catapult_target2: BuildingType  # TODO: Can you target every single BuildingType?
+    spy_target: enums.SpyMissionType  # TODO: Could be an int enum
+    catapult_target1: enums.BuildingType  # TODO: Can you target every single BuildingType?
+    catapult_target2: enums.BuildingType  # TODO: Can you target every single BuildingType?
     merchants: int
     recurrences: int
     recurrences_total: int
@@ -850,7 +844,7 @@ class TroopsMovementInfo(_Base):
 @dataclass
 class Troops(_Base):
     troop_id: TroopId
-    tribe_id: PlayerTribe
+    tribe_id: enums.PlayerTribe
     player_id: ScalarId
     player_name: str
     village_id: MapId
@@ -861,7 +855,7 @@ class Troops(_Base):
     player_name_location: str  # TODO: What's this?
     filter: str  # TODO: What's this?
     village_id_supply: int  # TODO: What's this?
-    status: TroopStatus
+    status: enums.TroopStatus
     units: Union[RomanUnits, TeutonUnits, GaulUnits]
     supply_troops: int  # TODO: What's this?
     capacity: int  # TODO: What'st his?
@@ -870,7 +864,7 @@ class Troops(_Base):
 
 @dataclass
 class UnitQueueItem(_Base):
-    unit_type: Union[RomanUnit, TeutonUnit, GaulUnit]  # TODO: We probably need a non union for these
+    unit_type: Union[enums.RomanUnit, enums.TeutonUnit, enums.GaulUnit]  # TODO: We probably need a non union for these
     count: int
     duration_per_unit: int
     time_finished_next: Timestamp
@@ -880,7 +874,7 @@ class UnitQueueItem(_Base):
 
 @dataclass
 class UnitResearchQueueItem(_Base):
-    unit_type: Union[RomanUnit, TeutonUnit, GaulUnit]  # TODO: We probably need a non union for these
+    unit_type: Union[enums.RomanUnit, enums.TeutonUnit, enums.GaulUnit]  # TODO: We probably need a non union for these
     research_level: int
     start_time: Timestamp
     finished: Timestamp
