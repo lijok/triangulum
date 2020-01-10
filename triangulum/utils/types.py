@@ -34,7 +34,7 @@ class VillageId(int):
         return map_id_to_coordinates(map_id=int(self.real))
 
 
-class Coordinates(int):
+class MapId(int):
     def __new__(cls, map_id=None, x=None, y=None):
         if not map_id:
             if not x and not y:
