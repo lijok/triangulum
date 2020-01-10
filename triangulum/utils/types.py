@@ -82,11 +82,34 @@ class FilterScalar(int):
 
 
 class ResourceFieldDistribution(int):
+    """Denotes the distribution of different resource fields in a given village type
+
+    5346 means there's 5 wood, 3 clay, 4 iron and 6 crop fields
+    The different possible types are:
+        4446
+        5346
+        5436
+        6336
+        3546
+        4536
+        3636
+        3456
+        4356
+        3366
+        11115
+        3339
+        4337
+        3437
+        3347
+    """
 
     @property
     def _distribution(self):
-        wood, clay, iron, crop = list(str(self.real))
-        return int(wood), int(clay), int(iron), int(crop)
+        if self.real == 11115:  # 15c
+            return 1, 1, 1, 15
+        else:
+            wood, clay, iron, crop = list(str(self.real))
+            return int(wood), int(clay), int(iron), int(crop)
 
     @property
     def wood(self):
