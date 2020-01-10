@@ -523,7 +523,7 @@ class Stars(_Base):
 
 
 @dataclass
-class Storage(_Resources):
+class Storage(_NumberedDict):
     _ENUM = enums.Resource
 
     WOOD: float
