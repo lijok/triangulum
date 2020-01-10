@@ -1,4 +1,4 @@
-from typing import Tuple
+from typing import Tuple, List
 from math import sqrt
 from enum import Enum
 
@@ -69,3 +69,7 @@ def filter_value_to_enums(enum: Enum, value: int) -> list:
             value = value % number
 
     return result
+
+
+def enums_to_filter_value(enums: List[Enum]):
+    return sum([i.value for i in enums])
