@@ -16,21 +16,24 @@ class _Base:
 
 
 @dataclass
-class _Units(_Base):
+class _NumberedDict(_Base):
     _ENUM: Enum
 
     def with_zeros(self):
         return {
-            str(self._ENUM[unit_name].value): unit_qty
-            for unit_name, unit_qty in dict(self).items()
+            str(self._ENUM[name].value): quantity
+            for name, quantity in dict(self).items()
         }
 
     def without_zeros(self):
         return {
-            str(self._ENUM[unit_name].value): unit_qty
-            for unit_name, unit_qty in dict(self).items() if unit_qty > 0
+            str(self._ENUM[name].value): quantity
+            for name, quantity in dict(self).items() if quantity > 0
         }
 
+
+@dataclass
+class _Units(_NumberedDict):
     def combat_format_with_zeros(self):
         return {
             str(unit_id_to_unit_nr(self._ENUM[unit_name].value)): unit_qty
@@ -137,24 +140,7 @@ class FieldMessage:
 
 
 @dataclass
-class _Resources(_Base):
-    _ENUM: Enum
-
-    def with_zeros(self):
-        return {
-            str(self._ENUM[resource_name].value): resource_qty
-            for resource_name, resource_qty in dict(self).items()
-        }
-
-    def without_zeros(self):
-        return {
-            str(self._ENUM[resource_name].value): resource_qty
-            for resource_name, resource_qty in dict(self).items() if resource_qty > 0
-        }
-
-
-@dataclass
-class Resources(_Resources):
+class Resources(_NumberedDict):
     _ENUM = enums.Resource
 
     WOOD: int
@@ -164,7 +150,7 @@ class Resources(_Resources):
 
 
 @dataclass
-class Bonuses(_Base):
+class Bonuses(_NumberedDict):
     _ENUM = enums.HeroItemBonus
 
     XP: int = None
@@ -192,18 +178,6 @@ class Bonuses(_Base):
     RESOURCES: int = None
     CROP: int = None
     POTION: int = None
-
-    def with_zeros(self):
-        return {
-            str(self._ENUM[bonus_type].value): bonus_value
-            for bonus_type, bonus_value in dict(self).items()
-        }
-
-    def without_zeros(self):
-        return {
-            str(self._ENUM[bonus_type].value): bonus_value
-            for bonus_type, bonus_value in dict(self).items() if bonus_value > 0
-        }
 
 
 @dataclass
