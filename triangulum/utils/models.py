@@ -3,7 +3,8 @@ from enum import Enum
 from typing import List, Union, Dict
 
 from triangulum.utils import enums
-from triangulum.utils.types import ScalarId, Timestamp, BoolInt, LocationId, MapId, TroopId, FilterScalar
+from triangulum.utils.types import ScalarId, Timestamp, BoolInt, LocationId, MapId, TroopId, FilterScalar, \
+    ResourceFieldDistribution
 from triangulum.utils.util import unit_id_to_unit_nr
 
 
@@ -458,7 +459,7 @@ class MapDetails(_Base):
     oasis_type: enums.VillageOasisStatus  # TODO: Double check this
     has_village: BoolInt
     has_npc: BoolInt
-    res_type: enums.ResourceVillageType
+    res_type: ResourceFieldDistribution
     is_habitable: BoolInt
     landscape: int  # TODO: Enum this?
     player_id: ScalarId
@@ -850,6 +851,7 @@ class UnitQueue(_Base):
     # building_types: {
     #     36: List[UnitQueueItem]
     # }
+
 
 @dataclass
 class UnitResearchQueue(_Base):
