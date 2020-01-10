@@ -44,10 +44,20 @@ class VillageId(int):
         return map_id_to_coordinates(map_id=int(self.real))
 
 
-@dataclass
-class Coordinates(_Base):
-    x: int
-    y: int
+class Coordinates(int):
+    def __new__(cls, map_id=None, x=None, y=None):
+        if not map_id:
+            if not x and not y:
+                raise EmptyType('map_id or x and y required')
+
+        if not map_id:
+            map_id = coordinates_to_map_id(x=x, y=y)
+
+        new = super().__new__(cls, map_id)
+        new.x = x
+        new.y = y
+
+        return new
 
     @property
     def as_dict(self):
