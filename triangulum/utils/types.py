@@ -80,3 +80,26 @@ class FilterScalar(int):
     def as_enums(self):
         return filter_value_to_enums(enum=self.enum, value=self.real)
 
+
+class ResourceFieldDistribution(int):
+
+    @property
+    def _distribution(self):
+        wood, clay, iron, crop = list(str(self.real))
+        return int(wood), int(clay), int(iron), int(crop)
+
+    @property
+    def wood(self):
+        return self._distribution[0]
+
+    @property
+    def clay(self):
+        return self._distribution[1]
+
+    @property
+    def iron(self):
+        return self._distribution[2]
+
+    @property
+    def crop(self):
+        return self._distribution[3]
