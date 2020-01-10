@@ -491,25 +491,13 @@ class Notepad(_Base):
 
 
 @dataclass
-class ResourceBonuses(_Base):
+class ResourceBonuses(_NumberedDict):
     _ENUM = enums.Resource
 
     WOOD: int
     CLAY: int
     IRON: int
     CROP: int
-
-    def with_zeros(self):
-        return {
-            str(self._ENUM[bonus_type].value): bonus_value
-            for bonus_type, bonus_value in dict(self).items()
-        }
-
-    def without_zeros(self):
-        return {
-            str(self._ENUM[bonus_type].value): bonus_value
-            for bonus_type, bonus_value in dict(self).items() if bonus_value > 0
-        }
 
 
 @dataclass
