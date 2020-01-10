@@ -1,6 +1,6 @@
 from datetime import datetime
 
-from triangulum.utils.util import map_id_to_coordinates, coordinates_to_map_id, filter_value_to_enums
+from triangulum.utils.util import coordinates_to_map_id, filter_value_to_enums
 
 
 class EmptyType(Exception):
