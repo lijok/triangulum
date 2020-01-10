@@ -3,8 +3,8 @@ from enum import Enum
 from typing import List, Union, Dict
 
 from triangulum.utils.enums import RomanUnit, TeutonUnit, GaulUnit, MarkerType, MarkerColor, MarkerEditType, \
-    MarkerDuration, FieldMessageType, MapFilterValues, AttacksFilterValues, Resource, HeroItemBonus, PlayerTribe, \
-    HeroItemType, AuctionStatus, HeroItemSlot, Country, PlayerPunishmentStrikeReason, BuildingType, BuildingCategory, \
+    MarkerDuration, FieldMessageType, Resource, HeroItemBonus, PlayerTribe, HeroItemType, AuctionStatus, HeroItemSlot, \
+    Country, PlayerPunishmentStrikeReason, BuildingType, BuildingCategory, \
     HeroStatus, Gender, PlayerKingdomRole, KingdomType, KingdomState, VillageOasisStatus, ResourceVillageType, \
     PlayerVacationState, QuestVersion, CelebrationType, PlayerProgressTriggerType, QuestGiver, QuestStatus, Language, \
     SettingsTimeType, SettingsTimeFormat, OnlineStatusFilter, SettingsPremiumConfirmation, SocietyAttitude, \
