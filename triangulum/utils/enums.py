@@ -1155,11 +1155,11 @@ class Gender(Enum):
 
 
 class CelebrationType(Enum):
-    SMALL = 1  # TODO: Double check this
-    LARGE = 2  # TODO: Double check this
+    SMALL = 1
+    LARGE = 2
 
 
-class RomanUnit(Enum):  # TODO: Double check that this is right
+class RomanUnit(Enum):
     LEGIONNAIRE = 1
     PRAETORIAN = 2
     IMPERIAN = 3
@@ -1172,7 +1172,7 @@ class RomanUnit(Enum):  # TODO: Double check that this is right
     SETTLER = 10
 
 
-class TeutonUnit(Enum):  # TODO: Double check that this is right
+class TeutonUnit(Enum):
     CLUBSWINGER = 11
     SPEARFIGHTER = 12
     AXEFIGHTER = 13
@@ -1185,7 +1185,7 @@ class TeutonUnit(Enum):  # TODO: Double check that this is right
     SETTLER = 20
 
 
-class GaulUnit(Enum):  # TODO: Double check that this is right
+class GaulUnit(Enum):
     PHALANX = 21
     SWORDSMAN = 22
     PATHFINDER = 23
@@ -1232,7 +1232,6 @@ class MapFilterValues(Enum):
 
 
 class AttacksFilterValues(Enum):
-    # TODO: There's likely more of these just like MapFilterValues
     NONE = 0
     KINGDOM = 2
 
@@ -1319,7 +1318,7 @@ class RankingCategory(Enum):
 
 class ShareReportWith(Enum):
     SOCIETY = 'secretSociety'
-    KINGDOM = 'kingdom'  # TODO: Doublecheck
+    KINGDOM = 'kingdom'
     PLAYER = 'player'
 
 
@@ -1368,7 +1367,7 @@ class TradeRate(Enum):
 
 class SpyMissionType(Enum):
     RESOURCES = 'resources'
-    DEFENCES = 'defences'  # TODO: Doublecheck
+    DEFENCES = 'defence'
 
 
 class PremiumFeatureAutoExtendFlags(Enum):
