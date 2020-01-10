@@ -9,7 +9,7 @@ from triangulum.utils.enums import RomanUnit, TeutonUnit, GaulUnit, MarkerType, 
     PlayerVacationState, QuestVersion, CelebrationType, PlayerProgressTriggerType, QuestGiver, QuestStatus, Language, \
     SettingsTimeType, SettingsTimeFormat, OnlineStatusFilter, SettingsPremiumConfirmation, SocietyAttitude, \
     DarkSocietyTarget, BrightSocietyTarget, TroopStatus, TroopMovementType, SpyMissionType
-from triangulum.utils.types import ScalarId, Timestamp, BoolInt, VillageId, LocationId, Coordinates, TroopId
+from triangulum.utils.types import ScalarId, Timestamp, BoolInt, LocationId, MapId, TroopId, FilterScalar
 from triangulum.utils.util import unit_id_to_unit_nr
 
 
@@ -140,41 +140,6 @@ class FieldMessage:
             'cellId': self.CELL_ID,
             'targetId': self.TARGET_ID
         }
-
-
-@dataclass
-class _FilterScalar(_Base):
-    _ENUM: Enum
-
-    def sum(self):
-        scalar = 0
-
-        for toggle_name, toggle_val in dict(self).items():
-            if toggle_val:
-                scalar += self._ENUM[toggle_name].value
-
-        return scalar
-
-
-@dataclass
-class MapFilter(_FilterScalar):
-    _ENUM: Enum = MapFilterValues
-
-    NONE: bool = False
-    KINGDOM_BORDERS: bool = True
-    CAPITAL_VILAGES: bool = True
-    OWN_MARKERS: bool = True
-    GAME_MESSAGES: bool = True
-    PLAYER_MESSAGES: bool = True
-    TREASURES: bool = True
-
-
-@dataclass
-class AttacksFilter(_FilterScalar):
-    _ENUM: Enum = AttacksFilterValues
-
-    NONE: bool = False
-    KINGDOM: bool = True
 
 
 @dataclass
@@ -316,14 +281,14 @@ class Bid(_Base):
 @dataclass
 class Building(_Base):
     building_type: BuildingType
-    village_id: VillageId
+    village_id: MapId
     location_id: LocationId
     lvl: int
     lvl_next: int
     is_max_lvl: bool
     lvl_max: int
     upgrade_costs: Resources
-    next_upgrade_costs: Dict[Resources]  # TODO: Is there a better way to express this?
+    next_upgrade_costs: Dict[int, Resources]  # TODO: Is there a better way to express this?
     upgrade_time: int
     next_upgrade_times: dict  # TODO: Is there a better way to express this?
     upgrade_supply_usage: int  # crop usage / pop increase of next lvl
@@ -335,10 +300,10 @@ class Building(_Base):
 
 @dataclass
 class BuildingQueue(_Base):
-    village_id: VillageId
+    village_id: MapId
     tribe_id: PlayerTribe
     free_slots: dict  # TODO: Is there a better way to express this?
-    queues: Dict[List[Dict]]  # TODO: Is there a better way to express this?
+    queues: Dict[int, List[dict]]  # TODO: Is there a better way to express this?
     can_use_instant_construction: bool
     can_use_instant_construction_only_in_village: bool
 
@@ -358,7 +323,7 @@ class FarmList(_Base):
     last_changed: Timestamp
     units: Union[GaulUnits, RomanUnits, TeutonUnits]  # TODO: This is the complex ones with unit_nr
     order_nr: int
-    village_ids: List[VillageId]
+    village_ids: List[MapId]
     entry_ids: List[ScalarId]
     is_default: bool
     max_entries_count: int
@@ -367,13 +332,13 @@ class FarmList(_Base):
 @dataclass
 class FarmListEntry(_Base):
     entry_id: ScalarId
-    village_id: VillageId
+    village_id: MapId
     village_name: str
     units: Union[GaulUnits, RomanUnits, TeutonUnits]  # TODO: This is the complex ones with unit_nr
     target_owner_id: ScalarId
     belongs_to_king: ScalarId
     population: int
-    coords: Coordinates
+    coords: MapId
     is_oasis: bool
     last_report: int  # TODO: Possible a ScalarId
 
@@ -397,8 +362,8 @@ class GroupInvitation(_Base):
 @dataclass
 class Hero(_Base):
     player_id: ScalarId
-    village_id: VillageId
-    dest_village_id: VillageId
+    village_id: MapId
+    dest_village_id: MapId
     status: HeroStatus
     health: float
     last_health_time: Timestamp
@@ -539,7 +504,7 @@ class MapDetails(_Base):
 
 @dataclass
 class Merchants(_Base):
-    village_id: VillageId
+    village_id: MapId
     max: int
     in_offers: int
     in_transport: int
@@ -582,13 +547,13 @@ class ResourceBonuses(_Base):
 @dataclass
 class OasisTroopRanking(_Base):
     id: ScalarId
-    oasis_id: VillageId
+    oasis_id: MapId
     oasis_type: int  # TODO: Enum this
     player_id: ScalarId
     rank: int
     amount: int
     max_usable_troops: int
-    used_by_village: VillageId
+    used_by_village: MapId
     village_influence: int
     bonus: ResourceBonuses
     troop_production: int
@@ -613,7 +578,7 @@ class Storage(_Resources):
 
 @dataclass
 class Village(_Base):
-    village_id: VillageId
+    village_id: MapId
     player_id: ScalarId
     name: str
     tribe_id: PlayerTribe
@@ -621,7 +586,7 @@ class Village(_Base):
     belongs_to_kingdom: ScalarId
     type: int  # TODO: Enum this
     population: int
-    coordinates: Coordinates
+    coordinates: MapId
     is_main_village: bool
     is_town: bool
     treasures_usable: int
@@ -803,8 +768,8 @@ class Settings(_Base):
     time_zone_string: str  # TODO: This is that weird time formatting
     time_zone_switcher: BoolInt
     time_format: SettingsTimeFormat
-    attacks_filter: AttacksFilter
-    map_filter: MapFilter
+    attacks_filter: FilterScalar
+    map_filter: FilterScalar
     disable_tab_notifications: BoolInt
     enable_tab_notifications: bool
     disable_animations: bool
@@ -839,7 +804,7 @@ class Society(_Base):
     society_id: ScalarId
     attitude: SocietyAttitude
     target_type: Union[BrightSocietyTarget, DarkSocietyTarget]
-    target_id: VillageId
+    target_id: MapId
     shared_informations: int  # TODO: Enum these values and add a scalar filter like val
     profile: SocietyProfile
 
@@ -850,7 +815,7 @@ class TradeOffer(_Base):
     player_id: ScalarId
     player_name: str
     kingdom_id: ScalarId
-    village_id: VillageId
+    village_id: MapId
     blocked_merchants: int
     offered_resource: Resource
     offered_amount: int
@@ -865,8 +830,8 @@ class TradeOffer(_Base):
 @dataclass
 class TroopsMovementInfo(_Base):
     troop_id: TroopId
-    village_id_start: VillageId
-    village_id_target: VillageId
+    village_id_start: MapId
+    village_id_target: MapId
     player_id_target: ScalarId
     coordinate_id: int  # TODO: What's this?
     time_start: Timestamp
@@ -888,9 +853,9 @@ class Troops(_Base):
     tribe_id: PlayerTribe
     player_id: ScalarId
     player_name: str
-    village_id: VillageId
+    village_id: MapId
     village_name: str
-    village_id_location: VillageId
+    village_id_location: MapId
     village_name_location: str  # TODO: What's this?
     player_id_location: int  # TODO: What's this?
     player_name_location: str  # TODO: What's this?
@@ -924,16 +889,15 @@ class UnitResearchQueueItem(_Base):
 
 @dataclass
 class UnitQueue(_Base):
-    village_id: VillageId
+    village_id: MapId
     building_types: dict  # TODO
     # building_types: {
     #     36: List[UnitQueueItem]
     # }
 
-
 @dataclass
 class UnitResearchQueue(_Base):
-    village_id: VillageId
+    village_id: MapId
     building_types: dict  # TODO
     # building_types: {
     #     22: List[UnitResearchQueueItem]
