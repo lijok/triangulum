@@ -354,7 +354,7 @@ class FarmList(_Base):
     list_name: str
     last_sent: Timestamp
     last_changed: Timestamp
-    units: Union[GaulUnits, RomanUnits, TeutonUnits]  # TODO: This is the complex ones with unit_nr
+    units: Units  # TODO: This is the complex ones with unit_nr
     order_nr: int
     village_ids: List[MapId]
     entry_ids: List[ScalarId]
@@ -367,7 +367,7 @@ class FarmListEntry(_Base):
     entry_id: ScalarId
     village_id: MapId
     village_name: str
-    units: Union[GaulUnits, RomanUnits, TeutonUnits]  # TODO: This is the complex ones with unit_nr
+    units: Units  # TODO: This is the complex ones with unit_nr
     target_owner_id: ScalarId
     belongs_to_king: ScalarId
     population: int
@@ -883,7 +883,7 @@ class Troops(_Base):
     filter: str  # TODO: What's this?
     village_id_supply: int  # TODO: What's this?
     status: enums.TroopStatus
-    units: Union[RomanUnits, TeutonUnits, GaulUnits]
+    units: Units
     supply_troops: int  # TODO: What's this?
     capacity: int  # TODO: What'st his?
     movement: TroopsMovementInfo
