@@ -1159,6 +1159,46 @@ class CelebrationType(Enum):
     LARGE = 2
 
 
+class Unit(Enum):
+    # Roman
+    LEGIONNAIRE = 1
+    PRAETORIAN = 2
+    IMPERIAN = 3
+    EQUITES_LEGATI = 4
+    EQUITES_IMPERATORIS = 5
+    EQUITES_CAESARIS = 6
+    BATTERING_RAM = 7
+    FIRE_CATAPULT = 8
+    SENATOR = 9
+    ROMAN_SETTLER = 10
+
+    # Teuton
+    CLUBSWINGER = 11
+    SPEARFIGHTER = 12
+    AXEFIGHTER = 13
+    SCOUT = 14
+    PALADIN = 15
+    TEUTONIC_KNIGHT = 16
+    TEUTON_RAM = 17
+    CATAPULT = 18
+    CHIEF = 19
+    TEUTON_SETTLER = 20
+
+    # Gaul
+    PHALANX = 21
+    SWORDSMAN = 22
+    PATHFINDER = 23
+    THEUTATES_THUNDER = 24
+    DRUIDRIDER = 25
+    HAEDUAN = 26
+    GAUL_RAM = 27
+    TREBUCHET = 28
+    CHIEFTAIN = 29
+    GAUL_SETTLER = 30
+
+    # TODO: Add nature and natar
+
+
 class RomanUnit(Enum):
     LEGIONNAIRE = 1
     PRAETORIAN = 2
