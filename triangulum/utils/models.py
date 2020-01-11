@@ -1,4 +1,4 @@
-from dataclasses import dataclass
+from dataclasses import dataclass, is_dataclass
 from enum import Enum
 from typing import List, Union, Dict
 
@@ -14,6 +14,28 @@ class _Base:
         for key, val in self.__dict__.items():
             if not key.startswith('_'):
                 yield key, val
+
+    @classmethod
+    def _load(cls, obj, params):
+        """Dummy _load method for when one is not defined in the child class"""
+        return obj, params
+
+    @classmethod
+    def load(cls, params):
+        # instantiate an empty object
+        obj = cls(**{key: None for key in cls.__dataclass_fields__.keys()})
+
+        # let any custom loading happen first
+        obj, params = cls._load(obj, params)
+        for key, val in params.items():
+            val_type = obj.__annotations__[key]
+
+            if is_dataclass(val_type):
+                obj.__dict__[key] = val_type.load(val)
+            else:
+                obj.__dict__[key] = val_type(val)
+
+        return obj
 
 
 @dataclass
