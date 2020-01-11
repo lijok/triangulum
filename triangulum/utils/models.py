@@ -71,7 +71,7 @@ class _Units(_NumberedDict):
 
 
 @dataclass
-class Units(_NumberedDict):
+class Units(_Units):
     TRIBE: enums.PlayerTribe
     _ENUM: Enum = enums.Unit
 
