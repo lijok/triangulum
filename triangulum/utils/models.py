@@ -57,6 +57,8 @@ class _NumberedDict(_Base):
 
 @dataclass
 class _Units(_NumberedDict):
+    _ENUM: Enum
+
     def combat_format_with_zeros(self):
         return {
             str(unit_id_to_unit_nr(self._ENUM[unit_name].value)): unit_qty
@@ -72,8 +74,8 @@ class _Units(_NumberedDict):
 
 @dataclass
 class Units(_Units):
-    TRIBE: enums.PlayerTribe
     _ENUM: Enum = enums.Unit
+    TRIBE: enums.PlayerTribe = enums.PlayerTribe.NONE
 
     LEGIONNAIRE: int = 0
     PRAETORIAN: int = 0
