@@ -71,6 +71,48 @@ class _Units(_NumberedDict):
 
 
 @dataclass
+class Units(_NumberedDict):
+    TRIBE: enums.PlayerTribe
+    _ENUM: Enum = enums.Unit
+
+    LEGIONNAIRE: int = 0
+    PRAETORIAN: int = 0
+    IMPERIAN: int = 0
+    EQUITES_LEGATI: int = 0
+    EQUITES_IMPERATORIS: int = 0
+    EQUITES_CAESARIS: int = 0
+    BATTERING_RAM: int = 0
+    FIRE_CATAPULT: int = 0
+    SENATOR: int = 0
+    ROMAN_SETTLER: int = 0
+    ROMAN_HERO: int = 0
+
+    CLUBSWINGER: int = 0
+    SPEARFIGHTER: int = 0
+    AXEFIGHTER: int = 0
+    SCOUT: int = 0
+    PALADIN: int = 0
+    TEUTONIC_KNIGHT: int = 0
+    RAM: int = 0
+    CATAPULT: int = 0
+    CHIEF: int = 0
+    TEUTON_SETTLER: int = 0
+    TEUTON_HERO: int = 0
+
+    PHALANX: int = 0
+    SWORDSMAN: int = 0
+    PATHFINDER: int = 0
+    THEUTATES_THUNDER: int = 0
+    DRUIDRIDER: int = 0
+    HAEDUAN: int = 0
+    GAUL_RAM: int = 0
+    TREBUCHET: int = 0
+    CHIEFTAIN: int = 0
+    GAUL_SETTLER: int = 0
+    GAUL_HERO: int = 0
+
+
+@dataclass
 class RomanUnits(_Units):
     _ENUM: Enum = enums.RomanUnit
     _TRIBE: enums.PlayerTribe = enums.PlayerTribe.ROMAN.value
