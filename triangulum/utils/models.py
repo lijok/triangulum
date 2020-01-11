@@ -744,7 +744,7 @@ class UnitResearchStats(UnitStats):
 
 @dataclass
 class Unit(_Base):
-    unit_type: Union[enums.RomanUnit, enums.TeutonUnit, enums.GaulUnit]  # TODO: We probably need a non union for these
+    unit_type: enums.Unit
     unit_level: int
     costs: Resources
     time: int
@@ -891,7 +891,7 @@ class Troops(_Base):
 
 @dataclass
 class UnitQueueItem(_Base):
-    unit_type: Union[enums.RomanUnit, enums.TeutonUnit, enums.GaulUnit]  # TODO: We probably need a non union for these
+    unit_type: enums.Unit
     count: int
     duration_per_unit: int
     time_finished_next: Timestamp
@@ -901,7 +901,7 @@ class UnitQueueItem(_Base):
 
 @dataclass
 class UnitResearchQueueItem(_Base):
-    unit_type: Union[enums.RomanUnit, enums.TeutonUnit, enums.GaulUnit]  # TODO: We probably need a non union for these
+    unit_type: enums.Unit
     research_level: int
     start_time: Timestamp
     finished: Timestamp
