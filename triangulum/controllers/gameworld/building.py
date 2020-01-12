@@ -4,7 +4,7 @@ from cachetools import TTLCache
 
 from triangulum.controllers.base import BaseController
 from triangulum.utils.cache import cached, MAX_SIZE, TTL
-from triangulum.utils.models import RomanUnits, TeutonUnits, GaulUnits
+from triangulum.utils.models import Units
 from triangulum.utils.enums import CelebrationType, BuildingType, RomanUnit, TeutonUnit, GaulUnit
 
 
@@ -130,7 +130,7 @@ class Building(BaseController):
             self,
             village_id: int,
             location_id: int,
-            units: Union[RomanUnits, TeutonUnits, GaulUnits]
+            units: Units
     ) -> dict:
         """Recruit new units
 

@@ -115,60 +115,6 @@ class Units(_Units):
 
 
 @dataclass
-class RomanUnits(_Units):
-    _ENUM: Enum = enums.RomanUnit
-    _TRIBE: enums.PlayerTribe = enums.PlayerTribe.ROMAN.value
-
-    LEGIONNAIRE: int = 0
-    PRAETORIAN: int = 0
-    IMPERIAN: int = 0
-    EQUITES_LEGATI: int = 0
-    EQUITES_IMPERATORIS: int = 0
-    EQUITES_CAESARIS: int = 0
-    BATTERING_RAM: int = 0
-    FIRE_CATAPULT: int = 0
-    SENATOR: int = 0
-    SETTLER: int = 0
-    HERO: int = 0
-
-
-@dataclass
-class TeutonUnits(_Units):
-    _ENUM: Enum = enums.TeutonUnit
-    _TRIBE: enums.PlayerTribe = enums.PlayerTribe.TEUTON.value
-
-    CLUBSWINGER: int = 0
-    SPEARFIGHTER: int = 0
-    AXEFIGHTER: int = 0
-    SCOUT: int = 0
-    PALADIN: int = 0
-    TEUTONIC_KNIGHT: int = 0
-    RAM: int = 0
-    CATAPULT: int = 0
-    CHIEF: int = 0
-    SETTLER: int = 0
-    HERO: int = 0
-
-
-@dataclass
-class GaulUnits(_Units):
-    _ENUM: Enum = enums.GaulUnit
-    _TRIBE: enums.PlayerTribe = enums.PlayerTribe.GAUL.value
-
-    PHALANX: int = 0
-    SWORDSMAN: int = 0
-    PATHFINDER: int = 0
-    THEUTATES_THUNDER: int = 0
-    DRUIDRIDER: int = 0
-    HAEDUAN: int = 0
-    RAM: int = 0
-    TREBUCHET: int = 0
-    CHIEFTAIN: int = 0
-    SETTLER: int = 0
-    HERO: int = 0
-
-
-@dataclass
 class Marker:
     OWNER: int
     TYPE: enums.MarkerType

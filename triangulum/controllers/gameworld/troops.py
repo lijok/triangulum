@@ -4,7 +4,7 @@ from cachetools import TTLCache
 
 from triangulum.controllers.base import BaseController
 from triangulum.utils.cache import cached, MAX_SIZE, TTL
-from triangulum.utils.models import GaulUnits, TeutonUnits, RomanUnits
+from triangulum.utils.models import Units
 from triangulum.utils.enums import TroopMovementType, SpyMissionType, PlayerTribe
 from triangulum.utils.exceptions import ActionNotImplementedError
 
@@ -61,7 +61,7 @@ class Troops(BaseController):
         movement_type: TroopMovementType,
         redeploy_hero: bool,
         hero_present: bool,
-        selected_units: Union[RomanUnits, TeutonUnits, GaulUnits]
+        selected_units: Units
     ) -> dict:
         """Check whether a desired troop movement is valid prior to begining the movement
 
@@ -93,7 +93,7 @@ class Troops(BaseController):
         village_id: int,
         movement_type: TroopMovementType,
         redeploy_hero: int,
-        units: Union[RomanUnits, TeutonUnits, GaulUnits],
+        units: Units,
         spy_mission: SpyMissionType = None
     ) -> dict:
         """Send troops
@@ -157,9 +157,9 @@ class Troops(BaseController):
             self,
             attack_type: int,
             attacker_tribe: PlayerTribe,
-            attacker_units: Union[RomanUnits, TeutonUnits, GaulUnits],
+            attacker_units: Units,
             defender_tribe: PlayerTribe,
-            defender_units: Union[RomanUnits, TeutonUnits, GaulUnits],
+            defender_units: Units,
             hero_off_bonus: list,  # List of bonuses?
             hero_def_bonus: list,  # List of bonuses?
             hero_item_type: list,  # List of item types?
@@ -231,7 +231,7 @@ class Troops(BaseController):
         #     }
         # )
 
-    async def move_troops_home(self, troop_id: int, units: Union[RomanUnits, TeutonUnits, GaulUnits]) -> dict:
+    async def move_troops_home(self, troop_id: int, units: Units) -> dict:
         """[*]
 
         Args:

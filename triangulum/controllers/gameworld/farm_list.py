@@ -1,7 +1,7 @@
 from typing import Union, Callable
 
 from triangulum.controllers.base import BaseController
-from triangulum.utils.models import RomanUnits, TeutonUnits, GaulUnits
+from triangulum.utils.models import Units
 
 
 class FarmList(BaseController):
@@ -43,7 +43,7 @@ class FarmList(BaseController):
     # as not all units are allowed to be added to a farm list
     # the list of numbers doesn't go beyond 6 or so, and each one has a different
     # enum assignment
-    async def edit_troops(self, entry_ids: list, units: Union[RomanUnits, TeutonUnits, GaulUnits]) -> dict:
+    async def edit_troops(self, entry_ids: list, units: Units) -> dict:
         """[*]Edit the assignment of attack units for entries in a farm list
 
         Args:
