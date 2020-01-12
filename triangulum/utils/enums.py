@@ -1,5 +1,7 @@
 from enum import Enum
 
+from triangulum.utils.util import unit_id_to_unit_nr
+
 
 class FriendStatus(Enum):
     AVAILABLE = -1
@@ -1197,6 +1199,10 @@ class Unit(Enum):
     GAUL_SETTLER = 30
 
     # TODO: Add nature and natar
+
+    @property
+    def as_nr(self):
+        return unit_id_to_unit_nr(self.value)
 
 
 class RomanUnit(Enum):
