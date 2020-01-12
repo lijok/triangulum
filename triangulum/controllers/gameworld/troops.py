@@ -83,7 +83,7 @@ class Troops(BaseController):
                 'movementType': movement_type.value,
                 'redeployHero': redeploy_hero,
                 'heroPresent': hero_present,
-                'selectedUnits': selected_units.combat_format_without_zeros(),
+                'selectedUnits': selected_units.nr_without_zeros(),
             }
         )
 
@@ -114,7 +114,7 @@ class Troops(BaseController):
                 'villageId': village_id,
                 'movementType': movement_type.value,
                 'redeployHero': redeploy_hero,
-                'units': units.combat_format_without_zeros(),
+                'units': units.nr_without_zeros(),
                 'spyMission': spy_mission.value if spy_mission else SpyMissionType.RESOURCES.value,  # Oddly enough, is required even during non spy missions
             }
         )
@@ -242,7 +242,7 @@ class Troops(BaseController):
             action='moveTroopsHome',
             params={
                 'troopId': troop_id,
-                'units': units.combat_format_without_zeros(),
+                'units': units.nr_without_zeros(),
             }
         )
 

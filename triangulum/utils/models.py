@@ -59,13 +59,13 @@ class _NumberedDict(_Base):
 class _Units(_NumberedDict):
     _ENUM: Enum
 
-    def combat_format_with_zeros(self):
+    def nr_with_zeros(self):
         return {
             str(unit_id_to_unit_nr(self._ENUM[unit_name].value)): unit_qty
             for unit_name, unit_qty in dict(self).items()
         }
 
-    def combat_format_without_zeros(self):
+    def nr_without_zeros(self):
         return {
             str(unit_id_to_unit_nr(self._ENUM[unit_name].value)): unit_qty
             for unit_name, unit_qty in dict(self).items() if unit_qty > 0
